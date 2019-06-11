@@ -3,21 +3,24 @@
 $base__space-unit: 1.5rem;
 
 // Colors
+$header-color-transparent: rgba(255,255,255,0.8);
+$font-awesome-color:#002D6E;
+$footer-bg-color: #1C1C1C;
+$header-title-font-color:#4A4A4A;
+$font-color:#4A4A4A;
+$hamburger-color:#002D6E
 
-$color__background-body: #fff;
-$color__text-main: #404040;
+//buton colors
+$btn-color: linear-gradient(90deg, #002D6E 0%, #2F88D3 100%);
+$pdf-btn-color: #FFFFFF; 
+$btn-border-color: #00D4E8;
+$roadmap-dot-color:#00D4E8;
+$subscribe-btn-color:linear-gradient(90deg, #158130 0%, #21BF48 100%);
+$source-of-funds-color:#FFFFFF;
+$point-form-icon-color:linear-gradient(180deg, #00ECF5 0%, #00D4E8 100%);
+$view-more-btn-color:linear-gradient(180deg, #00ECF5 0%, #00D4E8 100%);
 
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
 
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
-
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
 
 // Typography
 

@@ -46,3 +46,4 @@ themes/terra/gulpfile.js
 themes/terra/build/*
 
 package-lock.json
+themes/terra/package-lock.json

@@ -12,7 +12,12 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
+		<?php while (have_posts()) : the_post(); ?>
 
+			<?php get_template_part('template-parts/content', 'page'); ?>
+
+		<?php endwhile;
+	?>
 		<section class="fp-banner">
 			<h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
 			<img src="<?php echo CFS()->get('fp_banner_image'); ?>" />
@@ -33,12 +38,7 @@ get_header(); ?>
 		</div>
 
 
-		<?php while (have_posts()) : the_post(); ?>
 
-			<?php get_template_part('template-parts/content', 'page'); ?>
-
-		<?php endwhile;
-	?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

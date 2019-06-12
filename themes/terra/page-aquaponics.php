@@ -3,6 +3,7 @@
  * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
+ * Template Name: Aquaponnics
  */
 
 get_header(); ?>

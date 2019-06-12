@@ -6,14 +6,28 @@
     @include center-page;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
+    line-height: 27px;
+    .site-branding {
+      width: 50%;
+      img {
+        min-width: 20%;
+        max-width: 20%;
+      }
+    }
 
     .menu {
       display: flex;
       justify-content: flex-end;
-      width: 50%;
+      li a:hover {
+        text-decoration: #111;
+      }
       li {
         margin-left: 40px;
+        a {
+          font-size: 1.25rem;
+          color: black;
+        }
       }
     }
   }

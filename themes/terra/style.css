@@ -296,15 +296,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-<<<<<<< HEAD
-=======
-a:focus {
-  outline: thin dotted; }
-
-a:hover, a:active {
-  outline: 0; }
-
->>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 /* Menus */
 .main-navigation {
   clear: both;
@@ -317,11 +308,6 @@ a:hover, a:active {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-<<<<<<< HEAD
-=======
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
->>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
       float: left;
       position: absolute;
       top: 1.5rem;
@@ -546,38 +532,46 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
-.site-header {
-  background-color: #ccddec;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
-  .site-header .center-header {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100px; }
-    .site-header .center-header .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      width: 50%; }
-      .site-header .center-header .menu li {
-        margin-left: 40px; }
-=======
 footer {
   background-color: #2F2E2F; }
   footer .footer-center {
     width: 1140px;
     margin-left: auto;
     margin-right: auto; }
->>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  .site-header .center-header {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+    line-height: 27px; }
+    .site-header .center-header .site-branding {
+      width: 50%; }
+      .site-header .center-header .site-branding img {
+        min-width: 20%;
+        max-width: 20%; }
+    .site-header .center-header .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .site-header .center-header .menu li a:hover {
+        -webkit-text-decoration: #111;
+                text-decoration: #111; }
+      .site-header .center-header .menu li {
+        margin-left: 40px; }
+        .site-header .center-header .menu li a {
+          font-size: 1.25rem;
+          color: black; }

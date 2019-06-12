@@ -1,9 +1,12 @@
 // Structure
+$desktop-width: 620px;
+$desktop-max-width: 1140px;
 
 $base__space-unit: 1.5rem;
 
 // Colors
 $header-color-transparent: rgba(255, 255, 255, 0.8);
+$header-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 $font-awesome-color: #002d6e;
 $footer-bg-color: #1c1c1c;
 $header-title-font-color: #4a4a4a;

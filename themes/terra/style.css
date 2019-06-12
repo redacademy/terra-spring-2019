@@ -553,14 +553,25 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100px; }
+    height: 80px;
+    line-height: 27px; }
+    .site-header .center-header .site-branding {
+      width: 50%; }
+      .site-header .center-header .site-branding img {
+        min-width: 20%;
+        max-width: 20%; }
     .site-header .center-header .menu {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end;
-      width: 50%; }
+              justify-content: flex-end; }
+      .site-header .center-header .menu li a:hover {
+        -webkit-text-decoration: #111;
+                text-decoration: #111; }
       .site-header .center-header .menu li {
         margin-left: 40px; }
+        .site-header .center-header .menu li a {
+          font-size: 1.25rem;
+          color: black; }

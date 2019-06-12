@@ -15,11 +15,25 @@
 			<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
 		</div><!-- .site-info -->
 
-		<nav id="site-navigation" class="footer-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php echo esc_html('footer Menu'); ?></button>
-			<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
-		</nav><!-- #site-navigation -->
-	</div>
+		<section class="subscription">
+
+		</section><!-- .subscription -->
+
+		<section class="contact-media">
+			<nav id="site-navigation" class="footer-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php echo esc_html('footer Menu'); ?></button>
+				<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
+			</nav><!-- #site-navigation -->
+
+			<div class="social-media">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+			</div><!-- .social-media -->
+
+		</section><!-- .contact-media -->
+
+	</div><!-- .footer-center -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

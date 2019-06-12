@@ -34,12 +34,7 @@
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 				</nav><!-- #site-navigation -->
 
-<<<<<<< HEAD
 			</div>
 		</header><!-- #masthead -->
-=======
-\
-			</header><!-- #masthead -->
->>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 
 		<div id="content" class="site-content">

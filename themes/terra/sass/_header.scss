@@ -1,29 +1,32 @@
 .site-header {
   background-color: $header-color-transparent;
   box-shadow: $header-box-shadow;
+  position: relative;
 
   .center-header {
     @include center-page;
     display: flex;
     align-items: center;
-    height: 80px;
+    min-height: 100px;
     line-height: 27px;
     .site-branding {
       width: 50%;
+
       img {
         min-width: 20%;
         max-width: 20%;
+        margin-top: 10px;
       }
     }
-
     .menu {
       display: flex;
       justify-content: flex-end;
       li a:hover {
-        text-decoration: #111;
+        border-bottom: 4px solid #00ecf5;
       }
       li {
         margin-left: 40px;
+        max-height: 22px;
         a {
           font-size: 1.25rem;
           color: black;

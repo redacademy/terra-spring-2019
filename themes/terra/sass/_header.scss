@@ -1,0 +1,20 @@
+.site-header {
+  background-color: $header-color-transparent;
+  box-shadow: $header-box-shadow;
+
+  .center-header {
+    @include center-page;
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      li {
+        margin-left: 40px;
+      }
+    }
+  }
+}

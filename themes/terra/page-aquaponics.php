@@ -4,6 +4,8 @@
  *
  * @package RED_Starter_Theme
  * Template Name: Aquaponics
+ * 
+ * 
  */
 
 get_header(); ?>
@@ -15,7 +17,7 @@ get_header(); ?>
 
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
-		<?php endwhile; 
+		<?php endwhile;
 	?>
 
 	</main><!-- #main -->

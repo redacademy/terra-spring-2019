@@ -4,6 +4,7 @@
 
 /* Links */
 
+<<<<<<< HEAD
 // a {
 // 	color: $color__link;
 
@@ -23,10 +24,32 @@
 // 		outline: 0;
 // 	}
 // }
+=======
+a {
+	// color: $color__link;
+
+	// &:visited {
+	// 	color: $color__link-visited;
+	// }
+	// &:hover,
+	// &:focus,
+	// &:active {
+	// 	color: $color__link-hover;
+	// }
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+>>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 
 /* Menus */
 
 .main-navigation {
+<<<<<<< HEAD
   clear: both;
   display: block;
   float: left;
@@ -93,11 +116,80 @@
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
+=======
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999rem;
+			z-index: 99999;
+
+			ul {
+				left: -999rem;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+>>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
+<<<<<<< HEAD
   display: block;
 }
 
@@ -108,11 +200,24 @@
   .main-navigation ul {
     display: block;
   }
+=======
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+>>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+<<<<<<< HEAD
   .site-main & {
     margin: 0 0 $base__space-unit;
     overflow: hidden;
@@ -128,4 +233,22 @@
     text-align: right;
     width: 50%;
   }
+=======
+
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+>>>>>>> ea4547f241241cc695df9ac5be6e8515d26fae53
 }

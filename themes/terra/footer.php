@@ -10,20 +10,24 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="footer-center">
-		<div class="site-info">
-			<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
-		</div><!-- .site-info -->
 
-		<section class="subscription">
+	<section class="subscription">
+		<div class="footer-center">
+			<p class="subscribe-description">Want to stay up to date on our project? <br /> Subscribe to our newsletter!</p>
+			<?php echo do_shortcode('[contact-form-7 id="28" title="email subscription"]'); ?>
+			<div class="subscription-confirmed">
+				<h6>Subscription Confirmed!</h6>
+				<p>We are embarking on an adventure to create a better future for us all. Glad to have you with us!</p>
+			</div><!-- .subscription-confirmed -->
+		</div><!-- .footer-center -->
+	</section><!-- .subscription -->
 
-		</section><!-- .subscription -->
+	<section class="contact-media">
+		<div class="footer-center">
 
-		<section class="contact-media">
 			<nav id="site-navigation" class="footer-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php echo esc_html('footer Menu'); ?></button>
 				<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
-			</nav><!-- #site-navigation -->
+			</nav><!-- .footer-navigation -->
 
 			<div class="social-media">
 				<i class="fab fa-facebook-square"></i>
@@ -31,16 +35,13 @@
 				<i class="fab fa-instagram"></i>
 			</div><!-- .social-media -->
 
-		</section><!-- .contact-media -->
+		</div><!-- .footer-center -->
+	</section><!-- .contact-media -->
 
-	</div><!-- .footer-center -->
+
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
-<nav id="site-navigation" class="main-navigation" role="navigation">
-	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-	<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
-</nav><!-- #site-navigation -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

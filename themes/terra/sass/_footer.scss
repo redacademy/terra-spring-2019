@@ -1,10 +1,100 @@
 footer {
-  background-color: #2f2e2f;
+  background: $footer-bg-color-grey;
+  color: $footer-font-color;
   .footer-center {
     @include center-page;
   }
-  
-//   @include desktop {
 
-//   }
+  a {
+    text-decoration: none;
+    color: $footer-font-color;
+  }
+
+  .subscription {
+    background: $footer-bg-color-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    &:active {
+      background-image: url("/../assets/images/logos/Subscription-confirmation-banner-smaller.png");
+    }
+    .subscribe-description {
+      display: none;
+
+      @include desktop {
+        display: unset;
+      }
+    }
+
+    .wpcf7 {
+      .wpcf7-form {
+        width: 100%;
+      }
+      .subscribe-btn {
+        height: 55px;
+        width: 240px;
+        border-radius: 6px;
+        border: none;
+        background: linear-gradient(90deg, #158130 0%, #21bf48 100%);
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+
+      .wpcf7-text {
+        background: #cccc;
+        border: none;
+        padding: 0.5rem;
+      }
+
+      .wpcf7-mail-sent-ok {
+        background: coral;
+      }
+    }
+  }
+
+  .contact-media {
+    background: $footer-bg-color-grey;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 1.5rem;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        &:nth-child(1) {
+          border-right: 1px solid $footer-font-color;
+          padding-right: 1rem;
+        }
+      }
+    }
+    .social-media {
+      i {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @include desktop {
+      background: $footer-bg-color;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }

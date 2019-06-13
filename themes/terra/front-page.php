@@ -38,36 +38,30 @@ get_header(); ?>
         </div>
         
         <section class="fp-testimonies">
-            <h2>Testimonies</h2>
-            <p>Here at Terra-Mars, we partner up with local restaurants, 
-                wholesalers, and foodbanks to provide sustainably grown fish and produce to local communities. 
-                Here’s what some of our clients have to say:</P>
-			<article class="testimony-entries">
+            <h2><?php echo CFS()->get('title_testimonies'); ?></h2>
+            <p><?php echo CFS()->get('testimonies_intro'); ?></P>
+			<div class="testimony-entries">
 				<?php 
-				$args = array(  'post_type' => 'post',
+				$args = array(  'post_type' => 'testimony',
 								 'numberposts' => '-1', 
 				);
-				$testimony = get_posts( $args );
+				$testimony_posts = get_posts( $args );
 				?>
 				<?php foreach ( $testimony_posts as $post ) : setup_postdata( $post ); ?>
 
-				<div class="fp-testimony-content">
+				<article class="fp-testimony-content">
                         <?php if ( has_post_thumbnail() ) : ?>
-                            <a class="testimony-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title()?>">
-                                <?php the_post_thumbnail('large'); ?>
-                            </a>
-                        
+                             <h3><?php the_title()?></h3>
+                             <p><?php the_content()?></p>
+                                
+                            <img src="<?php the_post_thumbnail('large'); ?>">
+                         
+            </article>      
                 <?php endif; ?>
-                        
-                        <!-- post author and date -->
-                        <div class = "fp-post-meta">
-                            <?php echo get_the_date(); ?>
-                            <?php echo get_comments_number(); ?> Comments
-                        </div>
 
-				</div>
+            
 				<?php endforeach; wp_reset_postdata(); ?>
-			</article>				
+			</div>				
 			
 		  </section>
 
@@ -77,5 +71,5 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

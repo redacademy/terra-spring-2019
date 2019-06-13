@@ -22,7 +22,7 @@
       display: flex;
       justify-content: flex-end;
       li a:hover {
-        border-bottom: 4px solid #00ecf5;
+        border-bottom: 4px solid $nav-underline-color;
       }
       li {
         margin-left: 40px;

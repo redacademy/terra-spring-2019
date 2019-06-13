@@ -14,7 +14,7 @@
 	<section class="subscription">
 		<div class="footer-center">
 			<p class="subscribe-description">Want to stay up to date on our project? <br /> Subscribe to our newsletter!</p>
-			<?php echo do_shortcode('[contact-form-7 id="28" title="email subscription"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 id="108" title="email subscription"]'); ?>
 			<div class="subscription-confirmed">
 				<h6>Subscription Confirmed!</h6>
 				<p>We are embarking on an adventure to create a better future for us all. Glad to have you with us!</p>

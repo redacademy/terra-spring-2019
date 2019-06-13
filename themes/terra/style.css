@@ -543,37 +543,104 @@ footer {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .site-header .center-header {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 100px;
-    line-height: 27px; }
-    .site-header .center-header .site-branding {
-      width: 50%; }
-      .site-header .center-header .site-branding img {
-        min-width: 20%;
-        max-width: 20%;
-        margin-top: 10px; }
-    .site-header .center-header .menu {
+    width: 100%;
+    height: 60px; }
+    .site-header .center-header .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
-      .site-header .center-header .menu li a:hover {
-        border-bottom: 4px solid #00ecf5; }
-      .site-header .center-header .menu li {
-        margin-left: 40px;
-        max-height: 22px; }
-        .site-header .center-header .menu li a {
-          font-size: 1.25rem;
-          color: black; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: inherit; }
+      .site-header .center-header .main-navigation a {
+        padding-left: 10px;
+        color: black; }
+    .site-header .center-header .hamburger {
+      float: right; }
+    .site-header .center-header .menu-toggle {
+      display: none; }
+    .site-header .center-header img {
+      max-width: 70px;
+      height: 80%;
+      margin-top: 10px; }
+    .site-header .center-header .hamburger--collapse {
+      display: none; }
+    .site-header .center-header .dropdown-content {
+      position: relative;
+      margin-left: 0 auto;
+      overflow: auto;
+      z-index: 1; }
+    .site-header .center-header .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+    .site-header .center-header .dropdown {
+      position: static;
+      display: inline-block; }
+    .site-header .center-header .menu {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      right: 0;
+      height: 100vh;
+      padding-top: 60px;
+      background-color: green;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 70%;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+  @media (min-width: 620px) {
+    .site-header button {
+      display: none; }
+    .site-header img {
+      max-width: 20%;
+      height: 100%;
+      margin-top: 10px; }
+    .site-header .center-header {
+      width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 100px;
+      line-height: 27px; }
+      .site-header .center-header .site-branding {
+        width: 50%; }
+      .site-header .center-header .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .site-header .center-header .menu li a:hover {
+          border-bottom: 4px solid #00ecf5; }
+        .site-header .center-header .menu li {
+          margin-left: 40px;
+          max-height: 22px; }
+          .site-header .center-header .menu li a {
+            font-size: 1.25rem;
+            color: black; } }

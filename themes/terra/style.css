@@ -533,8 +533,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer {
-  background: #2F2E2F;
-  color: #ffffff; }
+  background-color: #2f2e2f; }
   footer .footer-center {
     max-width: 1140px;
     margin-left: auto;
@@ -641,7 +640,8 @@ footer {
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative; }
   .site-header .center-header {
     max-width: 1140px;
     margin-left: auto;
@@ -652,13 +652,14 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 80px;
+    min-height: 100px;
     line-height: 27px; }
     .site-header .center-header .site-branding {
       width: 50%; }
       .site-header .center-header .site-branding img {
         min-width: 20%;
-        max-width: 20%; }
+        max-width: 20%;
+        margin-top: 10px; }
     .site-header .center-header .menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -667,10 +668,10 @@ footer {
           -ms-flex-pack: end;
               justify-content: flex-end; }
       .site-header .center-header .menu li a:hover {
-        -webkit-text-decoration: #111;
-                text-decoration: #111; }
+        border-bottom: 4px solid #00ecf5; }
       .site-header .center-header .menu li {
-        margin-left: 40px; }
+        margin-left: 40px;
+        max-height: 22px; }
         .site-header .center-header .menu li a {
           font-size: 1.25rem;
           color: black; }

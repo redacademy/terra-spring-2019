@@ -40,7 +40,8 @@ get_header(); ?>
 
 	<!-- Our Mission Section-->
 
-	<section class="fp-mission" <h2><?php echo CFS()->get('our_mission'); ?></h2>
+	<section class="fp-mission">
+		<h2><?php echo CFS()->get('our_mission'); ?></h2>
 		<?php echo CFS()->get('mission_restore'); ?>
 		<?php echo CFS()->get('mission_feed'); ?>
 		<?php echo CFS()->get('mission_start'); ?>

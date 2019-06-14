@@ -26,15 +26,15 @@ get_header(); ?>
 		<section class="how-aqua">
 
 			<!--  How Aquaponics Works Section	 -->
-			<h2 class="how-aqua-h2"> <?php echo CFS()->get('how_aquaponics_works'); ?></h2>
+			<h2 class="how-aqua-h2"> <?php echo CFS()->get('how_aqua_works_title'); ?></h2>
 			<?php
 
-			$how_aqua_loop = CFS()->get('how_aquaponics_works'); // this is the loop field
+			$how_aqua_loop = CFS()->get('how_aquaponics_works_loop'); // this is the loop field
 			foreach ($how_aqua_loop as $how_aqua_info) : ?>
-				<div class="how-aqua-item">
-					<h3 class="how-aqua-h3"> <?php echo $how_aqua_info['how_feature_number']; ?></h3>
-					<p class="how-aqua-p"> <?php echo $how_aqua_info['how_feature_info']; ?></p>
-				</div>
+				<!-- <div class="how-aqua-item"> -->
+				<h3 class="how-aqua-h3"> <?php echo $how_aqua_info['how_feature_number']; ?></h3>
+				<p class="how-aqua-p"> <?php echo $how_aqua_info['how_feature_info']; ?></p>
+				<!-- </div> -->
 			<?php endforeach; ?>
 			<img class="how-aqua-img" src="<?php echo CFS()->get('how_feature_image'); ?>" />
 		</section>

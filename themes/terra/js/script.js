@@ -1,7 +1,8 @@
 (function ($) {
 
     $(function () {
-
+        
+        // humber menu mobile header
         var $hamburger = $('.hamburger');
         $hamburger.on('click', function (e) {
             $hamburger.toggleClass('is-active');

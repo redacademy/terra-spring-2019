@@ -99,46 +99,21 @@ get_header(); ?>
 			);
 			$partner_posts = get_posts($args);
 			?>
-			<?php foreach ($testimony_posts as $post) : setup_postdata($post); ?>
+			<?php foreach ($partner_posts as $post) : setup_postdata($post); ?>
 
-				<<<<<<< HEAD <article class="fp-testimony-content">
+				<article class="fp-testimony-content">
 					<?php if (has_post_thumbnail()) : ?>
-						<h3><?php the_title() ?></h3>
-						<p><?php the_content() ?></p>
-
-						<img src="<?php the_post_thumbnail('large'); ?>">
-
-						</article>
+						<?php the_post_thumbnail('large'); ?>
 					<?php endif; ?>
+				</article>
 
-
-				<?php endforeach;
-			wp_reset_postdata(); ?>
+			<?php endforeach;
+		wp_reset_postdata(); ?>
 		</div>
 
 	</section>
 
-
-
-
-
-
-
-	=======
-	<article class="fp-testimony-content">
-		<?php if (has_post_thumbnail()) : ?>
-			<?php the_post_thumbnail('large'); ?>
-		<?php endif; ?>
-	</article>
-
-	<?php endforeach;
-	wp_reset_postdata(); ?>
-</div>
-
-</section>
->>>>>>> 640b0de1e8ab4e32c84641e91be91ac080f70852
-
-</main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 

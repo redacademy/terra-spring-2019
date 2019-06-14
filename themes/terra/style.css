@@ -533,7 +533,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer {
-  background-color: #2f2e2f; }
+  background: #2f2e2f;
+  color: #ffffff; }
   footer .footer-center {
     max-width: 1140px;
     margin-left: auto;
@@ -542,7 +543,7 @@ footer {
     text-decoration: none;
     color: #ffffff; }
   footer .subscription {
-    background: #2F2E2F;
+    background: #2f2e2f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -586,7 +587,7 @@ footer {
     footer .subscription .wpcf7 .wpcf7-mail-sent-ok {
       background: coral; }
   footer .contact-media {
-    background: #2F2E2F;
+    background: #2f2e2f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -644,16 +645,10 @@ footer {
   position: relative;
   width: 100%; }
   .site-header .center-header {
-<<<<<<< HEAD
-=======
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
->>>>>>> 70dfae110f4976eec3504b06692b061c68edd346
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: inherit;
     height: 60px; }
     .site-header .center-header .main-navigation {
       display: -webkit-box;
@@ -668,7 +663,9 @@ footer {
         padding-left: 10px;
         color: black; }
     .site-header .center-header .hamburger {
-      float: right; }
+      float: right;
+      z-index: 10;
+      width: 200px; }
     .site-header .center-header .menu-toggle {
       display: none; }
     .site-header .center-header img {
@@ -677,7 +674,7 @@ footer {
       margin-top: 10px; }
     .site-header .center-header .hamburger--collapse {
       display: none; }
-    .site-header .center-header .dropdown-content {
+    .site-header .center-header .hamburger .dropdown-content {
       position: relative;
       margin-left: 0 auto;
       overflow: auto;
@@ -723,7 +720,7 @@ footer {
       height: 100%;
       margin-top: 10px; }
     .site-header .center-header {
-      width: 1140px;
+      max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
       -webkit-box-align: center;

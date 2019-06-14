@@ -7,7 +7,7 @@ $base__space-unit: 1.5rem;
 $header-color-transparent: rgba(255, 255, 255, 0.8);
 $header-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 $font-awesome-color: #002d6e;
-$footer-bg-color-grey: #2F2E2F;
+$footer-bg-color-grey: #2f2e2f;
 $footer-bg-color: #1c1c1c;
 $footer-font-color: #ffffff;
 $header-title-font-color: #4a4a4a;
@@ -27,8 +27,8 @@ $view-more-btn-color: linear-gradient(180deg, #00ecf5 0%, #00d4e8 100%);
 
 // Typography
 
-$font__main: ;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+// $font__main: ;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;

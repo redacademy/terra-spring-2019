@@ -471,6 +471,10 @@ textarea {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto; }
+
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -489,7 +493,7 @@ object {
 .wp-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
+  .wp-caption img[class*='wp-image-'] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -647,6 +651,10 @@ footer {
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
 
+button {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -658,69 +666,57 @@ footer {
     display: -ms-flexbox;
     display: flex;
     width: inherit;
-    height: 60px; }
+    height: 60px;
+    /* hamburger starts */
+    /* hamburger ends */ }
     .site-header .center-header .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: inherit; }
-      .site-header .center-header .main-navigation a {
-        padding-left: 10px;
-        color: black; }
-    .site-header .center-header .hamburger {
-      float: right;
-      z-index: 10;
-      width: 200px; }
-    .site-header .center-header .menu-toggle {
-      display: none; }
-    .site-header .center-header img {
-      max-width: 70px;
-      height: 80%;
-      margin-top: 10px; }
-    .site-header .center-header .hamburger--collapse {
-      display: none; }
-    .site-header .center-header .hamburger .dropdown-content {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%;
+      position: relative; }
+    .site-header .center-header .is-active {
+      z-index: 1;
+      height: 60px;
+      margin-right: auto; }
+    .site-header .center-header .toggled {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%;
       position: relative;
-      margin-left: 0 auto;
-      overflow: auto;
-      z-index: 1; }
-    .site-header .center-header .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse; }
-    .site-header .center-header .dropdown {
-      position: static;
-      display: inline-block; }
-    .site-header .center-header .menu {
-      position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      right: 0;
-      height: 100vh;
-      padding-top: 60px;
-      background-color: green;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      width: 70%;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .site-header .center-header .toggled .menu-main-menu-container {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        background-color: teal;
+        top: 0; }
+        .site-header .center-header .toggled .menu-main-menu-container .nav-menu {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-top: 60px;
+          text-align: right; }
+          .site-header .center-header .toggled .menu-main-menu-container .nav-menu li {
+            margin-top: 60px;
+            margin-right: 20px; }
+    .site-header .center-header .site-branding {
+      width: 50%; }
+      .site-header .center-header .site-branding img {
+        max-width: 70px;
+        height: 80%;
+        margin-top: 10px; }
   @media (min-width: 620px) {
     .site-header button {
       display: none; }

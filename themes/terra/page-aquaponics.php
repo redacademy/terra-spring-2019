@@ -19,41 +19,52 @@ get_header(); ?>
 
 		<?php endwhile;
 	?>
-		<section class="aqua-banner">
-			<h2><?php echo CFS()->get('banner_text'); ?></h2>
-			<img src="<?php echo CFS()->get('aqua_banner'); ?>" />
-		</section>
-		<div class="intro-aqua">
+		<!-- What is Aqua Section -->
+		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>
-		</div>
-		<div class="how-aqua">
-			<?php echo CFS()->get('how_aquaponics_works'); ?>
-			<?php echo CFS()->get('how_feature_number'); ?>
-			<?php echo CFS()->get('how_feature_info'); ?>
-			<img src="<?php echo CFS()->get('how_feature_image'); ?>" />
-		</div>
+		</section>
+		<section class="how-aqua">
+
+			<!--  How Aquaponics Works Section	 -->
+			<h2 class="how-aqua-h2"> <?php echo CFS()->get('how_aqua_works_title'); ?></h2>
+			<?php
+
+			$how_aqua_loop = CFS()->get('how_aquaponics_works_loop'); // this is the loop field
+			foreach ($how_aqua_loop as $how_aqua_info) : ?>
+				<!-- <div class="how-aqua-item"> -->
+				<h3 class="how-aqua-h3"> <?php echo $how_aqua_info['how_feature_number']; ?></h3>
+				<p class="how-aqua-p"> <?php echo $how_aqua_info['how_feature_info']; ?></p>
+				<!-- </div> -->
+			<?php endforeach; ?>
+			<img class="how-aqua-img" src="<?php echo CFS()->get('how_feature_image'); ?>" />
+		</section>
+
+		<!-- Benefits of Aquaponics Section -->
 		<div class="benefits-aqua">
+			<h2 class="ben-aqua-h2"><?php echo CFS()->get('benefits_of_aqua_section_title'); ?></h2>
 			<?php
 
 			$benefits_aqua_loop = CFS()->get('benefits_of_aquaponics'); // this is the loop field
 			foreach ($benefits_aqua_loop as $ben_aqua_info) : ?>
 				<div>
-					<img src="<?php echo $ben_aqua_info['benefits_image']; ?>" />
-					<?php echo $ben_aqua_info['benefits_title']; ?>
-					<?php echo $ben_aqua_info['benefits_info']; ?>
+					<img class="ben-aqua-img" src="<?php echo $ben_aqua_info['benefits_image']; ?>" />
+					<h3 class="ben-aqua-h3"><?php echo $ben_aqua_info['benefits_title']; ?></h3>
+					<p class="ben-aqua-p"><?php echo $ben_aqua_info['benefits_info']; ?></p>
 				</div>
 			<?php endforeach; ?>
 		</div>
 
+		<!-- Current Tech Section -->
 		<div class="current-tech">
+			<h2 class="cur-tech-h2"><?php echo CFS()->get('current_technology_section_title'); ?></h2>
 			<?php
 
 			$current_tech_loop = CFS()->get('current_tech'); // this is the loop field
 			foreach ($current_tech_loop as $cur_tech_info) : ?>
 				<div>
-					<img src="<?php echo $cur_tech_info['tech_image']; ?>" />
-					<?php echo $cur_tech_info['tech_title']; ?>
-					<?php echo $cur_tech_info['tech_info']; ?>
+					<img class="cur-tech-img" src="<?php echo $cur_tech_info['tech_image']; ?>" />
+					<h3 class="cur-tech-h3"><?php echo $cur_tech_info['tech_title']; ?></h3>
+					<p class="cur-tech-p"><?php echo $cur_tech_info['tech_info']; ?></p>
 				</div>
 			<?php endforeach; ?>
 		</div>

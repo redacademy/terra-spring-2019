@@ -19,6 +19,7 @@ get_header(); ?>
 
 		<?php endwhile;
 	?>
+
 		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>
 		</section>

@@ -75,10 +75,41 @@ get_header(); ?>
 	</section>
 
 
+	<section class="fp-testimonies">
+		<h2><?php echo CFS()->get('title_testimonies'); ?></h2>
+		<p><?php echo CFS()->get('testimonies_intro'); ?></P>
+		<div class="testimony-entries">
+			<?php
+			$args = array(
+				'post_type' => 'testimony',
+				'numberposts' => '-1',
+			);
+			$testimony_posts = get_posts($args);
+			?>
+			<?php foreach ($testimony_posts as $post) : setup_postdata($post); ?>
+
+				<article class="fp-testimony-content">
+					<?php if (has_post_thumbnail()) : ?>
+						<h3><?php the_title() ?></h3>
+						<p><?php the_content() ?></p>
+
+						<img src="<?php the_post_thumbnail('large'); ?>">
+
+					</article>
+				<?php endif; ?>
+
+
+			<?php endforeach;
+		wp_reset_postdata(); ?>
+		</div>
+
+	</section>
+
+
 
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -52,6 +52,44 @@ get_header(); ?>
 			<?php foreach ($testimony_posts as $post) : setup_postdata($post); ?>
 
 				<article class="fp-testimony-content">
+<<<<<<< HEAD
+                        <?php if ( has_post_thumbnail() ) : ?>
+                             <h3><?php the_title()?></h3>
+                             <p><?php the_content()?></p>
+                                
+                            <?php the_post_thumbnail('large'); ?>
+                         
+                 
+                <?php endif; ?>
+                </article>      
+            
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>				
+			
+          </section>
+          
+          <section class="fp-partners">
+            <h2><?php echo CFS()->get('title_partners'); ?></h2>
+			<div class="partner-entries">
+				<?php 
+				$args = array(  'post_type' => 'partner',
+								 'numberposts' => '-1', 
+				);
+				$testimony_posts = get_posts( $args );
+				?>
+				<?php foreach ( $partner_posts as $post ) : setup_postdata( $post ); ?>
+
+				<article class="fp-testimony-content">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <?php the_post_thumbnail('large'); ?>        
+                <?php endif; ?>
+                </article>      
+            
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>				
+			
+		  </section>
+=======
 					<?php if (has_post_thumbnail()) : ?>
 						<h3><?php the_title() ?></h3>
 						<p><?php the_content() ?></p>
@@ -69,6 +107,8 @@ get_header(); ?>
 	</section>
 
 
+
+>>>>>>> e49935f7fed360c507803461be832a9178f910dc
 
 
 

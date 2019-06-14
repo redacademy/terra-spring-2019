@@ -4,30 +4,45 @@ footer {
 
   .footer-center {
     @include center-page;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
-
   a {
     text-decoration: none;
     color: $footer-font-color;
   }
+}
 
-  .subscription-area {
-    background: $footer-bg-color-grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-    .subscribe-description {
-      display: none;
+
+.subscription-area {
+  background: $footer-bg-color-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  .subscribe-description {
+    display: none;
+    @include desktop {
+      display: unset;
+    }
+  }
+
+  .sub-confirm-section {
+    display: none;
+    h4 {
+      font-size: 1.1rem;
+      border: none;
       @include desktop {
-        display: unset;
+        font-size: 2.6rem;
+        font-weight: bold;
       }
     }
-
     .sub-confirm-msg {
-      // display: none;
       max-width: 260px;
       font-size: 1rem;
       font-weight: 200;
@@ -53,14 +68,6 @@ footer {
       font-weight: normal;
       margin-top: 1rem;
     }
-    .wpcf7-mail-sent-ok {
-      font-size: 1.2rem;
-      border: none;
-      @include desktop {
-        font-size: 2.6rem;
-        font-weight: bold;
-      }
-    }
 
     .wpcf7-text {
       background: #cccc;
@@ -73,7 +80,7 @@ footer {
 .subscription-area {
   &.active {
     background-image: url('../../assets/images/photos/Subscription-confirmation-banner-smaller.png');
-    .sub-confirm-msg {
+    .sub-confirm-section {
       display: unset;
     }
   }
@@ -85,12 +92,11 @@ footer {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  padding-top: 1.4rem;
   padding-bottom: 1.5rem;
   @include desktop {
     background: $footer-bg-color;
-    display: flex;
-    flex-direction: row;
   }
   ul {
     list-style: none;
@@ -109,9 +115,15 @@ footer {
   .social-media {
     text-align: center;
     i {
+      margin-top: 12px;
+      margin-bottom: 16px;
       margin-right: 1rem;
       margin-left: 1rem;
       font-size: 1.6rem;
+      @include desktop {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+      }
     }
   }
 }

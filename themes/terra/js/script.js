@@ -27,7 +27,7 @@
                 } else {
                     $('.subscription-area').addClass('active')
                     $('.subscription-form').slideUp('slow');
-                    // $('.sub-confirm-msg').show('slow');
+                    $('.sub-confirm-section').show('slow');
                 }
             }, 500);
              

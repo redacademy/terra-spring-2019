@@ -660,6 +660,9 @@ button {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
+html {
+  height: 100%; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -680,7 +683,8 @@ button {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      width: 100%;
+      width: auto;
+      margin-left: auto;
       position: relative; }
     .site-header .center-header .is-active {
       z-index: 1;
@@ -699,10 +703,9 @@ button {
               justify-content: flex-end; }
       .site-header .center-header .toggled .menu-main-menu-container {
         width: 100%;
-        height: 800px;
+        height: calc(var(--vh, 1vh) * 2361.5);
         position: absolute;
-        background-color: teal;
-        top: 0; }
+        background-color: teal; }
         .site-header .center-header .toggled .menu-main-menu-container .nav-menu {
           display: -webkit-box;
           display: -ms-flexbox;

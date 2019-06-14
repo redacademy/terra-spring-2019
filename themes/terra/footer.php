@@ -11,16 +11,13 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 
-	<section class="subscription">
+	<section class="subscription-area">
 		<div class="footer-center">
 			<div class="subscription-form">
 				<p class="subscribe-description">Want to stay up to date on our project? <br /> Subscribe to our newsletter!</p>
 				<?php echo do_shortcode('[contact-form-7 id="108" title="email subscription"]'); ?>
 			</div>
-			<div class="subscription-confirmed">
-				<h5>Subscription Confirmed!</h5>
-				<p>We are embarking on an adventure to create a better future for us all. Glad to have you with us!</p>
-			</div><!-- .subscription-confirmed -->
+			<p class="sub-confirm-msg">We are embarking on an adventure to create a better future for us all. Glad to have you with us!</p>
 		</div><!-- .footer-center -->
 	</section><!-- .subscription -->
 

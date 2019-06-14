@@ -19,19 +19,22 @@ get_header(); ?>
 
 		<?php endwhile;
 	?>
-		<section class="aqua-banner">
-			<h2><?php echo CFS()->get('banner_text'); ?></h2>
-			<img src="<?php echo CFS()->get('aqua_banner'); ?>" />
-		</section>
-		<div class="intro-aqua">
+		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>
-		</div>
-		<div class="how-aqua">
+		</section>
+		<section class="how-aqua">
 			<?php echo CFS()->get('how_aquaponics_works'); ?>
-			<?php echo CFS()->get('how_feature_number'); ?>
-			<?php echo CFS()->get('how_feature_info'); ?>
+			<?php
+
+			$how_aqua_loop = CFS()->get('how_aquaponics_works'); // this is the loop field
+			foreach ($how_aqua_loop as $how_aqua_info) : ?>
+				<div class="how-aqua-item">
+					<?php echo $how_aqua_info['how_feature_number']; ?>
+					<?php echo $how_aqua_info['how_feature_info']; ?>
+				</div>
+			<?php endforeach; ?>
 			<img src="<?php echo CFS()->get('how_feature_image'); ?>" />
-		</div>
+		</section>
 		<div class="benefits-aqua">
 			<?php
 

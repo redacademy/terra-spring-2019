@@ -38,6 +38,16 @@ get_header(); ?>
 	<?php endforeach; ?>
 	</section>
 
+	<!-- Our Mission Section-->
+
+	<section class="fp-mission" <h2><?php echo CFS()->get('our_mission'); ?></h2>
+		<?php echo CFS()->get('mission_restore'); ?>
+		<?php echo CFS()->get('mission_feed'); ?>
+		<?php echo CFS()->get('mission_start'); ?>
+		<?php echo CFS()->get('mission_sustain'); ?>
+	</section>
+
+	<!-- Roadmap Section -->
 	<section class="roadmap">
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
 

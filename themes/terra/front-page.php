@@ -21,9 +21,9 @@ get_header(); ?>
 		<section class="fp-banner">
 			<h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
 		</section>
-
+		<!-- Intro What is Aquaponics -->
 		<section class="intro-fp">
-			<?php echo CFS()->get('fp_intro_text'); ?>
+			<h2 class="intro-fp-h2"><?php echo CFS()->get('fp_intro_text'); ?></h2>
 </div>
 <div class="fp-ap-info">
 	<?php
@@ -31,9 +31,9 @@ get_header(); ?>
 	$fp_ap_info_loop = CFS()->get('fp_aquaponics_info'); // this is the loop field
 	foreach ($fp_ap_info_loop as $fp_ap_info) : ?>
 		<div>
-			<img src="<?php echo $fp_ap_info['aquaponics_info_image']; ?>" />
-			<?php echo $fp_ap_info['aquaponics_info_title']; ?>
-			<?php echo $fp_ap_info['aquaponics_info_description']; ?>
+			<img class="ap-info-img" src="<?php echo $fp_ap_info['aquaponics_info_image']; ?>" />
+			<h3 class="ap-info-h3"> <?php echo $fp_ap_info['aquaponics_info_title']; ?></h3>
+			<p class="ap-info-p"> <?php echo $fp_ap_info['aquaponics_info_description']; ?></p>
 		</div>
 	<?php endforeach; ?>
 	</section>
@@ -42,7 +42,7 @@ get_header(); ?>
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
 
 
-		<?php $fp_roadmaps = CFS()->get('roadmap_loop');  
+		<?php $fp_roadmaps = CFS()->get('roadmap_loop');
 		?>
 		<ul class="roadmap-ul">
 			<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>

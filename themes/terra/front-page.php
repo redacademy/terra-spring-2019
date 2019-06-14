@@ -36,7 +36,27 @@ get_header(); ?>
 			<?php echo $fp_ap_info['aquaponics_info_description']; ?>
 		</div>
 	<?php endforeach; ?>
-	</section>
+    </section>
+    
+    <section class="roadmap">
+            <h2><?php echo CFS()->get('roadmap_title'); ?></h2>
+           
+                
+            <?php    $fp_roadmaps = CFS()->get('roadmap_loop');  // this is the loop ?>
+            <ul class="roadmap-ul">
+            <?php foreach ($fp_roadmaps as $fp_roadmap) : ?> 
+                <li class=roadmap-info>
+                    <h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year'];?></h3>
+                    <p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p> 
+                </li>
+                <?php endforeach; ?> 
+            
+            </ul> 
+            
+    </section> 
+
+
+
 
 	<section class="fp-testimonies">
 		<h2><?php echo CFS()->get('title_testimonies'); ?></h2>
@@ -52,7 +72,6 @@ get_header(); ?>
 			<?php foreach ($testimony_posts as $post) : setup_postdata($post); ?>
 
 				<article class="fp-testimony-content">
-<<<<<<< HEAD
                         <?php if ( has_post_thumbnail() ) : ?>
                              <h3><?php the_title()?></h3>
                              <p><?php the_content()?></p>
@@ -75,7 +94,7 @@ get_header(); ?>
 				$args = array(  'post_type' => 'partner',
 								 'numberposts' => '-1', 
 				);
-				$testimony_posts = get_posts( $args );
+				$partner_posts = get_posts( $args );
 				?>
 				<?php foreach ( $partner_posts as $post ) : setup_postdata( $post ); ?>
 
@@ -88,31 +107,7 @@ get_header(); ?>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>				
 			
-		  </section>
-=======
-					<?php if (has_post_thumbnail()) : ?>
-						<h3><?php the_title() ?></h3>
-						<p><?php the_content() ?></p>
-
-						<img src="<?php the_post_thumbnail('large'); ?>">
-
-					</article>
-				<?php endif; ?>
-
-
-			<?php endforeach;
-		wp_reset_postdata(); ?>
-		</div>
-
-	</section>
-
-
-
->>>>>>> e49935f7fed360c507803461be832a9178f910dc
-
-
-
-
+		</section>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

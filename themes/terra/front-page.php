@@ -54,16 +54,39 @@ get_header(); ?>
                              <h3><?php the_title()?></h3>
                              <p><?php the_content()?></p>
                                 
-                            <img src="<?php the_post_thumbnail('large'); ?>">
+                            <?php the_post_thumbnail('large'); ?>
                          
-            </article>      
+                 
                 <?php endif; ?>
+                </article>      
+            
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>				
+			
+          </section>
+          
+          <section class="fp-partners">
+            <h2><?php echo CFS()->get('title_partners'); ?></h2>
+			<div class="partner-entries">
+				<?php 
+				$args = array(  'post_type' => 'partner',
+								 'numberposts' => '-1', 
+				);
+				$testimony_posts = get_posts( $args );
+				?>
+				<?php foreach ( $partner_posts as $post ) : setup_postdata( $post ); ?>
 
+				<article class="fp-testimony-content">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <?php the_post_thumbnail('large'); ?>        
+                <?php endif; ?>
+                </article>      
             
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>				
 			
 		  </section>
+
 
 
 

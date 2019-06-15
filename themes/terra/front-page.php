@@ -43,10 +43,10 @@ get_header(); ?>
 
 	<section class="fp-mission">
 		<h2><?php echo CFS()->get('our_mission'); ?></h2>
-		<?php echo CFS()->get('mission_restore'); ?>
-		<?php echo CFS()->get('mission_feed'); ?>
-		<?php echo CFS()->get('mission_start'); ?>
-		<?php echo CFS()->get('mission_sustain'); ?>
+		<div class="fp-miss-item mission-1"><?php echo CFS()->get('mission_restore'); ?></div>
+		<div class="fp-miss-item mission-2"><?php echo CFS()->get('mission_feed'); ?></div>
+		<div class="fp-miss-item mission-3"><?php echo CFS()->get('mission_start'); ?></div>
+		<div class="fp-miss-item mission-4"><?php echo CFS()->get('mission_sustain'); ?></div>
 	</section>
 
 	<!-- How we are Getting There Section -->

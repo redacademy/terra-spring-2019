@@ -59,19 +59,34 @@ get_header(); ?>
 	<!-- Roadmap Section -->
 	<section class="roadmap">
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
+		<!-- roadmap left side items -->
+		<div class="roadmap-left">
+			<?php $fp_roadmaps = CFS()->get('roadmap_loop_left');
+			?>
+			<ul class="roadmap-ul">
+				<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>
+					<li class=roadmap-left-info>
+						<h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year']; ?></h3>
+						<p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p>
+					</li>
+				<?php endforeach; ?>
 
-		<?php $fp_roadmaps = CFS()->get('roadmap_loop');
-		?>
-		<ul class="roadmap-ul">
-			<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>
-				<li class=roadmap-info>
-					<h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year']; ?></h3>
-					<p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p>
-				</li>
-			<?php endforeach; ?>
+			</ul>
+		</div>
+		<!-- roadmap right side items -->
+		<div class="roadmap-right">
+			<?php $fp_roadmaps_right = CFS()->get('roadmap_loop_right');
+			?>
+			<ul class="roadmap-right-ul">
+				<?php foreach ($fp_roadmaps_right as $fp_roadmap_right) : ?>
+					<li class=roadmap-right-info>
+						<h3 class="roadmap-yr"><?php echo $fp_roadmap_right['roadmap_year_right']; ?></h3>
+						<p class="roadmap-p"> <?php echo $fp_roadmap_right['roadmap_info_right']; ?></p>
+					</li>
+				<?php endforeach; ?>
 
-		</ul>
-
+			</ul>
+		</div>
 	</section>
 
 

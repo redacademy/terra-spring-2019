@@ -25,7 +25,7 @@
 	</section><!-- .subscription -->
 
 	<section class="contact-media">
-		<div class="footer-center">
+		<div class="contact-media-center">
 
 			<nav id="site-navigation" class="footer-navigation" role="navigation">
 				<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>

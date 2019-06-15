@@ -539,12 +539,19 @@ object {
 footer {
   background: #2f2e2f;
   color: #ffffff; }
+  footer a {
+    text-decoration: none;
+    color: #ffffff; }
   footer .footer-center {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto; }
+  footer .contact-media-center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; }
     @media (min-width: 620px) {
-      footer .footer-center {
+      footer .contact-media-center {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -552,15 +559,14 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; } }
-  footer a {
-    text-decoration: none;
-    color: #ffffff; }
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%; } }
 
 .subscription-area {
-  background: #2f2e2f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +591,8 @@ footer {
     display: none; }
     .subscription-area .sub-confirm-section h4 {
       font-size: 1.1rem;
-      border: none; }
+      border: none;
+      margin-top: 0; }
       @media (min-width: 620px) {
         .subscription-area .sub-confirm-section h4 {
           font-size: 2.6rem;
@@ -596,7 +603,8 @@ footer {
       font-weight: 200; }
       @media (min-width: 620px) {
         .subscription-area .sub-confirm-section .sub-confirm-msg {
-          max-width: 435px; } }
+          max-width: 435px;
+          margin: 0 auto; } }
   .subscription-area #wpcf7-f108-o1 .wpcf7-form {
     width: 100%; }
   .subscription-area #wpcf7-f108-o1 .wpcf7-submit {
@@ -615,7 +623,8 @@ footer {
   .subscription-area #wpcf7-f108-o1 .wpcf7-text {
     background: #cccc;
     border: none;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    margin-top: 1rem; }
 
 .subscription-area.active {
   background-image: url("../../assets/images/photos/Subscription-confirmation-banner-smaller.png"); }
@@ -652,10 +661,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 0; }
     .contact-media ul li {
-      margin-left: 1rem;
-      margin-right: 1rem; }
+      margin-left: 1rem; }
       .contact-media ul li:nth-child(1) {
         border-right: 1px solid #ffffff;
         padding-right: 1rem; }

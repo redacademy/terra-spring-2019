@@ -50,12 +50,14 @@ get_header(); ?>
 	</section>
 
 	<!-- How we are Getting There Section -->
-	<?php while (have_posts()) : the_post(); ?>
+	<section class="getting-there">
+		<?php while (have_posts()) : the_post(); ?>
 
-		<?php get_template_part('template-parts/content', 'page'); ?>
+			<?php get_template_part('template-parts/content', 'page'); ?>
 
-	<?php endwhile;
-?>
+		<?php endwhile;
+	?>
+	</section>
 	<!-- Roadmap Section -->
 	<section class="roadmap">
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>

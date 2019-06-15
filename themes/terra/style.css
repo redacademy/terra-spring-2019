@@ -536,6 +536,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site {
+  position: relative; }
+
 footer {
   background: #2f2e2f;
   color: #ffffff; }
@@ -687,6 +690,9 @@ button {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
+html {
+  height: 100%; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -707,8 +713,17 @@ button {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      width: 100%;
+      width: auto;
+      margin-left: auto;
       position: relative; }
+      .site-header .center-header .main-navigation.toggled {
+        background-color: teal;
+        position: fixed;
+        right: 0;
+        top: 46px;
+        top: 0;
+        height: 100vh;
+        width: 75%; }
     .site-header .center-header .is-active {
       z-index: 1;
       height: 60px;
@@ -720,29 +735,22 @@ button {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       width: 100%;
-      position: relative;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-      .site-header .center-header .toggled .menu-main-menu-container {
-        width: 100%;
-        height: 800px;
-        position: absolute;
-        background-color: teal;
-        top: 0; }
-        .site-header .center-header .toggled .menu-main-menu-container .nav-menu {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
+      .site-header .center-header .toggled .menu-main-menu-container .nav-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 60px;
+        text-align: right; }
+        .site-header .center-header .toggled .menu-main-menu-container .nav-menu li {
           margin-top: 60px;
-          text-align: right; }
-          .site-header .center-header .toggled .menu-main-menu-container .nav-menu li {
-            margin-top: 60px;
-            margin-right: 20px; }
+          margin-right: 20px; }
     .site-header .center-header .site-branding {
       width: 50%; }
       .site-header .center-header .site-branding img {

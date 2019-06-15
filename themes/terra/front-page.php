@@ -11,16 +11,17 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+		<!-- Homepage HeroBanner Section -->
 
-		<?php while (have_posts()) : the_post(); ?>
-
-			<?php get_template_part('template-parts/content', 'page'); ?>
-
-		<?php endwhile;
-	?>
 		<section class="fp-banner">
+			<?php while (have_posts()) : the_post(); ?>
+				<?php the_post_thumbnail(); ?>
+
+			<?php endwhile;
+		?>
 			<h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
 		</section>
+
 		<!-- Intro What is Aquaponics -->
 		<section class="intro-fp">
 			<h2 class="intro-fp-h2"><?php echo CFS()->get('fp_intro_text'); ?></h2>
@@ -48,23 +49,44 @@ get_header(); ?>
 		<?php echo CFS()->get('mission_sustain'); ?>
 	</section>
 
+	<!-- How we are Getting There Section -->
+	<?php while (have_posts()) : the_post(); ?>
+
+		<?php get_template_part('template-parts/content', 'page'); ?>
+
+	<?php endwhile;
+?>
 	<!-- Roadmap Section -->
 	<section class="roadmap">
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
+		<!-- roadmap left side items -->
+		<div class="roadmap-left">
+			<?php $fp_roadmaps = CFS()->get('roadmap_loop_left');
+			?>
+			<ul class="roadmap-ul">
+				<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>
+					<li class=roadmap-left-info>
+						<h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year']; ?></h3>
+						<p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p>
+					</li>
+				<?php endforeach; ?>
 
+			</ul>
+		</div>
+		<!-- roadmap right side items -->
+		<div class="roadmap-right">
+			<?php $fp_roadmaps_right = CFS()->get('roadmap_loop_right');
+			?>
+			<ul class="roadmap-right-ul">
+				<?php foreach ($fp_roadmaps_right as $fp_roadmap_right) : ?>
+					<li class=roadmap-right-info>
+						<h3 class="roadmap-yr"><?php echo $fp_roadmap_right['roadmap_year_right']; ?></h3>
+						<p class="roadmap-p"> <?php echo $fp_roadmap_right['roadmap_info_right']; ?></p>
+					</li>
+				<?php endforeach; ?>
 
-		<?php $fp_roadmaps = CFS()->get('roadmap_loop');
-		?>
-		<ul class="roadmap-ul">
-			<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>
-				<li class=roadmap-info>
-					<h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year']; ?></h3>
-					<p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p>
-				</li>
-			<?php endforeach; ?>
-
-		</ul>
-
+			</ul>
+		</div>
 	</section>
 
 

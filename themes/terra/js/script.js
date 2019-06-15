@@ -1,5 +1,5 @@
-(function ($) {
-  $(function () {
+(function($) {
+  $(function() {
     // humber menu mobile header
 
 
@@ -25,8 +25,5 @@
           }
         }, 500);
     }); // end of subscription form
-
-
-  });// end of document ready
-
+  }); // end of document ready
 })(jQuery);

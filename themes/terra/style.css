@@ -790,3 +790,11 @@ html {
           .site-header .center-header .menu li a {
             font-size: 1.25rem;
             color: black; } }
+
+.disclaimer-center {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 20px; }

@@ -11,14 +11,104 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<!-- Hero Banner Section -->
 		<?php while (have_posts()) : the_post(); ?>
 			<?php the_post_thumbnail(); ?>
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
-		<?php endwhile; 
+		<?php endwhile;
 	?>
+		<!-- Lack of Awareness Section NOTE: need to hardcode background image unless we want CSF -->
 
+
+		<section class="lack-aware-sect">
+			<h2 class="lack-aware-h2"><?php echo CFS()->get('lack_of_awareness_blurb'); ?></h2>
+			<div class="lack-aware-cards">
+				<?php
+
+				$lack_awareness_loop = CFS()->get('lack_of_awareness_loop'); // this is the loop field
+				foreach ($lack_awareness_loop as $lack_aware_info) : ?>
+					<div>
+						<img class="lack-aw-img" src="<?php echo $lack_aware_info['lack_of_awareness_image']; ?>" />
+						<h3 class="lack-aw-h3"> <?php echo $lack_aware_info['lack_of_awareness_title']; ?></h3>
+						<p class="lack-aw-p"> <?php echo $lack_aware_info['lack_of_awareness_info']; ?></p>
+					</div>
+				<?php endforeach; ?>
+		</section>
+
+		<!-- WHo We Are Section -->
+		<section class="who-we-are">
+			<h2><?php echo CFS()->get('who_we_are_title'); ?></h2>
+			<!-- Need to add team loop Andrew -->
+
+
+		</section>
+
+		<!-- Our Partners Section NOTE: IS IT OK TO LEAVE SAME CLASSES AS ON FP?-->
+		<section class="fp-partners">
+			<h2><?php echo CFS()->get('our_partners_title'); ?></h2>
+			<div class="partner-entries">
+				<?php
+				$args = array(
+					'post_type' => 'partner',
+					'numberposts' => '-1',
+				);
+				$partner_posts = get_posts($args);
+				?>
+				<?php foreach ($partner_posts as $post) : setup_postdata($post); ?>
+
+					<article class="fp-testimony-content">
+						<?php if (has_post_thumbnail()) : ?>
+							<?php the_post_thumbnail('large'); ?>
+						<?php endif; ?>
+					</article>
+
+				<?php endforeach;
+			wp_reset_postdata(); ?>
+			</div>
+
+		</section>
+
+		<!-- Source Of Funds Section -->
+
+		<section class="source-funds">
+
+			<h2><?php echo CFS()->get('source_of_funds_title'); ?></h2>
+			<h3 class="phase-1"><?php echo CFS()->get('1st_phase_title'); ?></h3>
+			<h3 class="phase-2"><?php echo CFS()->get('2nd_phase_title'); ?></h3>
+
+			<div class="seed-round">
+				<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
+				<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
+				<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+				<ol class="seed-items">
+					<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
+					<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
+					<li class="seed-item3"><?php echo CFS()->get('seed_round_item_3'); ?></li>
+					<li class="seed-item4"><?php echo CFS()->get('seed_round_item_4'); ?></li>
+					<li class="seed-item5"><?php echo CFS()->get('seed_round_item_5'); ?></li>
+				</ol>
+			</div>
+			<div class="series-round">
+				<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
+				<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
+				<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
+				<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+				<ol class="series-items">
+					<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
+					<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
+					<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
+				</ol>
+			</div>
+		</section>
+
+
+		<!-- White Paper Section -->
+		<section class="white-paper">
+			<h2 class="wh-paper-h3"><?php echo CFS()->get('white_paper_title'); ?></h2>
+			<button class="wh-paper-btn"><?php echo CFS()->get('white_paper_link'); ?></button>
+
+		</section>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

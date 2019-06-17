@@ -21,13 +21,30 @@ html {
       position: relative;
 
       &.toggled {
-        background-color: teal;
+        background-color: $hamburger-color;
         position: fixed;
+        z-index: 20;
         right: 0;
         top: 46px;
         top: 0;
         height: 100vh;
         width: 75%;
+
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner::before,
+        .hamburger.is-active .hamburger-inner::after,
+        .hamburger--arrow-r.is-active .hamburger-inner::before,
+        .hamburger--arrow-r.is-active .hamburger-inner::after {
+          background-color: white;
+        }
+        .bottom-nav-options {
+          position: absolute;
+          bottom: 0;
+          padding-right: 5px;
+        }
+        a {
+          color: white;
+        }
       }
     }
     /* hamburger starts */
@@ -46,10 +63,6 @@ html {
       justify-content: flex-end;
 
       .menu-main-menu-container {
-        .hamburger-box {
-          //   position: fixed;
-        }
-
         .nav-menu {
           display: flex;
           flex-direction: column;

@@ -225,6 +225,62 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+.fp-partners {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem; }
+  .fp-partners h2 {
+    width: 100%;
+    margin-left: 10%; }
+  .fp-partners .partner-entries {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .fp-partners .partner-entries article {
+      width: 30%;
+      -ms-flex-item-align: center;
+          align-self: center;
+      text-align: center; }
+      .fp-partners .partner-entries article:nth-child(1) {
+        -webkit-box-ordinal-group: 7;
+            -ms-flex-order: 6;
+                order: 6; }
+        .fp-partners .partner-entries article:nth-child(1) img {
+          width: 80%; }
+      .fp-partners .partner-entries article:nth-child(2) {
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5; }
+        .fp-partners .partner-entries article:nth-child(2) img {
+          width: 40%; }
+      .fp-partners .partner-entries article:nth-child(3) {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+        .fp-partners .partner-entries article:nth-child(3) img {
+          width: 40%; }
+      .fp-partners .partner-entries article:nth-child(4) {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; }
+        .fp-partners .partner-entries article:nth-child(4) img {
+          width: 40%; }
+      .fp-partners .partner-entries article:nth-child(5) {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+        .fp-partners .partner-entries article:nth-child(5) img {
+          width: 70%; }
+      .fp-partners .partner-entries article:nth-child(6) {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+        .fp-partners .partner-entries article:nth-child(6) img {
+          width: 60%; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

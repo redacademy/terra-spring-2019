@@ -99,17 +99,19 @@
 
   ul {
     padding: 0;
+    width: 100%;
     li {
       width: 100%;
       margin-bottom: 50px;
+      position: relative;
     }
   }
   .roadmap-left {
-    width: 48%;
-    border-right: 4px solid #ffffff;
+    width: 50%;
 
     ul {
       list-style: none;
+      border-right: 8px solid #ffffff;
 
       li {
         height: 100px;
@@ -121,10 +123,14 @@
             width: 30px;
             height: 30px;
             border-radius: 30px;
-            background-color: white;
-            position: relative;
-            float: right;
-            left: 19px;
+            background: radial-gradient(
+              ellipse at center,
+              #9b9b9b 51%,
+              #fcfcfc 53%
+            );
+            position: absolute;
+            right: -19px;
+            top: -2px;
           }
         }
         p {
@@ -134,17 +140,17 @@
     }
   }
   .roadmap-right {
-    width: 48%;
-    padding-top: 50px;
+    width: 50%;
+    padding-top: 58px;
     display: flex;
     justify-content: center;
-    border-left: 4px solid #ffffff;
 
     ul {
       list-style: none;
 
       li {
         height: 100px;
+        // border-left: 8px solid #ffffff;
         h3 {
           padding-left: 100px;
 
@@ -154,9 +160,13 @@
             width: 30px;
             height: 30px;
             border-radius: 30px;
-            background-color: white;
-            position: relative;
-            left: -119px;
+            background: radial-gradient(
+              ellipse at center,
+              #9b9b9b 51%,
+              #fcfcfc 53%
+            );
+            position: absolute;
+            left: -11px;
           }
         }
         p {

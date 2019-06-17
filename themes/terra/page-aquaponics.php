@@ -12,13 +12,14 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<!-- Hero Banner Section -->
 		<?php while (have_posts()) : the_post(); ?>
-
+			<?php the_post_thumbnail(); ?>
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
 		<?php endwhile;
 	?>
+
 		<!-- What is Aqua Section -->
 		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>

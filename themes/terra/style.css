@@ -225,6 +225,19 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+.testimony-entries {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  .testimony-entries .fp-testimony-content {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
 .fp-partners {
   max-width: 1140px;
   margin-left: auto;
@@ -280,6 +293,75 @@ th {
                 order: 1; }
         .fp-partners .partner-entries article:nth-child(6) img {
           width: 60%; }
+
+.roadmap-container {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2a8de4), to(#002d6e));
+  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
+
+.roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .roadmap h2 {
+    width: 100%; }
+  .roadmap ul {
+    padding: 0; }
+    .roadmap ul li {
+      width: 100%;
+      margin-bottom: 50px; }
+  .roadmap .roadmap-left {
+    width: 48%;
+    border-right: 4px solid #ffffff; }
+    .roadmap .roadmap-left ul {
+      list-style: none; }
+      .roadmap .roadmap-left ul li {
+        height: 100px; }
+        .roadmap .roadmap-left ul li h3::after {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          background-color: white;
+          position: relative;
+          float: right;
+          left: 19px; }
+        .roadmap .roadmap-left ul li p {
+          padding-right: 100px; }
+  .roadmap .roadmap-right {
+    width: 48%;
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-left: 4px solid #ffffff; }
+    .roadmap .roadmap-right ul {
+      list-style: none; }
+      .roadmap .roadmap-right ul li {
+        height: 100px; }
+        .roadmap .roadmap-right ul li h3 {
+          padding-left: 100px; }
+          .roadmap .roadmap-right ul li h3::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: white;
+            position: relative;
+            left: -119px; }
+        .roadmap .roadmap-right ul li p {
+          padding-left: 100px; }
 
 /*--------------------------------------------------------------
 # Forms

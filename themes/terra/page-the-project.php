@@ -98,6 +98,7 @@ get_header(); ?>
 					<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
 					<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
 					<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
+					<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
 				</ol>
 			</div>
 		</section>

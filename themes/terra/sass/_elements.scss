@@ -1,0 +1,168 @@
+// front page style
+
+//testimony section
+.testimony-entries {
+  @include center-page;
+  width: 100%;
+  .fp-testimony-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    // img {
+    //   order: 1;
+    //   width: 50%;
+    // }
+    // h3 {
+    //   order: 3;
+    //   width: 50%;
+    // }
+    // p {
+    //   order: 2;
+    //   width: 50%;
+    // }
+  }
+}
+
+//fp-partners section
+.fp-partners {
+  @include center-page;
+  margin-bottom: 8rem;
+  h2 {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .partner-entries {
+    display: flex;
+    flex-wrap: wrap;
+
+    article {
+      width: 30%;
+      align-self: center;
+      text-align: center;
+
+      &:nth-child(1) {
+        order: 6;
+        img {
+          width: 80%;
+        }
+      }
+      &:nth-child(2) {
+        order: 5;
+        img {
+          width: 40%;
+        }
+      }
+      &:nth-child(3) {
+        order: 4;
+        img {
+          width: 40%;
+        }
+      }
+      &:nth-child(4) {
+        order: 3;
+        img {
+          width: 40%;
+        }
+      }
+      &:nth-child(5) {
+        order: 2;
+        img {
+          width: 70%;
+        }
+      }
+      &:nth-child(6) {
+        order: 1;
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+//roadmap
+
+.roadmap-container {
+  width: 100%;
+  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%);
+}
+.roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  @include center-page;
+
+  h2 {
+    width: 100%;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  .roadmap-left {
+    width: 48%;
+    border-right: 4px solid #ffffff;
+
+    ul {
+      list-style: none;
+
+      li {
+        height: 100px;
+
+        h3 {
+          &::after {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: white;
+            position: relative;
+            float: right;
+            left: 19px;
+          }
+        }
+        p {
+          padding-right: 100px;
+        }
+      }
+    }
+  }
+  .roadmap-right {
+    width: 48%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-left: 4px solid #ffffff;
+
+    ul {
+      list-style: none;
+
+      li {
+        height: 100px;
+        h3 {
+          padding-left: 100px;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: white;
+            position: relative;
+            left: -119px;
+          }
+        }
+        p {
+          padding-left: 100px;
+        }
+      }
+    }
+  }
+}

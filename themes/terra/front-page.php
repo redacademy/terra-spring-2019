@@ -58,7 +58,8 @@ get_header(); ?>
 		<?php endwhile;
 	?>
 	</section>
-	<!-- Roadmap Section -->
+    <!-- Roadmap Section -->
+    <div class="roadmap-container">
 	<section class="roadmap">
 		<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
 		<!-- roadmap left side items -->
@@ -89,8 +90,8 @@ get_header(); ?>
 
 			</ul>
 		</div>
-	</section>
-
+    </section>
+    </div>
 
 
 

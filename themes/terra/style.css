@@ -257,42 +257,9 @@ th {
       -ms-flex-item-align: center;
           align-self: center;
       text-align: center; }
-      .fp-partners .partner-entries article:nth-child(1) {
-        -webkit-box-ordinal-group: 7;
-            -ms-flex-order: 6;
-                order: 6; }
-        .fp-partners .partner-entries article:nth-child(1) img {
-          width: 80%; }
-      .fp-partners .partner-entries article:nth-child(2) {
-        -webkit-box-ordinal-group: 6;
-            -ms-flex-order: 5;
-                order: 5; }
-        .fp-partners .partner-entries article:nth-child(2) img {
-          width: 40%; }
-      .fp-partners .partner-entries article:nth-child(3) {
-        -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4; }
-        .fp-partners .partner-entries article:nth-child(3) img {
-          width: 40%; }
-      .fp-partners .partner-entries article:nth-child(4) {
-        -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3; }
-        .fp-partners .partner-entries article:nth-child(4) img {
-          width: 40%; }
-      .fp-partners .partner-entries article:nth-child(5) {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-        .fp-partners .partner-entries article:nth-child(5) img {
-          width: 70%; }
-      .fp-partners .partner-entries article:nth-child(6) {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-        .fp-partners .partner-entries article:nth-child(6) img {
-          width: 60%; }
+      .fp-partners .partner-entries article img {
+        height: 8vw;
+        width: auto; }
 
 .roadmap-container {
   width: 100%;
@@ -325,12 +292,20 @@ th {
       border-right: 8px solid #ffffff; }
       .roadmap .roadmap-left ul li {
         height: 100px; }
+        .roadmap .roadmap-left ul li h3 {
+          margin-top: 0; }
+        .roadmap .roadmap-left ul li:hover h3::after {
+          background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+          -webkit-transform: scale(1.3);
+                  transform: scale(1.3); }
+        .roadmap .roadmap-left ul li:hover h3,
+        .roadmap .roadmap-left ul li:hover .roadmap-p {
+          font-size: 1.3rem; }
         .roadmap .roadmap-left ul li h3::after {
           content: '';
-          display: inline-block;
           width: 30px;
           height: 30px;
-          border-radius: 30px;
+          border-radius: 50%;
           background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
           position: absolute;
           right: -19px;
@@ -339,7 +314,7 @@ th {
           padding-right: 100px; }
   .roadmap .roadmap-right {
     width: 50%;
-    padding-top: 58px;
+    padding-top: 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,17 +325,25 @@ th {
       list-style: none; }
       .roadmap .roadmap-right ul li {
         height: 100px; }
+        .roadmap .roadmap-right ul li:hover h3::before {
+          background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+          -webkit-transform: scale(1.3);
+                  transform: scale(1.3); }
+        .roadmap .roadmap-right ul li:hover h3,
+        .roadmap .roadmap-right ul li:hover .roadmap-p {
+          font-size: 1.3rem; }
         .roadmap .roadmap-right ul li h3 {
-          padding-left: 100px; }
+          padding-left: 100px;
+          margin-top: 0; }
           .roadmap .roadmap-right ul li h3::before {
             content: '';
-            display: inline-block;
             width: 30px;
             height: 30px;
-            border-radius: 30px;
+            border-radius: 50%;
             background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
             position: absolute;
-            left: -11px; }
+            left: -11px;
+            top: -2px; }
         .roadmap .roadmap-right ul li p {
           padding-left: 100px; }
 

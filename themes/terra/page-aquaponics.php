@@ -12,31 +12,42 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<!-- Hero Banner Section -->
 		<?php while (have_posts()) : the_post(); ?>
-
+			<?php the_post_thumbnail(); ?>
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
 		<?php endwhile;
 	?>
+
 		<!-- What is Aqua Section -->
 		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>
 		</section>
+
+		<!--  How Aquaponics Works Section	 -->
+
 		<section class="how-aqua">
 
-			<!--  How Aquaponics Works Section	 -->
 			<h2 class="how-aqua-h2"> <?php echo CFS()->get('how_aqua_works_title'); ?></h2>
 			<?php
 
 			$how_aqua_loop = CFS()->get('how_aquaponics_works_loop'); // this is the loop field
 			foreach ($how_aqua_loop as $how_aqua_info) : ?>
+
 				<!-- <div class="how-aqua-item"> -->
 				<h3 class="how-aqua-h3"> <?php echo $how_aqua_info['how_feature_number']; ?></h3>
 				<p class="how-aqua-p"> <?php echo $how_aqua_info['how_feature_info']; ?></p>
 				<!-- </div> -->
+
 			<?php endforeach; ?>
 			<img class="how-aqua-img" src="<?php echo CFS()->get('how_feature_image'); ?>" />
+		</section>
+
+		<!-- History of Aquaponics Section (WYSISYG) -->
+
+		<section class="history-aqua">
+			<?php echo CFS()->get('history_of_aqua_section_all'); ?>
 		</section>
 
 		<!-- Benefits of Aquaponics Section -->
@@ -71,7 +82,4 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

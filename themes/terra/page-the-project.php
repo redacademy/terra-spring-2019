@@ -36,15 +36,40 @@ get_header(); ?>
 				<?php endforeach; ?>
 		</section>
 
-		<!-- WHo We Are Section -->
+		<!-- Who We Are  -->
 		<section class="who-we-are">
-			<h2><?php echo CFS()->get('who_we_are_title'); ?></h2>
-			<!-- Need to add team loop Andrew -->
 
+			<h2><?php echo CFS()->get('who_we_are_title'); ?></h2>
+
+			<div class="team-member">
+				<?php
+				$args = array(
+					'post_type' => 'member',
+					'numberposts' => '-1',
+				);
+				$member_posts = get_posts($args);
+				?>
+				<?php foreach ($member_posts as $post) : setup_postdata($post); ?>
+
+					<article class="who-we-are-content">
+						<?php if (has_post_thumbnail()) : ?>
+							<h3><?php the_title() ?></h3>
+							<p><?php the_content() ?></p>
+
+							<?php the_post_thumbnail('large'); ?>
+
+
+						<?php endif; ?>
+					</article>
+
+				<?php endforeach;
+			wp_reset_postdata(); ?>
+			</div>
 
 		</section>
 
 		<!-- Our Partners Section NOTE: IS IT OK TO LEAVE SAME CLASSES AS ON FP?-->
+
 		<section class="fp-partners">
 			<h2><?php echo CFS()->get('our_partners_title'); ?></h2>
 			<div class="partner-entries">
@@ -98,6 +123,7 @@ get_header(); ?>
 					<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
 					<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
 					<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
+					<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
 				</ol>
 			</div>
 		</section>

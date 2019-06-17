@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -34,12 +34,25 @@
 
 					<button class="hamburger hamburger--arrow-r" type="button">
 						<span class="hamburger-box">
-							<span class="hamburger-inner">
+							<span class="hamburger-inner ">
 							</span>
 						</span>
 					</button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 
+
+					<div class="bottom-nav-options">
+						<div class="contact-disclaimer">
+							<ul>
+								<li>
+									<p>Contact us</p>
+								</li>
+								<li>
+									<p>Disclaimer</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<!--   is-active-->
 				</nav><!-- #site-navigation -->
 

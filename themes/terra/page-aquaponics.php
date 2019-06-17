@@ -14,14 +14,12 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<!-- Hero Banner Section -->
 		<?php while (have_posts()) : the_post(); ?>
-			<?php the_post_thumbnail(); ?>
+			<img class="banner-aqua" src="<?php echo get_the_post_thumbnail_url(); ?>">
 			<?php get_template_part('template-parts/content', 'page'); ?>
-
 		<?php endwhile;
 	?>
-
 		<!-- What is Aqua Section -->
-		<section class="intro-aqua">
+		<section class=" intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>
 		</section>
 

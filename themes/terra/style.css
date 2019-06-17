@@ -855,13 +855,26 @@ html {
       margin-left: auto;
       position: relative; }
       .site-header .center-header .main-navigation.toggled {
-        background-color: teal;
+        background-color: #002d6e;
         position: fixed;
+        z-index: 20;
         right: 0;
         top: 46px;
         top: 0;
         height: 100vh;
         width: 75%; }
+        .site-header .center-header .main-navigation.toggled .hamburger.is-active .hamburger-inner,
+        .site-header .center-header .main-navigation.toggled .hamburger.is-active .hamburger-inner::before,
+        .site-header .center-header .main-navigation.toggled .hamburger.is-active .hamburger-inner::after,
+        .site-header .center-header .main-navigation.toggled .hamburger--arrow-r.is-active .hamburger-inner::before,
+        .site-header .center-header .main-navigation.toggled .hamburger--arrow-r.is-active .hamburger-inner::after {
+          background-color: white; }
+        .site-header .center-header .main-navigation.toggled .bottom-nav-options {
+          position: absolute;
+          bottom: 0;
+          padding-right: 5px; }
+        .site-header .center-header .main-navigation.toggled a {
+          color: white; }
     .site-header .center-header .is-active {
       z-index: 1;
       height: 60px;

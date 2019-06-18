@@ -10,6 +10,11 @@
 .banner-pic {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  object-fit: cover;
+  height: 21rem;
+  width: 100%;
+  // We can remove the code below if we are happy with the style of the banner semi-circle
+  // THis code brings the edges up higher. Impossible to do otherwise.
   // @include desktop {
   //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
   // }
@@ -52,22 +57,22 @@
       width: 150px;
       &:nth-child(1) {
         grid-area: 1;
-        padding: 1rem;
+        padding: 2rem;
         object-fit: contain;
       }
       &:nth-child(2) {
         grid-area: 2;
-        padding: 1rem;
+        padding: 2rem;
         object-fit: contain;
       }
       &:nth-child(3) {
         grid-area: 3;
-        padding: 1rem;
+        padding: 2rem;
         object-fit: contain;
       }
       &:nth-child(4) {
         grid-area: 4;
-        padding: 1rem;
+        padding: 2rem;
         object-fit: contain;
       }
     }

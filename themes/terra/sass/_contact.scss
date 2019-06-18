@@ -11,9 +11,8 @@
   h2 {
     text-transform: uppercase;
     color: $font-awesome-color;
-    // text-align: left;
-    // padding-left: 75px;
-    // padding-top: 25px;
+    margin: 25px auto;
+    font-weight: bold;
   }
 
   .contact-us-form {
@@ -48,31 +47,30 @@
       padding: 0.6rem;
       width: 330px;
       @include desktop {
-      width: 625px;
+      width: 605px;
       }
     }
 
-    // label {
-    //   text-align: left;
-    // }
-
     input[type='submit'] {
-      height: 3rem;
-      width: 150px;
-      background: linear-gradient(
-        90deg,
-        rgba(0, 45, 110, 1) 0%,
-        rgba(47, 136, 211, 1) 100%
-      );
-      color: white;
-      text-shadow: none;
-      box-shadow: none;
-      font-size: 0.9rem;
-      font-weight: 500;
+   @include button-style;
     }
 
     .textarea-msg #text {
       text-align: left;
     }
   }
+
+  .msg-sent {
+    text-align: center;
+    margin-bottom: 4rem;
+    border: 1px
+    p{
+      margin-bottom: 4rem;
+    }
+    a.return-home-btn {
+      @include button-anchor;
+      
+    }
+  }
+
 }

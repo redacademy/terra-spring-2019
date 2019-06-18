@@ -958,7 +958,9 @@ html {
 
 .page-contact-us h2 {
   text-transform: uppercase;
-  color: #002d6e; }
+  color: #002d6e;
+  margin: 25px auto;
+  font-weight: bold; }
 
 .page-contact-us .contact-us-form {
   display: block;
@@ -1012,7 +1014,7 @@ html {
     @media (min-width: 620px) {
       .page-contact-us .contact-us-form textarea,
       .page-contact-us .contact-us-form input {
-        width: 625px; } }
+        width: 605px; } }
   .page-contact-us .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
@@ -1023,9 +1025,36 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none;
     font-size: 0.9rem;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-bottom: 25px; }
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
+
+.page-contact-us .msg-sent {
+  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+  text-align: center;
+  margin-bottom: 4rem; }
+  @media (min-width: 620px) {
+    .page-contact-us .msg-sent {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border: 1px solid white;
+      border-radius: 20px;
+      -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); } }
+  .page-contact-us .msg-sent p {
+    margin-bottom: 4rem; }
+  .page-contact-us .msg-sent a.return-home-btn {
+    text-decoration: none;
+    border: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
+    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+    color: white;
+    border-radius: 6px; }
 
 /*--------------------------------------------------------------
 # Page Templates

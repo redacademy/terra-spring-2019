@@ -43,3 +43,26 @@
 
   //   position: absolute;
 }
+@mixin button-style {
+  height: 3rem;
+  width: 150px;
+  background: $btn-color;
+  color: white;
+  text-shadow: none;
+  box-shadow: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+@mixin button-anchor {
+  text-decoration: none;
+  border: 1px solid white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  background: $btn-color;
+  color: white;
+  border-radius: 6px;
+}

@@ -12,12 +12,14 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<!-- Hero Banner Section -->
-		<?php while (have_posts()) : the_post(); ?>
-			<?php the_post_thumbnail(); ?>
-			<?php get_template_part('template-parts/content', 'page'); ?>
+		<div class="hero-banner-project">
+			<?php while (have_posts()) : the_post(); ?>
+				<?php the_post_thumbnail(); ?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
 
-		<?php endwhile;
-	?>
+			<?php endwhile;
+		?>
+		</div>
 		<!-- Lack of Awareness Section NOTE: need to hardcode background image unless we want CSF -->
 
 

@@ -2,6 +2,10 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+* {
+  box-sizing: border-box;
+}
+
 /* Front page */
 .site {
   position: relative;

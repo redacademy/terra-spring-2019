@@ -33,12 +33,16 @@
 
     // contact form in contact-us page
     $('#wpcf7-f17-p13-o1').on('submit', function() {
-     
+      const emailInput = $('.contact-us-form input[type="email"]');
+      
       setTimeout(function() {
+        if (emailInput.hasClass('wpcf7-not-valid')) {
+          console.log('not valid');
+        } else {
           $('.contact-form-border').addClass('active');
           $('.original-form').fadeOut('slow');
           $('.msg-sent-border').fadeIn('slow');
-        
+        }
       }, 500);
     }); // end of contact form
 

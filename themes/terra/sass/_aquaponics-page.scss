@@ -3,32 +3,78 @@
 --------------------------------------------------------------*/
 
 /* Aquaponics page */
+// -----Hero Banner-----//
+.hero-banner {
+  position: relative;
+}
+.banner-pic {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  object-fit: cover;
+  height: 21rem;
+  width: 100%;
+  // We can remove the code below if we are happy with the style of the banner semi-circle
+  // THis code brings the edges up higher. Impossible to do otherwise.
+  // @include desktop {
+  //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
+  // }
+}
+
+.banner-title {
+  @include center-page;
+  position: absolute;
+  bottom: 7vw;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
 
 .page-aquaponics {
-  .hero-banner-aqua {
-    position: relative;
-  }
-  .banner-aqua {
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    @include desktop {
-      border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
-    }
-  }
   .intro-aqua {
     @include center-page;
     line-height: $font__line-height-body;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .entry-title {
-    @include center-page;
-    position: absolute;
-    bottom: 7vw;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    color: white;
-    text-transform: uppercase;
+  // -----What is Aquaponics Section-----//
+
+  .intro-aqua {
+    display: flex;
+  }
+  .what-aqua-text {
+    max-width: 66%;
+  }
+  .what-aqua-imgs {
+    width: 33%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      " 1 2 "
+      " 3 4 ";
+    img {
+      width: 150px;
+      &:nth-child(1) {
+        grid-area: 1;
+        padding: 2rem;
+        object-fit: contain;
+      }
+      &:nth-child(2) {
+        grid-area: 2;
+        padding: 2rem;
+        object-fit: contain;
+      }
+      &:nth-child(3) {
+        grid-area: 3;
+        padding: 2rem;
+        object-fit: contain;
+      }
+      &:nth-child(4) {
+        grid-area: 4;
+        padding: 2rem;
+        object-fit: contain;
+      }
+    }
   }
 }

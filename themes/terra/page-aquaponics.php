@@ -24,7 +24,15 @@ get_header(); ?>
 
 		<!-- What is Aqua Section -->
 		<section class="intro-aqua">
-			<?php echo CFS()->get('what_is_aquaponics'); ?>
+			<div class="what-aqua-text">
+				<?php echo CFS()->get('what_is_aquaponics'); ?>
+			</div>
+			<div class="what-aqua-imgs">
+				<img src="<?php echo CFS()->get('what_aqua_image_1'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_2'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_3'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_4'); ?>">
+			</div>
 		</section>
 
 		<!--  How Aquaponics Works Section	 -->

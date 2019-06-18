@@ -1,9 +1,33 @@
 /*--------------------------------------------------------------
-# Aquaponics Page Templates
+# Page Templates
 --------------------------------------------------------------*/
 
 /* Aquaponics page */
 
 .site {
   position: relative;
+}
+.page-aquaponics {
+  .banner-aqua {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    @include desktop {
+      border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    }
+  }
+  .intro-aqua {
+    @include center-page;
+    line-height: $font__line-height-body;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .entry-title {
+    @include center-page;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    right: 50%;
+    color: white;
+    text-transform: uppercase;
+  }
 }

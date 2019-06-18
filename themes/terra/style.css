@@ -414,6 +414,37 @@ th {
   margin-right: auto; }
   .fp-mission img {
     width: 100%; }
+  @media (min-width: 620px) {
+    .fp-mission {
+      padding: 0;
+      -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+      max-width: 1250px; }
+      .fp-mission .fp-miss-item {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 100px; }
+        .fp-mission .fp-miss-item:nth-child(odd) .mission-image {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+        .fp-mission .fp-miss-item .mission-image {
+          width: 50%; }
+          .fp-mission .fp-miss-item .mission-image img {
+            max-width: 100%; }
+        .fp-mission .fp-miss-item .mission-content {
+          width: 50%;
+          padding: 0 20px 20px 20px; }
+          .fp-mission .fp-miss-item .mission-content h3 {
+            font-size: 2rem;
+            margin-top: 0; }
+          .fp-mission .fp-miss-item .mission-content p {
+            font-size: 1.25rem; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1140,14 +1171,6 @@ html {
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Aquaponics Page Templates
---------------------------------------------------------------*/
-/* Aquaponics page */
-.site {
-  position: relative; }
-=======
 .page-contact-us .msg-sent {
   background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
   text-align: center;
@@ -1207,4 +1230,3 @@ html {
   max-width: 100%;
   color: white;
   text-transform: uppercase; }
->>>>>>> fb6bcd4f0ed4696d576b4a921713f25c342e5800

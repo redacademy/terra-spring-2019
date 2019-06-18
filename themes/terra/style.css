@@ -1059,9 +1059,14 @@ html {
   padding-right: 20px; }
 
 .page-contact-us .site-main {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+  background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
-  background-position: bottom -360px left; }
+  background-position: top 20px right -250px;
+  background-size: 80%; }
+  @media (min-width: 620px) {
+    .page-contact-us .site-main {
+      background-position: bottom -20px left;
+      background-size: 70%; } }
 
 .page-contact-us h1.entry-title {
   display: none; }
@@ -1070,13 +1075,17 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 750px; }
+  max-width: 750px;
+  padding-bottom: 10rem; }
 
 .page-contact-us h2 {
   text-transform: uppercase;
   color: #002d6e;
   margin: 25px auto;
   font-weight: bold; }
+
+.page-contact-us img {
+  max-width: 100%; }
 
 .page-contact-us .contact-us-form {
   display: block;
@@ -1095,8 +1104,7 @@ html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background: white; }
+          align-items: center; }
   @media (min-width: 620px) {
     .page-contact-us .contact-us-form {
       margin-top: 50px;
@@ -1146,21 +1154,7 @@ html {
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
 .page-contact-us .msg-sent-border {
-=======
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Aquaponics Page Templates
---------------------------------------------------------------*/
-/* Aquaponics page */
-.site {
-  position: relative; }
-=======
-.page-contact-us .msg-sent {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
->>>>>>> 04f74c5c0130a25b26a1a929090190b19047b6e3
-  text-align: center;
   height: 700px; }
   @media (min-width: 620px) {
     .page-contact-us .msg-sent-border {
@@ -1169,7 +1163,20 @@ html {
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-      background: white; } }
+      background: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .page-contact-us .msg-sent-border p {
     margin-bottom: 4rem; }
   .page-contact-us .msg-sent-border a.return-home-btn {
@@ -1183,6 +1190,27 @@ html {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px; }
+  .page-contact-us .msg-sent-border h3 {
+    font-size: 2rem; }
+  .page-contact-us .msg-sent-border .msg-sent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-contact-us .msg-sent-border .msg-sent .connect-world {
+      width: 35%; }
+      @media (min-width: 620px) {
+        .page-contact-us .msg-sent-border .msg-sent .connect-world {
+          width: 70%; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1217,4 +1245,3 @@ html {
   max-width: 100%;
   color: white;
   text-transform: uppercase; }
->>>>>>> fb6bcd4f0ed4696d576b4a921713f25c342e5800

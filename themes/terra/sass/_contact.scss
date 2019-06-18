@@ -1,8 +1,14 @@
 .page-contact-us {
   .site-main {
-    background: url('../../assets/images/illustrations/futurisitc_illustration.svg');
+    background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
     background-repeat: no-repeat;
-    background-position: bottom -360px left;
+    background-position: top 20px right -250px;
+    background-size: 80%;
+
+    @include desktop {
+    background-position: bottom -20px left;
+    background-size: 70%;
+    }
   }
 
   h1.entry-title {
@@ -12,6 +18,7 @@
   .contact-form-border {
     @include center-page;
     max-width: 750px;
+    padding-bottom: 10rem;
   }
 
   h2 {
@@ -21,6 +28,10 @@
     font-weight: bold;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   .contact-us-form {
     @include center-block;
     width: 100%;
@@ -28,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
+    // background: white;
     @include desktop {
       margin-top: 50px;
       // margin-bottom: 50px;
@@ -68,20 +79,17 @@
   }
 
   .msg-sent-border {
-    // background: pink;
-    // background: url('../../assets/images/illustrations/futurisitc_illustration.svg');
-    text-align: center;
-    // margin-bottom: 4rem;
     height: 700px;
-    // vertical-align: middle;
-    
     @include desktop {
       margin-top: 50px;
-      // margin-bottom: 50px;
       border: 1px solid white;
       border-radius: 20px;
       box-shadow: $section-box-shadow;
       background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     p {
@@ -89,6 +97,23 @@
     }
     a.return-home-btn {
       @include button-anchor;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .msg-sent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .connect-world {
+          width: 35%;
+        @include desktop {
+          width: 70%;
+        }
+      }
     }
   }
 }

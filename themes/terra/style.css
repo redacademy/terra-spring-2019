@@ -677,22 +677,22 @@ object {
 .site {
   position: relative; }
 
-footer {
+.site-footer {
   background: #2f2e2f;
   color: #ffffff; }
-  footer a {
+  .site-footer a {
     text-decoration: none;
     color: #ffffff; }
-  footer .footer-center {
+  .site-footer .footer-center {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto; }
-  footer .contact-media-center {
+  .site-footer .contact-media-center {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto; }
     @media (min-width: 620px) {
-      footer .contact-media-center {
+      .site-footer .contact-media-center {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -706,123 +706,120 @@ footer {
             -ms-flex-align: center;
                 align-items: center;
         width: 100%; } }
-
-.subscription-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem;
-  text-align: center; }
-  .subscription-area .subscribe-description {
-    display: none; }
-    @media (min-width: 620px) {
-      .subscription-area .subscribe-description {
-        display: unset; } }
-  .subscription-area .sub-confirm-section {
-    display: none; }
-    .subscription-area .sub-confirm-section h4 {
-      font-size: 1.1rem;
-      border: none;
-      margin-top: 0; }
-      @media (min-width: 620px) {
-        .subscription-area .sub-confirm-section h4 {
-          font-size: 2.6rem;
-          font-weight: bold; } }
-    .subscription-area .sub-confirm-section .sub-confirm-msg {
-      max-width: 260px;
-      font-size: 1rem;
-      font-weight: 200; }
-      @media (min-width: 620px) {
-        .subscription-area .sub-confirm-section .sub-confirm-msg {
-          max-width: 435px;
-          margin: 0 auto; } }
-  .subscription-area #wpcf7-f108-o1 .wpcf7-form {
-    width: 100%; }
-  .subscription-area #wpcf7-f108-o1 .wpcf7-submit {
-    height: 45px;
-    width: 150px;
-    border-radius: 6px;
-    border: none;
-    background: -webkit-gradient(linear, left top, right top, from(#158130), to(#21bf48));
-    background: linear-gradient(90deg, #158130 0%, #21bf48 100%);
-    -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 1rem; }
-  .subscription-area #wpcf7-f108-o1 .wpcf7-text {
-    background: #cccc;
-    border: none;
-    padding: 0.5rem;
-    margin-top: 1rem; }
-
-.subscription-area.active {
-  background-image: url("../../assets/images/photos/Subscription-confirmation-banner-smaller.png"); }
-  .subscription-area.active .sub-confirm-section {
-    display: unset; }
-
-.contact-media {
-  background: #2f2e2f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 1.4rem;
-  padding-bottom: 1.5rem; }
-  @media (min-width: 620px) {
-    .contact-media {
-      background: #1c1c1c; } }
-  .contact-media ul {
-    list-style: none;
+  .site-footer .subscription-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 0; }
-    .contact-media ul li {
-      margin-left: 1rem; }
-      .contact-media ul li:nth-child(1) {
-        border-right: 1px solid #ffffff;
-        padding-right: 1rem; }
-  .contact-media .social-media {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
     text-align: center; }
-    .contact-media .social-media i {
-      margin-top: 12px;
-      margin-bottom: 16px;
-      margin-right: 1rem;
-      margin-left: 1rem;
-      font-size: 1.6rem; }
+    .site-footer .subscription-area .subscribe-description {
+      display: none; }
       @media (min-width: 620px) {
-        .contact-media .social-media i {
-          margin-right: 0.5rem;
-          margin-left: 0.5rem; } }
+        .site-footer .subscription-area .subscribe-description {
+          display: unset; } }
+    .site-footer .subscription-area .sub-confirm-section {
+      display: none; }
+      .site-footer .subscription-area .sub-confirm-section h4 {
+        font-size: 1.1rem;
+        border: none;
+        margin-top: 0; }
+        @media (min-width: 620px) {
+          .site-footer .subscription-area .sub-confirm-section h4 {
+            font-size: 2.6rem;
+            font-weight: bold; } }
+      .site-footer .subscription-area .sub-confirm-section .sub-confirm-msg {
+        max-width: 260px;
+        font-size: 1rem;
+        font-weight: 200; }
+        @media (min-width: 620px) {
+          .site-footer .subscription-area .sub-confirm-section .sub-confirm-msg {
+            max-width: 435px;
+            margin: 0 auto; } }
+    .site-footer .subscription-area .subscription-input .wpcf7-form {
+      width: 100%; }
+    .site-footer .subscription-area .subscription-input .wpcf7-submit {
+      height: 45px;
+      width: 150px;
+      border-radius: 6px;
+      border: none;
+      background: -webkit-gradient(linear, left top, right top, from(#158130), to(#21bf48));
+      background: linear-gradient(90deg, #158130 0%, #21bf48 100%);
+      -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+              box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 1rem; }
+    .site-footer .subscription-area .subscription-input .wpcf7-text {
+      background: #cccc;
+      border: none;
+      padding: 0.5rem;
+      margin-top: 1rem; }
+  .site-footer .subscription-area.active {
+    background-image: url("../../assets/images/photos/Subscription-confirmation-banner-smaller.png"); }
+    .site-footer .subscription-area.active .sub-confirm-section {
+      display: unset; }
+  .site-footer .contact-media {
+    background: #2f2e2f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.4rem;
+    padding-bottom: 1.5rem; }
+    @media (min-width: 620px) {
+      .site-footer .contact-media {
+        background: #1c1c1c; } }
+    .site-footer .contact-media ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-left: 0; }
+      .site-footer .contact-media ul li {
+        margin-left: 1rem; }
+        .site-footer .contact-media ul li:nth-child(1) {
+          border-right: 1px solid #ffffff;
+          padding-right: 1rem; }
+    .site-footer .contact-media .social-media {
+      text-align: center; }
+      .site-footer .contact-media .social-media i {
+        margin-top: 12px;
+        margin-bottom: 16px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.6rem; }
+        @media (min-width: 620px) {
+          .site-footer .contact-media .social-media i {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem; } }
 
 button {
   -webkit-box-shadow: none;
@@ -950,22 +947,37 @@ html {
   padding-left: 20px;
   padding-right: 20px; }
 
+.page-contact-us h1.entry-title {
+  display: none; }
+
 .page-contact-us .contact-form-border {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 400px; }
+  max-width: 750px; }
+
+.page-contact-us h2 {
+  text-transform: uppercase;
+  color: #002d6e; }
 
 .page-contact-us .contact-us-form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: orange; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 620px) {
     .page-contact-us .contact-us-form {
       margin-top: 50px;
@@ -973,22 +985,45 @@ html {
       border: 1px solid white;
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); } }
-  .page-contact-us .contact-us-form .entry-title {
-    text-transform: uppercase;
-    color: #002d6e;
-    text-align: left;
-    padding-left: 25px; }
+              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); }
+      .page-contact-us .contact-us-form .first-line {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .page-contact-us .contact-us-form .first-line input {
+          max-width: 280px;
+          margin-right: 20px;
+          margin-left: 20px; } }
   .page-contact-us .contact-us-form textarea,
   .page-contact-us .contact-us-form input {
     border-radius: 7px;
     padding: 0.6rem;
-    max-width: 330px; }
-  .page-contact-us .contact-us-form .wpcf7-submit {
+    width: 330px; }
+    @media (min-width: 620px) {
+      .page-contact-us .contact-us-form textarea,
+      .page-contact-us .contact-us-form input {
+        width: 625px; } }
+  .page-contact-us .contact-us-form input[type='submit'] {
     height: 3rem;
-    width: 250px;
+    width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
-    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%); }
+    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+    color: white;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 0.9rem;
+    font-weight: 500; }
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 

@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php endwhile;
 		?>
 
-		</section>
+		</section><!-- .contact-form-border -->
 	</main><!-- #main -->
 </div><!-- #primary -->
 

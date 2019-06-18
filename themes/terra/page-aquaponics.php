@@ -12,13 +12,16 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+		<!-- Hero Banner Section -->
 
-		<?php while (have_posts()) : the_post(); ?>
+		<div class="hero-banner-aqua">
+			<?php while (have_posts()) : the_post(); ?>
+				<img class="banner-aqua" src="<?php echo get_the_post_thumbnail_url(); ?>">
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php endwhile;
+		?>
+		</div>
 
-			<?php get_template_part('template-parts/content', 'page'); ?>
-
-		<?php endwhile;
-	?>
 		<!-- What is Aqua Section -->
 		<section class="intro-aqua">
 			<?php echo CFS()->get('what_is_aquaponics'); ?>

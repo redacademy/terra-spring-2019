@@ -1,51 +1,85 @@
 .page-contact-us {
-   .contact-form-border {
+  h1.entry-title {
+    display: none;
+  }
+
+  .contact-form-border {
     @include center-page;
-    max-width: 400px;
-   }
+    max-width: 750px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $font-awesome-color;
+    margin: 25px auto;
+    font-weight: bold;
+  }
+
   .contact-us-form {
     @include center-block;
-
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include desktop {
       margin-top: 50px;
       margin-bottom: 50px;
       border: 1px solid white;
       border-radius: 20px;
-      box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .entry-title {
-      text-transform: uppercase;
-      color: $font-awesome-color;
-      text-align: left;
-      padding-left: 25px;
+      box-shadow: $section-box-shadow;
+      .first-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        input {
+          max-width: 280px;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
     }
 
     textarea,
     input {
       border-radius: 7px;
       padding: 0.6rem;
-      max-width: 330px;
+      width: 330px;
+      @include desktop {
+      width: 605px;
+      }
     }
 
-    .wpcf7-submit {
-      height: 3rem;
-      width: 250px;
-      background: linear-gradient(
-        90deg,
-        rgba(0, 45, 110, 1) 0%,
-        rgba(47, 136, 211, 1) 100%
-      );
+    input[type='submit'] {
+   @include button-style;
     }
 
     .textarea-msg #text {
       text-align: left;
     }
   }
+
+  .msg-sent {
+    // background: pink;
+    background: url('../../assets/images/illustrations/futurisitc_illustration.svg');
+    text-align: center;
+    margin-bottom: 4rem;
+    @include desktop {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border: 1px solid white;
+      border-radius: 20px;
+      box-shadow: $section-box-shadow;
+    }
+
+    p{
+      margin-bottom: 4rem;
+    }
+    a.return-home-btn {
+      @include button-anchor;
+      
+    }
+  }
+
 }

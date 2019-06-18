@@ -1,9 +1,7 @@
-button {
-  box-shadow: none;
-}
 html {
   height: 100%;
 }
+
 .site-header {
   background-color: $header-color-transparent;
   box-shadow: $header-box-shadow;
@@ -13,12 +11,47 @@ html {
     display: flex;
     width: inherit;
     height: 60px;
+    .w3-animate-right {
+      position: relative;
+      animation: animateright 0.5s ease-in-out;
+    }
+    @keyframes animateright {
+      from {
+        right: -300px;
+        opacity: 0;
+      }
+      to {
+        right: 0;
+        opacity: 1;
+      }
+    }
+    .footer-navigation {
+      display: inline-flex;
+      min-width: 80%;
+      line-height: 1.5;
+      li:nth-child(odd) {
+        padding-right: 1em;
+        padding-left: 1em;
+        border-right: 3px solid white;
+      }
+      li:nth-child(even) {
+        padding-left: 1em;
+      }
+    }
+
     .main-navigation {
       display: flex;
       flex-wrap: wrap;
       width: auto;
       margin-left: auto;
       position: relative;
+      button,
+      button:focus,
+      button:hover {
+        box-shadow: none;
+        border-color: transparent;
+        outline: 0;
+      }
 
       &.toggled {
         background-color: $hamburger-color;
@@ -30,45 +63,46 @@ html {
         height: 100vh;
         width: 75%;
 
-        .hamburger.is-active .hamburger-inner,
-        .hamburger.is-active .hamburger-inner::before,
-        .hamburger.is-active .hamburger-inner::after,
-        .hamburger--arrow-r.is-active .hamburger-inner::before,
-        .hamburger--arrow-r.is-active .hamburger-inner::after {
+        .hamburger-inner,
+        .hamburger-inner:before,
+        .hamburger-inner:after {
           background-color: white;
-        }
-        .bottom-nav-options {
-          position: absolute;
-          bottom: 0;
-          padding-right: 5px;
+          box-shadow: 0;
         }
         a {
-          color: white;
+          color: $white-text-color;
+          text-decoration: $font__code;
         }
       }
-    }
+    } // .main-navigation
     /* hamburger starts */
-
     .is-active {
       z-index: 1;
-      height: 60px;
+      position: absolute;
+      left: 0;
+      top: 50px;
       margin-right: auto;
     }
 
     .toggled {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
-      //   position: relative;
+      position: relative;
       justify-content: flex-end;
+      @include desktop {
+        display: none;
+      }
 
       .menu-main-menu-container {
+        margin-top: 20%;
+        width: 55%;
+        height: 65%;
         .nav-menu {
+          height: calc(70vh - 15px);
           display: flex;
           flex-direction: column;
-          margin-top: 60px;
-          text-align: right;
-
+          position: absolute;
+          right: 0;
           li {
             margin-top: 60px;
             margin-right: 20px;
@@ -92,6 +126,7 @@ html {
     button {
       display: none;
     }
+
     img {
       max-width: 20%;
       height: 100%;
@@ -105,18 +140,32 @@ html {
       .site-branding {
         width: 50%;
       }
-      .menu {
-        display: flex;
-        justify-content: flex-end;
-        li a:hover {
-          border-bottom: 4px solid $nav-underline-color;
-        }
-        li {
-          margin-left: 40px;
-          max-height: 22px;
-          a {
-            font-size: 1.25rem;
-            color: black;
+      .footer-navigation {
+        display: none;
+      }
+      .main-navigation {
+        justify-content: space-around;
+
+        .menu {
+          display: flex;
+          justify-content: flex-end;
+
+          .menu-item-146,
+          .menu-item-147 {
+            display: none;
+          }
+          li a:hover {
+            border-bottom: 4px solid $nav-underline-color;
+          }
+          li {
+            margin-left: 30px;
+            max-height: 22px;
+            a {
+              font-size: 1.25rem;
+              color: black;
+              margin-right: 40px;
+              min-width: 100%;
+            }
           }
         }
       }

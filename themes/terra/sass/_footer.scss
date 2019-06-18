@@ -16,7 +16,7 @@
     @include desktop {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       width: 100%;
     }
@@ -113,10 +113,13 @@
       justify-content: center;
       padding-left: 0;
       li {
-        margin-left: 1rem;
         &:nth-child(1) {
           border-right: 1px solid $footer-font-color;
           padding-right: 1rem;
+        }
+        &:nth-child(2) {
+
+          padding-left: 1rem;
         }
       }
     }

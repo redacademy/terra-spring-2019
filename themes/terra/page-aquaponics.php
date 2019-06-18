@@ -14,10 +14,10 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<!-- Hero Banner Section -->
 
-		<div class="hero-banner-aqua">
+		<div class="hero-banner">
 			<?php while (have_posts()) : the_post(); ?>
-				<img class="banner-aqua" src="<?php echo get_the_post_thumbnail_url(); ?>">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<img class="banner-pic" src="<?php echo get_the_post_thumbnail_url(); ?>">
+				<h1 class="banner-title"><?php the_title(); ?></h1>
 			<?php endwhile;
 		?>
 		</div>

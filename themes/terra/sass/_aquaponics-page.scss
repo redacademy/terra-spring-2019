@@ -3,35 +3,35 @@
 --------------------------------------------------------------*/
 
 /* Aquaponics page */
+// -----Hero Banner-----//
+.hero-banner {
+  position: relative;
+}
+.banner-pic {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  // @include desktop {
+  //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
+  // }
+}
+.intro-aqua {
+  @include center-page;
+  line-height: $font__line-height-body;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.banner-title {
+  @include center-page;
+  position: absolute;
+  bottom: 7vw;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
 
 .page-aquaponics {
-  // -----Hero Banner-----//
-  .hero-banner-aqua {
-    position: relative;
-  }
-  .banner-aqua {
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    @include desktop {
-      border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
-    }
-  }
-  .intro-aqua {
-    @include center-page;
-    line-height: $font__line-height-body;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .entry-title {
-    @include center-page;
-    position: absolute;
-    bottom: 7vw;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    color: white;
-    text-transform: uppercase;
-  }
   // -----What is Aquaponics Section-----//
 
   .intro-aqua {

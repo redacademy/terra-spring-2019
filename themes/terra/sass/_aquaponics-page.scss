@@ -14,12 +14,7 @@
   //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
   // }
 }
-.intro-aqua {
-  @include center-page;
-  line-height: $font__line-height-body;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 .banner-title {
   @include center-page;
   position: absolute;
@@ -32,6 +27,12 @@
 }
 
 .page-aquaponics {
+  .intro-aqua {
+    @include center-page;
+    line-height: $font__line-height-body;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   // -----What is Aquaponics Section-----//
 
   .intro-aqua {

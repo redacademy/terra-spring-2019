@@ -23,6 +23,26 @@
   margin-right: auto;
 }
 
+@mixin roadmap-dot {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+  position: absolute;
+}
+
+@mixin roadmap-dot-hover {
+  background: radial-gradient(
+    ellipse at center,
+    #00d4e8 0%,
+    #00d4e8 50%,
+    #ffffff 51%,
+    #f7f7f7 100%
+  );
+
+  //   position: absolute;
+}
 @mixin button-style {
   height: 3rem;
   width: 150px;
@@ -37,12 +57,12 @@
 
 @mixin button-anchor {
   text-decoration: none;
-      border: 1px solid white;
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
-      padding-left: 1.7rem;
-      padding-right: 1.7rem;
-      background: $btn-color;
-      color: white;
-      border-radius: 6px;
+  border: 1px solid white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  background: $btn-color;
+  color: white;
+  border-radius: 6px;
 }

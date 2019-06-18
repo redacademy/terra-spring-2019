@@ -12,7 +12,6 @@
     $nav.on('click', function() {
       $nav.toggleClass('nav');
       $nav.toggleClass('w3-animate-right');
-      $nav.toggleClass(w3 - animate - right);
     }); // end of hamburger menu
 
     // subscription form in footer

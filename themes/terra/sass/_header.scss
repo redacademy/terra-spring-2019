@@ -1,9 +1,7 @@
-button {
-  box-shadow: none;
-}
 html {
   height: 100%;
 }
+
 .site-header {
   background-color: $header-color-transparent;
   box-shadow: $header-box-shadow;
@@ -13,12 +11,34 @@ html {
     display: flex;
     width: inherit;
     height: 60px;
+    .w3-animate-right {
+      position: relative;
+      animation: animateright 0.5s ease-in-out;
+    }
+    @keyframes animateright {
+      from {
+        right: -300px;
+        opacity: 0;
+      }
+      to {
+        right: 0;
+        opacity: 1;
+      }
+    }
+
     .main-navigation {
       display: flex;
       flex-wrap: wrap;
       width: auto;
       margin-left: auto;
       position: relative;
+      button,
+      button:focus,
+      button:hover {
+        box-shadow: none;
+        border-color: transparent;
+        outline: 0;
+      }
 
       &.toggled {
         background-color: $hamburger-color;
@@ -30,28 +50,23 @@ html {
         height: 100vh;
         width: 75%;
 
-        .hamburger.is-active .hamburger-inner,
-        .hamburger.is-active .hamburger-inner::before,
-        .hamburger.is-active .hamburger-inner::after,
-        .hamburger--arrow-r.is-active .hamburger-inner::before,
-        .hamburger--arrow-r.is-active .hamburger-inner::after {
+        .hamburger-inner,
+        .hamburger-inner:before,
+        .hamburger-inner:after {
           background-color: white;
-        }
-        .bottom-nav-options {
-          position: absolute;
-          bottom: 0;
-          padding-right: 5px;
+          box-shadow: 0;
         }
         a {
           color: white;
         }
       }
-    }
+    } // .main-navigation
     /* hamburger starts */
-
     .is-active {
       z-index: 1;
-      height: 60px;
+      position: absolute;
+      left: 0;
+      top: 50px;
       margin-right: auto;
     }
 
@@ -59,15 +74,56 @@ html {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      //   position: relative;
+      position: relative;
       justify-content: flex-end;
+      @include desktop {
+        display: none;
+      }
 
       .menu-main-menu-container {
+        width: 80%;
         .nav-menu {
-          display: flex;
-          flex-direction: column;
-          margin-top: 60px;
           text-align: right;
+          display: grid;
+          padding-top: 26%;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 100px 100px 100px auto 50px;
+          height: calc(120vh - 10px);
+          align-items: center;
+
+          grid-template-areas:
+            '. . aquaponics aquaponics '
+            '. . the-project the-project '
+            '. . supportus supportus '
+            ' contact contact disclamer disclamer  ';
+
+          .menu-item-25 {
+            grid-area: the-project;
+          }
+
+          .menu-item-21 {
+            grid-area: aquaponics;
+          }
+
+          .menu-item-24 {
+            grid-area: supportus;
+          }
+
+          //disclaimer
+          .menu-item-146 {
+            grid-area: disclamer;
+            justify-self: start;
+            align-self: center;
+          }
+
+          //CONTACT US
+          .menu-item-147 {
+            grid-area: contact;
+            justify-self: end;
+            align-self: center;
+            padding-right: 20px;
+            border-right: 3px solid white;
+          }
 
           li {
             margin-top: 60px;
@@ -105,18 +161,29 @@ html {
       .site-branding {
         width: 50%;
       }
-      .menu {
-        display: flex;
-        justify-content: flex-end;
-        li a:hover {
-          border-bottom: 4px solid $nav-underline-color;
-        }
-        li {
-          margin-left: 40px;
-          max-height: 22px;
-          a {
-            font-size: 1.25rem;
-            color: black;
+      .main-navigation {
+        justify-content: space-around;
+
+        .menu {
+          display: flex;
+          justify-content: flex-end;
+
+          .menu-item-146,
+          .menu-item-147 {
+            display: none;
+          }
+          li a:hover {
+            border-bottom: 4px solid $nav-underline-color;
+          }
+          li {
+            margin-left: 30px;
+            max-height: 22px;
+            a {
+              font-size: 1.25rem;
+              color: black;
+              margin-right: 40px;
+              min-width: 100%;
+            }
           }
         }
       }

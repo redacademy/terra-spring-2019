@@ -700,8 +700,9 @@ object {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -803,11 +804,11 @@ object {
           -ms-flex-pack: center;
               justify-content: center;
       padding-left: 0; }
-      .site-footer .contact-media ul li {
-        margin-left: 1rem; }
-        .site-footer .contact-media ul li:nth-child(1) {
-          border-right: 1px solid #ffffff;
-          padding-right: 1rem; }
+      .site-footer .contact-media ul li:nth-child(1) {
+        border-right: 1px solid #ffffff;
+        padding-right: 1rem; }
+      .site-footer .contact-media ul li:nth-child(2) {
+        padding-left: 1rem; }
     .site-footer .contact-media .social-media {
       text-align: center; }
       .site-footer .contact-media .social-media i {
@@ -947,6 +948,11 @@ html {
   padding-left: 20px;
   padding-right: 20px; }
 
+.page-contact-us .site-main {
+  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -360px left; }
+
 .page-contact-us h1.entry-title {
   display: none; }
 
@@ -979,11 +985,11 @@ html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: white; }
   @media (min-width: 620px) {
     .page-contact-us .contact-us-form {
       margin-top: 50px;
-      margin-bottom: 50px;
       border: 1px solid white;
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
@@ -1030,21 +1036,20 @@ html {
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-.page-contact-us .msg-sent {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+.page-contact-us .msg-sent-border {
   text-align: center;
-  margin-bottom: 4rem; }
+  height: 700px; }
   @media (min-width: 620px) {
-    .page-contact-us .msg-sent {
+    .page-contact-us .msg-sent-border {
       margin-top: 50px;
-      margin-bottom: 50px;
       border: 1px solid white;
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); } }
-  .page-contact-us .msg-sent p {
+              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+      background: white; } }
+  .page-contact-us .msg-sent-border p {
     margin-bottom: 4rem; }
-  .page-contact-us .msg-sent a.return-home-btn {
+  .page-contact-us .msg-sent-border a.return-home-btn {
     text-decoration: none;
     border: 1px solid white;
     padding-top: 0.8rem;

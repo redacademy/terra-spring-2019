@@ -25,6 +25,19 @@ html {
         opacity: 1;
       }
     }
+    .footer-navigation {
+      display: inline-flex;
+      min-width: 80%;
+      line-height: 1.5;
+      li:nth-child(odd) {
+        padding-right: 1em;
+        padding-left: 1em;
+        border-right: 3px solid white;
+      }
+      li:nth-child(even) {
+        padding-left: 1em;
+      }
+    }
 
     .main-navigation {
       display: flex;
@@ -57,7 +70,8 @@ html {
           box-shadow: 0;
         }
         a {
-          color: white;
+          color: $white-text-color;
+          text-decoration: $font__code;
         }
       }
     } // .main-navigation
@@ -73,7 +87,6 @@ html {
     .toggled {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
       position: relative;
       justify-content: flex-end;
       @include desktop {
@@ -81,50 +94,15 @@ html {
       }
 
       .menu-main-menu-container {
-        width: 80%;
+        margin-top: 20%;
+        width: 55%;
+        height: 65%;
         .nav-menu {
-          text-align: right;
-          display: grid;
-          padding-top: 26%;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 100px 100px 100px auto 50px;
-          height: calc(120vh - 10px);
-          align-items: center;
-
-          grid-template-areas:
-            '. . aquaponics aquaponics '
-            '. . the-project the-project '
-            '. . supportus supportus '
-            ' contact contact disclamer disclamer  ';
-
-          .menu-item-25 {
-            grid-area: the-project;
-          }
-
-          .menu-item-21 {
-            grid-area: aquaponics;
-          }
-
-          .menu-item-24 {
-            grid-area: supportus;
-          }
-
-          //disclaimer
-          .menu-item-146 {
-            grid-area: disclamer;
-            justify-self: start;
-            align-self: center;
-          }
-
-          //CONTACT US
-          .menu-item-147 {
-            grid-area: contact;
-            justify-self: end;
-            align-self: center;
-            padding-right: 20px;
-            border-right: 3px solid white;
-          }
-
+          height: calc(70vh - 15px);
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
           li {
             margin-top: 60px;
             margin-right: 20px;
@@ -148,6 +126,7 @@ html {
     button {
       display: none;
     }
+
     img {
       max-width: 20%;
       height: 100%;
@@ -160,6 +139,9 @@ html {
       line-height: 27px;
       .site-branding {
         width: 50%;
+      }
+      .footer-navigation {
+        display: none;
       }
       .main-navigation {
         justify-content: space-around;

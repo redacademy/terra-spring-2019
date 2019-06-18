@@ -14,17 +14,25 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<!-- Hero Banner Section -->
 
-		<div class="hero-banner-aqua">
+		<div class="hero-banner">
 			<?php while (have_posts()) : the_post(); ?>
-				<img class="banner-aqua" src="<?php echo get_the_post_thumbnail_url(); ?>">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<img class="banner-pic" src="<?php echo get_the_post_thumbnail_url(); ?>">
+				<h1 class="banner-title"><?php the_title(); ?></h1>
 			<?php endwhile;
 		?>
 		</div>
 
 		<!-- What is Aqua Section -->
 		<section class="intro-aqua">
-			<?php echo CFS()->get('what_is_aquaponics'); ?>
+			<div class="what-aqua-text">
+				<?php echo CFS()->get('what_is_aquaponics'); ?>
+			</div>
+			<div class="what-aqua-imgs">
+				<img src="<?php echo CFS()->get('what_aqua_image_1'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_2'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_3'); ?>">
+				<img src="<?php echo CFS()->get('what_aqua_image_4'); ?>">
+			</div>
 		</section>
 
 		<!--  How Aquaponics Works Section	 -->

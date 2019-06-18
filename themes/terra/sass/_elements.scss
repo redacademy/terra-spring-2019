@@ -216,4 +216,39 @@
   img {
     width: 100%;
   }
+  @include desktop {
+    padding: 0;
+    box-shadow: $section-box-shadow;
+    max-width: 1250px;
+    .fp-miss-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      &:nth-child(odd) {
+        .mission-image {
+          order: 2;
+        }
+      }
+      .mission-image {
+        width: 50%;
+        img {
+          max-width: 100%;
+        }
+      }
+      .mission-content {
+        width: 50%;
+        padding: 0 20px 20px 20px;
+
+        h3 {
+          font-size: 2rem;
+          margin-top: 0;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
 }

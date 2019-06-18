@@ -275,7 +275,8 @@ th {
   color: white;
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 20px; }
   .roadmap h2 {
     width: 100%; }
   .roadmap ul {
@@ -283,7 +284,7 @@ th {
     width: 100%; }
     .roadmap ul li {
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       position: relative; }
   .roadmap .roadmap-left {
     width: 50%; }
@@ -298,9 +299,10 @@ th {
           background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
           -webkit-transform: scale(1.3);
                   transform: scale(1.3); }
-        .roadmap .roadmap-left ul li:hover h3,
+        .roadmap .roadmap-left ul li:hover h3 {
+          font-size: 2rem; }
         .roadmap .roadmap-left ul li:hover .roadmap-p {
-          font-size: 1.3rem; }
+          font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
           content: '';
           width: 30px;
@@ -311,10 +313,13 @@ th {
           right: -19px;
           top: -2px; }
         .roadmap .roadmap-left ul li p {
-          padding-right: 100px; }
+          padding-right: 60px; }
+          @media (min-width: 620px) {
+            .roadmap .roadmap-left ul li p {
+              padding-left: 100px; } }
   .roadmap .roadmap-right {
     width: 50%;
-    padding-top: 72px;
+    padding-top: 82px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -329,12 +334,16 @@ th {
           background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
           -webkit-transform: scale(1.3);
                   transform: scale(1.3); }
-        .roadmap .roadmap-right ul li:hover h3,
+        .roadmap .roadmap-right ul li:hover h3 {
+          font-size: 2rem; }
         .roadmap .roadmap-right ul li:hover .roadmap-p {
-          font-size: 1.3rem; }
+          font-size: 1.1rem; }
         .roadmap .roadmap-right ul li h3 {
-          padding-left: 100px;
+          padding-left: 60px;
           margin-top: 0; }
+          @media (min-width: 620px) {
+            .roadmap .roadmap-right ul li h3 {
+              padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
             content: '';
             width: 30px;
@@ -342,10 +351,69 @@ th {
             border-radius: 50%;
             background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
             position: absolute;
-            left: -11px;
+            left: -19px;
             top: -2px; }
         .roadmap .roadmap-right ul li p {
-          padding-left: 100px; }
+          padding-left: 60px; }
+          @media (min-width: 620px) {
+            .roadmap .roadmap-right ul li p {
+              padding-left: 100px; } }
+
+.fp-ap-info {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .fp-ap-info .fp-ap-container {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
+    @media (min-width: 620px) {
+      .fp-ap-info .fp-ap-container {
+        width: 33%; } }
+    .fp-ap-info .fp-ap-container .ap-info-img {
+      width: 70%;
+      text-align: center;
+      height: 120px; }
+      .fp-ap-info .fp-ap-container .ap-info-img img {
+        width: 40%;
+        height: 120px; }
+    .fp-ap-info .fp-ap-container .ap-info-p {
+      font-size: 1.25rem;
+      margin-top: auto;
+      margin: 0; }
+    .fp-ap-info .fp-ap-container .ap-info-h3 {
+      font-size: 1.5rem; }
+
+.fp-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .fp-mission img {
+    width: 100%; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -975,3 +1043,10 @@ html {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%); }
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
+
+/*--------------------------------------------------------------
+# Aquaponics Page Templates
+--------------------------------------------------------------*/
+/* Aquaponics page */
+.site {
+  position: relative; }

@@ -1145,23 +1145,7 @@ html {
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .page-contact-us .msg-sent-border {
-=======
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Aquaponics Page Templates
---------------------------------------------------------------*/
-/* Aquaponics page */
-.site {
-  position: relative; }
-=======
->>>>>>> 791de0d77f3d9610e42d0f73662dc75d55adee91
-.page-contact-us .msg-sent {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
->>>>>>> 04f74c5c0130a25b26a1a929090190b19047b6e3
   text-align: center;
   height: 700px; }
   @media (min-width: 620px) {

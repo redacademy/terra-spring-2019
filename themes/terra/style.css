@@ -1031,10 +1031,19 @@ html {
     text-align: left; }
 
 .page-contact-us .msg-sent {
+  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
   text-align: center;
-  margin-bottom: 4rem;
-  border: 1px p;
-    border-margin-bottom: 4rem; }
+  margin-bottom: 4rem; }
+  @media (min-width: 620px) {
+    .page-contact-us .msg-sent {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border: 1px solid white;
+      border-radius: 20px;
+      -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); } }
+  .page-contact-us .msg-sent p {
+    margin-bottom: 4rem; }
   .page-contact-us .msg-sent a.return-home-btn {
     text-decoration: none;
     border: 1px solid white;
@@ -1048,7 +1057,7 @@ html {
     border-radius: 6px; }
 
 /*--------------------------------------------------------------
-# Aquaponics Page Templates
+# Page Templates
 --------------------------------------------------------------*/
 /* Aquaponics page */
 .site {

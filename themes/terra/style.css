@@ -1571,10 +1571,8 @@ img {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px;
-    position: absolute;
-    left: 48%;
-    margin-left: -50px;
-    bottom: 27%; }
+    position: relative;
+    text-align: none; }
   .page-support-us .entry-content {
     max-width: 1140px;
     margin-left: auto;
@@ -1612,12 +1610,11 @@ img {
     @media (min-width: 620px) {
       .page-support-us .entry-content .banner-title h1 {
         bottom: 9vw; }
-      .page-support-us .entry-content .world {
-        position: relative; }
-        .page-support-us .entry-content .world img {
-          position: absolute;
-          left: 50%;
-          z-index: -1;
-          -o-object-fit: cover;
-             object-fit: cover;
-          overflow: hidden; } }
+      .page-support-us .entry-content .world img {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: 620px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        overflow: hidden; } }

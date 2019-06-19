@@ -5,10 +5,9 @@
   }
   a.fund-btn {
     @include button-anchor;
-    position: absolute;
-    left: 48%;
-    margin-left: -50px;
-    bottom: 27%;
+    position: relative;
+
+    text-align: none;
   }
   .entry-content {
     @include center-page;
@@ -43,11 +42,12 @@
       }
 
       .world {
-        position: relative;
         img {
           position: absolute;
-          left: 50%;
-          z-index: -1;
+
+          right: 0;
+          width: 100px;
+          height: 620px;
           object-fit: cover;
           overflow: hidden;
         }

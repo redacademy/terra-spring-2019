@@ -1,5 +1,5 @@
 .page-contact-us {
-  .site-main {
+  .page-contact-us.site-main {
     background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
     background-repeat: no-repeat;
     background-position: top 20px right -250px;
@@ -11,7 +11,7 @@
     }
   }
 
-  h1.entry-title {
+  .page-contact-us h1.entry-title {
     display: none;
   }
 
@@ -23,7 +23,7 @@
     }
   }
 
-  h2 {
+  .page-contact-us h2 {
     text-transform: uppercase;
     color: $font-awesome-color;
     margin: 25px auto;

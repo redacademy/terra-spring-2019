@@ -1336,17 +1336,17 @@ html {
   padding-left: 20px;
   padding-right: 20px; }
 
-.page-contact-us .site-main {
+.page-contact-us .page-contact-us.site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 20px right -250px;
   background-size: 80%; }
   @media (min-width: 620px) {
-    .page-contact-us .site-main {
+    .page-contact-us .page-contact-us.site-main {
       background-position: bottom -20px left;
       background-size: 70%; } }
 
-.page-contact-us h1.entry-title {
+.page-contact-us .page-contact-us h1.entry-title {
   display: none; }
 
 .page-contact-us .contact-form-border {
@@ -1357,7 +1357,7 @@ html {
   padding-top: 2rem;
   padding-bottom: 6rem; }
 
-h2 {
+.page-contact-us h2 {
   text-transform: uppercase;
   color: #002d6e;
   margin: 25px auto;

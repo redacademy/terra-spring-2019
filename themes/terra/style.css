@@ -395,7 +395,8 @@ th {
   font-style: italic; }
 
 body {
-  font-family: ‘Nunito Sans’; }
+  font-family: ‘Nunito Sans’;
+  line-height: 1.25rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: ‘Lato’; }
@@ -1331,7 +1332,7 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
+  line-height: 1.25rem;
   padding-left: 20px;
   padding-right: 20px; }
 
@@ -1434,13 +1435,8 @@ img {
   .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
-.page-contact-us .msg-sent-border {
-  text-align: center;
-=======
 .msg-sent-border {
   display: none;
->>>>>>> 1b70ccbb5c1cf6b95c015dbda8b554f9ac548ffa
   height: 700px; }
   @media (min-width: 620px) {
     .msg-sent-border {
@@ -1486,7 +1482,7 @@ img {
         .msg-sent-border .msg-sent .connect-world {
           width: 40%; } }
 
-.original-form.active {
+.original-form.sent-out-msg {
   display: none; }
 
 /*--------------------------------------------------------------
@@ -1520,7 +1516,7 @@ img {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
+  line-height: 1.25rem;
   padding-left: 20px;
   padding-right: 20px; }
 

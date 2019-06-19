@@ -26,8 +26,6 @@
       color: $font-color;
       text-align: left;
       line-height: $font__line-height-body;
-      width: 41pc;
-      height: 10pc;
     }
     h2 {
       width: 18pc;
@@ -43,6 +41,10 @@
       h2 {
         width: auto;
       }
+      p {
+        width: 41pc;
+        height: 10pc;
+      }
       .banner-title h1 {
         bottom: 9vw;
       }
@@ -52,11 +54,12 @@
       .world {
         img {
           position: absolute;
+          overflow: hidden;
+          z-index: -5;
           right: 0;
           width: 28pc;
           bottom: 35.9pc;
           height: 31.5pc;
-          overflow: hidden;
         }
       }
     }

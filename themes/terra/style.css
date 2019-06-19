@@ -1620,9 +1620,7 @@ img {
               justify-content: space-between;
       color: #4a4a4a;
       text-align: left;
-      line-height: 1.25rem;
-      width: 41pc;
-      height: 10pc; }
+      line-height: 1.25rem; }
     .page-support-us .entry-content h2 {
       width: 18pc;
       color: #4a4a4a;
@@ -1636,6 +1634,9 @@ img {
         padding-top: 8pc; }
         .page-support-us .entry-content h2 {
           width: auto; }
+        .page-support-us .entry-content p {
+          width: 41pc;
+          height: 10pc; }
         .page-support-us .entry-content .banner-title h1 {
           bottom: 9vw; }
         .page-support-us .entry-content .button-center {

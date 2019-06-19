@@ -1,0 +1,31 @@
+.page-support-us {
+  .banner-title {
+    bottom: 24vw;
+  }
+  a.fund-btn {
+    @include button-anchor;
+    position: absolute;
+    left: 48%;
+    margin-left: -50px;
+    bottom: 23%;
+  }
+  .entry-content {
+    @include center-page;
+    padding: 0px 7% 5% 7%;
+    p {
+      padding-top: 0;
+      padding-bottom: 6.25rem;
+      color: $font-color;
+      font-family: $font__code;
+      font-size: 16px;
+      text-align: left;
+      line-height: 2em;
+    }
+    h2 {
+      width: 263px;
+      color: $font-color;
+      font-family: $font__pre;
+      font-size: 22px;
+    }
+  }
+}

@@ -395,7 +395,8 @@ th {
   font-style: italic; }
 
 body {
-  font-family: ‘Nunito Sans’; }
+  font-family: ‘Nunito Sans’;
+  line-height: 1.25rem; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: ‘Lato’; }
@@ -1331,21 +1332,21 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
+  line-height: 1.25rem;
   padding-left: 20px;
   padding-right: 20px; }
 
-.page-contact-us .site-main {
+.page-contact-us .page-contact-us.site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 20px right -250px;
   background-size: 80%; }
   @media (min-width: 620px) {
-    .page-contact-us .site-main {
+    .page-contact-us .page-contact-us.site-main {
       background-position: bottom -20px left;
       background-size: 70%; } }
 
-.page-contact-us h1.entry-title {
+.page-contact-us .page-contact-us h1.entry-title {
   display: none; }
 
 .page-contact-us .contact-form-border {
@@ -1356,7 +1357,7 @@ html {
   padding-top: 2rem;
   padding-bottom: 6rem; }
 
-h2 {
+.page-contact-us h2 {
   text-transform: uppercase;
   color: #002d6e;
   margin: 25px auto;
@@ -1434,13 +1435,8 @@ img {
   .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
-.page-contact-us .msg-sent-border {
-  text-align: center;
-=======
 .msg-sent-border {
   display: none;
->>>>>>> 1b70ccbb5c1cf6b95c015dbda8b554f9ac548ffa
   height: 700px; }
   @media (min-width: 620px) {
     .msg-sent-border {
@@ -1486,7 +1482,7 @@ img {
         .msg-sent-border .msg-sent .connect-world {
           width: 40%; } }
 
-.original-form.active {
+.original-form.sent-out-msg {
   display: none; }
 
 /*--------------------------------------------------------------
@@ -1520,7 +1516,7 @@ img {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
+  line-height: 1.25rem;
   padding-left: 20px;
   padding-right: 20px; }
 

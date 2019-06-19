@@ -1,44 +1,68 @@
 .page-support-us {
   position: relative;
+
   .banner-title {
     bottom: 9vw;
   }
   a.fund-btn {
     @include button-anchor;
-    position: absolute;
-    left: 48%;
-    margin-left: -50px;
-    bottom: 19%;
+    position: relative;
+    text-align: none;
   }
   .entry-content {
-    padding: 0px 7% 5% 7%;
     @include center-page;
+    padding: $page-padding-mobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
     img {
       max-width: 100%;
+      z-index: -5;
       height: auto;
+      object-fit: none;
     }
     p {
-      padding-top: 0.25rem;
-      padding-bottom: 2.25rem;
+      justify-content: space-between;
       color: $font-color;
-      font-family: $font__code;
-      font-size: 16px;
       text-align: left;
-      line-height: 2em;
+      line-height: $font__line-height-body;
     }
     h2 {
-      width: 266px;
+      width: 18pc;
       color: $font-color;
-      font-family: $font__pre;
       font-size: 22px;
+      height: 5pc;
       margin: 0;
     }
 
     @include desktop {
+      @include white-space-both-side;
+      padding-top: 8pc;
+      h2 {
+        width: auto;
+      }
+      p {
+        width: 41pc;
+        height: 10pc;
+      }
       .banner-title h1 {
         bottom: 9vw;
       }
-      display: flex;
+      .button-center {
+        height: 25vh;
+      }
+      .world {
+        img {
+          position: absolute;
+          overflow: hidden;
+          z-index: -5;
+          right: 0;
+          width: 28pc;
+          bottom: 35.9pc;
+          height: 31.5pc;
+        }
+      }
     }
   }
 }

@@ -12,9 +12,7 @@
     var $nav = $('nav');
     $nav.on('click', function () {
       $nav.toggleClass('nav');
-      $nav.toggleClass('w3-animate-right');
     }); // end of hamburger menu
-
 
     // subscription form in footer
     $('#wpcf7-f108-o1').on('submit', function () {
@@ -31,7 +29,6 @@
       }, 500);
     }); // end of subscription form
 
-
     // contact form in contact-us page
     $('#wpcf7-f17-p13-o1').on('submit', function () {
       const emailInput = $('.contact-us-form input[type="email"]');
@@ -46,8 +43,5 @@
         }
       }, 500);
     }); // end of contact form
-
-
-
   }); // end of document ready
 })(jQuery);

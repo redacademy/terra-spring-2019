@@ -304,7 +304,7 @@ th {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -345,7 +345,7 @@ th {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: '';
+            content: "";
             width: 30px;
             height: 30px;
             border-radius: 50%;

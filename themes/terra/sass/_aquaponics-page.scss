@@ -13,8 +13,10 @@
   object-fit: cover;
   height: 21rem;
   width: 100%;
-  // We can remove the code below if we are happy with the style of the banner semi-circle
+
+  // Note: we can remove the code below if we are happy with the style of the banner semi-circle
   // THis code brings the edges up higher. Impossible to do otherwise.
+
   // @include desktop {
   //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
   // }
@@ -76,5 +78,11 @@
         object-fit: contain;
       }
     }
+    // @media screen {
+    //   min-width: 960px;
+    // }
+    // .what-aqua-imgs {
+    //   display: none;
+    // }
   }
 }

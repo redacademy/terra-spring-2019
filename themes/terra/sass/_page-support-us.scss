@@ -1,16 +1,17 @@
 .page-support-us {
   position: relative;
+
   .banner-title {
     bottom: 9vw;
   }
   a.fund-btn {
     @include button-anchor;
     position: relative;
-
     text-align: none;
   }
   .entry-content {
     @include center-page;
+    padding: $page-padding-mobile;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,7 +26,7 @@
       color: $font-color;
       text-align: left;
       line-height: $font__line-height-body;
-      width: 50pc;
+      width: 41pc;
       height: 10pc;
     }
     h2 {
@@ -37,18 +38,24 @@
     }
 
     @include desktop {
+      @include white-space-both-side;
+      padding-top: 8pc;
+      h2 {
+        width: auto;
+      }
       .banner-title h1 {
         bottom: 9vw;
       }
-
+      .button-center {
+        height: 25vh;
+      }
       .world {
         img {
           position: absolute;
-
           right: 0;
-          width: 100px;
-          height: 620px;
-          object-fit: cover;
+          width: 28pc;
+          bottom: 31.9pc;
+          height: 31.5pc;
           overflow: hidden;
         }
       }

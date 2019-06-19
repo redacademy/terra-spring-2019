@@ -397,8 +397,6 @@ th {
 body {
   font-family: ‘Nunito Sans’;
   line-height: 1.25rem; }
-<<<<<<< HEAD
-=======
 
 h1,
 h2,
@@ -408,7 +406,6 @@ h5,
 h6 {
   font-family: ‘Lato’;
   color: #4a4a4a; }
->>>>>>> c3b27b41b813a36651649d6c89c93469f7e976e3
 
 p {
   color: #4a4a4a; }
@@ -1345,10 +1342,6 @@ html {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.25rem;
-<<<<<<< HEAD
-  padding-left: 20px;
-  padding-right: 20px; }
-=======
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -1357,7 +1350,6 @@ html {
     text-align: center; }
   .disclaimer-center .page-contact-us h1.entry-title {
     display: unset; }
->>>>>>> c3b27b41b813a36651649d6c89c93469f7e976e3
 
 .page-contact-us .page-contact-us.site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
@@ -1536,17 +1528,6 @@ img {
   text-transform: uppercase; }
 
 .page-aquaponics .intro-aqua {
-<<<<<<< HEAD
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.25rem;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.page-aquaponics .intro-aqua {
-=======
->>>>>>> c3b27b41b813a36651649d6c89c93469f7e976e3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1618,6 +1599,7 @@ img {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 1.25rem 0 1.25rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1640,7 +1622,7 @@ img {
       color: #4a4a4a;
       text-align: left;
       line-height: 1.25rem;
-      width: 50pc;
+      width: 41pc;
       height: 10pc; }
     .page-support-us .entry-content h2 {
       width: 18pc;
@@ -1649,24 +1631,23 @@ img {
       height: 5pc;
       margin: 0; }
     @media (min-width: 620px) {
-<<<<<<< HEAD
-      .page-support-us .entry-content .banner-title h1 {
-        bottom: 9vw; }
-      .page-support-us .entry-content .world img {
-        position: absolute;
-        right: 0;
-        width: 100px;
-        height: 620px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        overflow: hidden; } }
-=======
       .page-support-us .entry-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 8pc; }
+        .page-support-us .entry-content h2 {
+          width: auto; }
         .page-support-us .entry-content .banner-title h1 {
-          bottom: 9vw; } }
+          bottom: 9vw; }
+        .page-support-us .entry-content .button-center {
+          height: 25vh; }
+        .page-support-us .entry-content .world img {
+          position: absolute;
+          right: 0;
+          width: 28pc;
+          bottom: 31.9pc;
+          height: 31.5pc;
+          overflow: hidden; } }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }
@@ -1682,4 +1663,3 @@ img {
     position: absolute;
     z-index: -1;
     width: 100%; }
->>>>>>> c3b27b41b813a36651649d6c89c93469f7e976e3

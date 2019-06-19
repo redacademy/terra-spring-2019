@@ -397,6 +397,7 @@ th {
 body {
   font-family: ‘Nunito Sans’;
   line-height: 1.25rem; }
+<<<<<<< HEAD
 
 h1,
 h2,
@@ -406,6 +407,8 @@ h5,
 h6 {
   font-family: ‘Lato’;
   color: #4a4a4a; }
+=======
+>>>>>>> bacfeade761c899bee946bfa2f2050d09709ae87
 
 p {
   color: #4a4a4a; }
@@ -1345,17 +1348,17 @@ html {
   padding-left: 20px;
   padding-right: 20px; }
 
-.page-contact-us .site-main {
+.page-contact-us .page-contact-us.site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 20px right -250px;
   background-size: 80%; }
   @media (min-width: 620px) {
-    .page-contact-us .site-main {
+    .page-contact-us .page-contact-us.site-main {
       background-position: bottom -20px left;
       background-size: 70%; } }
 
-.page-contact-us h1.entry-title {
+.page-contact-us .page-contact-us h1.entry-title {
   display: none; }
 
 .page-contact-us .contact-form-border {
@@ -1366,7 +1369,7 @@ html {
   padding-top: 2rem;
   padding-bottom: 6rem; }
 
-h2 {
+.page-contact-us h2 {
   text-transform: uppercase;
   color: #002d6e;
   margin: 25px auto;
@@ -1522,6 +1525,17 @@ img {
   text-transform: uppercase; }
 
 .page-aquaponics .intro-aqua {
+<<<<<<< HEAD
+=======
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25rem;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.page-aquaponics .intro-aqua {
+>>>>>>> bacfeade761c899bee946bfa2f2050d09709ae87
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1572,40 +1586,51 @@ img {
           -o-object-fit: contain;
              object-fit: contain; } }
 
-.page-support-us .banner-title {
-  bottom: 24vw; }
-
-.page-support-us a.fund-btn {
-  text-decoration: none;
-  border: 1px solid white;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
-  background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
-  color: white;
-  border-radius: 6px;
-  position: absolute;
-  left: 48%;
-  margin-left: -50px;
-  bottom: 23%; }
-
-.page-support-us .entry-content {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 7% 5% 7%; }
-  .page-support-us .entry-content p {
-    padding-top: 0;
-    padding-bottom: 6.25rem;
-    color: #4a4a4a;
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-    font-size: 16px;
-    text-align: left;
-    line-height: 2em; }
-  .page-support-us .entry-content h2 {
-    width: 263px;
-    color: #4a4a4a;
-    font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 22px; }
+.page-support-us {
+  position: relative; }
+  .page-support-us .banner-title {
+    bottom: 9vw; }
+  .page-support-us a.fund-btn {
+    text-decoration: none;
+    border: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
+    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 48%;
+    margin-left: -50px;
+    bottom: 19%; }
+  .page-support-us .entry-content {
+    padding: 0px 7% 5% 7%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-support-us .entry-content img {
+      max-width: 100%;
+      height: auto; }
+    .page-support-us .entry-content p {
+      padding-top: 0.25rem;
+      padding-bottom: 2.25rem;
+      color: #4a4a4a;
+      font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+      font-size: 16px;
+      text-align: left;
+      line-height: 2em; }
+    .page-support-us .entry-content h2 {
+      width: 266px;
+      color: #4a4a4a;
+      font-family: "Courier 10 Pitch", Courier, monospace;
+      font-size: 22px;
+      margin: 0; }
+    @media (min-width: 620px) {
+      .page-support-us .entry-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .page-support-us .entry-content .banner-title h1 {
+          bottom: 9vw; } }

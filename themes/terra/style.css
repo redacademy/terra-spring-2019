@@ -316,7 +316,7 @@ th {
           padding-right: 60px; }
           @media (min-width: 620px) {
             .roadmap .roadmap-left ul li p {
-              padding-left: 100px; } }
+              padding-right: 100px; } }
   .roadmap .roadmap-right {
     width: 50%;
     padding-top: 82px;
@@ -387,7 +387,7 @@ th {
       .fp-ap-info .fp-ap-container {
         width: 33%; } }
     .fp-ap-info .fp-ap-container .ap-info-img {
-      width: 70%;
+      width: 100%;
       text-align: center;
       height: 120px; }
       .fp-ap-info .fp-ap-container .ap-info-img img {
@@ -432,11 +432,13 @@ th {
         .fp-mission .fp-miss-item:nth-child(odd) .mission-image {
           -webkit-box-ordinal-group: 3;
               -ms-flex-order: 2;
-                  order: 2; }
+                  order: 2;
+          text-align: end; }
         .fp-mission .fp-miss-item .mission-image {
           width: 50%; }
           .fp-mission .fp-miss-item .mission-image img {
-            max-width: 100%; }
+            max-width: 95%;
+            height: 300px; }
         .fp-mission .fp-miss-item .mission-content {
           width: 50%;
           padding: 0 20px 20px 20px; }
@@ -444,7 +446,77 @@ th {
             font-size: 2rem;
             margin-top: 0; }
           .fp-mission .fp-miss-item .mission-content p {
-            font-size: 1.25rem; } }
+            font-size: 1.25rem;
+            line-height: 28px; } }
+
+.home h1 {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .home h1:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+.home .getting-there {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25rem 0 1.25rem;
+  line-height: 1.25rem; }
+  @media (min-width: 620px) {
+    .home .getting-there {
+      margin-top: 12.5rem; } }
+  .home .getting-there .button-center {
+    margin-top: 2rem;
+    margin-bottom: 4.25rem; }
+    @media (min-width: 620px) {
+      .home .getting-there .button-center {
+        margin-bottom: 12.5rem; } }
+  .home .getting-there a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
+    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+    color: white;
+    border-radius: 6px;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  .home .getting-there .entry-content {
+    width: 100%; }
+    @media (min-width: 620px) {
+      .home .getting-there .entry-content {
+        width: 70%;
+        margin-bottom: 2.5rem; }
+        .home .getting-there .entry-content h2 {
+          margin-bottom: 2.25rem; } }
+
+.button-center {
+  text-align: center; }
+  @media (min-width: 620px) {
+    .button-center {
+      text-align: left; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1176,26 +1248,7 @@ html {
   .page-contact-us .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .page-contact-us .msg-sent-border {
-=======
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Aquaponics Page Templates
---------------------------------------------------------------*/
-/* Aquaponics page */
-.site {
-  position: relative; }
-=======
->>>>>>> 791de0d77f3d9610e42d0f73662dc75d55adee91
->>>>>>> d13ae2c9667780798ba3b7035b1159cd5f7b03f7
-.page-contact-us .msg-sent {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
->>>>>>> 04f74c5c0130a25b26a1a929090190b19047b6e3
   text-align: center;
   height: 700px; }
   @media (min-width: 620px) {

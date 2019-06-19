@@ -110,7 +110,7 @@
           padding-right: 60px;
 
           @include desktop {
-            padding-left: 100px;
+            padding-right: 100px;
           }
         }
       }
@@ -186,7 +186,7 @@
     }
 
     .ap-info-img {
-      width: 70%;
+      width: 100%;
       text-align: center;
       height: 120px;
 
@@ -229,12 +229,15 @@
       &:nth-child(odd) {
         .mission-image {
           order: 2;
+          text-align: end;
         }
       }
       .mission-image {
         width: 50%;
+
         img {
-          max-width: 100%;
+          max-width: 95%;
+          height: 300px;
         }
       }
       .mission-content {
@@ -247,8 +250,62 @@
         }
         p {
           font-size: 1.25rem;
+          line-height: 28px;
         }
       }
     }
+  }
+}
+
+.home {
+  h1 {
+    @include screen-reader-hide;
+  }
+
+  //How we're getting there
+
+  .getting-there {
+    @include center-page;
+    padding: 0 1.25rem 0 1.25rem;
+    line-height: 1.25rem;
+
+    @include desktop {
+      margin-top: 12.5rem;
+    }
+
+    .button-center {
+      margin-top: 2rem;
+      margin-bottom: 4.25rem;
+
+      @include desktop {
+        margin-bottom: 12.5rem;
+      }
+    }
+    a {
+      @include button-anchor;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    .entry-content {
+      width: 100%;
+      @include desktop {
+        width: 70%;
+        margin-bottom: 2.5rem;
+
+        h2 {
+          margin-bottom: 2.25rem;
+        }
+      }
+    }
+  }
+}
+
+//button center
+
+.button-center {
+  text-align: center;
+  @include desktop {
+    text-align: left;
   }
 }

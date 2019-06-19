@@ -39,7 +39,7 @@
         if (emailInput.hasClass('wpcf7-not-valid')) {
           console.log('not valid');
         } else {
-          $('.contact-form-border').addClass('active');
+          $('.contact-form-border').addClass('sent-out-msg');
           $('.original-form').fadeOut('slow');
           $('.msg-sent-border').fadeIn('slow');
         }

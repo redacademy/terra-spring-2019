@@ -1434,7 +1434,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type='submit'] {
+  .contact-us-form input[type="submit"] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1576,6 +1576,33 @@ img {
           padding: 2rem;
           -o-object-fit: contain;
              object-fit: contain; } }
+
+.page-aquaponics .history-aqua {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 40px; }
+  .page-aquaponics .history-aqua p {
+    position: relative; }
+    .page-aquaponics .history-aqua p:nth-child(4)::before, .page-aquaponics .history-aqua p:nth-child(5)::before, .page-aquaponics .history-aqua p:nth-child(6)::before {
+      -webkit-transform: translate(-260%);
+              transform: translate(-260%);
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #00d4e8; }
+
+.page-aquaponics .hist-aqua-img {
+  opacity: 0.78;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d4e8), to(#002d6e));
+  background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%); }
 
 .page-support-us {
   position: relative; }

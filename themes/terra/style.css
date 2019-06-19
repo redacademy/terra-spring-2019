@@ -1592,8 +1592,7 @@ img {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px;
-    position: relative;
-    text-align: none; }
+    position: relative; }
   .page-support-us .entry-content {
     max-width: 1140px;
     margin-left: auto;
@@ -1609,7 +1608,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    .page-support-us .entry-content img {
+    .page-support-us .entry-content .world img {
       max-width: 100%;
       z-index: -5;
       height: auto;
@@ -1636,8 +1635,9 @@ img {
         .page-support-us .entry-content h2 {
           width: auto; }
         .page-support-us .entry-content p {
-          width: 41pc;
-          height: 10pc; }
+          width: 60%;
+          padding: 0% 3% 10% 0%;
+          height: 20%; }
         .page-support-us .entry-content .banner-title h1 {
           bottom: 9vw; }
         .page-support-us .entry-content .button-center {
@@ -1647,9 +1647,9 @@ img {
           overflow: hidden;
           z-index: -5;
           right: 0;
-          width: 28pc;
-          bottom: 35.9pc;
-          height: 31.5pc; } }
+          width: 37%;
+          height: 33%;
+          bottom: 30.5%; } }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }

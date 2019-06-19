@@ -11,8 +11,8 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<!-- Hero Banner Section -->
 
+		<!-- Hero Banner Section -->
 		<div class="hero-banner">
 			<?php while (have_posts()) : the_post(); ?>
 				<img class="banner-pic" src="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -20,9 +20,15 @@ get_header(); ?>
 			<?php endwhile;
 		?>
 		</div>
+
+		<div class="entry-content whats-terra">
+			<?php the_content(); ?>
+
+		</div><!-- .entry-content -->
+
+
+		
 		<!-- Lack of Awareness Section NOTE: need to hardcode background image unless we want CSF -->
-
-
 		<section class="lack-aware-sect">
 			<h2 class="lack-aware-h2"><?php echo CFS()->get('lack_of_awareness_blurb'); ?></h2>
 			<div class="lack-aware-cards">
@@ -70,8 +76,8 @@ get_header(); ?>
 
 		</section>
 
-		<!-- Our Partners Section NOTE: IS IT OK TO LEAVE SAME CLASSES AS ON FP?-->
 
+		<!-- Our Partners Section NOTE: IS IT OK TO LEAVE SAME CLASSES AS ON FP?-->
 		<section class="fp-partners">
 			<h2><?php echo CFS()->get('our_partners_title'); ?></h2>
 			<div class="partner-entries">
@@ -96,8 +102,8 @@ get_header(); ?>
 
 		</section>
 
-		<!-- Source Of Funds Section -->
 
+		<!-- Source Of Funds Section -->
 		<section class="source-funds">
 
 			<h2><?php echo CFS()->get('source_of_funds_title'); ?></h2>
@@ -137,6 +143,8 @@ get_header(); ?>
 			<button class="wh-paper-btn"><?php echo CFS()->get('white_paper_link'); ?></button>
 
 		</section>
+
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 

@@ -14,7 +14,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
-
+						<h1 class="disclaimer-title"><?php echo the_title(); ?></h1>
 
 						<?php if ('post' === get_post_type()) : ?>
 							<div class="entry-meta">
@@ -24,7 +24,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<?php the_excerpt(); ?>
+						<?php the_content(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 

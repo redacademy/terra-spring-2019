@@ -1308,40 +1308,51 @@ img {
       -o-object-fit: contain;
          object-fit: contain; }
 
-.page-support-us .banner-title {
-  bottom: 24vw; }
-
-.page-support-us a.fund-btn {
-  text-decoration: none;
-  border: 1px solid white;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
-  background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
-  color: white;
-  border-radius: 6px;
-  position: absolute;
-  left: 48%;
-  margin-left: -50px;
-  bottom: 23%; }
-
-.page-support-us .entry-content {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 7% 5% 7%; }
-  .page-support-us .entry-content p {
-    padding-top: 0;
-    padding-bottom: 6.25rem;
-    color: #4a4a4a;
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-    font-size: 16px;
-    text-align: left;
-    line-height: 2em; }
-  .page-support-us .entry-content h2 {
-    width: 263px;
-    color: #4a4a4a;
-    font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 22px; }
+.page-support-us {
+  position: relative; }
+  .page-support-us .banner-title {
+    bottom: 9vw; }
+  .page-support-us a.fund-btn {
+    text-decoration: none;
+    border: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
+    background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 48%;
+    margin-left: -50px;
+    bottom: 19%; }
+  .page-support-us .entry-content {
+    padding: 0px 7% 5% 7%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-support-us .entry-content img {
+      max-width: 100%;
+      height: auto; }
+    .page-support-us .entry-content p {
+      padding-top: 0.25rem;
+      padding-bottom: 2.25rem;
+      color: #4a4a4a;
+      font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+      font-size: 16px;
+      text-align: left;
+      line-height: 2em; }
+    .page-support-us .entry-content h2 {
+      width: 266px;
+      color: #4a4a4a;
+      font-family: "Courier 10 Pitch", Courier, monospace;
+      font-size: 22px;
+      margin: 0; }
+    @media (min-width: 620px) {
+      .page-support-us .entry-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .page-support-us .entry-content .banner-title h1 {
+          bottom: 9vw; } }

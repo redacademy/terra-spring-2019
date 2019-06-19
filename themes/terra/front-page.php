@@ -68,7 +68,10 @@ get_header(); ?>
 					<?php get_template_part('template-parts/content', 'page'); ?>
 
 				<?php endwhile;
-			?>
+            ?>
+                <div class="button-center">
+                    <a href="<?php echo home_url("the-project") ?>">Learn More</a>
+                 </div>
 			</section>
 			<!-- Roadmap Section -->
 			<div class="roadmap-container">

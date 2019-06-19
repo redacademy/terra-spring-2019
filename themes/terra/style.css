@@ -430,7 +430,7 @@ p {
   margin-bottom: 8rem; }
   .fp-partners h2 {
     width: 100%;
-    margin-left: 10%; }
+    padding-left: 10%; }
   .fp-partners .partner-entries {
     display: -webkit-box;
     display: -ms-flexbox;

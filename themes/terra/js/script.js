@@ -14,6 +14,7 @@
       $nav.toggleClass('w3-animate-right');
     }); // end of hamburger menu
 
+
     // subscription form in footer
     $('#wpcf7-f108-o1').on('submit', function() {
       const emailInput = $('.subscription-area input[type="email"]');
@@ -28,5 +29,24 @@
         }
       }, 500);
     }); // end of subscription form
+
+
+    // contact form in contact-us page
+    $('#wpcf7-f17-p13-o1').on('submit', function() {
+      const emailInput = $('.contact-us-form input[type="email"]');
+      
+      setTimeout(function() {
+        if (emailInput.hasClass('wpcf7-not-valid')) {
+          console.log('not valid');
+        } else {
+          $('.contact-form-border').addClass('active');
+          $('.original-form').fadeOut('slow');
+          $('.msg-sent-border').fadeIn('slow');
+        }
+      }, 500);
+    }); // end of contact form
+
+
+
   }); // end of document ready
 })(jQuery);

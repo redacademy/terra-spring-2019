@@ -12,11 +12,11 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<!-- Hero Banner Section -->
-		<div class="hero-banner-project">
-			<?php while (have_posts()) : the_post(); ?>
-				<?php the_post_thumbnail(); ?>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
 
+		<div class="hero-banner">
+			<?php while (have_posts()) : the_post(); ?>
+				<img class="banner-pic" src="<?php echo get_the_post_thumbnail_url(); ?>">
+				<h1 class="banner-title"><?php the_title(); ?></h1>
 			<?php endwhile;
 		?>
 		</div>

@@ -1611,6 +1611,7 @@ img {
             justify-content: flex-start; }
     .page-support-us .entry-content img {
       max-width: 100%;
+      z-index: -5;
       height: auto;
       -o-object-fit: none;
          object-fit: none; }
@@ -1643,11 +1644,12 @@ img {
           height: 25vh; }
         .page-support-us .entry-content .world img {
           position: absolute;
+          overflow: hidden;
+          z-index: -5;
           right: 0;
           width: 28pc;
           bottom: 35.9pc;
-          height: 31.5pc;
-          overflow: hidden; } }
+          height: 31.5pc; } }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }

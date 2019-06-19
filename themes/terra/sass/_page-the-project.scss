@@ -1,8 +1,9 @@
 .page-the-project {
 
     .whats-terra {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: $page-padding-mobile;
+        // padding-left: 2rem;
+        // padding-right: 2rem;
         // background-image: url('../../assets/images/illustrations/space-ring-update.svg');
         // background-repeat: no-repeat;
         // background-position: top 20px right -250px;
@@ -10,7 +11,8 @@
         
         &::after {
             content: "";
-            background: url('../../assets/images/illustrations/space-ring-update.svg');
+            background-image: url('../../assets/images/illustrations/space-ring-update.svg');
+            background-repeat: no-reapeat;
             opacity: 0.1;
             top: 0;
             left: 0;
@@ -18,7 +20,7 @@
             right: 0;
             position: absolute;
             z-index: -1;   
-            width : 60%
+            width : 100%
 
           }
 

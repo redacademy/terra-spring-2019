@@ -1,8 +1,17 @@
 body {
-    font-family: $font__main;
-    line-height: $font__line-height-body;
+  font-family: $font__main;
+  line-height: $font__line-height-body;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font__heading;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font__heading;
+  color: $header-title-font-color;
+}
+p {
+  color: $font-color;
 }

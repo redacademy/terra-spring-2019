@@ -34,49 +34,59 @@
 }
 
 .page-aquaponics {
-  .intro-aqua {
-    @include center-page;
-    line-height: $font__line-height-body;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   // -----What is Aquaponics Section-----//
-
   .intro-aqua {
     display: flex;
+
+    @include desktop {
+      @include center-page;
+      line-height: $font__line-height-body;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   .what-aqua-text {
-    max-width: 66%;
+    max-width: 100%;
+    @include desktop {
+      max-width: 66%;
+    }
   }
   .what-aqua-imgs {
-    width: 33%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      " 1 2 "
-      " 3 4 ";
-    img {
-      width: 150px;
-      &:nth-child(1) {
-        grid-area: 1;
-        padding: 2rem;
-        object-fit: contain;
-      }
-      &:nth-child(2) {
-        grid-area: 2;
-        padding: 2rem;
-        object-fit: contain;
-      }
-      &:nth-child(3) {
-        grid-area: 3;
-        padding: 2rem;
-        object-fit: contain;
-      }
-      &:nth-child(4) {
-        grid-area: 4;
-        padding: 2rem;
-        object-fit: contain;
+    display: none;
+    @include desktop {
+      display: block;
+      width: 33%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        " 1 2 "
+        " 3 4 ";
+      img {
+        width: 150px;
+        &:nth-child(1) {
+          grid-area: 1;
+          padding: 2rem;
+          object-fit: contain;
+        }
+        &:nth-child(2) {
+          grid-area: 2;
+          padding: 2rem;
+          object-fit: contain;
+        }
+        &:nth-child(3) {
+          grid-area: 3;
+          padding: 2rem;
+          object-fit: contain;
+        }
+        &:nth-child(4) {
+          grid-area: 4;
+          padding: 2rem;
+          object-fit: contain;
+        }
       }
     }
   }
+  //end what is aqua section
+
+  // How Aqua Works Section
 }

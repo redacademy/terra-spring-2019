@@ -1089,9 +1089,14 @@ html {
   padding-right: 20px; }
 
 .page-contact-us .site-main {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+  background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
-  background-position: bottom -360px left; }
+  background-position: top 20px right -250px;
+  background-size: 80%; }
+  @media (min-width: 620px) {
+    .page-contact-us .site-main {
+      background-position: bottom -20px left;
+      background-size: 70%; } }
 
 .page-contact-us h1.entry-title {
   display: none; }
@@ -1100,15 +1105,20 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 750px; }
+  max-width: 750px;
+  padding-top: 2rem;
+  padding-bottom: 6rem; }
 
-.page-contact-us h2 {
+h2 {
   text-transform: uppercase;
   color: #002d6e;
   margin: 25px auto;
   font-weight: bold; }
 
-.page-contact-us .contact-us-form {
+img {
+  max-width: 100%; }
+
+.contact-us-form {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1126,15 +1136,16 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: white; }
+  padding-top: 2rem; }
   @media (min-width: 620px) {
-    .page-contact-us .contact-us-form {
+    .contact-us-form {
       margin-top: 50px;
+      background: white;
       border: 1px solid white;
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); }
-      .page-contact-us .contact-us-form .first-line {
+      .contact-us-form .first-line {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1148,20 +1159,20 @@ html {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .page-contact-us .contact-us-form .first-line input {
+        .contact-us-form .first-line input {
           max-width: 280px;
           margin-right: 20px;
           margin-left: 20px; } }
-  .page-contact-us .contact-us-form textarea,
-  .page-contact-us .contact-us-form input {
+  .contact-us-form textarea,
+  .contact-us-form input {
     border-radius: 7px;
     padding: 0.6rem;
     width: 330px; }
     @media (min-width: 620px) {
-      .page-contact-us .contact-us-form textarea,
-      .page-contact-us .contact-us-form input {
+      .contact-us-form textarea,
+      .contact-us-form input {
         width: 605px; } }
-  .page-contact-us .contact-us-form input[type='submit'] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1173,23 +1184,23 @@ html {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 25px; }
-  .page-contact-us .contact-us-form .textarea-msg #text {
+  .contact-us-form .textarea-msg #text {
     text-align: left; }
 
-.page-contact-us .msg-sent-border {
-  text-align: center;
+.msg-sent-border {
+  display: none;
   height: 700px; }
   @media (min-width: 620px) {
-    .page-contact-us .msg-sent-border {
+    .msg-sent-border {
       margin-top: 50px;
       border: 1px solid white;
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
       background: white; } }
-  .page-contact-us .msg-sent-border p {
+  .msg-sent-border p {
     margin-bottom: 4rem; }
-  .page-contact-us .msg-sent-border a.return-home-btn {
+  .msg-sent-border a.return-home-btn {
     text-decoration: none;
     border: 1px solid white;
     padding-top: 0.8rem;
@@ -1200,6 +1211,31 @@ html {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px; }
+  .msg-sent-border h3 {
+    font-size: 2rem; }
+  .msg-sent-border .msg-sent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4rem; }
+    .msg-sent-border .msg-sent .connect-world {
+      width: 35%; }
+      @media (min-width: 620px) {
+        .msg-sent-border .msg-sent .connect-world {
+          width: 40%; } }
+
+.original-form.active {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Page Templates

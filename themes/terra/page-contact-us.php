@@ -25,7 +25,7 @@ get_header(); ?>
 			<div class="msg-sent-border">
 				<div class="msg-sent">
 					<h3>Thanks for reaching out!</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/World.png" alt="World">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/World.png" alt="World" class="connect-world">
 					<p>We will do our best to get back to you as soon as possible.</p>
 					<a href="<?php echo get_home_url(); ?>" class="return-home-btn">Return Home</a>
 				</div><!-- .msg-sent -->

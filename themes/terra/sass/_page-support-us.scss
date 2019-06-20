@@ -41,8 +41,10 @@
       padding-top: 8pc;
       h2 {
         width: auto;
+        font-size: 32px;
       }
       p {
+        font-size: 20px;
         width: 60%;
         padding: 0% 3% 10% 0%;
         height: 20%;
@@ -57,11 +59,12 @@
         img {
           position: absolute;
           overflow: hidden;
+          align-items: stretch;
           z-index: -5;
           right: 0;
           width: 37%;
-          height: 33%;
-          bottom: 30.5%;
+          height: 37%;
+          bottom: 28.5%;
         }
       }
     }

@@ -1660,8 +1660,10 @@ img {
         padding-left: 2rem;
         padding-top: 8pc; }
         .page-support-us .entry-content h2 {
-          width: auto; }
+          width: auto;
+          font-size: 32px; }
         .page-support-us .entry-content p {
+          font-size: 20px;
           width: 60%;
           padding: 0% 3% 10% 0%;
           height: 20%; }
@@ -1672,11 +1674,14 @@ img {
         .page-support-us .entry-content .world img {
           position: absolute;
           overflow: hidden;
+          -webkit-box-align: stretch;
+              -ms-flex-align: stretch;
+                  align-items: stretch;
           z-index: -5;
           right: 0;
           width: 37%;
-          height: 33%;
-          bottom: 30.5%; } }
+          height: 37%;
+          bottom: 28.5%; } }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }

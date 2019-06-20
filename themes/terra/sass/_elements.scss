@@ -278,19 +278,8 @@
       line-height: 1.25rem;
 
       &::after {
-        content: '';
-        z-index: -1;
-        background: url('../../assets/images/illustrations/space-ring.svg');
-        opacity: 0.4;
-        position: absolute;
+        @include space-ring-bg;
         background-position: top right;
-        background-repeat: no-repeat;
-        background-size: fill;
-        top: -100px;
-        right: -20%;
-        // bottom: 100px;
-        width: 90%;
-        padding-bottom: 60%;
       }
       @include desktop {
         padding-top: 12.5rem;

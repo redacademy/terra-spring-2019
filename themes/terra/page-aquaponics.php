@@ -1,8 +1,9 @@
 <?php
 /**
- * The template for displaying all pages.
+ * 
  *
  * @package RED_Starter_Theme
+ * 
  * Template Name: Aquaponics
  * 
  * 
@@ -58,9 +59,14 @@ get_header(); ?>
 
 		<section class="history-aqua">
 
-			<h2 class="hist-aqua-h2"><?php echo CFS()->get('history_aqua_title'); ?></h2>
-			<img class="hist-aqua-img" src="<?php echo CFS()->get('history_aqua_image_only'); ?>">
-			<?php echo CFS()->get('history_of_aqua_text'); ?>
+			<div class="hist-content">
+				<h2 class="hist-aqua-h2"><?php echo CFS()->get('history_aqua_title'); ?></h2>
+				<img class="hist-aqua-img-1" src="<?php echo CFS()->get('history_aqua_image_only'); ?>">
+				<?php echo CFS()->get('history_of_aqua_text'); ?>
+			</div>
+			<div class="hist-image-cont">
+				<img class="hist-aqua-img" src="<?php echo CFS()->get('history_aqua_image_only'); ?>">
+			</div>
 
 		</section>
 

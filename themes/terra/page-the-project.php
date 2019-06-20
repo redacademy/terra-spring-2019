@@ -27,21 +27,27 @@ get_header(); ?>
 		</div><!-- .entry-content -->
 
 
-		
+
 		<!-- Lack of Awareness Section NOTE: need to hardcode background image unless we want CSF -->
 		<section class="lack-aware-sect">
-			<h2 class="lack-aware-h2"><?php echo CFS()->get('lack_of_awareness_blurb'); ?></h2>
+			<div class="lack-aware-container">
+				<h2 class="lack-aware-h2"><?php echo CFS()->get('lack_of_awareness_blurb'); ?></h2>
+			</div><!-- .lack-aware-container -->
+
 			<div class="lack-aware-cards">
 				<?php
 
 				$lack_awareness_loop = CFS()->get('lack_of_awareness_loop'); // this is the loop field
 				foreach ($lack_awareness_loop as $lack_aware_info) : ?>
-					<div>
+					<div class="lack-aw-item-wraps">
 						<img class="lack-aw-img" src="<?php echo $lack_aware_info['lack_of_awareness_image']; ?>" />
 						<h3 class="lack-aw-h3"> <?php echo $lack_aware_info['lack_of_awareness_title']; ?></h3>
 						<p class="lack-aw-p"> <?php echo $lack_aware_info['lack_of_awareness_info']; ?></p>
-					</div>
+					</div><!-- .lack-aw-item-wraps -->
+
 				<?php endforeach; ?>
+			</div><!-- .lack-aware-cards -->
+
 		</section>
 
 		<!-- Who We Are  -->
@@ -49,7 +55,7 @@ get_header(); ?>
 
 			<h2><?php echo CFS()->get('who_we_are_title'); ?></h2>
 
-			<div class="team-member">
+			<div class="team-members">
 				<?php
 				$args = array(
 					'post_type' => 'member',
@@ -59,12 +65,15 @@ get_header(); ?>
 				?>
 				<?php foreach ($member_posts as $post) : setup_postdata($post); ?>
 
-					<article class="who-we-are-content">
+					<article class="team-member">
 						<?php if (has_post_thumbnail()) : ?>
-							<h3><?php the_title() ?></h3>
-							<p><?php the_content() ?></p>
 
-							<?php the_post_thumbnail('large'); ?>
+
+							<div class="member-photo"><?php the_post_thumbnail('large'); ?>
+									<p class="member-detail-arrow"><i class="fas fa-arrow-right"></i></p>
+							</div>
+							<h3><?php the_title() ?></h3>
+							<p><?php echo CFS()->get('member_position'); ?></p>
 
 
 						<?php endif; ?>
@@ -72,7 +81,7 @@ get_header(); ?>
 
 				<?php endforeach;
 			wp_reset_postdata(); ?>
-			</div>
+			</div><!-- .team-members -->
 
 		</section>
 

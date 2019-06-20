@@ -123,5 +123,40 @@ img {
 .original-form {
   &.sent-out-msg {
     display: none;
+    height: 700px;
+    @include desktop {
+      margin-top: 50px;
+      border: 1px solid white;
+      border-radius: 20px;
+      box-shadow: $section-box-shadow;
+      background: white;
+    }
+      p {
+        margin-bottom: 4rem;
+      }
+      a.return-home-btn {
+        @include button-anchor;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      
+      .msg-sent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        .connect-world {
+          width: 35%;
+          @include desktop {
+            width: 40%;
+          }
+        
+      }
+      }
+    
   }
 }

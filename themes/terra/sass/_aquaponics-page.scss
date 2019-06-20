@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 
 /* Aquaponics page */
-// -----Hero Banner-----//
+
+// -----HERO Banner-----//
 .hero-banner {
   position: relative;
 }
@@ -32,12 +33,13 @@
   color: white;
   text-transform: uppercase;
 }
+// End of HERO BANNER
 
+// -----What is Aquaponics Section-----//
 .page-aquaponics {
-  // -----What is Aquaponics Section-----//
   .intro-aqua {
     display: flex;
-
+    padding: $page-padding-mobile;
     @include desktop {
       @include center-page;
       line-height: $font__line-height-body;
@@ -87,7 +89,9 @@
     }
   }
   //end what is aqua section
-
+  .how-aqua-works {
+    padding: $page-padding-mobile;
+  }
   // How Aqua Works Section
 
   // to do later
@@ -95,31 +99,84 @@
   // History of Aquaponics Section
 
   .history-aqua {
+    padding: $page-padding-mobile;
+    position: relative;
+    display: flex;
+    width: 100%;
     @include center-page;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    p {
-      position: relative;
 
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6) {
-        &::before {
-          transform: translate(-260%);
-          @include roadmap-dot;
-          width: 15px;
-          height: 15px;
-          background: $roadmap-dot-color;
-        }
+    .hist-aqua-img-1 {
+      width: 100%;
+      opacity: 0.78;
+      border-radius: 50px;
+      // height: 80%;
+
+      @include desktop {
+        display: none;
       }
     }
+
+    .hist-aqua-img {
+      display: none;
+      width: 100%;
+      opacity: 0.78;
+      border-radius: 50px;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .hist-content {
+      width: 100%;
+      // display: flex;
+      // flex-direction: column;
+      @include desktop {
+        width: 50%;
+        // display: flex;
+        // position: absolute;
+      }
+    }
+
+    .hist-image-cont {
+      display: none;
+
+      @include desktop {
+        margin-top: 50px;
+        max-width: 50%;
+        height: 400px;
+        overflow: hidden;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        opacity: 0.78;
+        border-radius: 50px;
+      }
+    }
+    img {
+      min-width: 100%;
+      border-radius: 50px;
+      @include desktop {
+        object-fit: cover;
+        object-position: bottom;
+        height: 100%;
+      }
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      color: $font-color;
+      padding-left: 40px;
+    }
+    li:before {
+      @include roadmap-dot;
+      left: 0;
+      background: $roadmap-dot-color;
+      width: 15px;
+      height: 15px;
+    }
   }
-  //gradient for photo
-  .hist-aqua-img {
-    // height: 508px;
-    // width: 708px;
-    opacity: 0.78;
-    border-radius: 15px;
-    background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%);
-  }
+  // End history of Aqua section
 }

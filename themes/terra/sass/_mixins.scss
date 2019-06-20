@@ -98,3 +98,20 @@
   padding-right: 2rem;
   padding-left: 2rem;
 }
+<<<<<<< HEAD
+=======
+
+@mixin space-ring-bg {
+  content: '';
+  z-index: -1;
+  background: url('../../assets/images/illustrations/space-ring.svg');
+  opacity: 0.4;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: fill;
+  top: -100px;
+  right: -20%;
+  width: 90%;
+  padding-bottom: 60%;
+}
+>>>>>>> 8ffaaaac93b11fe33f7de23e2e8ff7fbf3783e02

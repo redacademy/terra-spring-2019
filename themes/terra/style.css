@@ -410,6 +410,9 @@ h6 {
 p {
   color: #4a4a4a; }
 
+h2 {
+  font-size: 2.625rem; }
+
 .fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
@@ -433,18 +436,19 @@ p {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8rem; }
+  margin-bottom: 12rem;
+  margin-top: 12rem; }
   .fp-partners h2 {
     width: 100%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    margin-bottom: 6rem; }
   .fp-partners .partner-entries {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-gap: 50px; }
     .fp-partners .partner-entries article {
-      width: 30%;
+      width: 100%;
       -ms-flex-item-align: center;
           align-self: center;
       text-align: center; }
@@ -495,7 +499,7 @@ p {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -536,7 +540,7 @@ p {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: "";
+            content: '';
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -683,13 +687,13 @@ p {
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
       position: absolute;
-      background-position: top right;
       background-repeat: no-repeat;
       background-size: fill;
       top: -100px;
       right: -20%;
       width: 90%;
-      padding-bottom: 60%; }
+      padding-bottom: 60%;
+      background-position: top right; }
     @media (min-width: 620px) {
       .home .getting-there article {
         padding-top: 12.5rem; } }
@@ -1615,7 +1619,7 @@ img {
     .page-aquaponics .history-aqua p:nth-child(4)::before, .page-aquaponics .history-aqua p:nth-child(5)::before, .page-aquaponics .history-aqua p:nth-child(6)::before {
       -webkit-transform: translate(-260%);
               transform: translate(-260%);
-      content: "";
+      content: '';
       width: 30px;
       height: 30px;
       border-radius: 50%;

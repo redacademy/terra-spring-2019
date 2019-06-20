@@ -159,7 +159,7 @@ get_header(); ?>
 					?>
 					<?php foreach ($partner_posts as $post) : setup_postdata($post); ?>
 
-						<article class="fp-testimony-content">
+						<article class="fp-partner-content">
 							<?php if (has_post_thumbnail()) : ?>
 								<?php the_post_thumbnail('large'); ?>
 							<?php endif; ?>

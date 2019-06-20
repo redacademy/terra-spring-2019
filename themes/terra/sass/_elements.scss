@@ -25,18 +25,22 @@
 //fp-partners section
 .fp-partners {
   @include center-page;
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
+  margin-top: 12rem;
   h2 {
     width: 100%;
     padding-left: 10%;
+    margin-bottom: 6rem;
   }
 
   .partner-entries {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-gap: 50px;
 
     article {
-      width: 30%;
+      width: 100%;
       align-self: center;
       text-align: center;
       img {

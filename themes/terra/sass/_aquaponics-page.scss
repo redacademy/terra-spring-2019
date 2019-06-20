@@ -89,4 +89,37 @@
   //end what is aqua section
 
   // How Aqua Works Section
+
+  // to do later
+
+  // History of Aquaponics Section
+
+  .history-aqua {
+    @include center-page;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    p {
+      position: relative;
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        &::before {
+          transform: translate(-260%);
+          @include roadmap-dot;
+          width: 15px;
+          height: 15px;
+          background: $roadmap-dot-color;
+        }
+      }
+    }
+  }
+  //gradient for photo
+  .hist-aqua-img {
+    // height: 508px;
+    // width: 708px;
+    opacity: 0.78;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%);
+  }
 }

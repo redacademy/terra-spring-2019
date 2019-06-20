@@ -24,7 +24,7 @@
 }
 
 @mixin roadmap-dot {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -33,7 +33,13 @@
 }
 
 @mixin roadmap-dot-hover {
-  background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+  background: radial-gradient(
+    ellipse at center,
+    #00d4e8 0%,
+    #00d4e8 50%,
+    #ffffff 51%,
+    #f7f7f7 100%
+  );
 
   //   position: absolute;
 }
@@ -87,3 +93,25 @@
     z-index: 100000; /* Above WP toolbar. */
   }
 }
+<<<<<<< HEAD
+=======
+
+@mixin white-space-both-side {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@mixin space-ring-bg {
+  content: '';
+  z-index: -1;
+  background: url('../../assets/images/illustrations/space-ring.svg');
+  opacity: 0.4;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: fill;
+  top: -100px;
+  right: -20%;
+  width: 90%;
+  padding-bottom: 60%;
+}
+>>>>>>> e90e80acc9ce189706c9fce364b323a3c1aadb93

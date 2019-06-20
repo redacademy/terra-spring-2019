@@ -1,6 +1,6 @@
 .page-contact-us {
   .page-contact-us.site-main {
-    background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
+    background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
     background-repeat: no-repeat;
     background-position: top 20px right -250px;
     background-size: 80%;
@@ -20,68 +20,110 @@
     max-width: 750px;
     padding-top: 2rem;
     padding-bottom: 6rem;
+  }
+}
+
+.page-contact-us h2 {
+  text-transform: uppercase;
+  color: $font-awesome-color;
+  margin: 25px auto;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contact-us-form {
+  @include center-block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  @include desktop {
+    margin-top: 50px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: $section-box-shadow;
+    .first-line {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      input {
+        max-width: 280px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
     }
   }
 
-  .page-contact-us h2 {
-    text-transform: uppercase;
-    color: $font-awesome-color;
-    margin: 25px auto;
-    font-weight: bold;
+  textarea,
+  input {
+    border-radius: 7px;
+    padding: 0.6rem;
+    width: 330px;
+    @include desktop {
+      width: 605px;
+    }
   }
 
-  img {
-    max-width: 100%;
+  input[type="submit"] {
+    @include button-style;
   }
 
-  .contact-us-form {
-    @include center-block;
-    width: 100%;
+  .textarea-msg #text {
+    text-align: left;
+  }
+}
+
+.msg-sent-border {
+  display: none;
+  height: 700px;
+  @include desktop {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: $section-box-shadow;
+    background: white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+  a.return-home-btn {
+    @include button-anchor;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .msg-sent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    @include desktop {
-      margin-top: 50px;
-      background: white;
-      border: 1px solid white;
-      border-radius: 20px;
-      box-shadow: $section-box-shadow;
-      .first-line {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        input {
-          max-width: 280px;
-          margin-right: 20px;
-          margin-left: 20px;
-        }
-      }
-    }
-
-    textarea,
-    input {
-      border-radius: 7px;
-      padding: 0.6rem;
-      width: 330px;
+    padding-top: 4rem;
+    .connect-world {
+      width: 35%;
       @include desktop {
-        width: 605px;
+        width: 40%;
       }
-    }
-
-    input[type='submit'] {
-      @include button-style;
-    }
-
-    .textarea-msg #text {
-      text-align: left;
     }
   }
+}
 
-  .msg-sent-border {
+.original-form {
+  &.sent-out-msg {
     display: none;
+<<<<<<< HEAD
     height: 700px;
     @include desktop {
       margin-top: 50px;
@@ -117,11 +159,7 @@
       }
       }
     
+=======
+>>>>>>> e90e80acc9ce189706c9fce364b323a3c1aadb93
   }
-
-    .original-form {
-      &.sent-out-msg {
-        display: none;
-    }
-  
 }

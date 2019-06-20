@@ -24,7 +24,7 @@
 }
 
 @mixin roadmap-dot {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -33,7 +33,13 @@
 }
 
 @mixin roadmap-dot-hover {
-  background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+  background: radial-gradient(
+    ellipse at center,
+    #00d4e8 0%,
+    #00d4e8 50%,
+    #ffffff 51%,
+    #f7f7f7 100%
+  );
 
   //   position: absolute;
 }
@@ -91,5 +97,4 @@
 @mixin white-space-both-side {
   padding-right: 2rem;
   padding-left: 2rem;
-
 }

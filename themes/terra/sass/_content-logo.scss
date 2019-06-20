@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.anime-rotate {
+  position: relative;
+  width: 100%;
+  bottom: 12pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .anime {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+  }
+  .outer-ring {
+    color: white;
+    z-index: 99;
+  }
+  .inner-circle {
+    opacity: 1;
+    margin-top: 18%;
+  }
+  .small-fish {
+    width: 6%;
+    z-index: 20;
+  }
+  .big-fish {
+    width: 15%;
+    z-index: 90;
+  }
+  .small-leaves {
+    width: 30%;
+    height: 100%;
+    left: 29%;
+    z-index: 40;
+    animation: sway1 16s infinite;
+    transform-origin: 50% 100% 0;
+  }
+  .grass-blades {
+    width: 250px;
+    height: 50px;
+    left: 31%;
+    z-index: 70;
+    animation: sway2 12s infinite;
+    transform-origin: 50% 100% 0;
+  }
+}
+// css animations
+.rotate-fast {
+  animation: rotation 6s infinite linear;
+}
+.rotate-slow {
+  animation: rotation 26s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes sway1 {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes sway2 {
+  0%,
+  100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+}

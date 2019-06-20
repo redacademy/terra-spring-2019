@@ -1,16 +1,15 @@
 .disclaimer-center {
-        @include center-page;
-        line-height: $font__line-height-body;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    
-    .disclaimer-title {
-        text-align: center;
-    }
-    .page-contact-us h1.entry-title {
-        display: unset;
-      }
+  @include center-page;
+  line-height: $font__line-height-body;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
+  .disclaimer-title {
+    text-align: center;
+  }
+  .page-contact-us h1.entry-title {
+    display: unset;
+  }
 }

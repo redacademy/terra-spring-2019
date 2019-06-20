@@ -7,7 +7,6 @@
   a.fund-btn {
     @include button-anchor;
     position: relative;
-    text-align: none;
   }
   .entry-content {
     @include center-page;
@@ -15,12 +14,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    img {
-      max-width: 100%;
-      z-index: -5;
-      height: auto;
-      object-fit: none;
+    .world {
+      img {
+        max-width: 100%;
+        z-index: -5;
+        height: auto;
+        object-fit: none;
+      }
     }
     p {
       justify-content: space-between;
@@ -41,10 +41,13 @@
       padding-top: 8pc;
       h2 {
         width: auto;
+        font-size: 32px;
       }
       p {
-        width: 41pc;
-        height: 10pc;
+        font-size: 20px;
+        width: 60%;
+        padding: 0% 3% 10% 0%;
+        height: 18%;
       }
       .banner-title h1 {
         bottom: 9vw;
@@ -56,11 +59,12 @@
         img {
           position: absolute;
           overflow: hidden;
+          align-items: stretch;
           z-index: -5;
           right: 0;
-          width: 28pc;
-          bottom: 35.9pc;
-          height: 31.5pc;
+          width: 37%;
+          height: 37.9%;
+          bottom: 27.5%;
         }
       }
     }

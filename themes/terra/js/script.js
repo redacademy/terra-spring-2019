@@ -15,27 +15,32 @@
     }); // end of hamburger menu
 
     // subscription form in footer
-    $('#wpcf7-f108-o1').on('submit', function () {
+    const subscriptionButton = $('#wpcf7-f108-o1')
+   
+    subscriptionButton.on('submit', function() {
       const emailInput = $('.subscription-area input[type="email"]');
 
-      setTimeout(function () {
-        if (emailInput.hasClass('wpcf7-not-valid')) {
-          console.log('not valid');
+      setTimeout(function() {
+        const failMessage = $('.wpcf7-not-valid')
+
+        if (emailInput.hasClass(failMessage)) {
         } else {
           $('.subscription-area').addClass('active');
-          $('.subscription-form').slideUp('slow');
-          $('.sub-confirm-section').show('slow');
+          $('.subscription-form').fadeOut('slow');
+          $('.sub-confirm-section').fadeIn('slow');
         }
       }, 500);
     }); // end of subscription form
 
     // contact form in contact-us page
-    $('#wpcf7-f17-p13-o1').on('submit', function () {
-      const emailInput = $('.contact-us-form input[type="email"]');
+    const contactForm = $('#wpcf7-f17-p13-o1')
 
-      setTimeout(function () {
-        if (emailInput.hasClass('wpcf7-not-valid')) {
-          console.log('not valid');
+    contactForm.on('submit', function() {
+      const emailInput = $('.contact-us-form input[type="email"]');
+      
+      setTimeout(function() {
+      
+        if (emailInput.hasClass(failMessage)) {
         } else {
           $('.contact-form-border').addClass('sent-out-msg');
           $('.original-form').fadeOut('slow');

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: Terra Theme
 Theme URI: http://underscores.me/
@@ -395,7 +394,7 @@ th {
   font-style: italic; }
 
 body {
-  font-family: ‘Nunito Sans’;
+  font-family: "Nunito Sans";
   line-height: 1.25rem; }
 
 h1,
@@ -404,24 +403,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ‘Lato’;
+  font-family: "Lato";
   color: #4a4a4a; }
 
 p {
   color: #4a4a4a; }
 
-.testimony-entries {
+.fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; }
+
+.testimony-entries {
   width: 100%; }
-  .testimony-entries .fp-testimony-content {
-    width: 50%;
+  .testimony-entries .fp-testimony {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .testimony-entries .fp-testimony .fp-testimony {
+      width: 50%; }
+    .testimony-entries .fp-testimony .testimony-content {
+      width: 50%; }
 
 .fp-partners {
   max-width: 1140px;
@@ -430,7 +435,7 @@ p {
   margin-bottom: 8rem; }
   .fp-partners h2 {
     width: 100%;
-    margin-left: 10%; }
+    padding-left: 10%; }
   .fp-partners .partner-entries {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,16 +550,12 @@ p {
               padding-left: 100px; } }
 
 .fp-ap-info {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .fp-ap-info .fp-ap-container {
-    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -596,7 +597,9 @@ p {
   padding: 20px;
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  z-index: 5; }
   .fp-mission img {
     width: 100%; }
   @media (min-width: 620px) {
@@ -604,7 +607,8 @@ p {
       padding: 0;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-      max-width: 1250px; }
+      max-width: 1250px;
+      background-color: white; }
       .fp-mission .fp-miss-item {
         width: 100%;
         display: -webkit-box;
@@ -661,15 +665,37 @@ p {
     /* Above WP toolbar. */ }
 
 .home .getting-there {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.25rem 0 1.25rem;
-  line-height: 1.25rem; }
-  @media (min-width: 620px) {
-    .home .getting-there {
-      margin-top: 12.5rem; } }
+  position: relative;
+  min-width: 100%; }
+  .home .getting-there article {
+    position: relative;
+    font-size: 1.25rem;
+    z-index: -1;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.25rem 0 1.25rem;
+    line-height: 1.25rem; }
+    .home .getting-there article::after {
+      content: '';
+      z-index: -1;
+      background: url("../../assets/images/illustrations/space-ring.svg");
+      opacity: 0.4;
+      position: absolute;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: fill;
+      top: -100px;
+      right: -20%;
+      width: 90%;
+      padding-bottom: 60%; }
+    @media (min-width: 620px) {
+      .home .getting-there article {
+        padding-top: 12.5rem; } }
   .home .getting-there .button-center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 4.25rem; }
     @media (min-width: 620px) {
@@ -1667,8 +1693,7 @@ img {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px;
-    position: relative;
-    text-align: none; }
+    position: relative; }
   .page-support-us .entry-content {
     max-width: 1140px;
     margin-left: auto;
@@ -1684,7 +1709,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    .page-support-us .entry-content img {
+    .page-support-us .entry-content .world img {
       max-width: 100%;
       z-index: -5;
       height: auto;
@@ -1709,10 +1734,13 @@ img {
         padding-left: 2rem;
         padding-top: 8pc; }
         .page-support-us .entry-content h2 {
-          width: auto; }
+          width: auto;
+          font-size: 32px; }
         .page-support-us .entry-content p {
-          width: 41pc;
-          height: 10pc; }
+          font-size: 20px;
+          width: 60%;
+          padding: 0% 3% 10% 0%;
+          height: 18%; }
         .page-support-us .entry-content .banner-title h1 {
           bottom: 9vw; }
         .page-support-us .entry-content .button-center {
@@ -1720,23 +1748,76 @@ img {
         .page-support-us .entry-content .world img {
           position: absolute;
           overflow: hidden;
+          -webkit-box-align: stretch;
+              -ms-flex-align: stretch;
+                  align-items: stretch;
           z-index: -5;
           right: 0;
-          width: 28pc;
-          bottom: 35.9pc;
-          height: 31.5pc; } }
+          width: 37%;
+          height: 37.9%;
+          bottom: 27.5%; } }
+
+.page-the-project img {
+  max-width: 100%; }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }
-  .page-the-project .whats-terra::after {
-    content: "";
-    background-image: url("../../assets/images/illustrations/space-ring-update.svg");
-    background-repeat: no-reapeat;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+
+.page-the-project .lack-aware-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/images/photos/lack-of-awareness.jpeg");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: bottom -72px left -20px;
+  position: relative; }
+  @media (min-width: 620px) {
+    .page-the-project .lack-aware-container {
+      height: 640px;
+      background-size: 130%; } }
+  .page-the-project .lack-aware-container .lack-aware-h2 {
+    width: 290px;
+    color: white;
     position: absolute;
-    z-index: -1;
-    width: 100%; }
+    text-align: center;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    line-height: 1.87rem;
+    font-size: 1.4em; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-container .lack-aware-h2 {
+        width: 900px;
+        font-size: 4rem;
+        line-height: 1.2em; } }
+
+.page-the-project .lack-aware-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 620px) {
+    .page-the-project .lack-aware-cards {
+      position: relative;
+      margin-top: -130px; } }
+  .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+    width: 50vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+        width: 25vw; } }

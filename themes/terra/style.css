@@ -398,8 +398,17 @@ body {
   font-family: ‘Nunito Sans’;
   line-height: 1.25rem; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: ‘Lato’; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: ‘Lato’;
+  color: #4a4a4a; }
+
+p {
+  color: #4a4a4a; }
 
 .fp-testimonies {
   max-width: 1140px;
@@ -427,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8rem; }
   .fp-partners h2 {
     width: 100%;
-    margin-left: 10%; }
+    padding-left: 10%; }
   .fp-partners .partner-entries {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1352,7 +1361,6 @@ html {
             .site-header .center-header .main-navigation .menu li a {
               font-size: 1.25rem;
               color: black;
-              margin-right: 40px;
               min-width: 100%; } }
 
 .disclaimer-center {
@@ -1360,8 +1368,14 @@ html {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.25rem;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .disclaimer-center .disclaimer-title {
+    text-align: center; }
+  .disclaimer-center .page-contact-us h1.entry-title {
+    display: unset; }
 
 .page-contact-us .page-contact-us.site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
@@ -1447,7 +1461,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type='submit'] {
+  .contact-us-form input[type="submit"] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1540,48 +1554,82 @@ img {
   text-transform: uppercase; }
 
 .page-aquaponics .intro-aqua {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.25rem;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.page-aquaponics .intro-aqua {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 620px) {
+    .page-aquaponics .intro-aqua {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.25rem;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .page-aquaponics .what-aqua-text {
-  max-width: 66%; }
+  max-width: 100%; }
+  @media (min-width: 620px) {
+    .page-aquaponics .what-aqua-text {
+      max-width: 66%; } }
 
 .page-aquaponics .what-aqua-imgs {
-  width: 33%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: " 1 2 " " 3 4 "; }
-  .page-aquaponics .what-aqua-imgs img {
-    width: 150px; }
-    .page-aquaponics .what-aqua-imgs img:nth-child(1) {
-      grid-area: 1;
-      padding: 2rem;
-      -o-object-fit: contain;
-         object-fit: contain; }
-    .page-aquaponics .what-aqua-imgs img:nth-child(2) {
-      grid-area: 2;
-      padding: 2rem;
-      -o-object-fit: contain;
-         object-fit: contain; }
-    .page-aquaponics .what-aqua-imgs img:nth-child(3) {
-      grid-area: 3;
-      padding: 2rem;
-      -o-object-fit: contain;
-         object-fit: contain; }
-    .page-aquaponics .what-aqua-imgs img:nth-child(4) {
-      grid-area: 4;
-      padding: 2rem;
-      -o-object-fit: contain;
-         object-fit: contain; }
+  display: none; }
+  @media (min-width: 620px) {
+    .page-aquaponics .what-aqua-imgs {
+      display: block;
+      width: 33%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: " 1 2 " " 3 4 "; }
+      .page-aquaponics .what-aqua-imgs img {
+        width: 150px; }
+        .page-aquaponics .what-aqua-imgs img:nth-child(1) {
+          grid-area: 1;
+          padding: 2rem;
+          -o-object-fit: contain;
+             object-fit: contain; }
+        .page-aquaponics .what-aqua-imgs img:nth-child(2) {
+          grid-area: 2;
+          padding: 2rem;
+          -o-object-fit: contain;
+             object-fit: contain; }
+        .page-aquaponics .what-aqua-imgs img:nth-child(3) {
+          grid-area: 3;
+          padding: 2rem;
+          -o-object-fit: contain;
+             object-fit: contain; }
+        .page-aquaponics .what-aqua-imgs img:nth-child(4) {
+          grid-area: 4;
+          padding: 2rem;
+          -o-object-fit: contain;
+             object-fit: contain; } }
+
+.page-aquaponics .history-aqua {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 40px; }
+  .page-aquaponics .history-aqua p {
+    position: relative; }
+    .page-aquaponics .history-aqua p:nth-child(4)::before, .page-aquaponics .history-aqua p:nth-child(5)::before, .page-aquaponics .history-aqua p:nth-child(6)::before {
+      -webkit-transform: translate(-260%);
+              transform: translate(-260%);
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #00d4e8; }
+
+.page-aquaponics .hist-aqua-img {
+  opacity: 0.78;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d4e8), to(#002d6e));
+  background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%); }
 
 .page-support-us {
   position: relative; }
@@ -1598,36 +1646,76 @@ img {
     background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
     color: white;
     border-radius: 6px;
-    position: absolute;
-    left: 48%;
-    margin-left: -50px;
-    bottom: 19%; }
+    position: relative; }
   .page-support-us .entry-content {
-    padding: 0px 7% 5% 7%;
     max-width: 1140px;
     margin-left: auto;
-    margin-right: auto; }
-    .page-support-us .entry-content img {
+    margin-right: auto;
+    padding: 0 1.25rem 0 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .page-support-us .entry-content .world img {
       max-width: 100%;
-      height: auto; }
+      z-index: -5;
+      height: auto;
+      -o-object-fit: none;
+         object-fit: none; }
     .page-support-us .entry-content p {
-      padding-top: 0.25rem;
-      padding-bottom: 2.25rem;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       color: #4a4a4a;
-      font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-      font-size: 16px;
       text-align: left;
-      line-height: 2em; }
+      line-height: 1.25rem; }
     .page-support-us .entry-content h2 {
-      width: 266px;
+      width: 18pc;
       color: #4a4a4a;
-      font-family: "Courier 10 Pitch", Courier, monospace;
       font-size: 22px;
+      height: 5pc;
       margin: 0; }
     @media (min-width: 620px) {
       .page-support-us .entry-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 8pc; }
+        .page-support-us .entry-content h2 {
+          width: auto; }
+        .page-support-us .entry-content p {
+          width: 60%;
+          padding: 0% 3% 10% 0%;
+          height: 20%; }
         .page-support-us .entry-content .banner-title h1 {
-          bottom: 9vw; } }
+          bottom: 9vw; }
+        .page-support-us .entry-content .button-center {
+          height: 25vh; }
+        .page-support-us .entry-content .world img {
+          position: absolute;
+          overflow: hidden;
+          z-index: -5;
+          right: 0;
+          width: 37%;
+          height: 33%;
+          bottom: 30.5%; } }
+
+.page-the-project .whats-terra {
+  padding: 0 1.25rem 0 1.25rem; }
+  .page-the-project .whats-terra::after {
+    content: "";
+    background-image: url("../../assets/images/illustrations/space-ring-update.svg");
+    background-repeat: no-reapeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%; }

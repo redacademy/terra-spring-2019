@@ -87,3 +87,9 @@
     z-index: 100000; /* Above WP toolbar. */
   }
 }
+
+@mixin white-space-both-side {
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+}

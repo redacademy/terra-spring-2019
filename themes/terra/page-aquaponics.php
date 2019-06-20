@@ -57,7 +57,11 @@ get_header(); ?>
 		<!-- History of Aquaponics Section (WYSISYG) -->
 
 		<section class="history-aqua">
-			<?php echo CFS()->get('history_of_aqua_section_all'); ?>
+
+			<h2 class="hist-aqua-h2"><?php echo CFS()->get('history_aqua_title'); ?></h2>
+			<img class="hist-aqua-img" src="<?php echo CFS()->get('history_aqua_image_only'); ?>">
+			<?php echo CFS()->get('history_of_aqua_text'); ?>
+
 		</section>
 
 		<!-- Benefits of Aquaponics Section -->

@@ -1,25 +1,24 @@
 // front page style
 
 //testimony section
-.testimony-entries {
+
+.fp-testimonies {
   @include center-page;
+}
+
+.testimony-entries {
   width: 100%;
-  .fp-testimony-content {
-    width: 50%;
+  .fp-testimony {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    // img {
-    //   order: 1;
-    //   width: 50%;
-    // }
-    // h3 {
-    //   order: 3;
-    //   width: 50%;
-    // }
-    // p {
-    //   order: 2;
-    //   width: 50%;
-    // }
+
+    .fp-testimony {
+      width: 50%;
+    }
+    .testimony-content {
+      width: 50%;
+    }
   }
 }
 
@@ -169,12 +168,11 @@
 //frontpage Aquaponics section
 
 .fp-ap-info {
-  @include center-page;
   display: flex;
   flex-wrap: wrap;
 
   .fp-ap-container {
-    width: 50%;
+    // width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -212,6 +210,8 @@
   flex-direction: column;
   padding: 20px;
   @include center-page;
+  position: relative;
+  z-index: 5;
 
   img {
     width: 100%;
@@ -220,6 +220,7 @@
     padding: 0;
     box-shadow: $section-box-shadow;
     max-width: 1250px;
+    background-color: white;
     .fp-miss-item {
       width: 100%;
       display: flex;
@@ -265,15 +266,39 @@
   //How we're getting there
 
   .getting-there {
-    @include center-page;
-    padding: 0 1.25rem 0 1.25rem;
-    line-height: 1.25rem;
+    position: relative;
+    min-width: 100%;
 
-    @include desktop {
-      margin-top: 12.5rem;
+    article {
+      position: relative;
+      font-size: 1.25rem;
+      z-index: -1;
+      @include center-page;
+      padding: 0 1.25rem 0 1.25rem;
+      line-height: 1.25rem;
+
+      &::after {
+        content: '';
+        z-index: -1;
+        background: url('../../assets/images/illustrations/space-ring.svg');
+        opacity: 0.4;
+        position: absolute;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: fill;
+        top: -100px;
+        right: -20%;
+        // bottom: 100px;
+        width: 90%;
+        padding-bottom: 60%;
+      }
+      @include desktop {
+        padding-top: 12.5rem;
+      }
     }
 
     .button-center {
+      @include center-page;
       margin-top: 2rem;
       margin-bottom: 4.25rem;
 

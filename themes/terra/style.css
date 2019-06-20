@@ -1693,7 +1693,7 @@ img {
           font-size: 20px;
           width: 60%;
           padding: 0% 3% 10% 0%;
-          height: 20%; }
+          height: 18%; }
         .page-support-us .entry-content .banner-title h1 {
           bottom: 9vw; }
         .page-support-us .entry-content .button-center {
@@ -1707,8 +1707,8 @@ img {
           z-index: -5;
           right: 0;
           width: 37%;
-          height: 37%;
-          bottom: 28.5%; } }
+          height: 37.9%;
+          bottom: 27.5%; } }
 
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }

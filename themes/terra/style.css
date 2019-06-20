@@ -409,6 +409,9 @@ h6 {
 p {
   color: #4a4a4a; }
 
+h2 {
+  font-size: 2.625rem; }
+
 .fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
@@ -432,18 +435,19 @@ p {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8rem; }
+  margin-bottom: 12rem;
+  margin-top: 12rem; }
   .fp-partners h2 {
     width: 100%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    margin-bottom: 6rem; }
   .fp-partners .partner-entries {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-gap: 50px; }
     .fp-partners .partner-entries article {
-      width: 30%;
+      width: 100%;
       -ms-flex-item-align: center;
           align-self: center;
       text-align: center; }
@@ -1599,7 +1603,8 @@ img {
 .page-aquaponics .intro-aqua {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 0 1.25rem 0 1.25rem; }
   @media (min-width: 620px) {
     .page-aquaponics .intro-aqua {
       max-width: 1140px;
@@ -1647,9 +1652,19 @@ img {
           -o-object-fit: contain;
              object-fit: contain; } }
 
+.page-aquaponics .how-aqua-works {
+  padding: 0 1.25rem 0 1.25rem; }
+
 .page-aquaponics .history-aqua {
+  padding: 0 1.25rem 0 1.25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   max-width: 1140px;
   margin-left: auto;
+<<<<<<< HEAD
   margin-right: auto;
   padding-left: 40px;
   padding-bottom: 40px; }
@@ -1673,6 +1688,69 @@ img {
   border-radius: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#00d4e8), to(#002d6e));
   background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%); }
+=======
+  margin-right: auto; }
+  .page-aquaponics .history-aqua .hist-aqua-img-1 {
+    width: 100%;
+    opacity: 0.78;
+    border-radius: 50px; }
+    @media (min-width: 620px) {
+      .page-aquaponics .history-aqua .hist-aqua-img-1 {
+        display: none; } }
+  .page-aquaponics .history-aqua .hist-aqua-img {
+    display: none;
+    width: 100%;
+    opacity: 0.78;
+    border-radius: 50px; }
+    @media (min-width: 620px) {
+      .page-aquaponics .history-aqua .hist-aqua-img {
+        display: block; } }
+  .page-aquaponics .history-aqua .hist-content {
+    width: 100%; }
+    @media (min-width: 620px) {
+      .page-aquaponics .history-aqua .hist-content {
+        width: 50%; } }
+  .page-aquaponics .history-aqua .hist-image-cont {
+    display: none; }
+    @media (min-width: 620px) {
+      .page-aquaponics .history-aqua .hist-image-cont {
+        margin-top: 50px;
+        max-width: 50%;
+        height: 400px;
+        overflow: hidden;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        opacity: 0.78;
+        border-radius: 50px; } }
+  .page-aquaponics .history-aqua img {
+    min-width: 100%;
+    border-radius: 50px; }
+    @media (min-width: 620px) {
+      .page-aquaponics .history-aqua img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: bottom;
+           object-position: bottom;
+        height: 100%; } }
+  .page-aquaponics .history-aqua li {
+    list-style: none;
+    position: relative;
+    color: #4a4a4a;
+    padding-left: 40px; }
+  .page-aquaponics .history-aqua li:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+    position: absolute;
+    left: 0;
+    background: #00d4e8;
+    width: 15px;
+    height: 15px; }
+>>>>>>> 401bec8bca2f95c3c64286b182c7d6fa5f0f6209
 
 .page-support-us {
   position: relative; }

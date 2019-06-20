@@ -410,18 +410,24 @@ h6 {
 p {
   color: #4a4a4a; }
 
-.testimony-entries {
+.fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; }
+
+.testimony-entries {
   width: 100%; }
-  .testimony-entries .fp-testimony-content {
-    width: 50%;
+  .testimony-entries .fp-testimony {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .testimony-entries .fp-testimony .fp-testimony {
+      width: 50%; }
+    .testimony-entries .fp-testimony .testimony-content {
+      width: 50%; }
 
 .fp-partners {
   max-width: 1140px;
@@ -545,16 +551,12 @@ p {
               padding-left: 100px; } }
 
 .fp-ap-info {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .fp-ap-info .fp-ap-container {
-    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -596,7 +598,9 @@ p {
   padding: 20px;
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  z-index: 5; }
   .fp-mission img {
     width: 100%; }
   @media (min-width: 620px) {
@@ -604,7 +608,8 @@ p {
       padding: 0;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-      max-width: 1250px; }
+      max-width: 1250px;
+      background-color: white; }
       .fp-mission .fp-miss-item {
         width: 100%;
         display: -webkit-box;
@@ -661,15 +666,37 @@ p {
     /* Above WP toolbar. */ }
 
 .home .getting-there {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.25rem 0 1.25rem;
-  line-height: 1.25rem; }
-  @media (min-width: 620px) {
-    .home .getting-there {
-      margin-top: 12.5rem; } }
+  position: relative;
+  min-width: 100%; }
+  .home .getting-there article {
+    position: relative;
+    font-size: 1.25rem;
+    z-index: -1;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.25rem 0 1.25rem;
+    line-height: 1.25rem; }
+    .home .getting-there article::after {
+      content: '';
+      z-index: -1;
+      background: url("../../assets/images/illustrations/space-ring.svg");
+      opacity: 0.4;
+      position: absolute;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: fill;
+      top: -100px;
+      right: -20%;
+      width: 90%;
+      padding-bottom: 60%; }
+    @media (min-width: 620px) {
+      .home .getting-there article {
+        padding-top: 12.5rem; } }
   .home .getting-there .button-center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 4.25rem; }
     @media (min-width: 620px) {

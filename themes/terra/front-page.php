@@ -123,12 +123,19 @@ get_header(); ?>
 					?>
 					<?php foreach ($testimony_posts as $post) : setup_postdata($post); ?>
 
-						<article class="fp-testimony-content">
-							<?php if (has_post_thumbnail()) : ?>
+						<article class="fp-testimony">
+                            
+                            <?php if (has_post_thumbnail()) : ?>
+                            
+                            
+                            <div class="testimony-img">
+                                <?php the_post_thumbnail('large'); ?>
+                            </div>
+                            <div class="testimony-content">
 								<h3><?php the_title() ?></h3>
 								<p><?php the_content() ?></p>
-
-								<?php the_post_thumbnail('large'); ?>
+                            </div>
+								
 
 
 							<?php endif; ?>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: Terra Theme
 Theme URI: http://underscores.me/
@@ -395,7 +394,7 @@ th {
   font-style: italic; }
 
 body {
-  font-family: ‘Nunito Sans’;
+  font-family: "Nunito Sans";
   line-height: 1.25rem; }
 
 h1,
@@ -404,7 +403,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ‘Lato’;
+  font-family: "Lato";
   color: #4a4a4a; }
 
 p {
@@ -1627,17 +1626,67 @@ img {
         .page-support-us .entry-content .banner-title h1 {
           bottom: 9vw; } }
 
+.page-the-project img {
+  max-width: 100%; }
+
 .page-the-project .whats-terra {
   padding: 0 1.25rem 0 1.25rem; }
-  .page-the-project .whats-terra::after {
-    content: "";
-    background-image: url("../../assets/images/illustrations/space-ring-update.svg");
-    background-repeat: no-reapeat;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+
+.page-the-project .lack-aware-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/images/photos/lack-of-awareness.jpeg");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: bottom -72px left -20px;
+  position: relative; }
+  @media (min-width: 620px) {
+    .page-the-project .lack-aware-container {
+      height: 640px;
+      background-size: 130%; } }
+  .page-the-project .lack-aware-container .lack-aware-h2 {
+    width: 290px;
+    color: white;
     position: absolute;
-    z-index: -1;
-    width: 100%; }
+    text-align: center;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    line-height: 1.87rem;
+    font-size: 1.4em; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-container .lack-aware-h2 {
+        width: 900px;
+        font-size: 4rem;
+        line-height: 1.2em; } }
+
+.page-the-project .lack-aware-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 620px) {
+    .page-the-project .lack-aware-cards {
+      position: relative;
+      margin-top: -130px; } }
+  .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+    width: 50vw;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+        width: 25vw; } }

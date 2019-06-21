@@ -109,7 +109,7 @@ get_header(); ?>
 			</div>
 
 
-
+            <div class="testimony-background">
 			<section class="fp-testimonies">
 				<h2><?php echo CFS()->get('title_testimonies'); ?></h2>
 				<p><?php echo CFS()->get('testimonies_intro'); ?></P>
@@ -146,7 +146,7 @@ get_header(); ?>
 				</div>
 
 			</section>
-
+            </div>
 			<section class="fp-partners">
 				<h2><?php echo CFS()->get('title_partners'); ?></h2>
 				<div class="partner-entries">
@@ -170,7 +170,7 @@ get_header(); ?>
 				</div>
 
 			</section>
-
+            
 	</main><!-- #main -->
 </div><!-- #primary -->
 

@@ -412,35 +412,95 @@ p {
 h2 {
   font-size: 2.625rem; }
 
+.testimony-background {
+  position: relative; }
+  @media (min-width: 620px) {
+    .testimony-background::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 80%;
+      top: 15%;
+      right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#00d4e8), to(#002d6e));
+      background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%);
+      -webkit-box-shadow: 0 15px 40px 15px rgba(0, 45, 110, 0.15);
+              box-shadow: 0 15px 40px 15px rgba(0, 45, 110, 0.15);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      z-index: -1; } }
+
 .fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto; }
 
 .testimony-entries {
+  padding: 0 1.25rem 0 1.25rem;
+  position: relative;
   width: 100%; }
   .testimony-entries .fp-testimony {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    margin: 30px 0 30px 0;
+    -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); }
+    @media (min-width: 620px) {
+      .testimony-entries .fp-testimony {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        z-index: 1;
+        background-color: white; } }
     .testimony-entries .fp-testimony .fp-testimony {
-      width: 50%; }
-    .testimony-entries .fp-testimony .testimony-content {
-      width: 50%; }
+      width: 100%; }
+      @media (min-width: 620px) {
+        .testimony-entries .fp-testimony .fp-testimony {
+          width: 50%; } }
+    @media (max-width: 620px) {
+      .testimony-entries .fp-testimony .testimony-content {
+        width: inherit;
+        margin-top: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 1.25rem 0 1.25rem;
+        padding-top: 100px; }
+        .testimony-entries .fp-testimony .testimony-content h3 {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+      .testimony-entries .fp-testimony .testimony-img {
+        position: relative;
+        width: 100%;
+        text-align: center; }
+        .testimony-entries .fp-testimony .testimony-img img {
+          -webkit-transform: translate(50%, -50%);
+                  transform: translate(50%, -50%);
+          position: absolute;
+          right: 50%;
+          top: 0; } }
 
 .fp-partners {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12rem;
-  margin-top: 12rem; }
+  margin-top: 12rem;
+  color: #4a4a4a; }
   .fp-partners h2 {
     width: 100%;
     padding-left: 10%;
-    margin-bottom: 6rem; }
+    margin-bottom: 6rem;
+    color: #4a4a4a; }
   .fp-partners .partner-entries {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -452,7 +512,6 @@ h2 {
           align-self: center;
       text-align: center; }
       .fp-partners .partner-entries article img {
-        height: 8vw;
         width: auto; }
 
 .roadmap-container {
@@ -466,20 +525,24 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: white;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
   .roadmap h2 {
-    width: 100%; }
+    width: 100%;
+    color: #ffffff; }
   .roadmap ul {
     padding: 0;
     width: 100%; }
     .roadmap ul li {
       width: 100%;
       margin-bottom: 70px;
-      position: relative; }
+      position: relative;
+      color: #ffffff; }
+      .roadmap ul li p,
+      .roadmap ul li h3 {
+        color: inherit; }
   .roadmap .roadmap-left {
     width: 50%; }
     .roadmap .roadmap-left ul {
@@ -1463,7 +1526,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type="submit"] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));

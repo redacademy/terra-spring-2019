@@ -120,6 +120,8 @@ img {
 .original-form {
   &.sent-out-msg {
     display: none;
+<<<<<<< HEAD
+=======
     height: 700px;
     @include desktop {
       margin-top: 50px;
@@ -152,5 +154,6 @@ img {
         }
       }
     }
+>>>>>>> c46c5e423f1614f065cf893834ba71df792bae63
   }
 }

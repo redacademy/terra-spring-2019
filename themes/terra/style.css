@@ -412,35 +412,95 @@ p {
 h2 {
   font-size: 2.625rem; }
 
+.testimony-background {
+  position: relative; }
+  @media (min-width: 620px) {
+    .testimony-background::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 80%;
+      top: 15%;
+      right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#00d4e8), to(#002d6e));
+      background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%);
+      -webkit-box-shadow: 0 15px 40px 15px rgba(0, 45, 110, 0.15);
+              box-shadow: 0 15px 40px 15px rgba(0, 45, 110, 0.15);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      z-index: -1; } }
+
 .fp-testimonies {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto; }
 
 .testimony-entries {
+  padding: 0 1.25rem 0 1.25rem;
+  position: relative;
   width: 100%; }
   .testimony-entries .fp-testimony {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    margin: 30px 0 30px 0;
+    -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1); }
+    @media (min-width: 620px) {
+      .testimony-entries .fp-testimony {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        z-index: 1;
+        background-color: white; } }
     .testimony-entries .fp-testimony .fp-testimony {
-      width: 50%; }
-    .testimony-entries .fp-testimony .testimony-content {
-      width: 50%; }
+      width: 100%; }
+      @media (min-width: 620px) {
+        .testimony-entries .fp-testimony .fp-testimony {
+          width: 50%; } }
+    @media (max-width: 620px) {
+      .testimony-entries .fp-testimony .testimony-content {
+        width: inherit;
+        margin-top: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 1.25rem 0 1.25rem;
+        padding-top: 100px; }
+        .testimony-entries .fp-testimony .testimony-content h3 {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+      .testimony-entries .fp-testimony .testimony-img {
+        position: relative;
+        width: 100%;
+        text-align: center; }
+        .testimony-entries .fp-testimony .testimony-img img {
+          -webkit-transform: translate(50%, -50%);
+                  transform: translate(50%, -50%);
+          position: absolute;
+          right: 50%;
+          top: 0; } }
 
 .fp-partners {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12rem;
-  margin-top: 12rem; }
+  margin-top: 12rem;
+  color: #4a4a4a; }
   .fp-partners h2 {
     width: 100%;
     padding-left: 10%;
-    margin-bottom: 6rem; }
+    margin-bottom: 6rem;
+    color: #4a4a4a; }
   .fp-partners .partner-entries {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -452,7 +512,6 @@ h2 {
           align-self: center;
       text-align: center; }
       .fp-partners .partner-entries article img {
-        height: 8vw;
         width: auto; }
 
 .roadmap-container {
@@ -472,14 +531,22 @@ h2 {
   padding: 20px; }
   .roadmap h2 {
     width: 100%;
+<<<<<<< HEAD
+    color: #ffffff; }
+=======
     color: white; }
+>>>>>>> 73f2206314f65216afe9bb574ff80c26e24eb6d3
   .roadmap ul {
     padding: 0;
     width: 100%; }
     .roadmap ul li {
       width: 100%;
       margin-bottom: 70px;
-      position: relative; }
+      position: relative;
+      color: #ffffff; }
+      .roadmap ul li p,
+      .roadmap ul li h3 {
+        color: inherit; }
   .roadmap .roadmap-left {
     width: 50%; }
     .roadmap .roadmap-left ul {
@@ -681,7 +748,7 @@ h2 {
     padding: 0 1.25rem 0 1.25rem;
     line-height: 1.25rem; }
     .home .getting-there article::after {
-      content: '';
+      content: "";
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -1724,6 +1791,66 @@ img {
     background: #00d4e8;
     width: 15px;
     height: 15px; }
+
+.page-aquaponics .benefits-aqua {
+  padding: 0 1.25rem 0 1.25rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .benefits-aqua {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.page-aquaponics .ben-aqua-h2 {
+  padding-top: 35px; }
+  @media (min-width: 620px) {
+    .page-aquaponics .ben-aqua-h2 {
+      padding-top: 60px; } }
+
+.page-aquaponics .benefit-container {
+  width: 100%;
+  padding: 20px;
+  margin: 30px auto;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 390px;
+  width: 336px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.05); }
+  @media (min-width: 620px) {
+    .page-aquaponics .benefit-container {
+      width: 50%;
+      margin: 15px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      max-height: 500px;
+      max-width: 400px; } }
+
+.page-aquaponics .ben-aqua-img {
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .ben-aqua-img {
+      width: 35%; } }
 
 .page-support-us {
   position: relative; }

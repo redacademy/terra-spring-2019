@@ -1,6 +1,6 @@
 .error404 {
   background-color: $font-awesome-color;
-  flex-wrap: wrap;
+
   .site-content {
     //using to see all content on page, once dont editing will delete
 
@@ -22,7 +22,7 @@
       .page-content {
         padding: 10px 10px 10px 10px;
         height: -webkit-fill-available;
-        height: 110vh;
+        height: 90vh;
 
         .search-box-content {
           box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
@@ -43,9 +43,10 @@
           display: flex;
           justify-content: space-around;
           font-size: 200px;
+          width: 99.5%;
 
           .first-4 {
-            margin-right: 800px;
+            margin-right: 250px;
             color: white;
           }
           .second-4 {

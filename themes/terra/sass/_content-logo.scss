@@ -14,21 +14,51 @@
       width: 500px;
       height: 500px;
     }
+    .illustration-rings {
+      z-index: 100;
+    }
     .outer-ring {
       color: white;
       z-index: 99;
     }
     .inner-circle {
-      opacity: 1;
       margin-top: 18%;
+      img {
+        opacity: -100;
+      }
     }
-    .small-fish {
-      width: 6%;
+    .earth {
+      z-index: 100;
+      width: 46%;
+      img {
+        width: 29.01%;
+        height: 102.1%;
+      }
+    }
+    .single-fish-1 {
+      width: 8%;
       z-index: 20;
+      img {
+        width: 80%;
+      }
+    }
+    .single-fish-2 {
+      width: 10%;
+      z-index: 24;
+      img {
+        width: 60%;
+      }
+    }
+    .single-fish-3 {
+      width: 9%;
+      z-index: 24;
     }
     .big-fish {
-      width: 15%;
-      z-index: 90;
+      width: 10%;
+      z-index: 190;
+      img {
+        width: 60%;
+      }
     }
     .small-leaves {
       width: 30%;
@@ -43,30 +73,63 @@
       height: 50px;
       left: 31%;
       z-index: 70;
-      animation: sway2 12s infinite;
+      animation: sway2 7s infinite;
       transform-origin: 50% 100% 0;
     }
   }
-  // css animations
+  // css animations speeds
+  //group of smaller fish
   .rotate-fast {
-    animation: rotation 6s infinite linear;
+    animation: rotation_1 16s infinite linear;
   }
+  //single-fish-1
   .rotate-slow {
-    animation: rotation 26s infinite linear;
+    animation: rotation_2 50s infinite linear;
   }
+  .rotate-slow-2 {
+    animation: rotation_2_2 40s infinite linear;
+  }
+  .rotate-slow-3 {
+    animation: rotation_2_2 30s infinite linear;
+  }
+  //earth movement
   .rotate-reverse {
-    animation: back_rotation 26s infinite linear;
+    animation: back_rotation 180s infinite linear;
   }
-
-  @keyframes rotation {
+  //fish movement
+  @keyframes rotation_1 {
     from {
-      transform: rotate(0deg);
+      transform: rotate(0deg) translate(100px, 150px);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(1turn) translate(100px, 150px);
     }
   }
-
+  @keyframes rotation_2 {
+    from {
+      transform: rotate(0deg) translate(133px, 245px);
+    }
+    to {
+      transform: rotate(1turn) translate(133px, 245px);
+    }
+  }
+  @keyframes rotation_2_2 {
+    from {
+      transform: rotate(0deg) translate(133px, 245px);
+    }
+    to {
+      transform: rotate(1turn) translate(133px, 245px);
+    }
+  }
+  @keyframes rotation_2_3 {
+    from {
+      transform: rotate(0deg) translate(133px, 245px);
+    }
+    to {
+      transform: rotate(1turn) translate(133px, 245px);
+    }
+  }
+  // rotation for earth
   @keyframes back_rotation {
     from {
       transform: rotate(0deg);
@@ -75,6 +138,7 @@
       transform: rotate(-360deg);
     }
   }
+  // grass movement
   @keyframes sway1 {
     0%,
     100% {

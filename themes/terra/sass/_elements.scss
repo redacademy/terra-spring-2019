@@ -55,17 +55,17 @@
 
 .roadmap-container {
   width: 100%;
-  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%);
+  background: $fp-gradient;
 }
 .roadmap {
   display: flex;
   flex-wrap: wrap;
-  color: white;
   @include center-page;
   padding: 20px;
 
   h2 {
     width: 100%;
+    color: white;
   }
 
   ul {

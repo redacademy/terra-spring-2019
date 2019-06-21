@@ -1,6 +1,6 @@
 .page-contact-us {
   .page-contact-us.site-main {
-    background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
+    background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
     background-repeat: no-repeat;
     background-position: top 20px right -250px;
     background-size: 80%;
@@ -71,7 +71,7 @@ img {
     }
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     @include button-style;
   }
 
@@ -89,10 +89,6 @@ img {
     border-radius: 20px;
     box-shadow: $section-box-shadow;
     background: white;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
   }
   p {
     margin-bottom: 4rem;
@@ -131,32 +127,29 @@ img {
       box-shadow: $section-box-shadow;
       background: white;
     }
-      p {
-        margin-bottom: 4rem;
-      }
-      a.return-home-btn {
-        @include button-anchor;
-      }
+    p {
+      margin-bottom: 4rem;
+    }
+    a.return-home-btn {
+      @include button-anchor;
+    }
 
-      h3 {
-        font-size: 2rem;
-      }
+    h3 {
+      font-size: 2rem;
+    }
 
-      
-      .msg-sent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 4rem;
-        .connect-world {
-          width: 35%;
-          @include desktop {
-            width: 40%;
-          }
-        
+    .msg-sent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 4rem;
+      .connect-world {
+        width: 35%;
+        @include desktop {
+          width: 40%;
+        }
       }
-      }
-    
+    }
   }
 }

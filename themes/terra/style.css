@@ -1215,8 +1215,8 @@ html {
     /* hamburger ends */ }
     .site-header .center-header .w3-animate-right {
       position: relative;
-      -webkit-animation: animateright 0.5s ease-in-out;
-              animation: animateright 0.5s ease-in-out; }
+      -webkit-animation: animateright 0.7s ease-in-out;
+              animation: animateright 0.7s ease-in-out; }
 
 @-webkit-keyframes animateright {
   from {
@@ -1353,8 +1353,7 @@ html {
           -webkit-box-pack: end;
               -ms-flex-pack: end;
                   justify-content: flex-end; }
-          .site-header .center-header .main-navigation .menu .menu-item-146,
-          .site-header .center-header .main-navigation .menu .menu-item-147 {
+          .site-header .center-header .main-navigation .menu .footer-menu li {
             display: none; }
           .site-header .center-header .main-navigation .menu li a:hover {
             border-bottom: 4px solid #00ecf5; }
@@ -1988,3 +1987,181 @@ img {
           flex-direction: row; }
   .page-the-project .series-p-wrapper .series-p-left, .page-the-project .series-p-wrapper .series-p-middle, .page-the-project .series-p-wrapper .series-p-right {
     width: 63px; }
+  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
+
+.error404 {
+  background-color: #002d6e;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .error404 .site-content .widget {
+    display: none; }
+  .error404 .site-content .error-404 {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    .error404 .site-content .error-404 .page-title {
+      color: white; }
+    .error404 .site-content .error-404 .page-header {
+      margin-right: auto;
+      margin-left: auto;
+      width: 45%; }
+    .error404 .site-content .error-404 .page-content {
+      padding: 10px 10px 10px 10px;
+      height: -webkit-fill-available;
+      height: 110vh; }
+      .error404 .site-content .error-404 .page-content .search-box-content {
+        -webkit-box-shadow: 43px 37px 22px -9px black;
+                box-shadow: 43px 37px 22px -9px black;
+        width: 28%; }
+        .error404 .site-content .error-404 .page-content .search-box-content fieldset {
+          width: 80%;
+          border: none; }
+        .error404 .site-content .error-404 .page-content .search-box-content p {
+          text-align: center;
+          line-height: 1.3;
+          font-size: 24px;
+          color: #00d4e8; }
+      .error404 .site-content .error-404 .page-content .four-0-four {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        font-size: 200px; }
+        .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
+          margin-right: 800px;
+          color: white; }
+        .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
+          color: white; }
+
+.not-found {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center; }
+  .not-found .anime-rotate {
+    position: relative;
+    width: 100%;
+    bottom: 12pc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .not-found .anime-rotate .anime {
+      position: absolute;
+      width: 500px;
+      height: 500px; }
+    .not-found .anime-rotate .outer-ring {
+      color: white;
+      z-index: 99; }
+    .not-found .anime-rotate .inner-circle {
+      opacity: 1;
+      margin-top: 18%; }
+    .not-found .anime-rotate .small-fish {
+      width: 6%;
+      z-index: 20; }
+    .not-found .anime-rotate .big-fish {
+      width: 15%;
+      z-index: 90; }
+    .not-found .anime-rotate .small-leaves {
+      width: 30%;
+      height: 100%;
+      left: 29%;
+      z-index: 40;
+      -webkit-animation: sway1 16s infinite;
+              animation: sway1 16s infinite;
+      -webkit-transform-origin: 50% 100% 0;
+              transform-origin: 50% 100% 0; }
+    .not-found .anime-rotate .grass-blades {
+      width: 250px;
+      height: 50px;
+      left: 31%;
+      z-index: 70;
+      -webkit-animation: sway2 12s infinite;
+              animation: sway2 12s infinite;
+      -webkit-transform-origin: 50% 100% 0;
+              transform-origin: 50% 100% 0; }
+  .not-found .rotate-fast {
+    -webkit-animation: rotation 6s infinite linear;
+            animation: rotation 6s infinite linear; }
+  .not-found .rotate-slow {
+    -webkit-animation: rotation 26s infinite linear;
+            animation: rotation 26s infinite linear; }
+  .not-found .rotate-reverse {
+    -webkit-animation: back_rotation 26s infinite linear;
+            animation: back_rotation 26s infinite linear; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes back_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes back_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@-webkit-keyframes sway1 {
+  0%,
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg); }
+  50% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg); } }
+
+@keyframes sway1 {
+  0%,
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg); }
+  50% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg); } }
+
+@-webkit-keyframes sway2 {
+  0%,
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg); }
+  50% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg); } }
+
+@keyframes sway2 {
+  0%,
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg); }
+  50% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg); } }

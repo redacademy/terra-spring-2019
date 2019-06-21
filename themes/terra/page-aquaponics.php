@@ -71,20 +71,25 @@ get_header(); ?>
 		</section>
 
 		<!-- Benefits of Aquaponics Section -->
+		<!-- <section class="benefits-aqua-sec"> -->
+		<h2 class="ben-aqua-h2"><?php echo CFS()->get('benefits_of_aqua_section_title'); ?></h2>
+
+
 		<div class="benefits-aqua">
-			<h2 class="ben-aqua-h2"><?php echo CFS()->get('benefits_of_aqua_section_title'); ?></h2>
 			<?php
 
 			$benefits_aqua_loop = CFS()->get('benefits_of_aquaponics'); // this is the loop field
 			foreach ($benefits_aqua_loop as $ben_aqua_info) : ?>
-				<div>
+
+				<div class="benefit-container">
 					<img class="ben-aqua-img" src="<?php echo $ben_aqua_info['benefits_image']; ?>" />
 					<h3 class="ben-aqua-h3"><?php echo $ben_aqua_info['benefits_title']; ?></h3>
 					<p class="ben-aqua-p"><?php echo $ben_aqua_info['benefits_info']; ?></p>
 				</div>
+
 			<?php endforeach; ?>
 		</div>
-
+		<!-- </section> -->
 		<!-- Current Tech Section -->
 		<div class="current-tech">
 			<h2 class="cur-tech-h2"><?php echo CFS()->get('current_technology_section_title'); ?></h2>

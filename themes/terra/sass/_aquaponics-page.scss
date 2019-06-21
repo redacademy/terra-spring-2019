@@ -109,7 +109,6 @@
       width: 100%;
       opacity: 0.78;
       border-radius: 50px;
-      // height: 80%;
 
       @include desktop {
         display: none;
@@ -129,12 +128,8 @@
 
     .hist-content {
       width: 100%;
-      // display: flex;
-      // flex-direction: column;
       @include desktop {
         width: 50%;
-        // display: flex;
-        // position: absolute;
       }
     }
 
@@ -179,4 +174,53 @@
     }
   }
   // End history of Aqua section
-}
+
+  //  Benefits of Aquaponics Section
+
+  .benefits-aqua {
+    padding: $page-padding-mobile;
+    @include center-page;
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .ben-aqua-h2 {
+    padding-top: 35px;
+    @include desktop {
+      padding-top: 60px;
+    }
+  }
+
+  .benefit-container {
+    width: 100%;
+    padding: 20px;
+    margin: 30px auto;
+    align-content: space-between;
+    justify-content: center;
+    height: 390px;
+    width: 336px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.05);
+
+    @include desktop {
+      width: 50%;
+      margin: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: 500px;
+      max-width: 400px;
+    }
+  }
+  .ben-aqua-img {
+    width: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    @include desktop {
+      width: 35%;
+    }
+  }
+} // End of Aqua Page

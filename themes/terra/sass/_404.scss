@@ -1,8 +1,10 @@
 .error404 {
-  background-color: $font-awesome-color;
-  flex-wrap: wrap;
+  background-color: $fp-gradient;
+
   .site-content {
-    //using to see all content on page, once dont editing will delete
+    @media screen and (max-width: 620px) {
+      overflow: hidden;
+    }
 
     .widget {
       display: none;
@@ -10,27 +12,43 @@
     .error-404 {
       @include center-page;
       @include center-block;
-      .page-title {
-        color: white;
+
+      .phone-404 {
+        display: block;
+        font-size: 100px;
+        @media screen and (min-width: 620px) {
+          display: none;
+        }
       }
 
       .page-header {
         margin-right: auto;
         margin-left: auto;
         width: 45%;
+        @media screen and (max-width: 620px) {
+          width: 100%;
+          margin-top: 15%;
+          margin-bottom: 15%;
+        }
+        .page-title {
+          color: white;
+        }
       }
       .page-content {
         padding: 10px 10px 10px 10px;
         height: -webkit-fill-available;
-        height: 110vh;
+        height: 90vh;
+        @media screen and (max-width: 620px) {
+          height: 115vh;
+        }
 
         .search-box-content {
-          box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
+          box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.315);
           width: 28%;
-          fieldset {
-            width: 80%;
-            border: none;
+          @media screen and (max-width: 620px) {
+            width: 100%;
           }
+
           p {
             text-align: center;
             line-height: 1.3;
@@ -38,20 +56,45 @@
             color: $btn-border-color;
           }
         }
+        .anime-rotate {
+          @media screen and (max-width: 620px) {
+            margin-top: 120%;
+            margin-bottom: 25%;
+            .grass-blades {
+              width: 213px;
+              height: 2px;
+              left: 1%;
+            }
+            .small-leaves {
+              margin-top: 21%;
+              width: 43%;
+              left: 12%;
+            }
+            .single-fish-3 {
+              width: 16%;
+            }
+          }
+        }
 
         .four-0-four {
           display: flex;
           justify-content: space-around;
           font-size: 200px;
-
+          width: 99.5%;
           .first-4 {
-            margin-right: 800px;
             color: white;
+            margin-right: 20%;
           }
           .second-4 {
             color: white;
           }
+          @media screen and (max-width: 620px) {
+            display: none;
+          }
         }
+      }
+      @media screen and (max-width: 620px) {
+        width: 100%;
       }
     }
   }

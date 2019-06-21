@@ -2,22 +2,85 @@
 
 //testimony section
 
+.testimony-background {
+  position: relative;
+
+  @include desktop {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 80%;
+      top: 15%;
+      right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background: linear-gradient(180deg, #00d4e8 0%, #002d6e 100%);
+      box-shadow: 0 15px 40px 15px rgba(0, 45, 110, 0.15);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      z-index: -1;
+    }
+  }
+}
+
 .fp-testimonies {
   @include center-page;
 }
 
 .testimony-entries {
+  padding: $page-padding-mobile;
+  position: relative;
   width: 100%;
+
   .fp-testimony {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+    box-shadow: $section-box-shadow;
+
+    @include desktop {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+
+      z-index: 1;
+      background-color: white;
+    }
 
     .fp-testimony {
-      width: 50%;
+      width: 100%;
+      @include desktop {
+        width: 50%;
+      }
     }
-    .testimony-content {
-      width: 50%;
+
+    @include mobile-max {
+      .testimony-content {
+        width: inherit;
+
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        padding: $page-padding-mobile;
+        padding-top: 100px;
+
+        h3 {
+          order: 2;
+        }
+      }
+
+      .testimony-img {
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        img {
+          transform: translate(50%, -50%);
+          position: absolute;
+          right: 50%;
+          top: 0;
+        }
+      }
     }
   }
 }
@@ -27,10 +90,12 @@
   @include center-page;
   margin-bottom: 12rem;
   margin-top: 12rem;
+  color: $font-color;
   h2 {
     width: 100%;
     padding-left: 10%;
     margin-bottom: 6rem;
+    color: $font-color;
   }
 
   .partner-entries {
@@ -44,7 +109,6 @@
       align-self: center;
       text-align: center;
       img {
-        height: 8vw;
         width: auto;
       }
     }
@@ -65,7 +129,7 @@
 
   h2 {
     width: 100%;
-    color: white;
+    color: $white-text-color;
   }
 
   ul {
@@ -75,6 +139,12 @@
       width: 100%;
       margin-bottom: 70px;
       position: relative;
+      color: $white-text-color;
+
+      p,
+      h3 {
+        color: inherit;
+      }
     }
   }
   .roadmap-left {
@@ -176,7 +246,6 @@
   flex-wrap: wrap;
 
   .fp-ap-container {
-    // width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

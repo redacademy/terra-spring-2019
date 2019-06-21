@@ -66,17 +66,35 @@ get_header(); ?>
 				<?php foreach ($member_posts as $post) : setup_postdata($post); ?>
 
 					<article class="team-member">
-						<?php if (has_post_thumbnail()) : ?>
 
+						<div class="member-photo"><?php the_post_thumbnail('large'); ?>
+							<a href="#" class="member-detail-arrow"><i class="fas fa-arrow-right"></i></a>
+						</div>
+						<h3><?php the_title() ?></h3>
+						<p><?php echo CFS()->get('member_position'); ?></p>
 
-							<div class="member-photo"><?php the_post_thumbnail('large'); ?>
-								<a href="#" class="member-detail-arrow"><i class="fas fa-arrow-right"></i></a>
+						<!-- Team member modal window -->
+						<div class="team-modal">
+							<div class="team-modal__inner">
+								<i class="fas fa-times team-modal__close-btn"></i>
+
+								<div class="team-modal__left-col">
+									<img class="team-modal__img" src="<?php echo get_the_post_thumbnail_url(); ?>" />
+									<div class="team-modal__text-wrap">
+										<h3 class="team-modal__title"><?php the_title() ?></h3>
+										<p class="team-modal__subtitle"><?php echo CFS()->get('member_position'); ?></p>
+									</div>
+								</div>
+								<div class="team-modal__right-col">
+									<div class="team-modal__description">
+										<?php the_content(); ?>
+									</div>
+								</div>
 							</div>
-							<h3><?php the_title() ?></h3>
-							<p><?php echo CFS()->get('member_position'); ?></p>
+						</div><!-- .team-modal -->
 
 
-						<?php endif; ?>
+
 					</article>
 
 				<?php endforeach;
@@ -116,36 +134,39 @@ get_header(); ?>
 		<section class="source-funds">
 
 			<h2><?php echo CFS()->get('source_of_funds_title'); ?></h2>
-			<h3 class="phase-1"><?php echo CFS()->get('1st_phase_title'); ?></h3>
-			<h3 class="phase-2"><?php echo CFS()->get('2nd_phase_title'); ?></h3>
+			<div class="sf-wrapper">
+				<h3 class="phase-1"><?php echo CFS()->get('1st_phase_title'); ?></h3>
+				<h3 class="phase-2"><?php echo CFS()->get('2nd_phase_title'); ?></h3>
 
-			<div class="seed-round">
-				<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
-				<div class="seed-p-wrapper">
-					<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
-					<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+				<div class="seed-round">
+					<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
+					<div class="seed-p-wrapper">
+						<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
+						<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+					</div>
+					<ol class="seed-items">
+						<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
+						<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
+						<li class="seed-item3"><?php echo CFS()->get('seed_round_item_3'); ?></li>
+						<li class="seed-item4"><?php echo CFS()->get('seed_round_item_4'); ?></li>
+						<li class="seed-item5"><?php echo CFS()->get('seed_round_item_5'); ?></li>
+					</ol>
 				</div>
-				<ol class="seed-items">
-					<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
-					<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
-					<li class="seed-item3"><?php echo CFS()->get('seed_round_item_3'); ?></li>
-					<li class="seed-item4"><?php echo CFS()->get('seed_round_item_4'); ?></li>
-					<li class="seed-item5"><?php echo CFS()->get('seed_round_item_5'); ?></li>
-				</ol>
-			</div>
-			<div class="series-round">
-				<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
-				<div class="series-p-wrapper">
-					<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
-					<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
-					<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+
+				<div class="series-round">
+					<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
+					<div class="series-p-wrapper">
+						<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
+						<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
+						<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+					</div>
+					<ol class="series-items">
+						<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
+						<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
+						<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
+						<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
+					</ol>
 				</div>
-				<ol class="series-items">
-					<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
-					<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
-					<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
-					<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
-				</ol>
 			</div>
 		</section>
 
@@ -153,7 +174,7 @@ get_header(); ?>
 		<!-- White Paper Section -->
 		<section class="white-paper">
 			<h2 class="wh-paper-h3"><?php echo CFS()->get('white_paper_title'); ?></h2>
-			<button class="wh-paper-btn"><?php echo CFS()->get('white_paper_link'); ?></button>
+			<button class="wh-paper-btn"><?php echo CFS()->get('white_paper_link'); ?> &nbsp; <i class="fas fa-download"></i></button>
 
 		</section>
 

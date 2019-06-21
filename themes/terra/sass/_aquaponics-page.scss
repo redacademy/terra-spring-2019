@@ -109,12 +109,17 @@
       width: 100%;
       opacity: 0.78;
       border-radius: 50px;
+      margin-top: 20px;
 
       @include desktop {
         display: none;
       }
     }
-
+    .hist-aqua-h2 {
+      @include desktop {
+        min-width: 500px;
+      }
+    }
     .hist-aqua-img {
       display: none;
       width: 100%;
@@ -176,6 +181,9 @@
   // End history of Aqua section
 
   //  Benefits of Aquaponics Section
+  .ben-aqua-h2 {
+    @include center-page;
+  }
 
   .benefits-aqua {
     padding: $page-padding-mobile;
@@ -222,5 +230,57 @@
     @include desktop {
       width: 35%;
     }
+  } //end of benefits section
+
+  //Current Technology Section
+  .cur-tech-h2 {
+    @include center-page;
+  }
+  .current-tech {
+    padding: $page-padding-mobile;
+    @include center-page;
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .cur-tech-container {
+    width: 100%;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    margin: 30px auto;
+    align-content: space-between;
+    justify-content: center;
+    height: 390px;
+    width: 336px;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    @include desktop {
+      width: 50%;
+      margin: 15px;
+      border-radius: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: 500px;
+      max-width: 400px;
+    }
+  }
+  .cur-tech-h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cur-tech-p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cur-tech-img {
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 } // End of Aqua Page

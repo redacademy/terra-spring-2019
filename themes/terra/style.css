@@ -404,10 +404,10 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 p {
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 h2 {
   font-size: 2.625rem; }
@@ -531,11 +531,7 @@ h2 {
   padding: 20px; }
   .roadmap h2 {
     width: 100%;
-<<<<<<< HEAD
     color: #ffffff; }
-=======
-    color: white; }
->>>>>>> 73f2206314f65216afe9bb574ff80c26e24eb6d3
   .roadmap ul {
     padding: 0;
     width: 100%; }
@@ -565,7 +561,7 @@ h2 {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -606,7 +602,7 @@ h2 {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: '';
+            content: "";
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -1530,7 +1526,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type='submit'] {
+  .contact-us-form input[type="submit"] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1734,10 +1730,14 @@ img {
   .page-aquaponics .history-aqua .hist-aqua-img-1 {
     width: 100%;
     opacity: 0.78;
-    border-radius: 50px; }
+    border-radius: 50px;
+    margin-top: 20px; }
     @media (min-width: 620px) {
       .page-aquaponics .history-aqua .hist-aqua-img-1 {
         display: none; } }
+  @media (min-width: 620px) {
+    .page-aquaponics .history-aqua .hist-aqua-h2 {
+      min-width: 500px; } }
   .page-aquaponics .history-aqua .hist-aqua-img {
     display: none;
     width: 100%;
@@ -1781,7 +1781,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1791,6 +1791,11 @@ img {
     background: #00d4e8;
     width: 15px;
     height: 15px; }
+
+.page-aquaponics .ben-aqua-h2 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .page-aquaponics .benefits-aqua {
   padding: 0 1.25rem 0 1.25rem;
@@ -1851,6 +1856,73 @@ img {
   @media (min-width: 620px) {
     .page-aquaponics .ben-aqua-img {
       width: 35%; } }
+
+.page-aquaponics .cur-tech-h2 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-aquaponics .current-tech {
+  padding: 0 1.25rem 0 1.25rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .current-tech {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.page-aquaponics .cur-tech-container {
+  width: 100%;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  margin: 30px auto;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 390px;
+  width: 336px;
+  border-radius: 0 0 15px 15px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden; }
+  @media (min-width: 620px) {
+    .page-aquaponics .cur-tech-container {
+      width: 50%;
+      margin: 15px;
+      border-radius: 15px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      max-height: 500px;
+      max-width: 400px; } }
+
+.page-aquaponics .cur-tech-h3 {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.page-aquaponics .cur-tech-p {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.page-aquaponics .cur-tech-img {
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
 
 .page-support-us {
   position: relative; }
@@ -1943,7 +2015,7 @@ img {
   position: relative;
   margin-bottom: 8rem; }
   .page-the-project .whats-terra::after {
-    content: '';
+    content: "";
     z-index: -1;
     background: url("../../assets/images/illustrations/space-ring.svg");
     opacity: 0.4;

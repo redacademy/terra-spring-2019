@@ -15,13 +15,13 @@
     <div class="anime small-leaves">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/small-leaves.svg' alt='logo front page'>
     </div>
-    <div class="anime rotate-fast-2 small-fish">
+    <div class="anime rotate-slow small-fish">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/asset-14.svg' alt='logo front page'>
     </div>
-    <div class="anime rotate-slow-1 big-fish">
+    <div class="anime rotate-fast big-fish">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/big-fish.svg' alt='logo front page'>
     </div>
-    <div class="anime rotate-slow earth">
+    <div class="anime rotate-reverse earth">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/earth.svg' alt='logo front page'>
     </div>
     <div class="anime inner-circle">

@@ -27,19 +27,73 @@
 
 .fp-testimonies {
   @include center-page;
+  padding: $page-padding-mobile;
 }
 
 .testimony-entries {
   padding: $page-padding-mobile;
   position: relative;
   width: 100%;
+  @include desktop {
+    padding: 0;
+  }
 
   .fp-testimony {
     margin: 30px 0 30px 0;
+    padding: 2rem;
     box-shadow: $section-box-shadow;
-
+    border-radius: 15px;
+    width: 100%;
     @include desktop {
       width: 60%;
+      height: auto;
+      justify-content: space-between;
+
+      &:hover {
+        justify-content: space-around;
+        width: 100%;
+        .testimony-img {
+          transform: scale(1.3);
+        }
+        .testimony-content {
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+      }
+
+      .testimony-img {
+        width: 30%;
+        align-self: center;
+      }
+    }
+
+    .testimony-content {
+      display: flex;
+      flex-direction: column;
+      @include desktop {
+        font-size: 1rem;
+        width: 60%;
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+      }
+
+      h3 {
+        font-size: inherit;
+        font-weight: 400;
+        align-self: flex-end;
+        order: 2;
+        padding: 40px 20px 0 0;
+        margin-top: 0;
+        &::before {
+          content: '- ';
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    @include desktop {
+      width: 70%;
       display: flex;
       flex-wrap: wrap;
 
@@ -47,25 +101,22 @@
       background-color: white;
     }
 
-    .fp-testimony {
-      width: 100%;
-      @include desktop {
-        width: 50%;
-      }
-    }
-
     @include mobile-max {
       .testimony-content {
+        margin-bottom: 200px;
         width: inherit;
-
         margin-top: 120px;
-        display: flex;
-        flex-direction: column;
         padding: $page-padding-mobile;
         padding-top: 100px;
 
+        p {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
         h3 {
-          order: 2;
+          align-self: flex-start;
+          padding: 20px;
         }
       }
 
@@ -91,11 +142,15 @@
   margin-bottom: 12rem;
   margin-top: 12rem;
   color: $font-color;
+  padding: $page-padding-mobile;
   h2 {
     width: 100%;
-    padding-left: 10%;
     margin-bottom: 6rem;
     color: $font-color;
+
+    @include desktop {
+      padding-left: 10%;
+    }
   }
 
   .partner-entries {
@@ -103,6 +158,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto auto;
     grid-gap: 50px;
+    padding: 20px;
 
     article {
       width: 100%;
@@ -241,39 +297,50 @@
 
 //frontpage Aquaponics section
 
+.about-aqua {
+  @include center-page;
+  margin-bottom: 250px;
+
+  .button-center {
+    margin-top: 40px;
+  }
+}
 .fp-ap-info {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 
-  .fp-ap-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    align-content: space-between;
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-    @include desktop {
-      width: 33%;
-    }
+.fp-ap-container {
+  padding: 20px;
+  align-content: space-between;
 
-    .ap-info-img {
-      width: 100%;
-      text-align: center;
-      height: 120px;
+  @include desktop {
+    width: 100%;
+  }
 
-      img {
+  .ap-info-img {
+    text-align: center;
+
+    img {
+      width: 60%;
+      @include desktop {
         width: 40%;
         height: 120px;
       }
     }
-    .ap-info-p {
-      font-size: 1.25rem;
-      margin-top: auto;
-      margin: 0;
-    }
-    .ap-info-h3 {
-      font-size: 1.5rem;
-    }
+  }
+  .ap-info-p {
+    font-size: 1.25rem;
+    margin-top: auto;
+    margin: 0;
+  }
+  .ap-info-h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -368,11 +435,6 @@
         margin-bottom: 12.5rem;
       }
     }
-    a {
-      @include button-anchor;
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
 
     .entry-content {
       width: 100%;
@@ -391,6 +453,10 @@
 //button center
 
 .button-center {
+  a {
+    @include button-anchor;
+    padding: 1rem 4rem 1rem 4rem;
+  }
   text-align: center;
   @include desktop {
     text-align: left;

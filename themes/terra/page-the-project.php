@@ -70,7 +70,7 @@ get_header(); ?>
 
 
 							<div class="member-photo"><?php the_post_thumbnail('large'); ?>
-									<p class="member-detail-arrow"><i class="fas fa-arrow-right"></i></p>
+								<p class="member-detail-arrow"><i class="fas fa-arrow-right"></i></p>
 							</div>
 							<h3><?php the_title() ?></h3>
 							<p><?php echo CFS()->get('member_position'); ?></p>
@@ -87,7 +87,7 @@ get_header(); ?>
 
 
 		<!-- Our Partners Section NOTE: IS IT OK TO LEAVE SAME CLASSES AS ON FP?-->
-		<section class="fp-partners">
+		<section class="fp-partners project-partners">
 			<h2><?php echo CFS()->get('our_partners_title'); ?></h2>
 			<div class="partner-entries">
 				<?php
@@ -121,8 +121,10 @@ get_header(); ?>
 
 			<div class="seed-round">
 				<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
-				<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
-				<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+				<div class="seed-p-wrapper">
+					<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
+					<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+				</div>
 				<ol class="seed-items">
 					<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
 					<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
@@ -133,9 +135,11 @@ get_header(); ?>
 			</div>
 			<div class="series-round">
 				<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
-				<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
-				<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
-				<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+				<div class="series-p-wrapper">
+					<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
+					<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
+					<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+				</div>
 				<ol class="series-items">
 					<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
 					<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>

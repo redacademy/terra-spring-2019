@@ -1974,7 +1974,9 @@ img {
   background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
 
 .error404 {
-  background-color: #002d6e; }
+  background-color: #002d6e;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .error404 .site-content .widget {
     display: none; }
   .error404 .site-content .error-404 {

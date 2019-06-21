@@ -17,6 +17,12 @@
   }
 }
 
+@mixin mobile-max {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
 @mixin center-page {
   max-width: $desktop-max-width;
   margin-left: auto;
@@ -106,3 +112,20 @@
   width: 90%;
   padding-bottom: 60%;
 }
+<<<<<<< HEAD
+=======
+
+@mixin fp-gradient-rect {
+  content: '';
+  z-index: -1;
+  background: url('../../assets/images/Icons/7DE0379D0C234C6C.jpg');
+  opacity: 0.4;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: fill;
+  top: 0;
+  right: 0;
+  width: 90%;
+  padding-bottom: 60%;
+}
+>>>>>>> c46c5e423f1614f065cf893834ba71df792bae63

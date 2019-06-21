@@ -13,7 +13,7 @@ html {
     height: 60px;
     .w3-animate-right {
       position: relative;
-      animation: animateright 0.5s ease-in-out;
+      animation: animateright 0.7s ease-in-out;
     }
     @keyframes animateright {
       from {
@@ -149,11 +149,12 @@ html {
         .menu {
           display: flex;
           justify-content: flex-end;
-
-          .menu-item-146,
-          .menu-item-147 {
-            display: none;
+          .footer-menu {
+            li {
+              display: none;
+            }
           }
+
           li a:hover {
             border-bottom: 4px solid $nav-underline-color;
           }

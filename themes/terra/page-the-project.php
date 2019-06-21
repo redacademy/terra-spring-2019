@@ -55,7 +55,7 @@ get_header(); ?>
 
 			<h2><?php echo CFS()->get('who_we_are_title'); ?></h2>
 
-			<div class="team-member">
+			<div class="team-members">
 				<?php
 				$args = array(
 					'post_type' => 'member',
@@ -65,12 +65,15 @@ get_header(); ?>
 				?>
 				<?php foreach ($member_posts as $post) : setup_postdata($post); ?>
 
-					<article class="who-we-are-content">
+					<article class="team-member">
 						<?php if (has_post_thumbnail()) : ?>
-							<h3><?php the_title() ?></h3>
-							<p><?php the_content() ?></p>
 
-							<?php the_post_thumbnail('large'); ?>
+
+							<div class="member-photo"><?php the_post_thumbnail('large'); ?>
+									<p class="member-detail-arrow"><i class="fas fa-arrow-right"></i></p>
+							</div>
+							<h3><?php the_title() ?></h3>
+							<p><?php echo CFS()->get('member_position'); ?></p>
 
 
 						<?php endif; ?>
@@ -78,7 +81,7 @@ get_header(); ?>
 
 				<?php endforeach;
 			wp_reset_postdata(); ?>
-			</div>
+			</div><!-- .team-members -->
 
 		</section>
 

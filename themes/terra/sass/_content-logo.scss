@@ -9,11 +9,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     .anime {
       position: absolute;
       width: 500px;
       height: 500px;
+      opacity: 1;
     }
+
     .illustration-rings {
       z-index: 100;
     }
@@ -36,14 +39,15 @@
       }
     }
     .single-fish-1 {
-      width: 8%;
+      width: 6%;
       z-index: 20;
+
       img {
         width: 80%;
       }
     }
     .single-fish-2 {
-      width: 10%;
+      width: 12%;
       z-index: 24;
       img {
         width: 60%;
@@ -73,7 +77,7 @@
       height: 50px;
       left: 31%;
       z-index: 70;
-      animation: sway2 7s infinite;
+      animation: sway2 12s infinite;
       transform-origin: 50% 100% 0;
     }
   }
@@ -84,13 +88,13 @@
   }
   //single-fish-1
   .rotate-slow {
-    animation: rotation_2 50s infinite linear;
+    animation: rotation_2 42s infinite linear;
   }
   .rotate-slow-2 {
-    animation: rotation_2_2 40s infinite linear;
+    animation: rotation_2_2 35s infinite linear;
   }
   .rotate-slow-3 {
-    animation: rotation_2_2 30s infinite linear;
+    animation: rotation_2_2 29s infinite linear;
   }
   //earth movement
   .rotate-reverse {
@@ -142,20 +146,20 @@
   @keyframes sway1 {
     0%,
     100% {
-      transform: rotate(-6deg);
+      transform: rotate(2deg);
     }
     50% {
-      transform: rotate(6deg);
+      transform: rotate(-2deg);
     }
   }
 
   @keyframes sway2 {
     0%,
     100% {
-      transform: rotate(8deg);
+      transform: rotate(4deg);
     }
     50% {
-      transform: rotate(-6deg);
+      transform: rotate(-4deg);
     }
   }
 }

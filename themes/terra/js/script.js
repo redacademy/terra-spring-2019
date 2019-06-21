@@ -21,7 +21,7 @@
       const emailInput = $('.subscription-area input[type="email"]');
 
       setTimeout(function() {
-        const failMessage = $('.wpcf7-not-valid')
+        const failMessage = $('.wpcf7-not-valid');
 
         if (emailInput.hasClass(failMessage)) {
         } else {
@@ -40,7 +40,7 @@
       
       setTimeout(function() {
       
-        if (emailInput.hasClass(failMessage)) {
+        if (emailInput.hasClass()) {
         } else {
           $('.contact-form-border').addClass('sent-out-msg');
           $('.original-form').fadeOut('slow');
@@ -53,10 +53,26 @@
     /**
      * Team member popup
      */
-    $('.member-detail-arrow').on('click', function(event){
-      event.preventDefault();
-      console.log('click');
-    })
+    // close modal window
+    function closeModal(event) {
+      const closeModalTriggers = ".team-modal__close-btn, .team-modal";
+      // only close the modal if an element being clicked matches closeModalTriggers
+      if (event.target.matches(closeModalTriggers)) {
+        $(".team-modal").removeClass("team-modal--active");
+      }
+    }
 
+    if ($(".team-modal").length) {
+      $('.member-detail-arrow').on("click", function(event) {
+        event.preventDefault();
+        console.log($(this).parent().next(".team-modal"));
+        $(this).parent().parent().find(".team-modal").toggleClass("team-modal--active");
+      });
+      // click event added to body
+      $("body").on("click", closeModal);
+    }
+
+
+    
   }); // end of document ready
 })(jQuery);

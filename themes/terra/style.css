@@ -612,7 +612,7 @@ h2 {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -653,7 +653,7 @@ h2 {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: '';
+            content: "";
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -796,7 +796,7 @@ h2 {
     padding: 0 1.25rem 0 1.25rem;
     line-height: 1.25rem; }
     .home .getting-there article::after {
-      content: '';
+      content: "";
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -1577,7 +1577,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type='submit'] {
+  .contact-us-form input[type="submit"] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1781,10 +1781,14 @@ img {
   .page-aquaponics .history-aqua .hist-aqua-img-1 {
     width: 100%;
     opacity: 0.78;
-    border-radius: 50px; }
+    border-radius: 50px;
+    margin-top: 20px; }
     @media (min-width: 620px) {
       .page-aquaponics .history-aqua .hist-aqua-img-1 {
         display: none; } }
+  @media (min-width: 620px) {
+    .page-aquaponics .history-aqua .hist-aqua-h2 {
+      min-width: 500px; } }
   .page-aquaponics .history-aqua .hist-aqua-img {
     display: none;
     width: 100%;
@@ -1828,7 +1832,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1838,6 +1842,142 @@ img {
     background: #00d4e8;
     width: 15px;
     height: 15px; }
+
+.page-aquaponics .ben-aqua-h2 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-aquaponics .benefits-aqua {
+  padding: 0 1.25rem 0 1.25rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .benefits-aqua {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.page-aquaponics .ben-aqua-h2 {
+  padding-top: 35px; }
+  @media (min-width: 620px) {
+    .page-aquaponics .ben-aqua-h2 {
+      padding-top: 60px; } }
+
+.page-aquaponics .benefit-container {
+  width: 100%;
+  padding: 20px;
+  margin: 30px auto;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 390px;
+  width: 336px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.05); }
+  @media (min-width: 620px) {
+    .page-aquaponics .benefit-container {
+      width: 50%;
+      margin: 15px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      max-height: 500px;
+      max-width: 400px; } }
+
+.page-aquaponics .ben-aqua-img {
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .ben-aqua-img {
+      width: 35%; } }
+
+.page-aquaponics .cur-tech-h2 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-aquaponics .current-tech {
+  padding: 0 1.25rem 0 1.25rem;
+  margin-bottom: 50px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 620px) {
+    .page-aquaponics .current-tech {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 70px; } }
+
+.page-aquaponics .cur-tech-container {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin: 30px auto;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 410px;
+  width: 336px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15); }
+  @media (min-width: 620px) {
+    .page-aquaponics .cur-tech-container {
+      width: 50%;
+      margin: 15px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      height: 450px;
+      max-width: 350px; } }
+
+.page-aquaponics .cur-tech-h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: solid 5px #00ecf5;
+  border-spacing: 100px; }
+
+.page-aquaponics .cur-tech-p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px; }
+
+.page-aquaponics .cur-tech-img {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto; }
 
 .page-support-us {
   position: relative; }
@@ -1918,211 +2058,404 @@ img {
           height: 37.9%;
           bottom: 27.5%; } }
 
-.page-the-project img {
-  max-width: 100%; }
-
-.page-the-project .whats-terra {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding: 0 1.25rem 0 1.25rem;
-  position: relative;
-  margin-bottom: 8rem; }
-  .page-the-project .whats-terra::after {
-    content: '';
-    z-index: -1;
-    background: url("../../assets/images/illustrations/space-ring.svg");
-    opacity: 0.4;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: fill;
-    top: -100px;
-    right: -20%;
-    width: 90%;
-    padding-bottom: 60%;
-    background-position: bottom right;
-    bottom: -400px;
-    top: 0;
-    opacity: 0.2; }
-  @media (min-width: 620px) {
+.page-the-project {
+  /**
+   * Team Modal popup
+   */ }
+  .page-the-project img {
+    max-width: 100%; }
+  .page-the-project .whats-terra {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 1.25rem 0 1.25rem;
+    position: relative;
+    margin-bottom: 8rem; }
+    .page-the-project .whats-terra h2,
+    .page-the-project .whats-terra h3,
     .page-the-project .whats-terra p {
-      width: 65%; } }
-
-.page-the-project .lack-aware-container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/images/photos/lack-of-awareness.jpeg");
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: bottom -72px left -20px;
-  position: relative; }
-  @media (min-width: 620px) {
-    .page-the-project .lack-aware-container {
-      height: 640px;
-      background-size: 130%; } }
-  .page-the-project .lack-aware-container .lack-aware-h2 {
-    width: 290px;
-    color: white;
-    position: absolute;
-    text-align: center;
-    top: 43%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    line-height: 1.87rem;
-    font-size: 1.4em; }
+      color: black; }
+    .page-the-project .whats-terra::after {
+      content: "";
+      z-index: -1;
+      background: url("../../assets/images/illustrations/space-ring.svg");
+      opacity: 0.4;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: fill;
+      top: -100px;
+      right: -20%;
+      width: 90%;
+      padding-bottom: 60%;
+      background-position: bottom right;
+      bottom: -400px;
+      top: 0;
+      opacity: 0.2; }
     @media (min-width: 620px) {
-      .page-the-project .lack-aware-container .lack-aware-h2 {
-        width: 900px;
-        font-size: 4rem;
-        line-height: 1.2em; } }
-
-.page-the-project .lack-aware-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 2rem; }
-  @media (min-width: 620px) {
-    .page-the-project .lack-aware-cards {
-      position: relative;
-      margin-top: -130px; } }
-  .page-the-project .lack-aware-cards .lack-aw-item-wraps {
-    width: 50%;
-    height: 50%;
+      .page-the-project .whats-terra p {
+        width: 65%; } }
+  .page-the-project .lack-aware-container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/images/photos/lack-of-awareness.jpeg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: bottom -72px left -20px;
+    position: relative; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-container {
+        height: 640px;
+        background-size: 130%; } }
+    .page-the-project .lack-aware-container .lack-aware-h2 {
+      width: 290px;
+      color: white;
+      position: absolute;
+      text-align: center;
+      top: 43%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      line-height: 1.87rem;
+      font-size: 1.4em; }
+      @media (min-width: 620px) {
+        .page-the-project .lack-aware-container .lack-aware-h2 {
+          width: 900px;
+          font-size: 4rem;
+          line-height: 1.2em; } }
+  .page-the-project .lack-aware-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 2rem; }
+    @media (min-width: 620px) {
+      .page-the-project .lack-aware-cards {
+        position: relative;
+        margin-top: -130px; } }
+    .page-the-project .lack-aware-cards h2,
+    .page-the-project .lack-aware-cards h3,
+    .page-the-project .lack-aware-cards p {
+      color: black; }
+    .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+      width: 50%;
+      height: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-right: 2rem;
+      padding-left: 2rem; }
+      @media (min-width: 620px) {
+        .page-the-project .lack-aware-cards .lack-aw-item-wraps {
+          width: 25%; } }
+  .page-the-project .who-we-are {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; }
+    .page-the-project .who-we-are p,
+    .page-the-project .who-we-are h3 {
+      color: black; }
+  .page-the-project .team-members {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-the-project .team-member {
+    width: 50%; }
+    @media (min-width: 620px) {
+      .page-the-project .team-member {
+        width: 25%; } }
+  .page-the-project .member-photo {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-the-project .member-photo .member-detail-arrow {
+      font-size: 20px;
+      border: 1px solid white;
+      text-align: center;
+      vertical-align: middle;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: white;
+      -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+              box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      margin: 0; }
+      .page-the-project .member-photo .member-detail-arrow i {
+        color: #002d6e;
+        position: absolute;
+        bottom: 6px;
+        right: 7px; }
+  .page-the-project .project-partners {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url("../../assets/images/illustrations/futurisitc_illustration.svg");
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../../assets/images/illustrations/futurisitc_illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain 170%;
+    background-position: right -270px bottom -270px;
+    margin: 0 auto;
+    padding-bottom: 200px; }
+    .page-the-project .project-partners h2 {
+      max-width: 94%;
+      padding-left: 0;
+      color: black; }
+    .page-the-project .project-partners p,
+    .page-the-project .project-partners h3 {
+      color: black; }
+  .page-the-project .partner-entries {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    padding: 0 1.25rem 0 1.25rem;
+    -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    max-width: 94%;
+    padding: 2rem 2rem;
+    background: white; }
+  .page-the-project .source-funds {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2a8de4), to(#002d6e));
+    background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%);
+    padding: 2rem 2rem; }
+    .page-the-project .source-funds h2,
+    .page-the-project .source-funds h3,
+    .page-the-project .source-funds p,
+    .page-the-project .source-funds li {
+      color: white; }
+    .page-the-project .source-funds .sf-wrapper {
+      border-left: 8px solid #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      @media (min-width: 620px) {
+        .page-the-project .source-funds .sf-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      .page-the-project .source-funds .sf-wrapper .phase-1 {
+        position: relative;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+        .page-the-project .source-funds .sf-wrapper .phase-1::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+          position: absolute;
+          left: -19px;
+          top: -6px;
+          margin: 2rem; }
+      .page-the-project .source-funds .sf-wrapper .phase-2 {
+        position: relative;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; }
+        .page-the-project .source-funds .sf-wrapper .phase-2::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+          position: absolute;
+          left: -19px;
+          top: -6px;
+          margin: 2rem; }
+      .page-the-project .source-funds .sf-wrapper .seed-round {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+      .page-the-project .source-funds .sf-wrapper .series-round {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+  .page-the-project .seed-p-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .page-the-project .seed-p-wrapper .seed-p-left {
+      width: 110px; }
+    .page-the-project .seed-p-wrapper .seed-p-right {
+      width: 70px; }
+  .page-the-project .series-p-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .page-the-project .series-p-wrapper .series-p-left,
+    .page-the-project .series-p-wrapper .series-p-middle,
+    .page-the-project .series-p-wrapper .series-p-right {
+      width: 63px; }
+  .page-the-project .white-paper {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.25rem 0 1.25rem; }
+    .page-the-project .white-paper .wh-paper-h3 {
+      color: #4a4a4a;
+      font-size: 1.2rem;
+      font-weight: 200; }
+      @media (min-width: 620px) {
+        .page-the-project .white-paper .wh-paper-h3 {
+          font-size: 1.5rem;
+          font-weight: 200; } }
+    .page-the-project .white-paper .wh-paper-btn {
+      height: 3rem;
+      width: 150px;
+      background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
+      background: linear-gradient(90deg, #002d6e 0%, #2f88d3 100%);
+      color: white;
+      text-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 25px;
+      background: white;
+      border-radius: 6px;
+      width: 190px;
+      border: 2px solid #00d4e8;
+      color: #00d4e8;
+      height: 55px; }
+      .page-the-project .white-paper .wh-paper-btn a {
+        text-decoration: none;
+        color: #00d4e8;
+        font-size: 1.05rem; }
+      .page-the-project .white-paper .wh-paper-btn i {
+        font-size: 1.3rem; }
+      @media (min-width: 620px) {
+        .page-the-project .white-paper .wh-paper-btn {
+          border: 2px solid #0f2e6b;
+          color: #0f2e6b; }
+          .page-the-project .white-paper .wh-paper-btn a {
+            color: #0f2e6b; } }
+  .page-the-project .team-modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-right: 2rem;
-    padding-left: 2rem; }
-    @media (min-width: 620px) {
-      .page-the-project .lack-aware-cards .lack-aw-item-wraps {
-        width: 25%; } }
-
-.page-the-project .who-we-are {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%; }
-  .page-the-project .who-we-are p, .page-the-project .who-we-are h3 {
-    color: black; }
-
-.page-the-project .team-members {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.page-the-project .team-member {
-  width: 50%; }
-  @media (min-width: 620px) {
-    .page-the-project .team-member {
-      width: 25%; } }
-
-.page-the-project .member-photo {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .page-the-project .member-photo .member-detail-arrow {
-    font-size: 20px;
-    border: 1px solid white;
-    text-align: center;
-    vertical-align: middle;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: white;
-    -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    margin: 0; }
-    .page-the-project .member-photo .member-detail-arrow i {
-      color: #002d6e;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 0;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    .page-the-project .team-modal__close-btn {
       position: absolute;
-      bottom: 6px;
-      right: 7px; }
-
-.page-the-project .project-partners {
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right bottom;
-  margin: 0 auto;
-  padding-bottom: 200px; }
-  .page-the-project .project-partners h2 {
-    max-width: 94%;
-    padding-left: 0;
-    margin: 4rem auto;
-    color: black; }
-  .page-the-project .project-partners p, .page-the-project .project-partners h3 {
-    color: black; }
-
-.page-the-project .partner-entries {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid white;
-  padding: 0 1.25rem 0 1.25rem;
-  -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  max-width: 94%;
-  padding: 2rem 2rem;
-  background: white; }
-
-.page-the-project .source-funds {
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2a8de4), to(#002d6e));
-  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%);
-  padding: 2rem 2rem; }
-  .page-the-project .source-funds h2, .page-the-project .source-funds h3, .page-the-project .source-funds p, .page-the-project .source-funds li {
-    color: white; }
-
-.page-the-project .seed-p-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .page-the-project .seed-p-wrapper .seed-p-left {
-    width: 110px; }
-  .page-the-project .seed-p-wrapper .seed-p-right {
-    width: 70px; }
-
-.page-the-project .series-p-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .page-the-project .series-p-wrapper .series-p-left, .page-the-project .series-p-wrapper .series-p-middle, .page-the-project .series-p-wrapper .series-p-right {
-    width: 63px; }
+      right: 0;
+      padding: 1rem;
+      cursor: pointer;
+      z-index: 99;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background: #fff; }
+      .page-the-project .team-modal__close-btn:hover {
+        background: #000;
+        color: #fff; }
+    .page-the-project .team-modal__description {
+      overflow-y: scroll;
+      height: 100vh; }
+    .page-the-project .team-modal--active {
+      opacity: 1;
+      position: fixed;
+      background: -webkit-gradient(linear, left top, right top, from(#2f88d3), to(#2a8de4));
+      background: linear-gradient(90deg, #2f88d3 0%, #2a8de4 100%);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      width: 100%;
+      overflow: hidden;
+      z-index: 999; }
+    .page-the-project .team-modal__inner {
+      background: #f3f2f0;
+      max-width: 1170px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .page-the-project .team-modal__left-col {
+      width: 100%; }
+      @media (min-width: 620px) {
+        .page-the-project .team-modal__left-col {
+          width: 50%; } }
+    .page-the-project .team-modal__right-col {
+      width: 100%; }
+      @media (min-width: 620px) {
+        .page-the-project .team-modal__right-col {
+          width: 50%; } }
+    .page-the-project .team-modal__img {
+      max-width: 100%;
+      height: auto;
+      position: relative; }
 
 .error404 {
-  background-color: #002d6e; }
+  background-color: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
+  @media screen and (max-width: 620px) {
+    .error404 .site-content {
+      overflow: hidden; } }
   .error404 .site-content .widget {
     display: none; }
   .error404 .site-content .error-404 {
@@ -2132,28 +2465,56 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    .error404 .site-content .error-404 .page-title {
-      color: white; }
+    .error404 .site-content .error-404 .phone-404 {
+      display: block;
+      font-size: 100px; }
+      @media screen and (min-width: 620px) {
+        .error404 .site-content .error-404 .phone-404 {
+          display: none; } }
     .error404 .site-content .error-404 .page-header {
       margin-right: auto;
       margin-left: auto;
       width: 45%; }
+      @media screen and (max-width: 620px) {
+        .error404 .site-content .error-404 .page-header {
+          width: 100%;
+          margin-top: 15%;
+          margin-bottom: 15%; } }
+      .error404 .site-content .error-404 .page-header .page-title {
+        color: white; }
     .error404 .site-content .error-404 .page-content {
       padding: 10px 10px 10px 10px;
       height: -webkit-fill-available;
       height: 90vh; }
+      @media screen and (max-width: 620px) {
+        .error404 .site-content .error-404 .page-content {
+          height: 115vh; } }
       .error404 .site-content .error-404 .page-content .search-box-content {
-        -webkit-box-shadow: 43px 37px 22px -9px black;
-                box-shadow: 43px 37px 22px -9px black;
+        -webkit-box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.315);
+                box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.315);
         width: 28%; }
-        .error404 .site-content .error-404 .page-content .search-box-content fieldset {
-          width: 80%;
-          border: none; }
+        @media screen and (max-width: 620px) {
+          .error404 .site-content .error-404 .page-content .search-box-content {
+            width: 100%; } }
         .error404 .site-content .error-404 .page-content .search-box-content p {
           text-align: center;
           line-height: 1.3;
           font-size: 24px;
           color: #00d4e8; }
+      @media screen and (max-width: 620px) {
+        .error404 .site-content .error-404 .page-content .anime-rotate {
+          margin-top: 120%;
+          margin-bottom: 25%; }
+          .error404 .site-content .error-404 .page-content .anime-rotate .grass-blades {
+            width: 213px;
+            height: 2px;
+            left: 1%; }
+          .error404 .site-content .error-404 .page-content .anime-rotate .small-leaves {
+            margin-top: 21%;
+            width: 43%;
+            left: 12%; }
+          .error404 .site-content .error-404 .page-content .anime-rotate .single-fish-3 {
+            width: 16%; } }
       .error404 .site-content .error-404 .page-content .four-0-four {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2163,10 +2524,16 @@ img {
         font-size: 200px;
         width: 99.5%; }
         .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
-          margin-right: 250px;
-          color: white; }
+          color: white;
+          margin-right: 20%; }
         .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
           color: white; }
+        @media screen and (max-width: 620px) {
+          .error404 .site-content .error-404 .page-content .four-0-four {
+            display: none; } }
+    @media screen and (max-width: 620px) {
+      .error404 .site-content .error-404 {
+        width: 100%; } }
 
 .not-found {
   -webkit-box-sizing: border-box;
@@ -2188,7 +2555,8 @@ img {
     .not-found .anime-rotate .anime {
       position: absolute;
       width: 500px;
-      height: 500px; }
+      height: 500px;
+      opacity: 1; }
     .not-found .anime-rotate .illustration-rings {
       z-index: 100; }
     .not-found .anime-rotate .outer-ring {
@@ -2205,12 +2573,12 @@ img {
         width: 29.01%;
         height: 102.1%; }
     .not-found .anime-rotate .single-fish-1 {
-      width: 8%;
+      width: 6%;
       z-index: 20; }
       .not-found .anime-rotate .single-fish-1 img {
         width: 80%; }
     .not-found .anime-rotate .single-fish-2 {
-      width: 10%;
+      width: 12%;
       z-index: 24; }
       .not-found .anime-rotate .single-fish-2 img {
         width: 60%; }
@@ -2236,22 +2604,22 @@ img {
       height: 50px;
       left: 31%;
       z-index: 70;
-      -webkit-animation: sway2 7s infinite;
-              animation: sway2 7s infinite;
+      -webkit-animation: sway2 12s infinite;
+              animation: sway2 12s infinite;
       -webkit-transform-origin: 50% 100% 0;
               transform-origin: 50% 100% 0; }
   .not-found .rotate-fast {
     -webkit-animation: rotation_1 16s infinite linear;
             animation: rotation_1 16s infinite linear; }
   .not-found .rotate-slow {
-    -webkit-animation: rotation_2 50s infinite linear;
-            animation: rotation_2 50s infinite linear; }
+    -webkit-animation: rotation_2 42s infinite linear;
+            animation: rotation_2 42s infinite linear; }
   .not-found .rotate-slow-2 {
-    -webkit-animation: rotation_2_2 40s infinite linear;
-            animation: rotation_2_2 40s infinite linear; }
+    -webkit-animation: rotation_2_2 35s infinite linear;
+            animation: rotation_2_2 35s infinite linear; }
   .not-found .rotate-slow-3 {
-    -webkit-animation: rotation_2_2 30s infinite linear;
-            animation: rotation_2_2 30s infinite linear; }
+    -webkit-animation: rotation_2_2 29s infinite linear;
+            animation: rotation_2_2 29s infinite linear; }
   .not-found .rotate-reverse {
     -webkit-animation: back_rotation 180s infinite linear;
             animation: back_rotation 180s infinite linear; }
@@ -2339,35 +2707,35 @@ img {
 @-webkit-keyframes sway1 {
   0%,
   100% {
-    -webkit-transform: rotate(-6deg);
-            transform: rotate(-6deg); }
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
   50% {
-    -webkit-transform: rotate(6deg);
-            transform: rotate(6deg); } }
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg); } }
 
 @keyframes sway1 {
   0%,
   100% {
-    -webkit-transform: rotate(-6deg);
-            transform: rotate(-6deg); }
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
   50% {
-    -webkit-transform: rotate(6deg);
-            transform: rotate(6deg); } }
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg); } }
 
 @-webkit-keyframes sway2 {
   0%,
   100% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg); }
   50% {
-    -webkit-transform: rotate(-6deg);
-            transform: rotate(-6deg); } }
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); } }
 
 @keyframes sway2 {
   0%,
   100% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg); }
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg); }
   50% {
-    -webkit-transform: rotate(-6deg);
-            transform: rotate(-6deg); } }
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg); } }

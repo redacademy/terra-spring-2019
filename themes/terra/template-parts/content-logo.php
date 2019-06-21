@@ -15,6 +15,7 @@
     <div class="anime small-leaves">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/small-leaves.svg' alt='logo front page'>
     </div>
+
     <div class="anime rotate-slow single-fish-1">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/single-fish.svg' alt='logo front page'>
     </div>

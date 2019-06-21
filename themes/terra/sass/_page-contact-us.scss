@@ -1,5 +1,5 @@
 .page-contact-us {
-  .page-contact-us.site-main {
+  .site-main {
     background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
     background-repeat: no-repeat;
     background-position: top 20px right -250px;
@@ -11,8 +11,9 @@
     }
   }
 
-  .page-contact-us h1.entry-title {
+  h1.entry-title {
     display: none;
+    
   }
 
   .contact-form-border {

@@ -404,10 +404,10 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #4a4a4a; }
+  color: #ffffff; }
 
 p {
-  color: #4a4a4a; }
+  color: #ffffff; }
 
 h2 {
   font-size: 2.625rem; }
@@ -466,13 +466,13 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: white;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
   .roadmap h2 {
-    width: 100%; }
+    width: 100%;
+    color: white; }
   .roadmap ul {
     padding: 0;
     width: 100%; }
@@ -1379,17 +1379,17 @@ html {
   .disclaimer-center .page-contact-us h1.entry-title {
     display: unset; }
 
-.page-contact-us .page-contact-us.site-main {
+.page-contact-us .site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
   background-position: top 20px right -250px;
   background-size: 80%; }
   @media (min-width: 620px) {
-    .page-contact-us .page-contact-us.site-main {
+    .page-contact-us .site-main {
       background-position: bottom -20px left;
       background-size: 70%; } }
 
-.page-contact-us .page-contact-us h1.entry-title {
+.page-contact-us h1.entry-title {
   display: none; }
 
 .page-contact-us .contact-form-border {
@@ -1463,7 +1463,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type="submit"] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1987,7 +1987,6 @@ img {
           flex-direction: row; }
   .page-the-project .series-p-wrapper .series-p-left, .page-the-project .series-p-wrapper .series-p-middle, .page-the-project .series-p-wrapper .series-p-right {
     width: 63px; }
-  background: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
 
 .error404 {
   background-color: #002d6e;

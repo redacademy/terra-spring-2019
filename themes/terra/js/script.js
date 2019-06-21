@@ -48,5 +48,15 @@
         }
       }, 500);
     }); // end of contact form
+
+
+    /**
+     * Team member popup
+     */
+    $('.member-detail-arrow').on('click', function(event){
+      event.preventDefault();
+      console.log('click');
+    })
+
   }); // end of document ready
 })(jQuery);

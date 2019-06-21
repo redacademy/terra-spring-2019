@@ -1902,6 +1902,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%; }
+  .page-the-project .who-we-are p, .page-the-project .who-we-are h3 {
+    color: black; }
 
 .page-the-project .team-members {
   display: -webkit-box;
@@ -1917,9 +1919,13 @@ img {
       width: 25%; } }
 
 .page-the-project .member-photo {
-  position: relative; }
-  .page-the-project .member-photo img {
-    position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .page-the-project .member-photo .member-detail-arrow {
     font-size: 20px;
     border: 1px solid white;
@@ -1932,17 +1938,29 @@ img {
     -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
     position: absolute;
-    bottom: 0;
-    right: 0; }
+    bottom: 5%;
+    right: 5%;
+    margin: 0; }
     .page-the-project .member-photo .member-detail-arrow i {
       color: #002d6e;
       position: absolute;
       bottom: 6px;
       right: 7px; }
 
-.page-the-project .project-partners::after {
-  content: '';
-  background: url("../../assets/images/illustrations/futurisitc_illustration.svg"); }
+.page-the-project .project-partners {
+  background: url("../../assets/images/illustrations/futurisitc_illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  margin: 0 auto;
+  padding-bottom: 200px; }
+  .page-the-project .project-partners h2 {
+    max-width: 94%;
+    padding-left: 0;
+    margin: 4rem auto;
+    color: black; }
+  .page-the-project .project-partners p, .page-the-project .project-partners h3 {
+    color: black; }
 
 .page-the-project .partner-entries {
   max-width: 1140px;
@@ -1954,7 +1972,8 @@ img {
           box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   max-width: 94%;
-  padding: 2rem 2rem; }
+  padding: 2rem 2rem;
+  background: white; }
 
 .page-the-project .source-funds {
   width: 100%;

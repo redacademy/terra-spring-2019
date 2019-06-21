@@ -70,7 +70,7 @@ get_header(); ?>
 
 
 							<div class="member-photo"><?php the_post_thumbnail('large'); ?>
-								<p class="member-detail-arrow"><i class="fas fa-arrow-right"></i></p>
+								<a href="#" class="member-detail-arrow"><i class="fas fa-arrow-right"></i></a>
 							</div>
 							<h3><?php the_title() ?></h3>
 							<p><?php echo CFS()->get('member_position'); ?></p>

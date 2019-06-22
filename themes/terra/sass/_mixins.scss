@@ -30,7 +30,7 @@
 }
 
 @mixin roadmap-dot {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -39,7 +39,13 @@
 }
 
 @mixin roadmap-dot-hover {
-  background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+  background: radial-gradient(
+    ellipse at center,
+    #00d4e8 0%,
+    #00d4e8 50%,
+    #ffffff 51%,
+    #f7f7f7 100%
+  );
 
   //   position: absolute;
 }
@@ -100,9 +106,9 @@
 }
 
 @mixin space-ring-bg {
-  content: "";
+  content: '';
   z-index: -1;
-  background: url("../../assets/images/illustrations/space-ring.svg");
+  background: url('../../assets/images/illustrations/space-ring.svg');
   opacity: 0.4;
   position: absolute;
   background-repeat: no-repeat;
@@ -114,9 +120,9 @@
 }
 
 @mixin fp-gradient-rect {
-  content: '';
+  content: "";
   z-index: -1;
-  background: url('../../assets/images/Icons/7DE0379D0C234C6C.jpg');
+  background: url("../../assets/images/Icons/7DE0379D0C234C6C.jpg");
   opacity: 0.4;
   position: absolute;
   background-repeat: no-repeat;

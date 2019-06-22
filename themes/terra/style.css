@@ -404,10 +404,10 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 p {
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 h2 {
   font-size: 2.625rem; }
@@ -531,11 +531,7 @@ h2 {
   padding: 20px; }
   .roadmap h2 {
     width: 100%;
-<<<<<<< HEAD
     color: #ffffff; }
-=======
-    color: white; }
->>>>>>> 73f2206314f65216afe9bb574ff80c26e24eb6d3
   .roadmap ul {
     padding: 0;
     width: 100%; }
@@ -748,7 +744,7 @@ h2 {
     padding: 0 1.25rem 0 1.25rem;
     line-height: 1.25rem; }
     .home .getting-there article::after {
-      content: "";
+      content: '';
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -2135,12 +2131,10 @@ img {
     width: 63px; }
 
 .error404 {
-  background-color: linear-gradient(180deg, #2a8de4 0%, #002d6e 100%); }
+  background: #002d6e; }
   @media screen and (max-width: 620px) {
     .error404 .site-content {
       overflow: hidden; } }
-  .error404 .site-content .widget {
-    display: none; }
   .error404 .site-content .error-404 {
     max-width: 1140px;
     margin-left: auto;
@@ -2148,164 +2142,151 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    .error404 .site-content .error-404 .phone-404 {
-      display: block;
-      font-size: 100px; }
-      @media screen and (min-width: 620px) {
-        .error404 .site-content .error-404 .phone-404 {
-          display: none; } }
-    .error404 .site-content .error-404 .page-header {
-      margin-right: auto;
-      margin-left: auto;
-      width: 45%; }
+    @media screen and (max-width: 620px) {
+      .error404 .site-content .error-404 .page-content {
+        height: 115vh; } }
+    .error404 .site-content .error-404 .page-content .search-box-content {
+      -webkit-box-shadow: 43px 37px 22px -9px black;
+              box-shadow: 43px 37px 22px -9px black;
+      width: 28%; }
       @media screen and (max-width: 620px) {
-        .error404 .site-content .error-404 .page-header {
-          width: 100%;
-          margin-top: 15%;
-          margin-bottom: 15%; } }
-      .error404 .site-content .error-404 .page-header .page-title {
+        .error404 .site-content .error-404 .page-content .search-box-content {
+          width: 100%; } }
+      .error404 .site-content .error-404 .page-content .search-box-content p {
+        text-align: center;
+        line-height: 1.3;
+        font-size: 24px;
+        color: #00d4e8; }
+    .error404 .site-content .error-404 .page-content .four-0-four {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 200px; }
+      .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
+        min-width: 50%;
+        height: 50vw;
+        position: relative; }
+      .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
+        color: white;
+        width: 25%; }
+      .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
+        width: 25%;
         color: white; }
-    .error404 .site-content .error-404 .page-content {
-      padding: 10px 10px 10px 10px;
-      height: -webkit-fill-available;
-      height: 90vh; }
       @media screen and (max-width: 620px) {
-        .error404 .site-content .error-404 .page-content {
-          height: 115vh; } }
-      .error404 .site-content .error-404 .page-content .search-box-content {
-        -webkit-box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.315);
-                box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.315);
-        width: 28%; }
-        @media screen and (max-width: 620px) {
-          .error404 .site-content .error-404 .page-content .search-box-content {
-            width: 100%; } }
-        .error404 .site-content .error-404 .page-content .search-box-content p {
-          text-align: center;
-          line-height: 1.3;
-          font-size: 24px;
-          color: #00d4e8; }
-      @media screen and (max-width: 620px) {
-        .error404 .site-content .error-404 .page-content .anime-rotate {
-          margin-top: 120%;
-          margin-bottom: 25%; }
-          .error404 .site-content .error-404 .page-content .anime-rotate .grass-blades {
-            width: 213px;
-            height: 2px;
-            left: 1%; }
-          .error404 .site-content .error-404 .page-content .anime-rotate .small-leaves {
-            margin-top: 21%;
-            width: 43%;
-            left: 12%; }
-          .error404 .site-content .error-404 .page-content .anime-rotate .single-fish-3 {
-            width: 16%; } }
-      .error404 .site-content .error-404 .page-content .four-0-four {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        font-size: 200px;
-        width: 99.5%; }
-        .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
-          color: white;
-          margin-right: 20%; }
-        .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
-          color: white; }
-        @media screen and (max-width: 620px) {
-          .error404 .site-content .error-404 .page-content .four-0-four {
-            display: none; } }
+        .error404 .site-content .error-404 .page-content .four-0-four {
+          display: none; } }
     @media screen and (max-width: 620px) {
       .error404 .site-content .error-404 {
         width: 100%; } }
 
-.not-found {
+.anime-rotate {
+  position: relative;
+  min-width: inherit;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center; }
-  .not-found .anime-rotate {
-    position: relative;
+  .anime-rotate .anime {
+    position: absolute;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
     width: 100%;
-    bottom: 12pc;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .not-found .anime-rotate .anime {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      opacity: 1; }
-    .not-found .anime-rotate .illustration-rings {
-      z-index: 100; }
-    .not-found .anime-rotate .outer-ring {
-      color: white;
-      z-index: 99; }
-    .not-found .anime-rotate .inner-circle {
-      margin-top: 18%; }
-      .not-found .anime-rotate .inner-circle img {
-        opacity: -100; }
-    .not-found .anime-rotate .earth {
-      z-index: 100;
-      width: 46%; }
-      .not-found .anime-rotate .earth img {
-        width: 29.01%;
-        height: 102.1%; }
-    .not-found .anime-rotate .single-fish-1 {
-      width: 6%;
-      z-index: 20; }
-      .not-found .anime-rotate .single-fish-1 img {
-        width: 80%; }
-    .not-found .anime-rotate .single-fish-2 {
-      width: 12%;
-      z-index: 24; }
-      .not-found .anime-rotate .single-fish-2 img {
-        width: 60%; }
-    .not-found .anime-rotate .single-fish-3 {
-      width: 9%;
-      z-index: 24; }
-    .not-found .anime-rotate .big-fish {
-      width: 10%;
-      z-index: 190; }
-      .not-found .anime-rotate .big-fish img {
-        width: 60%; }
-    .not-found .anime-rotate .small-leaves {
-      width: 30%;
-      height: 100%;
-      left: 29%;
-      z-index: 40;
-      -webkit-animation: sway1 16s infinite;
-              animation: sway1 16s infinite;
-      -webkit-transform-origin: 50% 100% 0;
-              transform-origin: 50% 100% 0; }
-    .not-found .anime-rotate .grass-blades {
-      width: 250px;
-      height: 50px;
-      left: 31%;
-      z-index: 70;
-      -webkit-animation: sway2 12s infinite;
-              animation: sway2 12s infinite;
-      -webkit-transform-origin: 50% 100% 0;
-              transform-origin: 50% 100% 0; }
-  .not-found .rotate-fast {
-    -webkit-animation: rotation_1 16s infinite linear;
-            animation: rotation_1 16s infinite linear; }
-  .not-found .rotate-slow {
-    -webkit-animation: rotation_2 42s infinite linear;
-            animation: rotation_2 42s infinite linear; }
-  .not-found .rotate-slow-2 {
-    -webkit-animation: rotation_2_2 35s infinite linear;
-            animation: rotation_2_2 35s infinite linear; }
-  .not-found .rotate-slow-3 {
-    -webkit-animation: rotation_2_2 29s infinite linear;
-            animation: rotation_2_2 29s infinite linear; }
-  .not-found .rotate-reverse {
-    -webkit-animation: back_rotation 180s infinite linear;
-            animation: back_rotation 180s infinite linear; }
+    height: auto;
+    opacity: 1;
+    top: 50%;
+    left: 50%; }
+  .anime-rotate .animation-bg {
+    position: relative;
+    left: -50%; }
+    .anime-rotate .animation-bg .bg-2 {
+      z-index: 11; }
+    .anime-rotate .animation-bg img {
+      position: absolute; }
+    .anime-rotate .animation-bg .earth-container {
+      position: relative;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: auto;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .anime-rotate .animation-bg .earth-container .earth {
+        z-index: 100;
+        width: 30%;
+        position: absolute; }
+  .anime-rotate .single-fish-1 {
+    width: 6%;
+    z-index: 20; }
+    .anime-rotate .single-fish-1 img {
+      width: 80%; }
+  .anime-rotate .single-fish-2 {
+    width: 12%;
+    z-index: 24; }
+    .anime-rotate .single-fish-2 img {
+      width: 60%; }
+  .anime-rotate .single-fish-3 {
+    width: 9%;
+    z-index: 24; }
+  .anime-rotate .big-fish {
+    width: 10%;
+    z-index: 190; }
+    .anime-rotate .big-fish img {
+      width: 60%; }
+  .anime-rotate .small-leaves {
+    width: 30%;
+    height: 100%;
+    left: 29%;
+    z-index: 40;
+    -webkit-animation: sway1 16s infinite;
+            animation: sway1 16s infinite;
+    -webkit-transform-origin: 50% 100% 0;
+            transform-origin: 50% 100% 0; }
+  .anime-rotate .grass-blades {
+    width: 30%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 70;
+    -webkit-animation: sway2 12s infinite;
+            animation: sway2 12s infinite;
+    -webkit-transform-origin: 50% 100% 0;
+            transform-origin: 50% 100% 0; }
+
+.rotate-fast {
+  -webkit-animation: rotation_1 16s infinite linear;
+          animation: rotation_1 16s infinite linear; }
+
+.rotate-slow {
+  -webkit-animation: rotation_2 42s infinite linear;
+          animation: rotation_2 42s infinite linear; }
+
+.rotate-slow-2 {
+  -webkit-animation: rotation_2_2 35s infinite linear;
+          animation: rotation_2_2 35s infinite linear; }
+
+.rotate-slow-3 {
+  -webkit-animation: rotation_2_2 29s infinite linear;
+          animation: rotation_2_2 29s infinite linear; }
+
+.rotate-reverse {
+  -webkit-animation: back_rotation 180s infinite linear;
+          animation: back_rotation 180s infinite linear; }
 
 @-webkit-keyframes rotation_1 {
   from {

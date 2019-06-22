@@ -1,16 +1,14 @@
 <div class="anime-rotate">
-
-    <div class="anime outer-ring">
-        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/outer-ring.svg' alt='logo front page'>
+    <div class="animation-bg">
+        <img class="bg-2" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/outer-ring.svg' alt='logo front page'>
+        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/water.svg' alt='logo front page'>
+        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/illustration-rings.svg' alt='logo front page'>
+        <div class="earth-container">
+            <img class="anime rotate-reverse earth" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/earth.svg' alt='logo front page'>
+        </div>
     </div>
     <div class="anime grass-blades">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/grass-blades.svg' alt='logo front page'>
-    </div>
-    <div class="anime illustration-rings">
-        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/illustration-rings.svg' alt='logo front page'>
-    </div>
-    <div class="anime water">
-        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/water.svg' alt='logo front page'>
     </div>
     <div class="anime small-leaves">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/small-leaves.svg' alt='logo front page'>
@@ -28,10 +26,10 @@
     <div class="anime rotate-fast big-fish">
         <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/big-fish.svg' alt='logo front page'>
     </div>
-    <div class="anime rotate-reverse earth">
-        <img class="earth-small" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/earth.svg' alt='logo front page'>
-    </div>
-    <div class="anime inner-circle">
-        <img src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/inner-circle.svg' alt='logo front page'>
-    </div>
+
+
+
+
+
+
 </div>

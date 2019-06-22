@@ -404,10 +404,10 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 p {
-  color: #ffffff; }
+  color: #4a4a4a; }
 
 h2 {
   font-size: 2.625rem; }
@@ -531,11 +531,7 @@ h2 {
   padding: 20px; }
   .roadmap h2 {
     width: 100%;
-<<<<<<< HEAD
     color: #ffffff; }
-=======
-    color: white; }
->>>>>>> 73f2206314f65216afe9bb574ff80c26e24eb6d3
   .roadmap ul {
     padding: 0;
     width: 100%; }
@@ -565,7 +561,7 @@ h2 {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -606,7 +602,7 @@ h2 {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: '';
+            content: "";
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -1781,7 +1777,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1944,27 +1940,16 @@ img {
     width: 100%;
     padding: 0 1.25rem 0 1.25rem;
     position: relative;
-    margin-bottom: 8rem; }
+    padding-bottom: 8rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../../assets/images/illustrations/space-ring.svg");
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../assets/images/illustrations/space-ring.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 60%; }
     .page-the-project .whats-terra h2,
     .page-the-project .whats-terra h3,
     .page-the-project .whats-terra p {
       color: black; }
-    .page-the-project .whats-terra::after {
-      content: '';
-      z-index: -1;
-      background: url("../../assets/images/illustrations/space-ring.svg");
-      opacity: 0.4;
-      position: absolute;
-      background-repeat: no-repeat;
-      background-size: fill;
-      top: -100px;
-      right: -20%;
-      width: 90%;
-      padding-bottom: 60%;
-      background-position: bottom right;
-      bottom: -400px;
-      top: 0;
-      opacity: 0.2; }
     @media (min-width: 620px) {
       .page-the-project .whats-terra p {
         width: 65%; } }
@@ -2142,7 +2127,7 @@ img {
             -ms-flex-order: 1;
                 order: 1; }
         .page-the-project .source-funds .sf-wrapper .phase-1::before {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -2157,7 +2142,7 @@ img {
             -ms-flex-order: 3;
                 order: 3; }
         .page-the-project .source-funds .sf-wrapper .phase-2::before {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -2288,8 +2273,8 @@ img {
     .page-the-project .team-modal--active {
       opacity: 1;
       position: fixed;
-      background: -webkit-gradient(linear, left top, right top, from(#2f88d3), to(#2a8de4));
-      background: linear-gradient(90deg, #2f88d3 0%, #2a8de4 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#1670c0), to(#5aa2dd));
+      background: linear-gradient(180deg, #1670c0 0%, #5aa2dd 100%);
       top: 0;
       right: 0;
       bottom: 0;
@@ -2302,15 +2287,29 @@ img {
       z-index: 999; }
     .page-the-project .team-modal__inner {
       background: #f3f2f0;
-      max-width: 1170px;
+      max-width: 80%;
+      max-height: 90%;
       position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      margin-top: 2rem;
+      border-bottom: 1px solid white;
+      border-radius: 20px 20px 20px 20px; }
+      @media (min-width: 620px) {
+        .page-the-project .team-modal__inner {
+          max-width: 1140px;
+          margin-top: 3rem; } }
     .page-the-project .team-modal__left-col {
-      width: 100%; }
+      width: 100%;
+      background: #000;
+      border: 1px solid black;
+      border-radius: 20px 20px 0 0; }
+      .page-the-project .team-modal__left-col h3,
+      .page-the-project .team-modal__left-col p {
+        color: white; }
       @media (min-width: 620px) {
         .page-the-project .team-modal__left-col {
           width: 50%; } }

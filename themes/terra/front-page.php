@@ -17,12 +17,14 @@ get_header(); ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<?php the_post_thumbnail(); ?>
 
-			<?php endwhile;
-		?>
-			<h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
+            <?php endwhile;
+        ?>
+            <h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
 		</section>
 
-		<!-- Intro What is Aquaponics -->
+        <!-- Intro What is Aquaponics -->
+        
+        <div class="about-aqua">
 		<section class="intro-fp">
 			<h2 class="intro-fp-h2"><?php echo CFS()->get('fp_intro_text'); ?></h2>
 		</section>
@@ -36,9 +38,13 @@ get_header(); ?>
 					<h3 class="ap-info-h3"> <?php echo $fp_ap_info['aquaponics_info_title']; ?></h3>
 					<p class="ap-info-p"> <?php echo $fp_ap_info['aquaponics_info_description']; ?></p>
 				</div>
-			<?php endforeach; ?>
-		</section>
-
+            <?php endforeach; ?>
+        </section>
+        
+        <div class="button-center">
+                    <a href="<?php echo home_url("aquaponics") ?>">Learn More</a>
+         </div>
+         </div>
 			<!-- Our Mission Section (4 WYSIWIGs)-->
             
 			<section class="fp-mission"> 

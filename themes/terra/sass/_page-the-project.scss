@@ -11,7 +11,11 @@
     padding: $page-padding-mobile;
     width: 100%;
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) center,
+    background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        )
+        center,
       url('../../assets/images/illustrations/space-ring.svg');
     background-repeat: no-repeat no-repeat;
     background-position: center, top 270px right -100px;
@@ -28,7 +32,6 @@
         font-size: 1.2rem;
       }
     }
-
   }
 
   .lack-aware-container {
@@ -66,7 +69,7 @@
   .lack-aware-cards {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding-top: 1rem;
     @include desktop {
       position: relative;
       margin-top: -130px;
@@ -90,14 +93,19 @@
         width: 25%;
       }
     }
+    .lack-aw-dc-wrap {
+      max-width: 210px;
+    }
   }
 
   .who-we-are {
     @include center-page;
-    max-width: 90%;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
     p,
     h3 {
       color: black;
+      text-align: center;
     }
   }
 
@@ -108,6 +116,7 @@
 
   .team-member {
     width: 50%;
+    flex-direction: column;
     @include desktop {
       width: 25%;
     }
@@ -150,7 +159,7 @@
     background-size: contain 170%;
     background-position: right -270px bottom -270px;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 15rem;
     h2 {
       max-width: 94%;
       padding-left: 0;
@@ -170,62 +179,113 @@
 
   .source-funds {
     width: 100%;
-    background: $fp-gradient;
-    padding: 2rem 2rem;
+    background: linear-gradient(180deg, #42a4fa 0%, #002d6e 100%);
+    padding: 2.5rem;
+    padding-bottom: 10rem;
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      @include desktop {
+        font-size: 2.6em;
+        margin-bottom: 6rem;
+      }
+    }
     h2,
     h3,
     p,
     li {
       color: white;
     }
-    .sf-wrapper {
-      border-left: 8px solid #ffffff;
+    
+    @include desktop {
+      padding-top: 7rem;
+      padding-left: 7rem;
+    }
+  }
+
+  .sf-wrapper {
+    border-left: 8px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .phase-1 {
+    position: relative;
+    order: 1;
+    margin-left: 2rem;
+    margin-top: 0;
+    &::before {
+      @include roadmap-dot;
+      left: -51px;
+      top: -5px;
+    }
+    @include desktop{
+      width: 50%;
+    }
+  }
+  .phase-2 {
+    position: relative;
+    order: 3;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    &::before {
+      @include roadmap-dot;
+      left: -51px;
+      top: -5px;
+    }
+    @include desktop{
+      width: 50%;
+    }
+  }
 
-      @include desktop {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
+  .seed-round {
+    order: 2;
+    width: 270px;
+    align-items: center;
+    margin-left: 5rem;
+    @include desktop {
+      width: 60%;
+      font-size: 1.3rem;
+    }
+  }
+  .series-round {
+    order: 4;
+    align-items: center;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    @include desktop {
+      width: 60%;
+      font-size: 1.3rem;
+    }
+  }
 
-      .phase-1 {
-        position: relative;
-        order: 1;
+  .seed-rnd-h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 0.8rem;
+    @include desktop {
+      margin-top: 2rem;
+    }
+  }
 
-        &::before {
-          @include roadmap-dot;
-          left: -19px;
-          top: -6px;
-          margin: 2rem;
-        }
-      }
-      .phase-2 {
-        position: relative;
-        order: 3;
-        &::before {
-          @include roadmap-dot;
-          left: -19px;
-          top: -6px;
-          margin: 2rem;
-        }
-      }
-      .seed-round {
-        order: 2;
-      }
-      .series-round {
-        order: 4;
-      }
+  .series-rnd-h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 0.8rem;
+    @include desktop {
+      width: 100%;
     }
   }
 
   .seed-p-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     .seed-p-left {
-      // display: flex;
-      // flex-direction: column;
-      // flex-wrap: wrap;
       width: 110px;
     }
     .seed-p-right {
@@ -236,12 +296,10 @@
   .series-p-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     .series-p-left,
     .series-p-middle,
     .series-p-right {
-      // display: flex;
-      // flex-direction: column;
-      // flex-wrap: wrap;
       width: 63px;
     }
   }
@@ -249,6 +307,13 @@
   .white-paper {
     @include center-page;
     padding: $page-padding-mobile;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    @include desktop {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
     .wh-paper-h3 {
       color: #4a4a4a;
       font-size: 1.2rem;
@@ -358,7 +423,6 @@
       @include desktop {
         max-width: 60%;
         margin-top: 3rem;
-
       }
     }
 
@@ -378,7 +442,7 @@
         width: 40%;
         border: 1px solid black;
         border-radius: 20px 0 0 20px;
-        height: 85vh; 
+        height: 85vh;
       }
     }
 

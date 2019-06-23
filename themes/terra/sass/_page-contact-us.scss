@@ -82,13 +82,14 @@ img {
 
 .msg-sent-border {
   display: none;
-  height: 700px;
+  height: 500px;
   @include desktop {
     margin-top: 50px;
     border: 1px solid white;
     border-radius: 20px;
     box-shadow: $section-box-shadow;
     background: white;
+    height: 700px;
   }
   p {
     margin-bottom: 4rem;

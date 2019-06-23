@@ -1132,7 +1132,7 @@ object {
     .site-footer .subscription-area .subscribe-description {
       display: none;
       color: #ffffff; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .site-footer .subscription-area .subscribe-description {
           display: unset; } }
     .site-footer .subscription-area .sub-confirm-section {
@@ -1142,7 +1142,7 @@ object {
         border: none;
         margin-top: 0;
         color: #ffffff; }
-        @media (min-width: 620px) {
+        @media (min-width: 600px) {
           .site-footer .subscription-area .sub-confirm-section h4 {
             font-size: 2.6rem;
             font-weight: bold; } }
@@ -1640,7 +1640,7 @@ img {
 
 .msg-sent-border {
   display: none;
-  height: 700px; }
+  height: 500px; }
   @media (min-width: 600px) {
     .msg-sent-border {
       margin-top: 50px;
@@ -1648,7 +1648,8 @@ img {
       border-radius: 20px;
       -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
               box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
-      background: white; } }
+      background: white;
+      height: 700px; } }
   .msg-sent-border p {
     margin-bottom: 4rem; }
   .msg-sent-border a.return-home-btn {
@@ -2116,36 +2117,12 @@ img {
     padding: 0 1.25rem 0 1.25rem;
     width: 100%;
     position: relative;
-    margin-bottom: 8rem; }
-    .page-the-project .whats-terra h2,
-    .page-the-project .whats-terra h3,
-    .page-the-project .whats-terra p {
-      color: black; }
-    .page-the-project .whats-terra::after {
-      content: '';
-      z-index: -1;
-      background: url("../../assets/images/illustrations/space-ring.svg");
-      opacity: 0.4;
-      position: absolute;
-      background-repeat: no-repeat;
-      background-size: fill;
-      top: -100px;
-      right: -20%;
-      width: 90%;
-      padding-bottom: 60%;
-      background-position: bottom right;
-      bottom: -400px;
-      top: 0;
-      opacity: 0.2; }
-    @media (min-width: 600px) {
-      .page-the-project .whats-terra p {
-        width: 65%; } }
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))) center, url("../../assets/images/illustrations/space-ring.svg");
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) center, url("../../assets/images/illustrations/space-ring.svg");
     background-repeat: no-repeat no-repeat;
     background-position: center, top 270px right -100px;
     background-size: 100%, 90%; }
-    @media (min-width: 620px) {
+    @media (min-width: 600px) {
       .page-the-project .whats-terra {
         padding-left: 8rem;
         padding-right: 5rem;
@@ -2179,7 +2156,7 @@ img {
               transform: translate(-50%, -50%);
       line-height: 2rem;
       font-size: 1.65em; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .lack-aware-container .lack-aware-h2 {
           width: 900px;
           font-size: 2.5em;
@@ -2191,7 +2168,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 1rem; }
-    @media (min-width: 620px) {
+    @media (min-width: 600px) {
       .page-the-project .lack-aware-cards {
         position: relative;
         margin-top: -130px; } }
@@ -2244,7 +2221,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 620px) {
+    @media (min-width: 600px) {
       .page-the-project .team-member {
         width: 25%; } }
   .page-the-project .member-photo {
@@ -2513,7 +2490,7 @@ img {
       overflow-y: scroll;
       padding: 2rem;
       height: 47%; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .team-modal__description {
           max-height: 90%; } }
     .page-the-project .team-modal--active {
@@ -2544,7 +2521,7 @@ img {
       margin-top: 4rem;
       border-bottom: 1px solid white;
       border-radius: 20px 20px 20px 20px; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .team-modal__inner {
           max-width: 60%;
           margin-top: 3rem; } }
@@ -2558,7 +2535,7 @@ img {
       .page-the-project .team-modal__left-col h3,
       .page-the-project .team-modal__left-col p {
         color: white; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .team-modal__left-col {
           width: 40%;
           border: 1px solid black;
@@ -2574,14 +2551,14 @@ img {
       max-width: 50%;
       height: auto;
       position: relative; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .team-modal__img {
           max-width: 100%; } }
     .page-the-project .team-modal__text-wrap {
       margin: 0 auto;
       max-width: 200px;
       text-align: left; }
-      @media (min-width: 620px) {
+      @media (min-width: 600px) {
         .page-the-project .team-modal__text-wrap {
           margin-top: 2rem;
           font-size: 1.2rem; } }

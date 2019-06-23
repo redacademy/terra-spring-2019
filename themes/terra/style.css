@@ -1155,7 +1155,7 @@ object {
             max-width: 435px;
             margin: 0 auto; } }
     .site-footer .subscription-area .subscription-input .wpcf7-form {
-      width: 100%; }
+      max-width: 100%; }
     .site-footer .subscription-area .subscription-input .wpcf7-submit {
       height: 45px;
       width: 150px;
@@ -1173,7 +1173,8 @@ object {
       background: #cccc;
       border: none;
       padding: 0.5rem;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      width: 300px; }
   .site-footer .subscription-area {
     height: 400px; }
     .site-footer .subscription-area.active {

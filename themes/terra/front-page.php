@@ -22,6 +22,9 @@ get_header(); ?>
                 <h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
             </section>
         </div>
+        <div class="banner-extension">
+
+        </div>
         <!-- Intro What is Aquaponics -->
         
         <div class="about-aqua">

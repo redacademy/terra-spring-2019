@@ -4,20 +4,49 @@
 .banner {
   min-width: 100%;
   background: linear-gradient(180deg, #0059a7 0%, #002d6e 100%);
+  border-bottom-left-radius: 50% 15px;
+  border-bottom-right-radius: 50% 15px;
+
+  @include desktop {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-position: fill;
+    height: 100vh;
+  }
+
   .banner-section {
-    // @include center-block;
     display: flex;
+    position: relative;
     flex-direction: column;
+    text-align: center;
+    padding-bottom: 250px;
+    margin-bottom: 250px;
 
     @include desktop {
+      text-align: left;
       @include center-page;
-      flex-direction: row;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 20% auto 20%;
+      grid-template-areas:
+        ' . . '
+        ' h2 img '
+        ' . . ';
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     img {
       width: 100%;
+      position: absolute;
+      margin-left: auto;
+      bottom: -250px;
       @include desktop {
-        width: 50%;
+        position: static;
+        grid-area: img;
+        justify-self: start;
+        width: 100%;
       }
     }
     h2 {
@@ -26,13 +55,28 @@
       color: $white-text-color;
       line-height: 2rem;
 
+      &::before {
+        content: '';
+      }
+
       @include desktop {
-        order: 2;
-        width: 50%;
+        width: 73%;
+        grid-area: h2;
+        line-height: 60px;
+        justify-self: center;
       }
     }
   }
 }
+.banner-extension {
+  background: #002d6e;
+  width: 100%;
+  height: 200px;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+}
+
+//end of hero banner
 
 //fp-partners section
 .fp-partners {

@@ -2426,7 +2426,13 @@ img {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.25rem 0 1.25rem; }
+    padding: 0 1.25rem 0 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+    @media (min-width: 600px) {
+      .page-the-project .white-paper {
+        margin-top: 4rem;
+        margin-bottom: 2rem; } }
     .page-the-project .white-paper .wh-paper-h3 {
       color: #4a4a4a;
       font-size: 1.2rem;

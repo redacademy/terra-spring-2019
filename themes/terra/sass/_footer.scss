@@ -7,6 +7,10 @@
     color: $footer-font-color;
   }
 
+  p {
+    color: #ffffff;
+  }
+
   .footer-center {
     @include center-page;
   }
@@ -31,6 +35,7 @@
     text-align: center;
     .subscribe-description {
       display: none;
+      color: $footer-font-color;
       @include desktop {
         display: unset;
       }
@@ -42,6 +47,7 @@
         font-size: 1.1rem;
         border: none;
         margin-top: 0;
+        color: $footer-font-color;
         @include desktop {
           font-size: 2.6rem;
           font-weight: bold;
@@ -85,6 +91,8 @@
   }
 
   .subscription-area {
+    height: 400px;
+    
     &.active {
       background-image: url('../../assets/images/photos/Subscription-confirmation-banner-smaller.png');
       .sub-confirm-section {

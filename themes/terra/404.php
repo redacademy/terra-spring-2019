@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package RED_Starter_Theme
+ * @package Terra_Theme
  * Template 404 page
  */
 

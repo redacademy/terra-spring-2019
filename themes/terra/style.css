@@ -2173,7 +2173,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    .page-support-us .entry-content .world img {
+    .page-support-us .entry-content img {
       max-width: 100%;
       z-index: -5;
       height: auto;
@@ -2723,9 +2723,6 @@ img {
 
 .error404 {
   background: #002d6e; }
-  @media screen and (max-width: 620px) {
-    .error404 .site-content {
-      overflow: hidden; } }
   .error404 .site-content .error-404 {
     max-width: 1140px;
     margin-left: auto;
@@ -2733,9 +2730,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    @media screen and (max-width: 620px) {
-      .error404 .site-content .error-404 .page-content {
-        height: 115vh; } }
     .error404 .site-content .error-404 .page-content .search-box-content {
       -webkit-box-shadow: 43px 37px 22px -9px black;
               box-shadow: 43px 37px 22px -9px black;
@@ -2770,12 +2764,6 @@ img {
         width: 25%;
         color: white;
         grid-area: number2; }
-      @media screen and (max-width: 620px) {
-        .error404 .site-content .error-404 .page-content .four-0-four {
-          display: none; } }
-    @media screen and (max-width: 620px) {
-      .error404 .site-content .error-404 {
-        width: 100%; } }
 
 .animation {
   width: 100%;
@@ -2789,6 +2777,12 @@ img {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     grid-area: animation; }
+    .animation .animation-bg img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
     .animation .animation-bg .white-circle {
       z-index: 100; }
     .animation .animation-bg .illustration-rings {
@@ -2802,32 +2796,17 @@ img {
     .animation .animation-bg .multiple-fish {
       position: relative;
       width: 100%;
-      left: 23%;
-      bottom: -15%; }
-      .animation .animation-bg .multiple-fish img {
-        width: 27%; }
-    .animation .animation-bg .green-1 {
-      position: relative;
-      width: 100%;
-      bottom: -60%; }
-      .animation .animation-bg .green-1 .small-leaves {
-        left: 33%; }
-      .animation .animation-bg .green-1 img {
-        width: 50%; }
-    .animation .animation-bg .green {
-      width: 40%;
-      bottom: -45%;
-      position: relative; }
-      .animation .animation-bg .green .grass-blades {
-        left: 62%; }
-        .animation .animation-bg .green .grass-blades img {
-          width: 30%; }
-    .animation .animation-bg img {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      left: 15%;
+      bottom: -12%;
+      -webkit-transform: rotate(-20deg);
+              transform: rotate(-20deg); }
+      @media (max-width: 620px) {
+        .animation .animation-bg .multiple-fish {
+          bottom: -6%; } }
+      .animation .animation-bg .multiple-fish .fish {
+        width: 23%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
 
 .rotate-reverse {
   -webkit-animation: back_rotation 60s infinite linear;

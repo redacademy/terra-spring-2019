@@ -6,18 +6,8 @@
         <img class="rotate-reverse earth" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/earth.svg' alt='logo front page'>
 
         <div class="multiple-fish">
-            <img class="rotate-fast" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/sea-of-fish.svg' alt='logo front page'>
+            <img class="fish" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/sea-of-fish.svg' alt='logo front page'>
         </div>
-        <div class="green">
-            <img class="grass-blades" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/grass-blades.svg' alt='logo front page'>
-        </div>
-        <div class="green-1">
-            <img class="small-leaves" src='<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/small-leaves.svg' alt='logo front page'>
-        </div>
+
     </div>
-    <!-- <div class="earth-cont">
-        
-    </div> -->
-
-
 </div>

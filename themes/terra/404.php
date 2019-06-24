@@ -32,9 +32,9 @@ get_header(); ?>
 
 				<div class="four-0-four">
 					<p class="first-4">4</p>
-					<div class='animation-container'>
-						<?php get_template_part('template-parts/content', 'logo'); ?>
-					</div>
+					<!-- <div class='animation-container'> -->
+					<?php get_template_part('template-parts/content', 'logo'); ?>
+					<!-- </div> -->
 					<p class="second-4">4</p>
 				</div>
 

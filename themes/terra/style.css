@@ -2160,35 +2160,11 @@ img {
     padding: 0 1.25rem 0 1.25rem;
     width: 100%;
     position: relative;
-<<<<<<< HEAD
-    margin-bottom: 8rem; }
-    .page-the-project .whats-terra h2,
-    .page-the-project .whats-terra h3,
-    .page-the-project .whats-terra p {
-      color: black; }
-    .page-the-project .whats-terra::after {
-      content: '';
-      z-index: -1;
-      background: url("../../assets/images/illustrations/space-ring.svg");
-      opacity: 0.4;
-      position: absolute;
-      background-repeat: no-repeat;
-      background-size: fill;
-      top: -100px;
-      right: -20%;
-      width: 90%;
-      padding-bottom: 60%;
-      background-position: bottom right;
-      bottom: -400px;
-      top: 0;
-      opacity: 0.2; }
-=======
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))) center, url("../../assets/images/illustrations/space-ring.svg");
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) center, url("../../assets/images/illustrations/space-ring.svg");
     background-repeat: no-repeat no-repeat;
     background-position: center, top 270px right -100px;
     background-size: 100%, 90%; }
->>>>>>> 30c36c86aebe0c1c333005e204c92df85945d3c0
     @media (min-width: 620px) {
       .page-the-project .whats-terra {
         padding-left: 8rem;
@@ -2364,66 +2340,6 @@ img {
     .page-the-project .source-funds p,
     .page-the-project .source-funds li {
       color: white; }
-<<<<<<< HEAD
-    .page-the-project .source-funds .sf-wrapper {
-      border-left: 8px solid #ffffff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      @media (min-width: 620px) {
-        .page-the-project .source-funds .sf-wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
-      .page-the-project .source-funds .sf-wrapper .phase-1 {
-        position: relative;
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-        .page-the-project .source-funds .sf-wrapper .phase-1::before {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-          position: absolute;
-          left: -19px;
-          top: -6px;
-          margin: 2rem; }
-      .page-the-project .source-funds .sf-wrapper .phase-2 {
-        position: relative;
-        -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3; }
-        .page-the-project .source-funds .sf-wrapper .phase-2::before {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-          position: absolute;
-          left: -19px;
-          top: -6px;
-          margin: 2rem; }
-      .page-the-project .source-funds .sf-wrapper .seed-round {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-      .page-the-project .source-funds .sf-wrapper .series-round {
-        -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4; }
-=======
     @media (min-width: 620px) {
       .page-the-project .source-funds {
         padding-top: 7rem;
@@ -2524,7 +2440,6 @@ img {
     @media (min-width: 620px) {
       .page-the-project .series-rnd-h3 {
         width: 100%; } }
->>>>>>> 30c36c86aebe0c1c333005e204c92df85945d3c0
   .page-the-project .seed-p-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

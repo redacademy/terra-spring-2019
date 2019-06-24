@@ -2,7 +2,7 @@
 /**
  * 
  *
- * @package RED_Starter_Theme
+ * @package Terra_Theme
  * 
  * Template Name: Aquaponics
  * 

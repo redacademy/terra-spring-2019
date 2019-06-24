@@ -612,7 +612,7 @@ h2 {
         .roadmap .roadmap-left ul li:hover .roadmap-p {
           font-size: 1.1rem; }
         .roadmap .roadmap-left ul li h3::after {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -653,7 +653,7 @@ h2 {
             .roadmap .roadmap-right ul li h3 {
               padding-left: 100px; } }
           .roadmap .roadmap-right ul li h3::before {
-            content: "";
+            content: '';
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -1451,7 +1451,7 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      min-height: 100px;
+      min-height: 50px;
       line-height: 27px; }
       .site-header .center-header .site-branding {
         width: 50%; }
@@ -1459,7 +1459,8 @@ html {
         display: none; }
       .site-header .center-header .main-navigation {
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
+            justify-content: space-around;
+        width: 100%; }
         .site-header .center-header .main-navigation .menu {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1832,7 +1833,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: "";
+    content: '';
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -2077,7 +2078,7 @@ img {
     .page-the-project .whats-terra p {
       color: black; }
     .page-the-project .whats-terra::after {
-      content: "";
+      content: '';
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -2269,7 +2270,7 @@ img {
             -ms-flex-order: 1;
                 order: 1; }
         .page-the-project .source-funds .sf-wrapper .phase-1::before {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -2284,7 +2285,7 @@ img {
             -ms-flex-order: 3;
                 order: 3; }
         .page-the-project .source-funds .sf-wrapper .phase-2::before {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -2479,26 +2480,23 @@ img {
         font-size: 24px;
         color: #00d4e8; }
     .error404 .site-content .error-404 .page-content .four-0-four {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: auto;
+      grid-template-areas: 'number animation number2';
       font-size: 200px; }
       .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
-        min-width: 50%;
-        height: 50vw;
-        position: relative; }
+        width: 100%;
+        grid-area: animation; }
       .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
         color: white;
-        width: 25%; }
+        width: 25%;
+        grid-area: number; }
       .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
         width: 25%;
-        color: white; }
+        color: white;
+        grid-area: number2; }
       @media screen and (max-width: 620px) {
         .error404 .site-content .error-404 .page-content .four-0-four {
           display: none; } }
@@ -2507,220 +2505,49 @@ img {
         width: 100%; } }
 
 .anime-rotate {
-  position: relative;
   min-width: inherit;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .anime-rotate .anime {
-    position: absolute;
-    -webkit-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    -webkit-transform-origin: center;
-            transform-origin: center;
     width: 100%;
     height: auto;
     opacity: 1;
-    top: 50%;
-    left: 50%; }
+    left: -50%;
+    bottom: 0; }
   .anime-rotate .animation-bg {
     position: relative;
-    left: -50%; }
-    .anime-rotate .animation-bg .bg-2 {
-      z-index: 11; }
+    left: -50%;
+    width: 100%;
+    height: auto; }
     .anime-rotate .animation-bg img {
       position: absolute; }
-    .anime-rotate .animation-bg .earth-container {
-      position: relative;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+    .anime-rotate .animation-bg .white-circle {
+      z-index: 1; }
+  .anime-rotate .multiple-fish {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .anime-rotate .multiple-fish img {
+      position: absolute;
+      width: 12%;
       height: auto;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      .anime-rotate .animation-bg .earth-container .earth {
-        z-index: 100;
-        width: 30%;
-        position: absolute; }
-  .anime-rotate .single-fish-1 {
-    width: 6%;
-    z-index: 20; }
-    .anime-rotate .single-fish-1 img {
-      width: 80%; }
-  .anime-rotate .single-fish-2 {
-    width: 12%;
-    z-index: 24; }
-    .anime-rotate .single-fish-2 img {
-      width: 60%; }
-  .anime-rotate .single-fish-3 {
-    width: 9%;
-    z-index: 24; }
-  .anime-rotate .big-fish {
-    width: 10%;
-    z-index: 190; }
-    .anime-rotate .big-fish img {
-      width: 60%; }
-  .anime-rotate .small-leaves {
-    width: 30%;
-    height: 100%;
-    left: 29%;
-    z-index: 40;
-    -webkit-animation: sway1 16s infinite;
-            animation: sway1 16s infinite;
-    -webkit-transform-origin: 50% 100% 0;
-            transform-origin: 50% 100% 0; }
+      top: 170px;
+      right: 40%;
+      padding-bottom: 100px; }
   .anime-rotate .grass-blades {
-    width: 30%;
+    width: 100%;
     height: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 70;
-    -webkit-animation: sway2 12s infinite;
-            animation: sway2 12s infinite;
-    -webkit-transform-origin: 50% 100% 0;
-            transform-origin: 50% 100% 0; }
-
-.rotate-fast {
-  -webkit-animation: rotation_1 16s infinite linear;
-          animation: rotation_1 16s infinite linear; }
-
-.rotate-slow {
-  -webkit-animation: rotation_2 42s infinite linear;
-          animation: rotation_2 42s infinite linear; }
-
-.rotate-slow-2 {
-  -webkit-animation: rotation_2_2 35s infinite linear;
-          animation: rotation_2_2 35s infinite linear; }
-
-.rotate-slow-3 {
-  -webkit-animation: rotation_2_2 29s infinite linear;
-          animation: rotation_2_2 29s infinite linear; }
-
-.rotate-reverse {
-  -webkit-animation: back_rotation 180s infinite linear;
-          animation: back_rotation 180s infinite linear; }
-
-@-webkit-keyframes rotation_1 {
-  from {
-    -webkit-transform: rotate(0deg) translate(100px, 150px);
-            transform: rotate(0deg) translate(100px, 150px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(100px, 150px);
-            transform: rotate(1turn) translate(100px, 150px); } }
-
-@keyframes rotation_1 {
-  from {
-    -webkit-transform: rotate(0deg) translate(100px, 150px);
-            transform: rotate(0deg) translate(100px, 150px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(100px, 150px);
-            transform: rotate(1turn) translate(100px, 150px); } }
-
-@-webkit-keyframes rotation_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@-webkit-keyframes rotation_2_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@-webkit-keyframes rotation_2_3 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2_3 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@-webkit-keyframes back_rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg); } }
-
-@keyframes back_rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg); } }
-
-@-webkit-keyframes sway1 {
-  0%,
-  100% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
-  50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); } }
-
-@keyframes sway1 {
-  0%,
-  100% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
-  50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); } }
-
-@-webkit-keyframes sway2 {
-  0%,
-  100% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg); }
-  50% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg); } }
-
-@keyframes sway2 {
-  0%,
-  100% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg); }
-  50% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg); } }
+    z-index: 70; }
+    .anime-rotate .grass-blades img {
+      width: 25%; }

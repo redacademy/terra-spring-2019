@@ -11,14 +11,14 @@
   margin-right: auto;
 }
 
-@mixin desktop {
-  @media (min-width: $desktop-width) {
+@mixin mobile-max {
+  @media (max-width: 620px) {
     @content;
   }
 }
 
-@mixin mobile-max {
-  @media (max-width: $desktop-width) {
+@mixin desktop {
+  @media (min-width: 620px) {
     @content;
   }
 }
@@ -46,9 +46,8 @@
     #ffffff 51%,
     #f7f7f7 100%
   );
-
-  //   position: absolute;
 }
+
 @mixin button-style {
   height: 3rem;
   width: 150px;
@@ -120,9 +119,9 @@
 }
 
 @mixin fp-gradient-rect {
-  content: "";
+  content: '';
   z-index: -1;
-  background: url("../../assets/images/Icons/7DE0379D0C234C6C.jpg");
+  background: url('../../assets/images/Icons/7DE0379D0C234C6C.jpg');
   opacity: 0.4;
   position: absolute;
   background-repeat: no-repeat;

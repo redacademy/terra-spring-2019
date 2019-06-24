@@ -12,16 +12,19 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<!-- Homepage HeroBanner Section -->
+        <div class="banner">
+            <section class="banner-section">
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php the_post_thumbnail(); ?>
 
-		<section class="fp-banner">
-			<?php while (have_posts()) : the_post(); ?>
-				<?php the_post_thumbnail(); ?>
+                <?php endwhile;
+            ?>
+                <h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
+            </section>
+        </div>
+        <div class="banner-extension">
 
-            <?php endwhile;
-        ?>
-            <h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
-		</section>
-
+        </div>
         <!-- Intro What is Aquaponics -->
         
         <div class="about-aqua">

@@ -41,8 +41,10 @@ get_header(); ?>
 				foreach ($lack_awareness_loop as $lack_aware_info) : ?>
 					<div class="lack-aw-item-wraps">
 						<img class="lack-aw-img" src="<?php echo $lack_aware_info['lack_of_awareness_image']; ?>" />
-						<h3 class="lack-aw-h3"> <?php echo $lack_aware_info['lack_of_awareness_title']; ?></h3>
-						<p class="lack-aw-p"> <?php echo $lack_aware_info['lack_of_awareness_info']; ?></p>
+						<div class="lack-aw-dc-wrap">
+							<h3 class="lack-aw-h3"> <?php echo $lack_aware_info['lack_of_awareness_title']; ?></h3>
+							<p class="lack-aw-p"> <?php echo $lack_aware_info['lack_of_awareness_info']; ?></p>
+						</div><!-- .lack-aw-dc-wrap -->
 					</div><!-- .lack-aw-item-wraps -->
 
 				<?php endforeach; ?>
@@ -70,8 +72,10 @@ get_header(); ?>
 						<div class="member-photo"><?php the_post_thumbnail('large'); ?>
 							<a href="#" class="member-detail-arrow"><i class="fas fa-arrow-right"></i></a>
 						</div>
-						<h3><?php the_title() ?></h3>
-						<p><?php echo CFS()->get('member_position'); ?></p>
+						<div class="member-dc-wrapper">
+							<h3><?php the_title() ?></h3>
+							<p><?php echo CFS()->get('member_position'); ?></p>
+						</div>
 
 						<!-- Team member modal window -->
 						<div class="team-modal">

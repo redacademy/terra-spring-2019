@@ -2266,6 +2266,9 @@ img {
     @media (min-width: 620px) {
       .page-the-project .team-member {
         width: 25%; } }
+    .page-the-project .team-member:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#75f3ff), color-stop(53%, #95c4eb), color-stop(59%, #88bdec), to(#378aff));
+      background: linear-gradient(to bottom, #75f3ff 0%, #95c4eb 53%, #88bdec 59%, #378aff 100%); }
   .page-the-project .member-photo {
     position: relative;
     display: -webkit-box;

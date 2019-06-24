@@ -120,6 +120,16 @@
     @include desktop {
       width: 25%;
     }
+
+    &:hover {
+      background: linear-gradient(
+        to bottom,
+        #75f3ff 0%,
+        #95c4eb 53%,
+        #88bdec 59%,
+        #378aff 100%
+      );
+    }
   }
 
   .member-photo {
@@ -197,7 +207,7 @@
     li {
       color: white;
     }
-    
+
     @include desktop {
       padding-top: 7rem;
       padding-left: 7rem;
@@ -225,7 +235,7 @@
       left: -51px;
       top: -5px;
     }
-    @include desktop{
+    @include desktop {
       width: 50%;
     }
   }
@@ -239,7 +249,7 @@
       left: -51px;
       top: -5px;
     }
-    @include desktop{
+    @include desktop {
       width: 50%;
     }
   }

@@ -18,17 +18,24 @@
         center,
       url('../../assets/images/illustrations/space-ring.svg');
     background-repeat: no-repeat no-repeat;
-    background-position: center, top 270px right -100px;
+    background-position: center, bottom -200px right -100px;
     background-size: 100%, 90%;
+    p {
+      font-size: 1.2rem;
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 5rem;
+      }
+    }
     @include desktop {
       padding-left: 8rem;
       padding-right: 5rem;
       padding-bottom: 10rem;
       padding-top: 3rem;
-      background-position: center, top 140px right -100px;
-      background-size: 100%, 50%;
+      // background-position: center, bottom -200px right -100px;
+      background-size: 100%, 60%;
       p {
-        width: 60%;
+        width: 65%;
         font-size: 1.2rem;
       }
     }
@@ -67,6 +74,7 @@
   }
 
   .lack-aware-cards {
+    @include center-page;
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
@@ -136,6 +144,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    padding: 1rem;
     .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;

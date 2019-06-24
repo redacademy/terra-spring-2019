@@ -1,12 +1,9 @@
-html {
-  height: 100%;
-}
-
 .site-header {
+  position: fixed;
   background-color: $header-color-transparent;
   box-shadow: $header-box-shadow;
-  position: relative;
   width: 100%;
+  z-index: 1000;
   .center-header {
     display: flex;
     width: inherit;
@@ -42,6 +39,7 @@ html {
     .main-navigation {
       display: flex;
       flex-wrap: wrap;
+      justify-items: flex-end;
       width: auto;
       margin-left: auto;
       position: relative;
@@ -114,6 +112,7 @@ html {
 
     .site-branding {
       width: 50%;
+      padding-left: 1rem;
       img {
         max-width: 70px;
         height: 80%;
@@ -135,7 +134,7 @@ html {
     .center-header {
       @include center-page;
       align-items: center;
-      min-height: 100px;
+      min-height: 50px;
       line-height: 27px;
       .site-branding {
         width: 50%;
@@ -144,11 +143,14 @@ html {
         display: none;
       }
       .main-navigation {
-        justify-content: space-around;
+        justify-content: flex-end;
+        padding-right: 1rem;
+        width: 100%;
 
         .menu {
           display: flex;
           justify-content: flex-end;
+
           .footer-menu {
             li {
               display: none;
@@ -161,10 +163,10 @@ html {
           li {
             margin-left: 30px;
             max-height: 22px;
+
             a {
               font-size: 1.25rem;
               color: black;
-
               min-width: 100%;
             }
           }

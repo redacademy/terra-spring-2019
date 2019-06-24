@@ -1773,9 +1773,8 @@ img {
           width: 40%; } }
 
 /*--------------------------------------------------------------
-# Page Templates
+/* Aquaponics page 
 --------------------------------------------------------------*/
-/* Aquaponics page */
 .hero-banner {
   position: relative; }
 
@@ -2784,7 +2783,10 @@ img {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
     .animation .animation-bg .white-circle {
-      z-index: 100; }
+      z-index: 100;
+      width: 100%; }
+    .animation .animation-bg .water {
+      width: 95%; }
     .animation .animation-bg .illustration-rings {
       margin-top: 10%;
       width: 80%;

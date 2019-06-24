@@ -10,14 +10,6 @@
       @include center-page;
       @include center-block;
 
-      // .phone-404 {
-      //   display: block;
-      //   font-size: 100px;
-      //   @media screen and (min-width: 620px) {
-      //     display: none;
-      //   }
-      // }
-
       .page-content {
         // padding: 10px 10px 10px 10px;
         // min-height: 115vh;
@@ -50,7 +42,7 @@
         //       left: 1%;
         //     }
         //     .small-leaves {
-        //       margin-top: 21%;
+        //       .: 21%;
         //       width: 43%;
         //       left: 12%;
         //     }
@@ -64,19 +56,15 @@
           display: grid;
           justify-items: center;
           grid-template-columns: 25% 50% 25%;
-          grid-template-rows: auto;
+          grid-template-rows: 600px;
           grid-template-areas: 'number animation number2';
-          // align-items: center;
-
-          // justify-content: center;
+          align-items: center;
           font-size: 200px;
-          // grid-template-columns: 1fr 1fr 1fr;
-          // grid-auto-rows: auto;
 
           .animation-container {
-            width: 100%;
             grid-area: animation;
-            // position: relative;
+            height: 100%;
+            width: 100%;
           }
 
           .first-4 {

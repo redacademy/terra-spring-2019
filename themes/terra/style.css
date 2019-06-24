@@ -484,6 +484,9 @@ h2 {
   height: 200px;
   border-bottom-left-radius: 50% 100%;
   border-bottom-right-radius: 50% 100%; }
+  @media (max-width: 620px) {
+    .banner-extension {
+      display: none; } }
 
 .fp-partners {
   max-width: 1140px;
@@ -1163,14 +1166,9 @@ object {
     padding: 2rem;
     text-align: center; }
     .site-footer .subscription-area .subscribe-description {
-<<<<<<< HEAD
-      display: none; }
-      @media (min-width: 620px) {
-=======
       display: none;
       color: #ffffff; }
-      @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
+      @media (min-width: 620px) {
         .site-footer .subscription-area .subscribe-description {
           display: unset; } }
     .site-footer .subscription-area .sub-confirm-section {
@@ -1178,14 +1176,9 @@ object {
       .site-footer .subscription-area .sub-confirm-section h4 {
         font-size: 1.1rem;
         border: none;
-<<<<<<< HEAD
-        margin-top: 0; }
-        @media (min-width: 620px) {
-=======
         margin-top: 0;
         color: #ffffff; }
-        @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
+        @media (min-width: 620px) {
           .site-footer .subscription-area .sub-confirm-section h4 {
             font-size: 2.6rem;
             font-weight: bold; } }
@@ -1683,13 +1676,8 @@ img {
 
 .msg-sent-border {
   display: none;
-<<<<<<< HEAD
-  height: 700px; }
-  @media (min-width: 620px) {
-=======
   height: 500px; }
-  @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
+  @media (min-width: 620px) {
     .msg-sent-border {
       margin-top: 50px;
       border: 1px solid white;
@@ -1836,7 +1824,7 @@ img {
       width: 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: " 1 2 " " 3 4 "; }
+      grid-template-areas: ' 1 2 ' ' 3 4 '; }
       .page-aquaponics .what-aqua-imgs img {
         width: 150px; }
         .page-aquaponics .what-aqua-imgs img:nth-child(1) {
@@ -2055,12 +2043,27 @@ img {
               align-items: flex-start;
       height: 450px;
       max-width: 350px; } }
-
-.page-aquaponics .cur-tech-h3 {
-  padding-left: 20px;
-  padding-right: 20px;
-  border-bottom: solid 5px #00ecf5;
-  border-spacing: 100px; }
+  .page-aquaponics .cur-tech-container:hover .cur-tech-h3:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  .page-aquaponics .cur-tech-container .cur-tech-h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-spacing: 100px; }
+    .page-aquaponics .cur-tech-container .cur-tech-h3:after {
+      display: block;
+      content: '';
+      border-bottom: solid 5px #00ecf5;
+      -webkit-transform: scaleX(0.6);
+              transform: scaleX(0.6);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-transition: -webkit-transform 500ms ease-in-out;
+      transition: -webkit-transform 500ms ease-in-out;
+      transition: transform 500ms ease-in-out;
+      transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+      bottom: 0;
+      left: 0; }
 
 .page-aquaponics .cur-tech-p {
   padding-left: 20px;
@@ -2170,7 +2173,7 @@ img {
     background-repeat: no-repeat no-repeat;
     background-position: center, top 270px right -100px;
     background-size: 100%, 90%; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .whats-terra {
         padding-left: 8rem;
         padding-right: 5rem;
@@ -2204,11 +2207,7 @@ img {
               transform: translate(-50%, -50%);
       line-height: 2rem;
       font-size: 1.65em; }
-<<<<<<< HEAD
       @media (min-width: 620px) {
-=======
-      @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
         .page-the-project .lack-aware-container .lack-aware-h2 {
           width: 900px;
           font-size: 2.5em;
@@ -2219,13 +2218,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-<<<<<<< HEAD
-    padding-top: 2rem; }
-    @media (min-width: 620px) {
-=======
     padding-top: 1rem; }
-    @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
+    @media (min-width: 620px) {
       .page-the-project .lack-aware-cards {
         position: relative;
         margin-top: -130px; } }
@@ -2273,17 +2267,12 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .page-the-project .team-member {
-<<<<<<< HEAD
-    width: 50%; }
-    @media (min-width: 620px) {
-=======
     width: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
+    @media (min-width: 620px) {
       .page-the-project .team-member {
         width: 25%; } }
   .page-the-project .member-photo {
@@ -2347,7 +2336,7 @@ img {
       font-size: 1.4rem;
       font-weight: bold;
       margin-bottom: 3rem; }
-      @media (min-width: 600px) {
+      @media (min-width: 620px) {
         .page-the-project .source-funds h2 {
           font-size: 2.6em;
           margin-bottom: 6rem; } }
@@ -2356,67 +2345,7 @@ img {
     .page-the-project .source-funds p,
     .page-the-project .source-funds li {
       color: white; }
-<<<<<<< HEAD
-    .page-the-project .source-funds .sf-wrapper {
-      border-left: 8px solid #ffffff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      @media (min-width: 620px) {
-        .page-the-project .source-funds .sf-wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
-      .page-the-project .source-funds .sf-wrapper .phase-1 {
-        position: relative;
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-        .page-the-project .source-funds .sf-wrapper .phase-1::before {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-          position: absolute;
-          left: -19px;
-          top: -6px;
-          margin: 2rem; }
-      .page-the-project .source-funds .sf-wrapper .phase-2 {
-        position: relative;
-        -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3; }
-        .page-the-project .source-funds .sf-wrapper .phase-2::before {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-          position: absolute;
-          left: -19px;
-          top: -6px;
-          margin: 2rem; }
-      .page-the-project .source-funds .sf-wrapper .seed-round {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-      .page-the-project .source-funds .sf-wrapper .series-round {
-        -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4; }
-=======
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .source-funds {
         padding-top: 7rem;
         padding-left: 7rem; } }
@@ -2429,7 +2358,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .sf-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2456,7 +2385,7 @@ img {
       position: absolute;
       left: -51px;
       top: -5px; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .phase-1 {
         width: 50%; } }
   .page-the-project .phase-2 {
@@ -2475,7 +2404,7 @@ img {
       position: absolute;
       left: -51px;
       top: -5px; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .phase-2 {
         width: 50%; } }
   .page-the-project .seed-round {
@@ -2487,7 +2416,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 5rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .seed-round {
         width: 60%;
         font-size: 1.3rem; } }
@@ -2500,23 +2429,22 @@ img {
             align-items: center;
     margin-left: 5rem;
     margin-top: 1rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .series-round {
         width: 60%;
         font-size: 1.3rem; } }
   .page-the-project .seed-rnd-h3 {
     border-bottom: 1px solid white;
     padding-bottom: 0.8rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .seed-rnd-h3 {
         margin-top: 2rem; } }
   .page-the-project .series-rnd-h3 {
     border-bottom: 1px solid white;
     padding-bottom: 0.8rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .series-rnd-h3 {
         width: 100%; } }
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
   .page-the-project .seed-p-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2552,7 +2480,7 @@ img {
     padding: 0 1.25rem 0 1.25rem;
     margin-top: 3rem;
     margin-bottom: 1rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 620px) {
       .page-the-project .white-paper {
         margin-top: 4rem;
         margin-bottom: 2rem; } }
@@ -2643,7 +2571,7 @@ img {
       overflow-y: scroll;
       padding: 2rem;
       height: 47%; }
-      @media (min-width: 600px) {
+      @media (min-width: 620px) {
         .page-the-project .team-modal__description {
           max-height: 90%; } }
     .page-the-project .team-modal--active {
@@ -2674,7 +2602,7 @@ img {
       margin-top: 4rem;
       border-bottom: 1px solid white;
       border-radius: 20px 20px 20px 20px; }
-      @media (min-width: 600px) {
+      @media (min-width: 620px) {
         .page-the-project .team-modal__inner {
           max-width: 60%;
           margin-top: 3rem; } }
@@ -2688,11 +2616,7 @@ img {
       .page-the-project .team-modal__left-col h3,
       .page-the-project .team-modal__left-col p {
         color: white; }
-<<<<<<< HEAD
       @media (min-width: 620px) {
-=======
-      @media (min-width: 600px) {
->>>>>>> 46b0f8d0a3d60ab6817ecd6adbc0ac899db9a34c
         .page-the-project .team-modal__left-col {
           width: 40%;
           border: 1px solid black;
@@ -2708,14 +2632,14 @@ img {
       max-width: 50%;
       height: auto;
       position: relative; }
-      @media (min-width: 600px) {
+      @media (min-width: 620px) {
         .page-the-project .team-modal__img {
           max-width: 100%; } }
     .page-the-project .team-modal__text-wrap {
       margin: 0 auto;
       max-width: 200px;
       text-align: left; }
-      @media (min-width: 600px) {
+      @media (min-width: 620px) {
         .page-the-project .team-modal__text-wrap {
           margin-top: 2rem;
           font-size: 1.2rem; } }

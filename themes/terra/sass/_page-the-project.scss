@@ -86,7 +86,7 @@
     h2,
     h3,
     p {
-      color: black;
+      color: $font-color;
     }
 
     .lack-aw-item-wraps {
@@ -112,7 +112,7 @@
     margin-bottom: 15rem;
     p,
     h3 {
-      color: black;
+      color: $font-color;
       text-align: center;
     }
   }
@@ -130,13 +130,15 @@
     }
 
     &:hover {
-      background: linear-gradient(
-        to bottom,
-        #75f3ff 0%,
-        #95c4eb 53%,
-        #88bdec 59%,
-        #378aff 100%
-      );
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5));
+      // background: linear-gradient(
+      //   to bottom,
+      //   #75f3ff 0%,
+      //   #95c4eb 53%,
+      //   #88bdec 59%,
+      //   #378aff 100%
+      // );
     }
   }
 
@@ -145,6 +147,7 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
+    // border-radius: 25px;
     .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;

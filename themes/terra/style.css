@@ -1575,12 +1575,10 @@ object {
   line-height: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem; }
   .disclaimer-center .disclaimer-title {
     text-align: center; }
-  .disclaimer-center .page-contact-us h1.entry-title {
-    display: unset; }
 
 .page-contact-us .site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
@@ -1666,7 +1664,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type="submit"] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1678,8 +1676,6 @@ img {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 25px; }
-  .contact-us-form .textarea-msg #text {
-    text-align: left; }
 
 .msg-sent-border {
   display: none;
@@ -2302,7 +2298,7 @@ img {
     .page-the-project .lack-aware-cards h2,
     .page-the-project .lack-aware-cards h3,
     .page-the-project .lack-aware-cards p {
-      color: black; }
+      color: #4a4a4a; }
     .page-the-project .lack-aware-cards .lack-aw-item-wraps {
       width: 50%;
       height: 50%;
@@ -2334,7 +2330,7 @@ img {
     margin-bottom: 15rem; }
     .page-the-project .who-we-are p,
     .page-the-project .who-we-are h3 {
-      color: black;
+      color: #4a4a4a;
       text-align: center; }
   .page-the-project .team-members {
     display: -webkit-box;
@@ -2352,8 +2348,9 @@ img {
       .page-the-project .team-member {
         width: 25%; } }
     .page-the-project .team-member:hover {
-      background: -webkit-gradient(linear, left top, left bottom, from(#75f3ff), color-stop(53%, #95c4eb), color-stop(59%, #88bdec), to(#378aff));
-      background: linear-gradient(to bottom, #75f3ff 0%, #95c4eb 53%, #88bdec 59%, #378aff 100%); }
+      border-radius: 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 212, 232, 0.3)), to(rgba(0, 45, 110, 0.5)));
+      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5)); }
   .page-the-project .member-photo {
     position: relative;
     display: -webkit-box;
@@ -2755,12 +2752,16 @@ img {
       display: grid;
       justify-items: center;
       grid-template-columns: 25% 50% 25%;
-      grid-template-rows: auto;
+      grid-template-rows: 600px;
       grid-template-areas: 'number animation number2';
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       font-size: 200px; }
       .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
-        width: 100%;
-        grid-area: animation; }
+        grid-area: animation;
+        height: 100%;
+        width: 100%; }
       .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
         color: white;
         width: 25%;
@@ -2776,50 +2777,76 @@ img {
       .error404 .site-content .error-404 {
         width: 100%; } }
 
-.anime-rotate {
-  min-width: inherit;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .anime-rotate .anime {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    left: -50%;
-    bottom: 0; }
-  .anime-rotate .animation-bg {
+.animation {
+  width: 100%;
+  height: 100%; }
+  .animation .animation-bg {
     position: relative;
-    left: -50%;
+    top: -50%;
+    left: 50%;
     width: 100%;
-    height: auto; }
-    .anime-rotate .animation-bg img {
-      position: absolute; }
-    .anime-rotate .animation-bg .white-circle {
-      z-index: 1; }
-  .anime-rotate .multiple-fish {
-    position: relative;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .anime-rotate .multiple-fish img {
+    height: 100%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    grid-area: animation; }
+    .animation .animation-bg .white-circle {
+      z-index: 100; }
+    .animation .animation-bg .illustration-rings {
+      margin-top: 10%;
+      width: 80%;
+      left: 10%; }
+    .animation .animation-bg .earth {
+      margin-top: 35%;
+      width: 30%;
+      left: 35%; }
+    .animation .animation-bg .multiple-fish {
+      position: relative;
+      width: 100%;
+      left: 23%;
+      bottom: -15%; }
+      .animation .animation-bg .multiple-fish img {
+        width: 27%; }
+    .animation .animation-bg .green-1 {
+      position: relative;
+      width: 100%;
+      bottom: -60%; }
+      .animation .animation-bg .green-1 .small-leaves {
+        left: 33%; }
+      .animation .animation-bg .green-1 img {
+        width: 50%; }
+    .animation .animation-bg .green {
+      width: 40%;
+      bottom: -45%;
+      position: relative; }
+      .animation .animation-bg .green .grass-blades {
+        left: 62%; }
+        .animation .animation-bg .green .grass-blades img {
+          width: 30%; }
+    .animation .animation-bg img {
       position: absolute;
-      width: 12%;
-      height: auto;
-      top: 170px;
-      right: 40%;
-      padding-bottom: 100px; }
-  .anime-rotate .grass-blades {
-    width: 100%;
-    height: auto;
-    z-index: 70; }
-    .anime-rotate .grass-blades img {
-      width: 25%; }
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+
+.rotate-reverse {
+  -webkit-animation: back_rotation 60s infinite linear;
+          animation: back_rotation 60s infinite linear;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+@-webkit-keyframes back_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes back_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }

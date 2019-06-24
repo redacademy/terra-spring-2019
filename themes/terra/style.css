@@ -2231,7 +2231,7 @@ img {
     .page-the-project .lack-aware-cards h2,
     .page-the-project .lack-aware-cards h3,
     .page-the-project .lack-aware-cards p {
-      color: black; }
+      color: #4a4a4a; }
     .page-the-project .lack-aware-cards .lack-aw-item-wraps {
       width: 50%;
       height: 50%;
@@ -2263,7 +2263,7 @@ img {
     margin-bottom: 15rem; }
     .page-the-project .who-we-are p,
     .page-the-project .who-we-are h3 {
-      color: black;
+      color: #4a4a4a;
       text-align: center; }
   .page-the-project .team-members {
     display: -webkit-box;
@@ -2281,8 +2281,9 @@ img {
       .page-the-project .team-member {
         width: 25%; } }
     .page-the-project .team-member:hover {
-      background: -webkit-gradient(linear, left top, left bottom, from(#75f3ff), color-stop(53%, #95c4eb), color-stop(59%, #88bdec), to(#378aff));
-      background: linear-gradient(to bottom, #75f3ff 0%, #95c4eb 53%, #88bdec 59%, #378aff 100%); }
+      border-radius: 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 212, 232, 0.3)), to(rgba(0, 45, 110, 0.5)));
+      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5)); }
   .page-the-project .member-photo {
     position: relative;
     display: -webkit-box;

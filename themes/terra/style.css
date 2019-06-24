@@ -1575,12 +1575,10 @@ object {
   line-height: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem; }
   .disclaimer-center .disclaimer-title {
     text-align: center; }
-  .disclaimer-center .page-contact-us h1.entry-title {
-    display: unset; }
 
 .page-contact-us .site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
@@ -1666,7 +1664,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type="submit"] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1678,8 +1676,6 @@ img {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 25px; }
-  .contact-us-form .textarea-msg #text {
-    text-align: left; }
 
 .msg-sent-border {
   display: none;

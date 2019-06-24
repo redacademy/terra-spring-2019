@@ -29,7 +29,7 @@ get_header(); ?>
         
         <div class="about-aqua">
 		<section class="intro-fp">
-			<h2 class="intro-fp-h2"><?php echo CFS()->get('fp_intro_text'); ?></h2>
+			<?php echo CFS()->get('fp_intro_text'); ?>
 		</section>
 		<section class="fp-ap-info">
 			<?php
@@ -53,8 +53,12 @@ get_header(); ?>
 			<section class="fp-mission"> 
 				<h2><?php echo CFS()->get('our_mission'); ?></h2>
 				<div class="fp-miss-item mission-1">
-                    <div class="mission-image"><img src="<?php echo CFS()->get('restore_photo'); ?>" /></div>
-                    <div class="mission-content"><?php echo CFS()->get('mission_restore'); ?></div>
+					<div class="mission-image"><img src="<?php echo CFS()->get('restore_photo'); ?>" /></div>
+					<div class="mission-content"><?php echo CFS()->get('mission_restore'); ?></div>
+					
+					
+
+
                 </div>
 				<div class="fp-miss-item mission-2">
                     <div class="mission-image"><img src="<?php echo CFS()->get('feed_photo'); ?>" /></div>

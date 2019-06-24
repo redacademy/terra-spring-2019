@@ -119,7 +119,7 @@ function terra_partner_post_type() {
 add_action( 'init', 'terra_partner_post_type', 0 );
 
 
-function terra_Member_post_type() {
+function terra_member_post_type() {
 
 	$labels = array(
 		'name'                  => 'Members',

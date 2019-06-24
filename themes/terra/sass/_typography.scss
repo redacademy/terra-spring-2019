@@ -1,6 +1,7 @@
 body {
   font-family: $font__main;
   line-height: $font__line-height-body;
+  letter-spacing: $body-letter-spacing
 }
 
 h1,
@@ -11,11 +12,16 @@ h5,
 h6 {
   font-family: $font__heading;
   color: $header-title-font-color;
+  line-height: $font__line-height-heading;
 }
+
 p {
   color: $font-color;
 }
 
 h2 {
-  font-size: 2.625rem;
+  font-size: $font__h2-size-mobile;
+  @include desktop {
+    font-size: $font__h2-size-desktop;
+  }
 }

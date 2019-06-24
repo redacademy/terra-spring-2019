@@ -1,8 +1,6 @@
 /*--------------------------------------------------------------
-# Page Templates
+/* Aquaponics page 
 --------------------------------------------------------------*/
-
-/* Aquaponics page */
 
 // -----HERO Banner-----//
 .hero-banner {
@@ -55,14 +53,16 @@
   }
   .what-aqua-imgs {
     display: none;
+
     @include desktop {
       display: block;
+      padding-top: 2.5rem;
       width: 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-        ' 1 2 '
-        ' 3 4 ';
+        " 1 2 "
+        " 3 4 ";
       img {
         width: 150px;
         &:nth-child(1) {
@@ -89,12 +89,81 @@
     }
   }
   //end what is aqua section
+  // How Aqua Works Section
+  .how-aqua-h2 {
+    padding: $page-padding-mobile;
+    @include center-page;
+  }
   .how-aqua-works {
     padding: $page-padding-mobile;
   }
-  // How Aqua Works Section
 
-  // to do later
+  .how-aqua {
+    padding: $page-padding-mobile;
+    @include center-page;
+    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .how-aqua-img {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      object-fit: contain;
+      padding: 2rem;
+      align-self: center;
+    }
+    .how-aqua-item:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1;
+      // padding: 2rem;
+      object-fit: contain;
+      @include desktop {
+        padding: 2rem;
+      }
+    }
+    .how-aqua-item:nth-child(2) {
+      grid-column: 3;
+      grid-row: 1;
+      // padding: 2rem;
+      object-fit: contain;
+      @include desktop {
+        padding: 2rem;
+      }
+    }
+    .how-aqua-item:nth-child(3) {
+      grid-column: 1/2;
+      grid-row: 2;
+      // padding: 2rem;
+      object-fit: contain;
+      @include desktop {
+        padding: 2rem;
+      }
+    }
+    .how-aqua-item:nth-child(4) {
+      grid-column: 3/4;
+      grid-row: 2;
+      // padding: 2rem;
+      object-fit: contain;
+      @include desktop {
+        padding: 2rem;
+      }
+    }
+    .how-aqua-info {
+      grid-column: 1 / 4;
+      grid-row: 3;
+      padding: 2rem;
+      object-fit: contain;
+    }
+    .how-aqua-h3 {
+      color: $font-awesome-color;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+
+  // End how aqua works
 
   // History of Aquaponics Section
 
@@ -125,6 +194,7 @@
       width: 100%;
       opacity: 0.78;
       border-radius: 50px;
+      margin-top: 20px;
 
       @include desktop {
         display: block;
@@ -182,6 +252,7 @@
 
   //  Benefits of Aquaponics Section
   .ben-aqua-h2 {
+    padding: $page-padding-mobile;
     @include center-page;
   }
 
@@ -232,6 +303,7 @@
   //Current Technology Section
   .cur-tech-h2 {
     @include center-page;
+    padding: $page-padding-mobile;
   }
   .current-tech {
     padding: $page-padding-mobile;
@@ -279,9 +351,9 @@
 
       &:after {
         display: block;
-        content: '';
+        content: "";
         border-bottom: solid 5px $nav-underline-color;
-        transform: scaleX(0.6);
+        transform: scaleX(0.3);
         transform-origin: 0% 50%;
         transition: transform 500ms ease-in-out;
         bottom: 0;

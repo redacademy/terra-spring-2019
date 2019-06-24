@@ -395,7 +395,8 @@ th {
 
 body {
   font-family: "Nunito Sans";
-  line-height: 1.25rem; }
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem; }
 
 h1,
 h2,
@@ -404,13 +405,17 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  line-height: 1.5em; }
 
 p {
   color: #4a4a4a; }
 
 h2 {
-  font-size: 2.625rem; }
+  font-size: 1.37rem; }
+  @media (min-width: 620px) {
+    h2 {
+      font-size: 2.625rem; } }
 
 .banner {
   min-width: 100%;
@@ -467,8 +472,7 @@ h2 {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1;
-      color: #ffffff;
-      line-height: 2rem; }
+      color: #ffffff; }
       .banner .banner-section h2::before {
         content: ''; }
       @media (min-width: 620px) {
@@ -1269,15 +1273,13 @@ object {
             margin-right: 0.5rem;
             margin-left: 0.5rem; } }
 
-html {
-  height: 100%; }
-
 .site-header {
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   .site-header .center-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1324,6 +1326,7 @@ html {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+      justify-items: flex-end;
       width: auto;
       margin-left: auto;
       position: relative; }
@@ -1391,7 +1394,8 @@ html {
             margin-top: 60px;
             margin-right: 20px; }
     .site-header .center-header .site-branding {
-      width: 50%; }
+      width: 50%;
+      padding-left: 1rem; }
       .site-header .center-header .site-branding img {
         max-width: 70px;
         height: 80%;
@@ -1410,15 +1414,18 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      min-height: 100px;
+      min-height: 50px;
       line-height: 27px; }
       .site-header .center-header .site-branding {
         width: 50%; }
       .site-header .center-header .footer-navigation {
         display: none; }
       .site-header .center-header .main-navigation {
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding-right: 1rem;
+        width: 100%; }
         .site-header .center-header .main-navigation .menu {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1565,15 +1572,13 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem; }
   .disclaimer-center .disclaimer-title {
     text-align: center; }
-  .disclaimer-center .page-contact-us h1.entry-title {
-    display: unset; }
 
 .page-contact-us .site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
@@ -1659,7 +1664,7 @@ img {
       .contact-us-form textarea,
       .contact-us-form input {
         width: 605px; } }
-  .contact-us-form input[type="submit"] {
+  .contact-us-form input[type='submit'] {
     height: 3rem;
     width: 150px;
     background: -webkit-gradient(linear, left top, right top, from(#002d6e), to(#2f88d3));
@@ -1671,8 +1676,6 @@ img {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 25px; }
-  .contact-us-form .textarea-msg #text {
-    text-align: left; }
 
 .msg-sent-border {
   display: none;
@@ -1806,7 +1809,7 @@ img {
       max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.25rem;
+      line-height: 1.5rem;
       padding-left: 20px;
       padding-right: 20px; } }
 
@@ -1821,10 +1824,11 @@ img {
   @media (min-width: 620px) {
     .page-aquaponics .what-aqua-imgs {
       display: block;
+      padding-top: 2.5rem;
       width: 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: ' 1 2 ' ' 3 4 '; }
+      grid-template-areas: " 1 2 " " 3 4 "; }
       .page-aquaponics .what-aqua-imgs img {
         width: 150px; }
         .page-aquaponics .what-aqua-imgs img:nth-child(1) {
@@ -1848,8 +1852,75 @@ img {
           -o-object-fit: contain;
              object-fit: contain; } }
 
+.page-aquaponics .how-aqua-h2 {
+  padding: 0 1.25rem 0 1.25rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .page-aquaponics .how-aqua-works {
   padding: 0 1.25rem 0 1.25rem; }
+
+.page-aquaponics .how-aqua {
+  padding: 0 1.25rem 0 1.25rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr 1fr 1fr; }
+  .page-aquaponics .how-aqua .how-aqua-img {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 2rem;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1;
+    -o-object-fit: contain;
+       object-fit: contain; }
+    @media (min-width: 620px) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(1) {
+        padding: 2rem; } }
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+    -o-object-fit: contain;
+       object-fit: contain; }
+    @media (min-width: 620px) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(2) {
+        padding: 2rem; } }
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2;
+    -o-object-fit: contain;
+       object-fit: contain; }
+    @media (min-width: 620px) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
+        padding: 2rem; } }
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 2;
+    -o-object-fit: contain;
+       object-fit: contain; }
+    @media (min-width: 620px) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
+        padding: 2rem; } }
+  .page-aquaponics .how-aqua .how-aqua-info {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    padding: 2rem;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .page-aquaponics .how-aqua .how-aqua-h3 {
+    color: #002d6e;
+    font-size: 1.25rem;
+    text-align: center; }
 
 .page-aquaponics .history-aqua {
   padding: 0 1.25rem 0 1.25rem;
@@ -1876,7 +1947,8 @@ img {
     display: none;
     width: 100%;
     opacity: 0.78;
-    border-radius: 50px; }
+    border-radius: 50px;
+    margin-top: 20px; }
     @media (min-width: 620px) {
       .page-aquaponics .history-aqua .hist-aqua-img {
         display: block; } }
@@ -1927,6 +1999,7 @@ img {
     height: 15px; }
 
 .page-aquaponics .ben-aqua-h2 {
+  padding: 0 1.25rem 0 1.25rem;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto; }
@@ -1985,7 +2058,8 @@ img {
 .page-aquaponics .cur-tech-h2 {
   max-width: 1140px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 1.25rem 0 1.25rem; }
 
 .page-aquaponics .current-tech {
   padding: 0 1.25rem 0 1.25rem;
@@ -2043,10 +2117,10 @@ img {
     border-spacing: 100px; }
     .page-aquaponics .cur-tech-container .cur-tech-h3:after {
       display: block;
-      content: '';
+      content: "";
       border-bottom: solid 5px #00ecf5;
-      -webkit-transform: scaleX(0.6);
-              transform: scaleX(0.6);
+      -webkit-transform: scaleX(0.3);
+              transform: scaleX(0.3);
       -webkit-transform-origin: 0% 50%;
               transform-origin: 0% 50%;
       -webkit-transition: -webkit-transform 500ms ease-in-out;
@@ -2111,7 +2185,7 @@ img {
               justify-content: space-between;
       color: #4a4a4a;
       text-align: left;
-      line-height: 1.25rem; }
+      line-height: 1.5rem; }
     .page-support-us .entry-content h2 {
       width: 18pc;
       color: #4a4a4a;
@@ -2162,18 +2236,22 @@ img {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))) center, url("../../assets/images/illustrations/space-ring.svg");
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) center, url("../../assets/images/illustrations/space-ring.svg");
     background-repeat: no-repeat no-repeat;
-    background-position: center, top 270px right -100px;
+    background-position: center, bottom -200px right -100px;
     background-size: 100%, 90%; }
+    .page-the-project .whats-terra p {
+      font-size: 1.2rem; }
+      .page-the-project .whats-terra p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 5rem; }
     @media (min-width: 620px) {
       .page-the-project .whats-terra {
         padding-left: 8rem;
         padding-right: 5rem;
         padding-bottom: 10rem;
         padding-top: 3rem;
-        background-position: center, top 140px right -100px;
-        background-size: 100%, 50%; }
+        background-size: 100%, 60%; }
         .page-the-project .whats-terra p {
-          width: 60%;
+          width: 65%;
           font-size: 1.2rem; } }
   .page-the-project .lack-aware-container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
@@ -2204,6 +2282,9 @@ img {
           font-size: 2.5em;
           line-height: 1.2em; } }
   .page-the-project .lack-aware-cards {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2217,7 +2298,7 @@ img {
     .page-the-project .lack-aware-cards h2,
     .page-the-project .lack-aware-cards h3,
     .page-the-project .lack-aware-cards p {
-      color: black; }
+      color: #4a4a4a; }
     .page-the-project .lack-aware-cards .lack-aw-item-wraps {
       width: 50%;
       height: 50%;
@@ -2249,7 +2330,7 @@ img {
     margin-bottom: 15rem; }
     .page-the-project .who-we-are p,
     .page-the-project .who-we-are h3 {
-      color: black;
+      color: #4a4a4a;
       text-align: center; }
   .page-the-project .team-members {
     display: -webkit-box;
@@ -2267,8 +2348,9 @@ img {
       .page-the-project .team-member {
         width: 25%; } }
     .page-the-project .team-member:hover {
-      background: -webkit-gradient(linear, left top, left bottom, from(#75f3ff), color-stop(53%, #95c4eb), color-stop(59%, #88bdec), to(#378aff));
-      background: linear-gradient(to bottom, #75f3ff 0%, #95c4eb 53%, #88bdec 59%, #378aff 100%); }
+      border-radius: 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 212, 232, 0.3)), to(rgba(0, 45, 110, 0.5)));
+      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5)); }
   .page-the-project .member-photo {
     position: relative;
     display: -webkit-box;
@@ -2276,7 +2358,8 @@ img {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding: 1rem; }
     .page-the-project .member-photo .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;
@@ -2666,26 +2749,27 @@ img {
         font-size: 24px;
         color: #00d4e8; }
     .error404 .site-content .error-404 .page-content .four-0-four {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 600px;
+      grid-template-areas: 'number animation number2';
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       font-size: 200px; }
       .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
-        min-width: 50%;
-        height: 50vw;
-        position: relative; }
+        grid-area: animation;
+        height: 100%;
+        width: 100%; }
       .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
         color: white;
-        width: 25%; }
+        width: 25%;
+        grid-area: number; }
       .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
         width: 25%;
-        color: white; }
+        color: white;
+        grid-area: number2; }
       @media screen and (max-width: 620px) {
         .error404 .site-content .error-404 .page-content .four-0-four {
           display: none; } }
@@ -2693,172 +2777,63 @@ img {
       .error404 .site-content .error-404 {
         width: 100%; } }
 
-.anime-rotate {
-  position: relative;
-  min-width: inherit;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center; }
-  .anime-rotate .anime {
-    position: absolute;
-    -webkit-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    top: 50%;
-    left: 50%; }
-  .anime-rotate .animation-bg {
+.animation {
+  width: 100%;
+  height: 100%; }
+  .animation .animation-bg {
     position: relative;
-    left: -50%; }
-    .anime-rotate .animation-bg .bg-2 {
-      z-index: 11; }
-    .anime-rotate .animation-bg img {
-      position: absolute; }
-    .anime-rotate .animation-bg .earth-container {
+    top: -50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    grid-area: animation; }
+    .animation .animation-bg .white-circle {
+      z-index: 100; }
+    .animation .animation-bg .illustration-rings {
+      margin-top: 10%;
+      width: 80%;
+      left: 10%; }
+    .animation .animation-bg .earth {
+      margin-top: 35%;
+      width: 30%;
+      left: 35%; }
+    .animation .animation-bg .multiple-fish {
       position: relative;
       width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      height: auto;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      .anime-rotate .animation-bg .earth-container .earth {
-        z-index: 100;
-        width: 30%;
-        position: absolute; }
-  .anime-rotate .single-fish-1 {
-    width: 6%;
-    z-index: 20; }
-    .anime-rotate .single-fish-1 img {
-      width: 80%; }
-  .anime-rotate .single-fish-2 {
-    width: 12%;
-    z-index: 24; }
-    .anime-rotate .single-fish-2 img {
-      width: 60%; }
-  .anime-rotate .single-fish-3 {
-    width: 9%;
-    z-index: 24; }
-  .anime-rotate .big-fish {
-    width: 10%;
-    z-index: 190; }
-    .anime-rotate .big-fish img {
-      width: 60%; }
-  .anime-rotate .small-leaves {
-    width: 30%;
-    height: 100%;
-    left: 29%;
-    z-index: 40;
-    -webkit-animation: sway1 16s infinite;
-            animation: sway1 16s infinite;
-    -webkit-transform-origin: 50% 100% 0;
-            transform-origin: 50% 100% 0; }
-  .anime-rotate .grass-blades {
-    width: 30%;
-    height: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 70;
-    -webkit-animation: sway2 12s infinite;
-            animation: sway2 12s infinite;
-    -webkit-transform-origin: 50% 100% 0;
-            transform-origin: 50% 100% 0; }
-
-.rotate-fast {
-  -webkit-animation: rotation_1 16s infinite linear;
-          animation: rotation_1 16s infinite linear; }
-
-.rotate-slow {
-  -webkit-animation: rotation_2 42s infinite linear;
-          animation: rotation_2 42s infinite linear; }
-
-.rotate-slow-2 {
-  -webkit-animation: rotation_2_2 35s infinite linear;
-          animation: rotation_2_2 35s infinite linear; }
-
-.rotate-slow-3 {
-  -webkit-animation: rotation_2_2 29s infinite linear;
-          animation: rotation_2_2 29s infinite linear; }
+      left: 23%;
+      bottom: -15%; }
+      .animation .animation-bg .multiple-fish img {
+        width: 27%; }
+    .animation .animation-bg .green-1 {
+      position: relative;
+      width: 100%;
+      bottom: -60%; }
+      .animation .animation-bg .green-1 .small-leaves {
+        left: 33%; }
+      .animation .animation-bg .green-1 img {
+        width: 50%; }
+    .animation .animation-bg .green {
+      width: 40%;
+      bottom: -45%;
+      position: relative; }
+      .animation .animation-bg .green .grass-blades {
+        left: 62%; }
+        .animation .animation-bg .green .grass-blades img {
+          width: 30%; }
+    .animation .animation-bg img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
 
 .rotate-reverse {
-  -webkit-animation: back_rotation 180s infinite linear;
-          animation: back_rotation 180s infinite linear; }
-
-@-webkit-keyframes rotation_1 {
-  from {
-    -webkit-transform: rotate(0deg) translate(100px, 150px);
-            transform: rotate(0deg) translate(100px, 150px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(100px, 150px);
-            transform: rotate(1turn) translate(100px, 150px); } }
-
-@keyframes rotation_1 {
-  from {
-    -webkit-transform: rotate(0deg) translate(100px, 150px);
-            transform: rotate(0deg) translate(100px, 150px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(100px, 150px);
-            transform: rotate(1turn) translate(100px, 150px); } }
-
-@-webkit-keyframes rotation_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@-webkit-keyframes rotation_2_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2_2 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@-webkit-keyframes rotation_2_3 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
-
-@keyframes rotation_2_3 {
-  from {
-    -webkit-transform: rotate(0deg) translate(133px, 245px);
-            transform: rotate(0deg) translate(133px, 245px); }
-  to {
-    -webkit-transform: rotate(1turn) translate(133px, 245px);
-            transform: rotate(1turn) translate(133px, 245px); } }
+  -webkit-animation: back_rotation 60s infinite linear;
+          animation: back_rotation 60s infinite linear;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
 
 @-webkit-keyframes back_rotation {
   from {
@@ -2875,39 +2850,3 @@ img {
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg); } }
-
-@-webkit-keyframes sway1 {
-  0%,
-  100% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
-  50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); } }
-
-@keyframes sway1 {
-  0%,
-  100% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
-  50% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); } }
-
-@-webkit-keyframes sway2 {
-  0%,
-  100% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg); }
-  50% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg); } }
-
-@keyframes sway2 {
-  0%,
-  100% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg); }
-  50% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg); } }

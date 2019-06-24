@@ -1,6 +1,6 @@
 .page-contact-us {
   .site-main {
-    background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
+    background: url('../../assets/images/illustrations/futurisitc_illustration-mobile.svg');
     background-repeat: no-repeat;
     background-position: top 20px right -250px;
     background-size: 80%;
@@ -21,13 +21,13 @@
     padding-top: 2rem;
     padding-bottom: 6rem;
   }
-}
 
-.page-contact-us h2 {
+ h2 {
   text-transform: uppercase;
   color: $font-awesome-color;
   margin: 25px auto;
   font-weight: bold;
+}
 }
 
 img {
@@ -71,12 +71,8 @@ img {
     }
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     @include button-style;
-  }
-
-  .textarea-msg #text {
-    text-align: left;
   }
 }
 

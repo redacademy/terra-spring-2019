@@ -1,171 +1,101 @@
-.anime-rotate {
-  //   transform: translate(0, 50%);
-  position: relative;
-  min-width: inherit;
-  transform-origin: center;
-  box-sizing: border-box;
-  text-align: center;
-
-  .anime {
-    position: absolute;
-    transform: translate(50%, -50%);
-    transform-origin: center;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-  }
+.animation {
+  //   position: relative;
+  width: 100%;
+  height: 100%;
 
   .animation-bg {
     position: relative;
-    left: -50%;
-
-    .bg-2 {
-      z-index: 11;
+    top: -50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, 50%);
+    grid-area: animation;
+    .white-circle {
+      z-index: 100;
+    }
+    .illustration-rings {
+      margin-top: 10%;
+      width: 80%;
+      left: 10%;
+    }
+    .earth {
+      margin-top: 35%;
+      width: 30%;
+      left: 35%;
+    }
+    .multiple-fish {
+      position: relative;
+      width: 100%;
+      left: 23%;
+      bottom: -15%;
+      img {
+        width: 27%;
+      }
+    }
+    .green-1 {
+      position: relative;
+      width: 100%;
+      bottom: -60%;
+      .small-leaves {
+        left: 33%;
+      }
+      img {
+        width: 50%;
+      }
+    }
+    .green {
+      width: 40%;
+      bottom: -45%;
+      position: relative;
+      .grass-blades {
+        left: 62%;
+        img {
+          width: 30%;
+        }
+      }
     }
     img {
       position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    .earth-container {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      box-sizing: border-box;
-
-      .earth {
-        z-index: 100;
-        width: 30%;
-        position: absolute;
-      }
-    }
-  }
-
-  .single-fish-1 {
-    width: 6%;
-    z-index: 20;
-
-    img {
-      width: 80%;
-    }
-  }
-  .single-fish-2 {
-    width: 12%;
-    z-index: 24;
-    img {
-      width: 60%;
-    }
-  }
-  .single-fish-3 {
-    width: 9%;
-    z-index: 24;
-  }
-  .big-fish {
-    width: 10%;
-    z-index: 190;
-    img {
-      width: 60%;
-    }
-  }
-  .small-leaves {
-    width: 30%;
-    height: 100%;
-    left: 29%;
-    z-index: 40;
-    animation: sway1 16s infinite;
-    transform-origin: 50% 100% 0;
-  }
-  .grass-blades {
-    width: 30%;
-    height: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 70;
-    animation: sway2 12s infinite;
-    transform-origin: 50% 100% 0;
   }
 }
+
 // css animations speeds
-//group of smaller fish
-.rotate-fast {
-  animation: rotation_1 16s infinite linear;
-}
-//single-fish-1
-.rotate-slow {
-  animation: rotation_2 42s infinite linear;
-}
-.rotate-slow-2 {
-  animation: rotation_2_2 35s infinite linear;
-}
-.rotate-slow-3 {
-  animation: rotation_2_2 29s infinite linear;
-}
-//earth movement
+
 .rotate-reverse {
-  animation: back_rotation 180s infinite linear;
-}
-//fish movement
-@keyframes rotation_1 {
-  from {
-    transform: rotate(0deg) translate(100px, 150px);
-  }
-  to {
-    transform: rotate(1turn) translate(100px, 150px);
-  }
-}
-@keyframes rotation_2 {
-  from {
-    transform: rotate(0deg) translate(133px, 245px);
-  }
-  to {
-    transform: rotate(1turn) translate(133px, 245px);
-  }
-}
-@keyframes rotation_2_2 {
-  from {
-    transform: rotate(0deg) translate(133px, 245px);
-  }
-  to {
-    transform: rotate(1turn) translate(133px, 245px);
-  }
-}
-@keyframes rotation_2_3 {
-  from {
-    transform: rotate(0deg) translate(133px, 245px);
-  }
-  to {
-    transform: rotate(1turn) translate(133px, 245px);
-  }
-}
-// rotation for earth
-@keyframes back_rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-// grass movement
-@keyframes sway1 {
-  0%,
-  100% {
-    transform: rotate(2deg);
-  }
-  50% {
-    transform: rotate(-2deg);
+  animation: back_rotation 60s infinite linear;
+  transform-origin: 50% 50%;
+  @keyframes back_rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
   }
 }
 
-@keyframes sway2 {
-  0%,
-  100% {
-    transform: rotate(4deg);
-  }
-  50% {
-    transform: rotate(-4deg);
-  }
-}
+// // grass movement
+// @keyframes sway1 {
+//   0%,
+//   100% {
+//     transform: rotate(2deg);
+//   }
+//   50% {
+//     transform: rotate(-2deg);
+//   }
+// }
+
+// @keyframes sway2 {
+//   0%,
+//   100% {
+//     transform: rotate(4deg);
+//   }
+//   50% {
+//     transform: rotate(-4deg);
+//   }
+// }

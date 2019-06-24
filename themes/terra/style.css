@@ -395,7 +395,8 @@ th {
 
 body {
   font-family: "Nunito Sans";
-  line-height: 1.25rem; }
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem; }
 
 h1,
 h2,
@@ -404,14 +405,17 @@ h4,
 h5,
 h6 {
   font-family: "Lato";
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  line-height: 1.5em; }
 
 p {
   color: #4a4a4a; }
 
 h2 {
-  font-size: 2.625rem;
-  line-height: 1.25em; }
+  font-size: 1.37rem; }
+  @media (min-width: 620px) {
+    h2 {
+      font-size: 2.625rem; } }
 
 .banner {
   min-width: 100%;
@@ -468,8 +472,7 @@ h2 {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1;
-      color: #ffffff;
-      line-height: 2rem; }
+      color: #ffffff; }
       .banner .banner-section h2::before {
         content: ''; }
       @media (min-width: 620px) {
@@ -1567,7 +1570,7 @@ html {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -1808,7 +1811,7 @@ img {
       max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.25rem;
+      line-height: 1.5rem;
       padding-left: 20px;
       padding-right: 20px; } }
 
@@ -2113,7 +2116,7 @@ img {
               justify-content: space-between;
       color: #4a4a4a;
       text-align: left;
-      line-height: 1.25rem; }
+      line-height: 1.5rem; }
     .page-support-us .entry-content h2 {
       width: 18pc;
       color: #4a4a4a;
@@ -2164,18 +2167,22 @@ img {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))) center, url("../../assets/images/illustrations/space-ring.svg");
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) center, url("../../assets/images/illustrations/space-ring.svg");
     background-repeat: no-repeat no-repeat;
-    background-position: center, top 270px right -100px;
+    background-position: center, bottom -200px right -100px;
     background-size: 100%, 90%; }
+    .page-the-project .whats-terra p {
+      font-size: 1.2rem; }
+      .page-the-project .whats-terra p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 5rem; }
     @media (min-width: 620px) {
       .page-the-project .whats-terra {
         padding-left: 8rem;
         padding-right: 5rem;
         padding-bottom: 10rem;
         padding-top: 3rem;
-        background-position: center, top 140px right -100px;
-        background-size: 100%, 50%; }
+        background-size: 100%, 60%; }
         .page-the-project .whats-terra p {
-          width: 60%;
+          width: 65%;
           font-size: 1.2rem; } }
   .page-the-project .lack-aware-container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/photos/lack-of-awareness.jpeg");
@@ -2206,6 +2213,9 @@ img {
           font-size: 2.5em;
           line-height: 1.2em; } }
   .page-the-project .lack-aware-cards {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2278,7 +2288,8 @@ img {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding: 1rem; }
     .page-the-project .member-photo .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;

@@ -2,22 +2,11 @@
   background: $hamburger-color;
 
   .site-content {
-    @media screen and (max-width: 620px) {
-      overflow: hidden;
-    }
-
     .error-404 {
       @include center-page;
       @include center-block;
 
       .page-content {
-        // padding: 10px 10px 10px 10px;
-        // min-height: 115vh;
-
-        @media screen and (max-width: 620px) {
-          height: 115vh;
-        }
-
         .search-box-content {
           box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
           width: 28%;
@@ -32,26 +21,6 @@
             color: $btn-border-color;
           }
         }
-        // .anime-rotate {
-        //   @media screen and (max-width: 620px) {
-        //     margin-top: 120%;
-        //     margin-bottom: 25%;
-        //     .grass-blades {
-        //       width: 213px;
-        //       height: 2px;
-        //       left: 1%;
-        //     }
-        //     .small-leaves {
-        //       .: 21%;
-        //       width: 43%;
-        //       left: 12%;
-        //     }
-        //     .single-fish-3 {
-        //       width: 16%;
-        //     }
-        //   }
-        // }
-
         .four-0-four {
           display: grid;
           justify-items: center;
@@ -77,13 +46,7 @@
             color: white;
             grid-area: number2;
           }
-          @media screen and (max-width: 620px) {
-            display: none;
-          }
         }
-      }
-      @media screen and (max-width: 620px) {
-        width: 100%;
       }
     }
   }

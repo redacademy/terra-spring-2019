@@ -3,7 +3,8 @@
  * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
- * Template Support Us Page
+ * 
+ * Template Name: Support Us Page
  */
 get_header(); ?>
 
@@ -28,7 +29,9 @@ get_header(); ?>
 						));
 						?>
 						<div class="button-center">
-							<a href="https://ca.gofundme.com/" class="fund-btn">GoFundMe</a>
+
+							<a class="fund-btn" href="<?php echo CFS()->get('fund_me_button'); ?></a>
+									<!-- <a href=" https://ca.gofundme.com/" class="fund-btn">GoFundMe</a> -->
 						</div>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->

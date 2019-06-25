@@ -1,3 +1,9 @@
+.page {
+  @include mobile-max {
+    overflow-x: hidden;
+  }
+}
+
 .site-header {
   position: fixed;
   background-color: $header-color-transparent;
@@ -6,8 +12,11 @@
   z-index: 1000;
   .center-header {
     display: flex;
+    overflow-x: hidden;
+    max-width: 100vw;
     width: inherit;
     height: 60px;
+
     .w3-animate-right {
       position: relative;
       animation: animateright 0.7s ease-in-out;
@@ -41,8 +50,8 @@
       flex-wrap: wrap;
       justify-items: flex-end;
       width: auto;
-      margin-left: auto;
       position: relative;
+      margin-left: auto;
       button,
       button:focus,
       button:hover {

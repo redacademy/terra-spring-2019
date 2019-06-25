@@ -131,3 +131,13 @@
   width: 90%;
   padding-bottom: 60%;
 }
+
+@mixin hover-underline {
+  display: block;
+  content: '';
+  border-bottom: solid 5px $nav-underline-color;
+  transform-origin: 0% 50%;
+  transition: transform 500ms ease-in-out;
+  bottom: 0;
+  left: 0;
+}

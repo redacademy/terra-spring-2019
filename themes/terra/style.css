@@ -2065,6 +2065,7 @@ img {
 .page-aquaponics .benefit-container {
   margin-top: 24px;
   width: 90%;
+  min-height: 400px;
   padding: 20px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -2120,7 +2121,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 410px;
+  height: 425px;
   width: 336px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 14px 30px 10px rgba(0, 0, 0, 0.15);
@@ -2164,6 +2165,9 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px; }
+  @media (min-width: 620px) {
+    .page-aquaponics .cur-tech-p {
+      padding-bottom: 30px; } }
 
 .page-aquaponics .cur-tech-img {
   width: 100%;

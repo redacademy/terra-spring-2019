@@ -31,11 +31,12 @@
 				<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
 			</nav><!-- .footer-navigation -->
 
-			<div class="social-media">
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-instagram"></i>
-			</div><!-- .social-media -->
+
+			<section class="social-media">
+			<a href="<?php $facebook = CFS()->get('facebook_link', 13); echo $facebook['url']; ?>"> <i class="fab fa-facebook-square"></i> </a>
+			<a href="<?php $twitter = CFS()->get('twitter_link', 13); echo $twitter['url']?>"> <i class="fab fa-twitter"></i></a>
+			<a href="<?php $instagram = CFS()->get('instagram_link', 13); echo $instagram['url'] ?>"> <i class="fab fa-instagram"></i></a>
+		</section>
 
 		</div><!-- .footer-center -->
 	</section><!-- .contact-media -->

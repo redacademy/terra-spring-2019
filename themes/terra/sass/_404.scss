@@ -3,6 +3,7 @@
 
   .site-content {
     padding-top: 30px;
+    padding-bottom: 0;
     .error-404 {
       @include center-page;
       @include center-block;

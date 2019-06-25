@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Footer Templates
+--------------------------------------------------------------*/
+
 .page-the-project {
   img {
     max-width: 100%;
@@ -30,10 +34,10 @@
     @include desktop {
       padding-left: 8rem;
       padding-right: 5rem;
-      padding-bottom: 10rem;
+      padding-bottom: 5rem;
       padding-top: 3rem;
       // background-position: center, bottom -200px right -100px;
-      background-size: 100%, 60%;
+      background-size: 100%, 50%;
       p {
         width: 65%;
         font-size: 1.2rem;
@@ -55,7 +59,6 @@
     }
 
     .lack-aware-h2 {
-      // background: pink;
       width: 400px;
       color: white;
       position: absolute;
@@ -108,8 +111,8 @@
 
   .who-we-are {
     @include center-page;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     p,
     h3 {
       color: $font-color;
@@ -131,7 +134,11 @@
 
     &:hover {
       border-radius: 20px;
-      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5));
+      background: linear-gradient(
+        180deg,
+        rgba(0, 212, 232, 0.3),
+        rgba(0, 45, 110, 0.5)
+      );
       // background: linear-gradient(
       //   to bottom,
       //   #75f3ff 0%,
@@ -181,7 +188,7 @@
     background-size: contain 170%;
     background-position: right -270px bottom -270px;
     margin: 0 auto;
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
     h2 {
       max-width: 94%;
       padding-left: 0;
@@ -210,7 +217,7 @@
       margin-bottom: 3rem;
       @include desktop {
         font-size: 2.6em;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
       }
     }
     h2,
@@ -361,7 +368,7 @@
       i {
         font-size: 1.3rem;
       }
-      @include desktop {
+        &:hover {
         border: 2px solid #0f2e6b;
         color: #0f2e6b;
         a {
@@ -411,9 +418,9 @@
     &__description {
       overflow-y: scroll;
       padding: 2rem;
-      height: 47%;
+      height: 40vh;
       @include desktop {
-        max-height: 90%;
+        height: 80vh;
       }
     }
 
@@ -474,7 +481,7 @@
       // border-radius: 20px 20px 20px 20px;
       @include desktop {
         width: 58%;
-        height: 90%;
+        // height: 90%;
       }
     }
 

@@ -5,20 +5,15 @@
 // -----HERO Banner-----//
 .hero-banner {
   position: relative;
+  margin-left: -100px;
+  margin-right: -100px;
 }
 .banner-pic {
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50% 80%;
+  border-bottom-left-radius: 50% 80%;
   object-fit: cover;
   height: 21rem;
   width: 100%;
-
-  // Note: we can remove the code below if we are happy with the style of the banner semi-circle
-  // THis code brings the edges up higher. Impossible to do otherwise.
-
-  // @include desktop {
-  //   border-radius: 50% 50% 50% 50% / 0% 0% 80% 80%;
-  // }
 }
 
 .banner-title {

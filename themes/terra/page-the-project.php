@@ -173,7 +173,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-
+				
 
 		<!-- White Paper Section -->
 		<section class="white-paper">

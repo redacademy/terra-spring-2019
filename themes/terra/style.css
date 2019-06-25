@@ -1197,6 +1197,9 @@ object {
     .site-footer .subscription-area .subscription-input .wpcf7-form {
       max-width: 100%; }
     .site-footer .subscription-area .subscription-input .wpcf7-submit {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       height: 45px;
       width: 150px;
       border-radius: 6px;
@@ -1583,7 +1586,7 @@ object {
 .page-contact-us .site-main {
   background: url("../../assets/images/illustrations/futurisitc_illustration-mobile.svg");
   background-repeat: no-repeat;
-  background-position: top 20px right -250px;
+  background-position: top 20px right -200px;
   background-size: 80%; }
   @media (min-width: 620px) {
     .page-contact-us .site-main {
@@ -2220,6 +2223,9 @@ img {
           height: 37.9%;
           bottom: 27.5%; } }
 
+/*--------------------------------------------------------------
+# Footer Templates
+--------------------------------------------------------------*/
 .page-the-project {
   /**
    * Team Modal popup
@@ -2592,12 +2598,11 @@ img {
         font-size: 1.05rem; }
       .page-the-project .white-paper .wh-paper-btn i {
         font-size: 1.3rem; }
-      @media (min-width: 620px) {
-        .page-the-project .white-paper .wh-paper-btn {
-          border: 2px solid #0f2e6b;
+      .page-the-project .white-paper .wh-paper-btn:hover {
+        border: 2px solid #0f2e6b;
+        color: #0f2e6b; }
+        .page-the-project .white-paper .wh-paper-btn:hover a {
           color: #0f2e6b; }
-          .page-the-project .white-paper .wh-paper-btn a {
-            color: #0f2e6b; } }
   .page-the-project .team-modal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2646,10 +2651,10 @@ img {
     .page-the-project .team-modal__description {
       overflow-y: scroll;
       padding: 2rem;
-      height: 47%; }
+      height: 40vh; }
       @media (min-width: 620px) {
         .page-the-project .team-modal__description {
-          max-height: 90%; } }
+          height: 80vh; } }
     .page-the-project .team-modal--active {
       opacity: 1;
       position: fixed;
@@ -2702,8 +2707,7 @@ img {
       width: 100%; }
       @media (min-width: 620px) {
         .page-the-project .team-modal__right-col {
-          width: 58%;
-          height: 90%; } }
+          width: 58%; } }
     .page-the-project .team-modal__img {
       max-width: 50%;
       height: auto;

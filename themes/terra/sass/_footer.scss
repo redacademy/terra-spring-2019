@@ -69,6 +69,7 @@
         max-width: 100%;
       }
       .wpcf7-submit {
+        @include center-block;
         height: 45px;
         width: 150px;
         border-radius: 6px;

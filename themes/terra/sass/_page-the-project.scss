@@ -55,7 +55,6 @@
     }
 
     .lack-aware-h2 {
-      // background: pink;
       width: 400px;
       color: white;
       position: absolute;
@@ -131,7 +130,11 @@
 
     &:hover {
       border-radius: 20px;
-      background: linear-gradient(180deg, rgba(0, 212, 232, 0.3), rgba(0, 45, 110, 0.5));
+      background: linear-gradient(
+        180deg,
+        rgba(0, 212, 232, 0.3),
+        rgba(0, 45, 110, 0.5)
+      );
       // background: linear-gradient(
       //   to bottom,
       //   #75f3ff 0%,

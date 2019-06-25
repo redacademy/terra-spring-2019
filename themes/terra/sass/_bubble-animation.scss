@@ -3,19 +3,23 @@
     bottom: 0px;
     left: 20%;
     position: absolute;
-    right: auto;
+    right: 30%;
     top: 0;
-    width: 50%;
-    height: 250px;
-    z-index: 400;
+    width: 55%;
+    height: 42%;
+    z-index: 1;
+    @include desktop {
+      left: 16%;
+      right: 0%;
+    }
   }
 
   @keyframes animateBubble {
     0% {
-      margin-top: 80px;
+      margin-top: 100%;
     }
     100% {
-      margin-top: 200px;
+      margin-top: 15%;
     }
   }
 
@@ -119,11 +123,11 @@
   .bubble {
     border-radius: 50%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
-      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 0.6);
 
-    height: 100px;
+    height: 30px;
     position: absolute;
-    width: 100px;
+    width: 30px;
   }
   .bubble:after {
     background: radial-gradient(
@@ -132,11 +136,11 @@
       rgba(255, 255, 255, 0) 70%
     );
     border-radius: 50%;
-    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.1);
     content: '';
-    height: 80px;
-    left: 10px;
+    height: 20px;
+    left: 11px;
     position: absolute;
-    width: 80px;
+    width: 20px;
   }
 }

@@ -15,15 +15,15 @@ get_header(); ?>
         <div class="banner">
             <section class="banner-section">
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php the_post_thumbnail(); ?>
-
-                <?php endwhile;
-            ?>
+                
+                <?php endwhile; ?>
+                <div class="fp-animation">
+              <?php get_template_part('template-parts/content', 'logo'); ?>
+              </div>
                 <h2><?php echo CFS()->get('fp_banner_text'); ?></h2>
             </section>
         </div>
         <div class="banner-extension">
-
         </div>
         <!-- Intro What is Aquaponics -->
         

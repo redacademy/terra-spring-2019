@@ -20,7 +20,7 @@
     flex-direction: column;
     text-align: center;
     padding-bottom: 250px;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 
     @include desktop {
       text-align: left;
@@ -28,7 +28,7 @@
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 20% auto 20%;
+      grid-template-rows: 20% 600px 20%;
       grid-template-areas:
         ' . . '
         ' h2 img '
@@ -37,21 +37,33 @@
       margin-bottom: 0;
     }
 
-    img {
+    .fp-animation {
       width: 100%;
+      height: 100%;
       position: absolute;
       margin-left: auto;
-      bottom: -250px;
+      bottom: -200px;
+      padding: 50px;
       @include desktop {
         position: static;
         grid-area: img;
         justify-self: start;
         width: 100%;
       }
+      .animation {
+        .animation-bg {
+          .multiple-fish {
+            @include mobile-max {
+              bottom: -15%;
+            }
+          }
+        }
+      }
     }
     h2 {
       width: 100%;
       order: -1;
+      margin-top: 70px;
       color: $white-text-color;
       // line-height: 2rem;
 
@@ -70,10 +82,12 @@
 }
 .banner-extension {
   background: #002d6e;
-  width: 100%;
+  min-width: 100%;
   height: 200px;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
+  margin-left: -100px;
+  margin-right: -100px;
+  border-bottom-right-radius: 50% 80%;
+  border-bottom-left-radius: 50% 80%;
 
   @include mobile-max {
     display: none;

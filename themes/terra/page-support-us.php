@@ -28,11 +28,13 @@ get_header(); ?>
 							'after'  => '</div>',
 						));
 						?>
-						<div class="button-center">
 
-							<a class="fund-btn" href="<?php echo CFS()->get('fund_me_button'); ?></a>
-									<!-- <a href=" https://ca.gofundme.com/" class="fund-btn">GoFundMe</a> -->
-						</div>
+
+						<section class="button-center">
+							<p class="fund-me"><?php echo CFS()->get('fund_me_button'); ?></p>
+							<button class="fund-btn"><?php echo CFS()->get('fund_me_button_link'); ?></button>
+						</section>
+
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 

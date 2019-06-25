@@ -3,6 +3,7 @@
  * The template for displaying all pages.
  *
  * @package Terra_Theme
+* Template Name: Contact
  */
 
 get_header(); ?>
@@ -32,7 +33,6 @@ get_header(); ?>
 			</div><!-- .msg-sent-border -->
 
 		</section><!-- .contact-form-border -->
-
 
 
 

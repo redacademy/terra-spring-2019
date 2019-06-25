@@ -1,5 +1,8 @@
 .page-support-us {
   position: relative;
+  .fund-btn {
+    display: none;
+  }
 
   .banner-title {
     bottom: 9vw;
@@ -56,17 +59,13 @@
       }
       .button-center {
         height: 25vh;
-        .fund-btn {
-          display: none;
-        }
       }
 
       img {
         position: absolute;
-        overflow: hidden;
         z-index: -5;
-        right: 0;
-        width: 37%;
+        right: -10%;
+        width: 50%;
         height: 37.9%;
         bottom: 27.5%;
       }

@@ -89,6 +89,7 @@ body {
       }
 
       &::before {
+<<<<<<< HEAD
         content: '\201C';
         position: absolute;
         font-size: 150px;
@@ -101,6 +102,9 @@ body {
           left: -5%;
           font-size: 100px;
         }
+=======
+        content: '';
+>>>>>>> 45313ff97c4675f0f426fcca99068d752e532010
       }
 
       @include desktop {
@@ -350,7 +354,9 @@ body {
   @include center-page;
   position: relative;
   z-index: 5;
-
+  h2 {
+    margin-left: 2%;
+  }
   img {
     width: 100%;
   }

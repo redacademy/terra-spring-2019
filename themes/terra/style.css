@@ -2729,6 +2729,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+    .error404 .site-content .error-404 .page-content h2 {
+      padding-top: 70px;
+      color: white; }
     .error404 .site-content .error-404 .page-content .search-box-content {
       -webkit-box-shadow: 43px 37px 22px -9px black;
               box-shadow: 43px 37px 22px -9px black;
@@ -2751,6 +2754,10 @@ img {
           -ms-flex-align: center;
               align-items: center;
       font-size: 200px; }
+      @media (max-width: 620px) {
+        .error404 .site-content .error-404 .page-content .four-0-four {
+          grid-template-rows: 300px;
+          font-size: 100px; } }
       .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
         grid-area: animation;
         height: 100%;
@@ -2763,6 +2770,9 @@ img {
         width: 25%;
         color: white;
         grid-area: number2; }
+        @media (max-width: 620px) {
+          .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
+            justify-self: start; } }
 
 .animation {
   width: 100%;

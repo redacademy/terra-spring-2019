@@ -18,11 +18,9 @@ get_header(); ?>
 
 
 			<div class="page-content">
-				<div class="four0four">
-					<p class="phone-404">404</p>
-				</div>
+
 				<div class="page-header">
-					<h1 class="page-title"><?php echo esc_html('Oops! That page can&rsquo;t be found.'); ?></h1>
+					<h2 class="page-title"><?php echo esc_html('Oops! That page can&rsquo;t be found.'); ?></h2>
 				</div><!-- .page-header -->
 
 				<div class="search-box-content">

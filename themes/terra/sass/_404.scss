@@ -7,6 +7,10 @@
       @include center-block;
 
       .page-content {
+        h2 {
+          padding-top: 70px;
+          color: white;
+        }
         .search-box-content {
           box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
           width: 28%;
@@ -30,6 +34,11 @@
           align-items: center;
           font-size: 200px;
 
+          @include mobile-max {
+            grid-template-rows: 300px;
+            font-size: 100px;
+          }
+
           .animation-container {
             grid-area: animation;
             height: 100%;
@@ -45,6 +54,10 @@
             width: 25%;
             color: white;
             grid-area: number2;
+
+            @include mobile-max {
+              justify-self: start;
+            }
           }
         }
       }

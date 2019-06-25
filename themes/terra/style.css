@@ -1289,6 +1289,10 @@ object {
             margin-right: 0.5rem;
             margin-left: 0.5rem; } }
 
+@media (max-width: 620px) {
+  .page {
+    overflow-x: hidden; } }
+
 .site-header {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1300,7 +1304,13 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: inherit;
+=======
     width: 100%;
+>>>>>>> 4c05ab7c8afbcbb3a1a7b12dfc392f9c7ea341f7
     height: 60px;
     /* hamburger starts */
     /* hamburger ends */ }
@@ -1344,8 +1354,8 @@ object {
           flex-wrap: wrap;
       justify-items: flex-end;
       width: auto;
-      margin-left: auto;
-      position: relative; }
+      position: relative;
+      margin-left: auto; }
       .site-header .center-header .main-navigation button,
       .site-header .center-header .main-navigation button:focus,
       .site-header .center-header .main-navigation button:hover {
@@ -1522,7 +1532,9 @@ object {
         height: auto;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between; }
+                justify-content: space-between;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out; }
         .testimony-entries .fp-testimony:hover {
           -ms-flex-pack: distribute;
               justify-content: space-around;

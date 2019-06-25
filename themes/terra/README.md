@@ -22,27 +22,27 @@ J-Query functions were used to:
 - On completion of the contact form, display a pop-up window
 - Show a pop-out feature, on-click for team members:
 
-    /**
-     * Team member popup
-     */
-    // close modal window
-    function closeModal(event) {
-      const closeModalTriggers = ".team-modal__close-btn, .team-modal";
-      // only close the modal if an element being clicked matches closeModalTriggers
-      if (event.target.matches(closeModalTriggers)) {
-        $(".team-modal").removeClass("team-modal--active");
-      }
-    }
+            /**
+            * Team member popup
+            */
+            // close modal window
+            function closeModal(event) {
+            const closeModalTriggers = ".team-modal__close-btn, .team-modal";
+            // only close the modal if an element being clicked matches closeModalTriggers
+            if (event.target.matches(closeModalTriggers)) {
+                $(".team-modal").removeClass("team-modal--active");
+            }
+            }
 
-    if ($(".team-modal").length) {
-      $('.member-detail-arrow').on("click", function(event) {
-        event.preventDefault();
-        console.log($(this).parent().next(".team-modal"));
-        $(this).parent().parent().find(".team-modal").toggleClass("team-modal--active");
-      });
-      // click event added to body
-      $("body").on("click", closeModal);
-    }
+            if ($(".team-modal").length) {
+            $('.member-detail-arrow').on("click", function(event) {
+                event.preventDefault();
+                console.log($(this).parent().next(".team-modal"));
+                $(this).parent().parent().find(".team-modal").toggleClass("team-modal--active");
+            });
+            // click event added to body
+            $("body").on("click", closeModal);
+            }
 
 
 ### User Functionality

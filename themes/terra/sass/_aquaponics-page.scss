@@ -56,8 +56,8 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-        ' 1 2 '
-        ' 3 4 ';
+        " 1 2 "
+        " 3 4 ";
       img {
         width: 150px;
         &:nth-child(1) {
@@ -109,7 +109,7 @@
 
     .aqua-animation {
       grid-column: 2;
-      grid-row: 0 / 2;
+      grid-row: 1 / 2;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -132,13 +132,42 @@
         }
       }
     }
+    .aqua-animation {
+      position: relative;
+      &:before {
+        content: "";
+        background: url(../../assets/images/illustrations/top-arrow.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: -20%;
+        left: -9%;
+        width: 70%;
+        height: 200%;
+      }
+      &:after {
+        content: "";
+        background: url(../../assets/images/illustrations/bottom-arrow.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 100%;
+        right: -10%;
+        width: 70%;
+        height: 200%;
+        @include one-k-px {
+          top: 80%;
+          right: -8%;
+        }
+      }
+    }
     .how-aqua-item:nth-child(1) {
       grid-column: 1/2;
       grid-row: 1;
       // padding: 2rem;
       object-fit: contain;
       @include desktop {
-        padding: 2rem;
+        padding: 3rem;
       }
     }
     .how-aqua-item:nth-child(2) {
@@ -147,7 +176,7 @@
       // padding: 2rem;
       object-fit: contain;
       @include desktop {
-        padding: 2rem;
+        padding: 3rem;
       }
     }
     .how-aqua-item:nth-child(3) {
@@ -156,7 +185,7 @@
       // padding: 2rem;
       object-fit: contain;
       @include desktop {
-        padding: 2rem;
+        padding: 3rem;
       }
     }
     .how-aqua-item:nth-child(4) {
@@ -165,7 +194,7 @@
       // padding: 2rem;
       object-fit: contain;
       @include desktop {
-        padding: 2rem;
+        padding: 3rem;
       }
     }
     .how-aqua-info {
@@ -175,12 +204,12 @@
       object-fit: contain;
       margin-top: 70px;
       @include desktop {
-        margin-top: 0;
+        padding-top: 6rem;
       }
     }
     .how-aqua-h3 {
       color: $font-awesome-color;
-      font-size: 1.25rem;
+      font-size: 2.25rem;
       text-align: center;
     }
   }

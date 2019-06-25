@@ -16,6 +16,17 @@
     @content;
   }
 }
+@mixin one-k-px {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin seven-fifty-px {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: 620px) {
@@ -30,7 +41,7 @@
 }
 
 @mixin roadmap-dot {
-  content: '';
+  content: "";
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -39,13 +50,7 @@
 }
 
 @mixin roadmap-dot-hover {
-  background: radial-gradient(
-    ellipse at center,
-    #00d4e8 0%,
-    #00d4e8 50%,
-    #ffffff 51%,
-    #f7f7f7 100%
-  );
+  background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
 }
 
 @mixin button-style {
@@ -105,9 +110,9 @@
 }
 
 @mixin space-ring-bg {
-  content: '';
+  content: "";
   z-index: -1;
-  background: url('../../assets/images/illustrations/space-ring.svg');
+  background: url("../../assets/images/illustrations/space-ring.svg");
   opacity: 0.4;
   position: absolute;
   background-repeat: no-repeat;
@@ -119,9 +124,9 @@
 }
 
 @mixin fp-gradient-rect {
-  content: '';
+  content: "";
   z-index: -1;
-  background: url('../../assets/images/Icons/7DE0379D0C234C6C.jpg');
+  background: url("../../assets/images/Icons/7DE0379D0C234C6C.jpg");
   opacity: 0.4;
   position: absolute;
   background-repeat: no-repeat;
@@ -134,7 +139,7 @@
 
 @mixin hover-underline {
   display: block;
-  content: '';
+  content: "";
   border-bottom: solid 5px $nav-underline-color;
   transform-origin: 0% 50%;
   transition: transform 500ms ease-in-out;

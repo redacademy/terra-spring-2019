@@ -49,11 +49,15 @@
             color: white;
             width: 25%;
             grid-area: number;
+            @include mobile-max {
+              margin-left: 20%;
+            }
           }
           .second-4 {
             width: 25%;
             color: white;
             grid-area: number2;
+            margin-right: 23%;
 
             @include mobile-max {
               justify-self: start;

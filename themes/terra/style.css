@@ -458,7 +458,7 @@ body {
                 align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 600px 20%;
-        grid-template-areas: " . . " " h2 img " " . . ";
+        grid-template-areas: ' . . ' ' h2 img ' ' . . ';
         padding-bottom: 0;
         margin-bottom: 0; } }
     .banner .banner-section .fp-animation {
@@ -485,7 +485,7 @@ body {
       margin-top: 70px;
       color: #ffffff; }
       .banner .banner-section h2::before {
-        content: ""; }
+        content: ''; }
       @media (min-width: 620px) {
         .banner .banner-section h2 {
           width: 73%;
@@ -688,6 +688,8 @@ body {
   margin-right: auto;
   position: relative;
   z-index: 5; }
+  .fp-mission h2 {
+    margin-left: 2%; }
   .fp-mission img {
     width: 100%; }
   @media (min-width: 620px) {
@@ -2913,27 +2915,27 @@ img {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg); } }
 
-#background-wrap {
+.animation-bg #background-wrap {
   bottom: 0px;
-  left: auto;
+  left: 20%;
   position: absolute;
   right: auto;
   top: 0;
-  width: 100%;
-  height: 200px;
+  width: 50%;
+  height: 250px;
   z-index: 400; }
 
 @-webkit-keyframes animateBubble {
   0% {
-    margin-top: 1000px; }
+    margin-top: 80px; }
   100% {
-    margin-top: -100%; } }
+    margin-top: 200px; } }
 
 @keyframes animateBubble {
   0% {
-    margin-top: 1000px; }
+    margin-top: 80px; }
   100% {
-    margin-top: -100%; } }
+    margin-top: 200px; } }
 
 @-webkit-keyframes sideWays {
   0% {
@@ -2947,7 +2949,7 @@ img {
   100% {
     margin-left: 50px; } }
 
-.x1 {
+.animation-bg .x1 {
   -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
           animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
   left: -5%;
@@ -2955,7 +2957,7 @@ img {
   -webkit-transform: scale(0.6);
           transform: scale(0.6); }
 
-.x2 {
+.animation-bg .x2 {
   -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
           animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
   left: 5%;
@@ -2963,7 +2965,7 @@ img {
   -webkit-transform: scale(0.4);
           transform: scale(0.4); }
 
-.x3 {
+.animation-bg .x3 {
   -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
           animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
   left: 10%;
@@ -2971,7 +2973,7 @@ img {
   -webkit-transform: scale(0.7);
           transform: scale(0.7); }
 
-.x4 {
+.animation-bg .x4 {
   -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
           animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
   left: 20%;
@@ -2979,7 +2981,7 @@ img {
   -webkit-transform: scale(0.3);
           transform: scale(0.3); }
 
-.x5 {
+.animation-bg .x5 {
   -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
           animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
   left: 30%;
@@ -2987,7 +2989,7 @@ img {
   -webkit-transform: scale(0.5);
           transform: scale(0.5); }
 
-.x6 {
+.animation-bg .x6 {
   -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
           animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
   left: 50%;
@@ -2995,7 +2997,7 @@ img {
   -webkit-transform: scale(0.8);
           transform: scale(0.8); }
 
-.x7 {
+.animation-bg .x7 {
   -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
           animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
   left: 65%;
@@ -3003,7 +3005,7 @@ img {
   -webkit-transform: scale(0.4);
           transform: scale(0.4); }
 
-.x8 {
+.animation-bg .x8 {
   -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
           animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
   left: 80%;
@@ -3011,7 +3013,7 @@ img {
   -webkit-transform: scale(0.3);
           transform: scale(0.3); }
 
-.x9 {
+.animation-bg .x9 {
   -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
           animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
   left: 90%;
@@ -3019,7 +3021,7 @@ img {
   -webkit-transform: scale(0.6);
           transform: scale(0.6); }
 
-.x10 {
+.animation-bg .x10 {
   -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
           animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
   left: 80%;
@@ -3027,21 +3029,21 @@ img {
   -webkit-transform: scale(0.3);
           transform: scale(0.3); }
 
-.bubble {
+.animation-bg .bubble {
   border-radius: 50%;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
           box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
-  height: 200px;
+  height: 100px;
   position: absolute;
-  width: 200px; }
+  width: 100px; }
 
-.bubble:after {
+.animation-bg .bubble:after {
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
           box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
   content: '';
-  height: 180px;
+  height: 80px;
   left: 10px;
   position: absolute;
-  width: 180px; }
+  width: 80px; }

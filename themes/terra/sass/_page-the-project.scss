@@ -34,10 +34,10 @@
     @include desktop {
       padding-left: 8rem;
       padding-right: 5rem;
-      padding-bottom: 10rem;
+      padding-bottom: 5rem;
       padding-top: 3rem;
       // background-position: center, bottom -200px right -100px;
-      background-size: 100%, 60%;
+      background-size: 100%, 50%;
       p {
         width: 65%;
         font-size: 1.2rem;
@@ -112,8 +112,8 @@
 
   .who-we-are {
     @include center-page;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     p,
     h3 {
       color: $font-color;
@@ -185,7 +185,7 @@
     background-size: contain 170%;
     background-position: right -270px bottom -270px;
     margin: 0 auto;
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
     h2 {
       max-width: 94%;
       padding-left: 0;
@@ -214,7 +214,7 @@
       margin-bottom: 3rem;
       @include desktop {
         font-size: 2.6em;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
       }
     }
     h2,

@@ -2315,9 +2315,9 @@ img {
       .page-the-project .whats-terra {
         padding-left: 8rem;
         padding-right: 5rem;
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
         padding-top: 3rem;
-        background-size: 100%, 60%; }
+        background-size: 100%, 50%; }
         .page-the-project .whats-terra p {
           width: 65%;
           font-size: 1.2rem; } }
@@ -2394,8 +2394,8 @@ img {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15rem;
-    margin-bottom: 15rem; }
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
     .page-the-project .who-we-are p,
     .page-the-project .who-we-are h3 {
       color: #4a4a4a;
@@ -2455,7 +2455,7 @@ img {
     background-size: contain 170%;
     background-position: right -270px bottom -270px;
     margin: 0 auto;
-    padding-bottom: 15rem; }
+    padding-bottom: 10rem; }
     .page-the-project .project-partners h2 {
       max-width: 94%;
       padding-left: 0; }
@@ -2484,7 +2484,7 @@ img {
       @media (min-width: 620px) {
         .page-the-project .source-funds h2 {
           font-size: 2.6em;
-          margin-bottom: 6rem; } }
+          margin-bottom: 5rem; } }
     .page-the-project .source-funds h2,
     .page-the-project .source-funds h3,
     .page-the-project .source-funds p,

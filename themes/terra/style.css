@@ -2947,8 +2947,8 @@ img {
                 transform: translateX(-50%); }
 
 .rotate-reverse {
-  -webkit-animation: back_rotation 35s infinite linear;
-          animation: back_rotation 35s infinite linear;
+  -webkit-animation: back_rotation 30s infinite linear;
+          animation: back_rotation 30s infinite linear;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%; }
 

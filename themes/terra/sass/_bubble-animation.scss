@@ -1,3 +1,5 @@
+// bubble code came from, https://codepen.io/Mark_Bowley/pen/mEtqj  (code-pen), A PEN BY Mark Bowley
+
 .animation-bg {
   #background-wrap {
     bottom: 0px;
@@ -86,7 +88,6 @@
   .x7 {
     animation: animateBubble 20s linear infinite,
       sideWays 2s ease-in-out infinite alternate;
-
     left: 65%;
     top: 70%;
 

@@ -42,9 +42,12 @@
     @include desktop {
       width: 60%;
       height: auto;
-      justify-content: space-between;
+      justify-content: space-around;
       transition: all 1s ease-in-out;
-
+      .testimony-img,
+      .testimony-content {
+        transition: all 1s ease-in-out;
+      }
       &:hover {
         justify-content: space-around;
         width: 100%;
@@ -67,10 +70,11 @@
     .testimony-content {
       display: flex;
       flex-direction: column;
+      position: relative;
       @include desktop {
         font-size: 1rem;
         width: 60%;
-        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+        padding: 3rem 1.2rem 3rem 1.2rem;
       }
 
       h3 {
@@ -86,6 +90,23 @@
       }
       p {
         margin: 0;
+      }
+
+      &::before {
+        content: '\201C';
+        position: absolute;
+        font-size: 150px;
+        font-family: $font__main;
+        color: #002d6e;
+        left: -5%;
+        top: 10%;
+        padding-top: 20px;
+        @include mobile-max {
+          padding-top: 10px;
+          left: 10%;
+          top: 20%;
+          font-size: 100px;
+        }
       }
     }
 

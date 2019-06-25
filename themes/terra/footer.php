@@ -33,19 +33,10 @@
 
 
 			<section class="social-media">
-			<a class="fb-link" href="<?php echo CFS()->get('facebook_the_link'); ?>"> <i class="fab fa-facebook-square"> </a>
-			<p class="tw-link"><?php echo CFS()->get('twitter'); ?><i class="fab fa-twitter"></i></p>
-			<p class="ig-link"><?php echo CFS()->get('instgram'); ?><i class="fab fa-instagram"></i></p>
-
-<!-- 			
-// echo CFS()->get( 'the_hyperlink' ); -->
-
+			<a href="<?php $facebook = CFS()->get('facebook_link', 13); echo $facebook['url']; ?>"> <i class="fab fa-facebook-square"></i> </a>
+			<a href="<?php $twitter = CFS()->get('twitter_link', 13); echo $twitter['url']?>"> <i class="fab fa-twitter"></i></a>
+			<a href="<?php $instagram = CFS()->get('instagram_link', 13); echo $instagram['url'] ?>"> <i class="fab fa-instagram"></i></a>
 		</section>
-			<!-- <div class="social-media">
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-instagram"></i> -->
-			</div><!-- .social-media -->
 
 		</div><!-- .footer-center -->
 	</section><!-- .contact-media -->

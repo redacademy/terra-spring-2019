@@ -52,7 +52,9 @@ get_header(); ?>
 				</div>
 
 			<?php endforeach; ?>
-			<img class="how-aqua-img" src="<?php echo CFS()->get('how_feature_image'); ?>" />
+			<div class="aqua-animation">
+				<?php get_template_part('template-parts/content', 'logo'); ?>
+			</div>
 			<p class="how-aqua-info"><?php echo CFS()->get('how_feature_info'); ?></p>
 
 		</section>

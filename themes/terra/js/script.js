@@ -3,12 +3,12 @@
 
     // hamburger menu mobile header
     var $hamburger = $('.hamburger');
-    $hamburger.on('click', function () {
+    $hamburger.on('click', function() {
       $hamburger.toggleClass('is-active');
       // Do something else, like open/close menu
     }); //slide nav open
     var $nav = $('nav');
-    $nav.on('click', function () {
+    $nav.on('click', function() {
       $nav.toggleClass('nav');
     }); // end of hamburger menu
 
@@ -42,24 +42,31 @@
 
 
 
-
     /**
      * Team member popup
      */
     // close modal window
     function closeModal(event) {
-      const closeModalTriggers = ".team-modal__close-btn, .team-modal";
+      const closeModalTriggers = '.team-modal__close-btn, .team-modal';
       // only close the modal if an element being clicked matches closeModalTriggers
       if (event.target.matches(closeModalTriggers)) {
-        $(".team-modal").removeClass("team-modal--active");
+        $('.team-modal').removeClass('team-modal--active');
       }
     }
 
     if ($(".team-modal").length) {
       $('.member-detail-arrow').on("click", function (event) {
         event.preventDefault();
-        console.log($(this).parent().next(".team-modal"));
-        $(this).parent().parent().find(".team-modal").toggleClass("team-modal--active");
+        console.log(
+          $(this)
+            .parent()
+            .next('.team-modal')
+        );
+        $(this)
+          .parent()
+          .parent()
+          .find('.team-modal')
+          .toggleClass('team-modal--active');
       });
       // click event added to body
       $("body").on("click", closeModal);

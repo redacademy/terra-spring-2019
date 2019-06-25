@@ -30,9 +30,9 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 20% 600px 20%;
       grid-template-areas:
-        ' . . '
-        ' h2 img '
-        ' . . ';
+        " . . "
+        " h2 img "
+        " . . ";
       padding-bottom: 0;
       margin-bottom: 0;
     }
@@ -68,7 +68,7 @@
       // line-height: 2rem;
 
       &::before {
-        content: '';
+        content: "";
       }
 
       @include desktop {

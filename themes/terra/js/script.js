@@ -1,6 +1,5 @@
-(function($) {
-  $(function() {
-    // humber menu mobile header
+(function ($) {
+  $(function () {
 
     // hamburger menu mobile header
     var $hamburger = $('.hamburger');
@@ -13,39 +12,35 @@
       $nav.toggleClass('nav');
     }); // end of hamburger menu
 
+
+
+
     // subscription form in footer
-    const subscriptionButton = $('#wpcf7-f108-o1');
+    const subscriptionForm = document.querySelector('.subscription-form .wpcf7');
 
-    subscriptionButton.on('submit', function() {
-      const emailInput = $('.subscription-area input[type="email"]');
+    if (subscriptionForm) {
+      subscriptionForm.addEventListener('wpcf7mailsent', function (event) {
+        $('.subscription-area').addClass('active');
+        $('.subscription-form').fadeOut('slow');
+        $('.sub-confirm-section').fadeIn('slow');
+      }, false);
+    } // end of subscription form
 
-      setTimeout(function() {
-        const failMessage = $('.wpcf7-not-valid');
 
-        if (emailInput.hasClass(failMessage)) {
-        } else {
-          $('.subscription-area').addClass('active');
-          $('.subscription-form').fadeOut('slow');
-          $('.sub-confirm-section').fadeIn('slow');
-        }
-      }, 500);
-    }); // end of subscription form
+
 
     // contact form in contact-us page
-    const contactForm = $('#wpcf7-f17-p13-o1');
+    const contactForm = document.querySelector('.page-contact-us .wpcf7');
 
-    contactForm.on('submit', function() {
-      const emailInput = $('.contact-us-form input[type="email"]');
+    if (contactForm) {
+      contactForm.addEventListener('wpcf7mailsent', function (event) {
+        $('.contact-form-border').addClass('sent-out-msg');
+        $('.original-form').fadeOut('slow');
+        $('.msg-sent-border').fadeIn('slow');
+      }, false);
+    } // end of contact form
 
-      setTimeout(function() {
-        if (emailInput.hasClass()) {
-        } else {
-          $('.contact-form-border').addClass('sent-out-msg');
-          $('.original-form').fadeOut('slow');
-          $('.msg-sent-border').fadeIn('slow');
-        }
-      }, 500);
-    }); // end of contact form
+
 
     /**
      * Team member popup
@@ -59,8 +54,8 @@
       }
     }
 
-    if ($('.team-modal').length) {
-      $('.member-detail-arrow').on('click', function(event) {
+    if ($(".team-modal").length) {
+      $('.member-detail-arrow').on("click", function (event) {
         event.preventDefault();
         console.log(
           $(this)
@@ -74,7 +69,10 @@
           .toggleClass('team-modal--active');
       });
       // click event added to body
-      $('body').on('click', closeModal);
-    }
+      $("body").on("click", closeModal);
+    } // end of team member popup
+
+
+
   }); // end of document ready
 })(jQuery);

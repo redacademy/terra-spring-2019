@@ -43,6 +43,7 @@
       width: 60%;
       height: auto;
       justify-content: space-between;
+      transition: all 1s ease-in-out;
 
       &:hover {
         justify-content: space-around;

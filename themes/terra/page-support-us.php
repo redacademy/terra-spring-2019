@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Terra_Theme
  * 
  * Template Name: Support Us Page
  */

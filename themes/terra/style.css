@@ -1773,9 +1773,8 @@ img {
           width: 40%; } }
 
 /*--------------------------------------------------------------
-# Page Templates
+/* Aquaponics page 
 --------------------------------------------------------------*/
-/* Aquaponics page */
 .hero-banner {
   position: relative; }
 
@@ -2730,6 +2729,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+    .error404 .site-content .error-404 .page-content h2 {
+      padding-top: 70px;
+      color: white; }
     .error404 .site-content .error-404 .page-content .search-box-content {
       -webkit-box-shadow: 43px 37px 22px -9px black;
               box-shadow: 43px 37px 22px -9px black;
@@ -2752,6 +2754,10 @@ img {
           -ms-flex-align: center;
               align-items: center;
       font-size: 200px; }
+      @media (max-width: 620px) {
+        .error404 .site-content .error-404 .page-content .four-0-four {
+          grid-template-rows: 300px;
+          font-size: 100px; } }
       .error404 .site-content .error-404 .page-content .four-0-four .animation-container {
         grid-area: animation;
         height: 100%;
@@ -2760,10 +2766,17 @@ img {
         color: white;
         width: 25%;
         grid-area: number; }
+        @media (max-width: 620px) {
+          .error404 .site-content .error-404 .page-content .four-0-four .first-4 {
+            margin-left: 20%; } }
       .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
         width: 25%;
         color: white;
-        grid-area: number2; }
+        grid-area: number2;
+        margin-right: 23%; }
+        @media (max-width: 620px) {
+          .error404 .site-content .error-404 .page-content .four-0-four .second-4 {
+            justify-self: start; } }
 
 .animation {
   width: 100%;
@@ -2784,7 +2797,10 @@ img {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
     .animation .animation-bg .white-circle {
-      z-index: 100; }
+      z-index: 100;
+      width: 100%; }
+    .animation .animation-bg .water {
+      width: 95%; }
     .animation .animation-bg .illustration-rings {
       margin-top: 10%;
       width: 80%;

@@ -15,11 +15,16 @@
       position: absolute;
       top: 0;
       left: 50%;
+
       transform: translateX(-50%);
     }
     // end of image tag holding contents
     .white-circle {
       z-index: 100;
+      width: 100%;
+    }
+    .water {
+      width: 95%;
     }
     .illustration-rings {
       margin-top: 10%;

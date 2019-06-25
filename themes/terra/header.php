@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Terra_Theme
  */
 
 ?>
@@ -38,7 +38,7 @@
 						</span>
 					</button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<nav id="footer-navigation" class="footer-navigation" role="navigation">
+					<nav class="footer-navigation" role="navigation">
 						<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
 					</nav><!-- .footer-navigation -->
 

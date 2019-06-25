@@ -2,13 +2,13 @@
   background: $hamburger-color;
 
   .site-content {
+    padding-top: 30px;
     .error-404 {
       @include center-page;
       @include center-block;
 
       .page-content {
         h2 {
-          padding-top: 70px;
           color: white;
         }
         .search-box-content {

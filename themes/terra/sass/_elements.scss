@@ -1,17 +1,24 @@
 // front page style
 
 // Hero Banner
+
+body {
+  overflow-x: hidden;
+}
+
+.banner-container {
+  overflow: hidden;
+  width: 100vw;
+}
 .banner {
   min-width: 100%;
   background: linear-gradient(180deg, #0059a7 0%, #002d6e 100%);
-  border-bottom-left-radius: 50% 15px;
-  border-bottom-right-radius: 50% 15px;
 
   @include desktop {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
     background-position: fill;
     height: 100vh;
+    margin-left: -100px;
+    margin-right: -100px;
   }
 
   .banner-section {
@@ -30,9 +37,9 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 20% 600px 20%;
       grid-template-areas:
-        ' . . '
-        ' h2 img '
-        ' . . ';
+        " . . "
+        " h2 img "
+        " . . ";
       padding-bottom: 0;
       margin-bottom: 0;
     }
@@ -68,7 +75,7 @@
       // line-height: 2rem;
 
       &::before {
-        content: '';
+        content: "";
       }
 
       @include desktop {
@@ -146,6 +153,10 @@
   h2 {
     width: 100%;
     color: $white-text-color;
+
+    // &::before {
+    //   content: ;
+    // }
   }
 
   ul {
@@ -368,6 +379,8 @@
   .getting-there {
     position: relative;
     min-width: 100%;
+    // overflow-x: hidden;
+    // overflow-y: visible;
 
     article {
       position: relative;

@@ -1827,7 +1827,7 @@ img {
       width: 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: " 1 2 " " 3 4 "; }
+      grid-template-areas: ' 1 2 ' ' 3 4 '; }
       .page-aquaponics .what-aqua-imgs img {
         width: 150px; }
         .page-aquaponics .what-aqua-imgs img:nth-child(1) {
@@ -2116,7 +2116,7 @@ img {
     border-spacing: 100px; }
     .page-aquaponics .cur-tech-container .cur-tech-h3:after {
       display: block;
-      content: "";
+      content: '';
       border-bottom: solid 5px #00ecf5;
       -webkit-transform: scaleX(0.3);
               transform: scaleX(0.3);
@@ -2825,8 +2825,8 @@ img {
                 transform: translateX(-50%); }
 
 .rotate-reverse {
-  -webkit-animation: back_rotation 60s infinite linear;
-          animation: back_rotation 60s infinite linear;
+  -webkit-animation: back_rotation 45s infinite linear;
+          animation: back_rotation 45s infinite linear;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%; }
 

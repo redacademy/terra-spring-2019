@@ -61,8 +61,8 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-        " 1 2 "
-        " 3 4 ";
+        ' 1 2 '
+        ' 3 4 ';
       img {
         width: 150px;
         &:nth-child(1) {
@@ -351,7 +351,7 @@
 
       &:after {
         display: block;
-        content: "";
+        content: '';
         border-bottom: solid 5px $nav-underline-color;
         transform: scaleX(0.3);
         transform-origin: 0% 50%;

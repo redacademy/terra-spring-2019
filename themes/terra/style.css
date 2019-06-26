@@ -2477,6 +2477,8 @@ img {
     .page-the-project .who-we-are h3 {
       color: #4a4a4a;
       text-align: center; }
+    .page-the-project .who-we-are h2 {
+      padding-left: 2rem; }
   .page-the-project .team-members {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2504,10 +2506,13 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 1rem; }
+    padding: 0.5rem; }
     .page-the-project .member-photo img {
       -o-object-fit: contain;
          object-fit: contain; }
+    @media (min-width: 620px) {
+      .page-the-project .member-photo {
+        padding: 1rem; } }
     .page-the-project .member-photo .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;

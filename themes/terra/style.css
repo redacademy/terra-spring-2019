@@ -2408,10 +2408,10 @@ img {
     position: relative; }
     @media (min-width: 620px) {
       .page-the-project .lack-aware-container {
-        height: 650px;
+        height: 618px;
         background-size: 130%; } }
     .page-the-project .lack-aware-container .lack-aware-h2 {
-      width: 400px;
+      max-width: 400px;
       color: white;
       position: absolute;
       text-align: center;
@@ -2419,13 +2419,13 @@ img {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      line-height: 2rem;
-      font-size: 1.5em; }
+      line-height: 1.5rem;
+      font-size: 1em; }
       @media (min-width: 620px) {
         .page-the-project .lack-aware-container .lack-aware-h2 {
-          width: 900px;
-          font-size: 2.5em;
-          line-height: 1.2em; } }
+          max-width: 900px;
+          font-size: 2em;
+          line-height: 1.5em; } }
   .page-the-project .lack-aware-cards {
     max-width: 1140px;
     margin-left: auto;
@@ -2505,6 +2505,9 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 1rem; }
+    .page-the-project .member-photo img {
+      -o-object-fit: contain;
+         object-fit: contain; }
     .page-the-project .member-photo .member-detail-arrow {
       font-size: 20px;
       border: 1px solid white;
@@ -2517,8 +2520,8 @@ img {
       -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
               box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
       position: absolute;
-      bottom: 5%;
-      right: 5%;
+      bottom: 10%;
+      right: 10%;
       margin: 0; }
       .page-the-project .member-photo .member-detail-arrow i {
         color: #002d6e;
@@ -2791,7 +2794,7 @@ img {
     .page-the-project .team-modal__description {
       overflow-y: scroll;
       padding: 2rem;
-      height: 34vh; }
+      height: 33vh; }
       @media (min-width: 620px) {
         .page-the-project .team-modal__description {
           height: 75vh; } }

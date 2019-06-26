@@ -635,7 +635,7 @@ body {
     .roadmap .roadmap-left ul li.is-active h3 {
       font-size: 2rem; }
     .roadmap .roadmap-left ul li.is-active .roadmap-p {
-      font-size: 1.1rem; }
+      font-size: 1.6rem; }
 
 .roadmap-right {
   width: 50%;
@@ -679,7 +679,7 @@ body {
   .roadmap-right ul li.is-active h3 {
     font-size: 2rem; }
   .roadmap-right ul li.is-active .roadmap-p {
-    font-size: 1.1rem; }
+    font-size: 1.6rem; }
 
 .about-aqua {
   max-width: 1140px;
@@ -2052,21 +2052,21 @@ img {
     @media (min-width: 620px) {
       .page-aquaponics .how-aqua .how-aqua-item:nth-child(2) {
         padding: 3rem; } }
-  .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
     grid-column: 1/2;
     grid-row: 2;
     -o-object-fit: contain;
        object-fit: contain; }
     @media (min-width: 620px) {
-      .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
         padding: 3rem; } }
-  .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
+  .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
     grid-column: 3/4;
     grid-row: 2;
     -o-object-fit: contain;
        object-fit: contain; }
     @media (min-width: 620px) {
-      .page-aquaponics .how-aqua .how-aqua-item:nth-child(4) {
+      .page-aquaponics .how-aqua .how-aqua-item:nth-child(3) {
         padding: 3rem; } }
   .page-aquaponics .how-aqua .how-aqua-info {
     grid-column: 1 / 4;

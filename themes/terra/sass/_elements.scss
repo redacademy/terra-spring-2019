@@ -250,7 +250,10 @@ body {
           font-size: 2rem;
         }
         .roadmap-p {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
+          @include desktop {
+            font-size: 1.6rem;
+          }
         }
       }
     }
@@ -304,7 +307,10 @@ body {
         font-size: 2rem;
       }
       .roadmap-p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        @include desktop {
+          font-size: 1.6rem;
+        }
       }
     }
   } // ul

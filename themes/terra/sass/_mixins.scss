@@ -17,14 +17,6 @@
   }
 }
 
-
-@mixin seven-fifty-px {
-  @media (max-width: 770px) {
-    @content;
-  }
-}
-@mixin eight-fifty-px {
-
 @mixin desktop {
   @media (min-width: 620px) {
     @content;

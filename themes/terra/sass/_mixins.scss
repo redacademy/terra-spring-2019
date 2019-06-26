@@ -17,14 +17,11 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 @mixin seven-fifty-px {
   @media (max-width: 770px) {
     @content;
   }
 }
->>>>>>> 14956beb943984f969d257bbca78e23d3afe002b
 @mixin desktop {
   @media (min-width: 620px) {
     @content;

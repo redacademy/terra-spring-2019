@@ -14,9 +14,11 @@
     @include mobile-max {
       display: none;
     }
+
     @include seven-fifty-px {
       display: none;
     }
+
     @include one-k-px {
       display: none;
     }

@@ -43,10 +43,10 @@
       width: 60%;
       height: auto;
       justify-content: space-around;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
       .testimony-img,
       .testimony-content {
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
       &:hover {
         justify-content: space-around;

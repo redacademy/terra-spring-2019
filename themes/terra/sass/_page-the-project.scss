@@ -150,10 +150,10 @@
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    img{
+    img {
       object-fit: contain;
     }
-    
+
     @include desktop {
       padding: 1rem;
     }
@@ -291,6 +291,7 @@
     align-items: center;
     margin-left: 5rem;
     margin-top: 1rem;
+    border-left: none;
     @include desktop {
       width: 60%;
       font-size: 1.3rem;
@@ -371,7 +372,7 @@
       i {
         font-size: 1.3rem;
       }
-        &:hover {
+      &:hover {
         border: 2px solid #0f2e6b;
         color: #0f2e6b;
         a {

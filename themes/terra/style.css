@@ -613,7 +613,7 @@ body {
         .roadmap .roadmap-left ul li h3 {
           margin-top: 0; }
         .roadmap .roadmap-left ul li h3::after {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -657,7 +657,7 @@ body {
           .roadmap-right ul li h3 {
             padding-left: 100px; } }
         .roadmap-right ul li h3::before {
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -815,7 +815,7 @@ body {
     padding: 0 1.25rem 0 1.25rem;
     line-height: 1.25rem; }
     .home .getting-there article::after {
-      content: '';
+      content: "";
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -1518,7 +1518,7 @@ object {
                         transform: scaleX(0.75); }
               .site-header .center-header .main-navigation .menu li a:after {
                 display: block;
-                content: '';
+                content: "";
                 border-bottom: solid 5px #00ecf5;
                 -webkit-transform-origin: 0% 50%;
                         transform-origin: 0% 50%;
@@ -2144,7 +2144,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: '';
+    content: "";
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -2275,7 +2275,7 @@ img {
     border-spacing: 100px; }
     .page-aquaponics .cur-tech-container .cur-tech-h3:after {
       display: block;
-      content: '';
+      content: "";
       border-bottom: solid 5px #00ecf5;
       -webkit-transform-origin: 0% 50%;
               transform-origin: 0% 50%;
@@ -2625,7 +2625,7 @@ img {
     margin-left: 2rem;
     margin-top: 0; }
     .page-the-project .phase-1::before {
-      content: '';
+      content: "";
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -2644,7 +2644,7 @@ img {
     margin-left: 2rem;
     margin-top: 4rem; }
     .page-the-project .phase-2::before {
-      content: '';
+      content: "";
       width: 30px;
       height: 30px;
       border-radius: 50%;

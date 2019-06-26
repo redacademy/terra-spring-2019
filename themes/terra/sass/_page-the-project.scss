@@ -67,7 +67,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       line-height: 2rem;
-      font-size: 1.65em;
+      font-size: 1.5em;
       @include desktop {
         width: 900px;
         font-size: 2.5em;
@@ -139,13 +139,6 @@
         rgba(0, 212, 232, 0.3),
         rgba(0, 45, 110, 0.5)
       );
-      // background: linear-gradient(
-      //   to bottom,
-      //   #75f3ff 0%,
-      //   #95c4eb 53%,
-      //   #88bdec 59%,
-      //   #378aff 100%
-      // );
     }
   }
 
@@ -418,9 +411,9 @@
     &__description {
       overflow-y: scroll;
       padding: 2rem;
-      height: 40vh;
+      height: 34vh;
       @include desktop {
-        height: 80vh;
+        height: 75vh;
       }
     }
 
@@ -442,16 +435,16 @@
     &__inner {
       background: #f3f2f0;
       max-width: 80%;
-      max-height: 85vh;
+      max-height: 80vh;
       position: relative;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 4rem;
+      margin-top: 5.5rem;
       border-bottom: 1px solid white;
       border-radius: 20px 20px 20px 20px;
       @include desktop {
         max-width: 60%;
-        margin-top: 3rem;
+        margin-top: 5.5rem;
       }
     }
 
@@ -462,7 +455,7 @@
       border: 1px solid black;
       border-radius: 20px 20px 0 0;
       text-align: center;
-      padding-top: 2rem;
+      padding: 2rem;
       h3,
       p {
         color: white;
@@ -471,7 +464,7 @@
         width: 40%;
         border: 1px solid black;
         border-radius: 20px 0 0 20px;
-        height: 85vh;
+        height: 80vh;
       }
     }
 

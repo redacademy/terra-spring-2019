@@ -3008,17 +3008,29 @@ img {
       left: 16%;
       right: 0%; } }
 
+@media (min-width: 620px) {
+  @-webkit-keyframes animateBubble {
+    0% {
+      margin-top: 190px; }
+    100% {
+      margin-top: 10px; } }
+  @keyframes animateBubble {
+    0% {
+      margin-top: 190px; }
+    100% {
+      margin-top: 10px; } } }
+
 @-webkit-keyframes animateBubble {
   0% {
-    margin-top: 100%; }
+    margin-top: 350px; }
   100% {
-    margin-top: 15%; } }
+    margin-top: 15px; } }
 
 @keyframes animateBubble {
   0% {
-    margin-top: 100%; }
+    margin-top: 350px; }
   100% {
-    margin-top: 15%; } }
+    margin-top: 15px; } }
 
 @-webkit-keyframes sideWays {
   0% {

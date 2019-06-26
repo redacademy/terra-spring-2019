@@ -7,21 +7,27 @@
     position: absolute;
     right: 30%;
     top: 0;
-    width: 55%;
-    height: 42%;
+    width: 42%;
+    height: 7%;
     z-index: 1;
-    @include desktop {
-      left: 16%;
-      right: 0%;
+
+    @include mobile-max {
+      display: none;
+    }
+    @include seven-fifty-px {
+      display: none;
+    }
+    @include one-k-px {
+      display: none;
     }
   }
   @include desktop {
     @keyframes animateBubble {
       0% {
-        margin-top: 190px;
+        margin-top: -850px;
       }
       100% {
-        margin-top: 10px;
+        margin-top: 400px;
       }
     }
   }

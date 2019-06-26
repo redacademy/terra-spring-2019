@@ -1978,12 +1978,10 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 250px 250px 1fr; }
+  grid-template-rows: minmax(150px 300px) minmax(150px 300px) 1fr; }
   @media (max-width: 620px) {
     .page-aquaponics .how-aqua {
-      grid-template-columns: 25% 50% 25%;
-      grid-template-rows: 150px 150px 1fr;
-      grid-row-gap: 20px; } }
+      grid-template-columns: 25% 50% 25%; } }
   .page-aquaponics .how-aqua .aqua-animation {
     grid-column: 2;
     grid-row: 1 / 2;
@@ -1996,7 +1994,7 @@ img {
         align-self: center; }
     @media (max-width: 620px) {
       .page-aquaponics .how-aqua .aqua-animation {
-        padding-top: 100px; } }
+        padding-top: 150px; } }
     .page-aquaponics .how-aqua .aqua-animation .animation .animation-bg .water {
       padding: 3%; }
     .page-aquaponics .how-aqua .aqua-animation .animation .animation-bg .multiple-fish {
@@ -2012,21 +2010,29 @@ img {
       position: absolute;
       background-repeat: no-repeat;
       background-size: 100%;
-      top: -20%;
-      left: -9%;
       width: 70%;
       height: 200%; }
+      @media (min-width: 620px) {
+        .page-aquaponics .how-aqua .aqua-animation:before {
+          top: -20%;
+          left: -9%; } }
+      @media (max-width: 620px) {
+        .page-aquaponics .how-aqua .aqua-animation:before {
+          top: 45%;
+          right: 38%; } }
     .page-aquaponics .how-aqua .aqua-animation:after {
       content: "";
       background: url(../../assets/images/illustrations/bottom-arrow.png);
       position: absolute;
       background-repeat: no-repeat;
       background-size: 100%;
-      top: 100%;
-      right: -10%;
       width: 70%;
       height: 200%; }
-      @media (max-width: 1000px) {
+      @media (max-width: 620px) {
+        .page-aquaponics .how-aqua .aqua-animation:after {
+          top: 115%;
+          right: -7%; } }
+      @media (min-width: 620px) {
         .page-aquaponics .how-aqua .aqua-animation:after {
           top: 80%;
           right: -8%; } }
@@ -2065,13 +2071,9 @@ img {
   .page-aquaponics .how-aqua .how-aqua-info {
     grid-column: 1 / 4;
     grid-row: 3;
-    padding: 2rem;
+    padding: 1rem;
     -o-object-fit: contain;
-       object-fit: contain;
-    margin-top: 70px; }
-    @media (min-width: 620px) {
-      .page-aquaponics .how-aqua .how-aqua-info {
-        padding-top: 6rem; } }
+       object-fit: contain; }
   .page-aquaponics .how-aqua .how-aqua-h3 {
     color: #002d6e;
     font-size: 2.25rem;
@@ -2966,6 +2968,15 @@ img {
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
+    @media (max-width: 620px) {
+      .animation .animation-bg .simple-bubbles {
+        z-index: 101;
+        width: 60%;
+        top: 125%;
+        bottom: 0; } }
+    @media (min-width: 620px) {
+      .animation .animation-bg .simple-bubbles {
+        display: none; } }
     .animation .animation-bg .white-circle {
       z-index: 100;
       width: 100%; }
@@ -3024,25 +3035,30 @@ img {
   position: absolute;
   right: 30%;
   top: 0;
-  width: 55%;
-  height: 42%;
+  width: 42%;
+  height: 7%;
   z-index: 1; }
-  @media (min-width: 620px) {
+  @media (max-width: 620px) {
     .animation-bg #background-wrap {
-      left: 16%;
-      right: 0%; } }
+      display: none; } }
+  @media (max-width: 750px) {
+    .animation-bg #background-wrap {
+      display: none; } }
+  @media (max-width: 1000px) {
+    .animation-bg #background-wrap {
+      display: none; } }
 
 @media (min-width: 620px) {
   @-webkit-keyframes animateBubble {
     0% {
-      margin-top: 190px; }
+      margin-top: -850px; }
     100% {
-      margin-top: 10px; } }
+      margin-top: 400px; } }
   @keyframes animateBubble {
     0% {
-      margin-top: 190px; }
+      margin-top: -850px; }
     100% {
-      margin-top: 10px; } } }
+      margin-top: 400px; } } }
 
 @-webkit-keyframes animateBubble {
   0% {

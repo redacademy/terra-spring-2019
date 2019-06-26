@@ -18,7 +18,17 @@
 
       transform: translateX(-50%);
     }
-
+    .simple-bubbles {
+      @include mobile-max {
+        z-index: 101;
+        width: 60%;
+        top: 125%;
+        bottom: 0;
+      }
+      @include desktop {
+        display: none;
+      }
+    }
     .white-circle {
       z-index: 100;
       width: 100%;

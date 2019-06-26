@@ -586,12 +586,20 @@ body {
     width: 100%; }
     .roadmap ul li {
       width: 100%;
-      margin-bottom: 70px;
+      margin-bottom: 170px;
       position: relative;
       color: #ffffff; }
       .roadmap ul li p,
       .roadmap ul li h3 {
+        -webkit-transition: 1s;
+        transition: 1s;
         color: inherit; }
+      .roadmap ul li h3::after {
+        -webkit-transition: 1s ease-in-out;
+        transition: 1s ease-in-out; }
+      .roadmap ul li h3::before {
+        -webkit-transition: 1s ease-in-out;
+        transition: 1s ease-in-out; }
   .roadmap .roadmap-left {
     width: 50%; }
     .roadmap .roadmap-left ul {
@@ -599,6 +607,9 @@ body {
       border-right: 8px solid #ffffff; }
       .roadmap .roadmap-left ul li {
         height: 100px; }
+        .roadmap .roadmap-left ul li:last-child {
+          margin-bottom: 0;
+          height: 150px; }
         .roadmap .roadmap-left ul li h3 {
           margin-top: 0; }
         .roadmap .roadmap-left ul li h3::after {
@@ -618,52 +629,57 @@ body {
     .roadmap .roadmap-left ul li.is-active h3::after {
       background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
       -webkit-transform: scale(1.3);
-              transform: scale(1.3); }
+              transform: scale(1.3);
+      -webkit-box-shadow: 0 0 11px 0 #ffffff;
+              box-shadow: 0 0 11px 0 #ffffff; }
     .roadmap .roadmap-left ul li.is-active h3 {
       font-size: 2rem; }
     .roadmap .roadmap-left ul li.is-active .roadmap-p {
       font-size: 1.1rem; }
-  .roadmap .roadmap-right {
-    width: 50%;
-    padding-top: 82px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .roadmap .roadmap-right ul {
-      list-style: none; }
-      .roadmap .roadmap-right ul li {
-        height: 100px; }
-        .roadmap .roadmap-right ul li h3 {
-          padding-left: 60px;
-          margin-top: 0; }
-          @media (min-width: 620px) {
-            .roadmap .roadmap-right ul li h3 {
-              padding-left: 100px; } }
-          .roadmap .roadmap-right ul li h3::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-            position: absolute;
-            left: -19px;
-            top: -2px; }
-        .roadmap .roadmap-right ul li p {
-          padding-left: 60px; }
-          @media (min-width: 620px) {
-            .roadmap .roadmap-right ul li p {
-              padding-left: 100px; } }
-    .roadmap .roadmap-right ul li.is-active h3::before {
-      background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
-      -webkit-transform: scale(1.3);
-              transform: scale(1.3); }
-    .roadmap .roadmap-right ul li.is-active h3 {
-      font-size: 2rem; }
-    .roadmap .roadmap-right ul li.is-active .roadmap-p {
-      font-size: 1.1rem; }
+
+.roadmap-right {
+  width: 50%;
+  padding-top: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .roadmap-right ul {
+    list-style: none; }
+    .roadmap-right ul li {
+      height: 100px; }
+      .roadmap-right ul li h3 {
+        padding-left: 60px;
+        margin-top: 0; }
+        @media (min-width: 620px) {
+          .roadmap-right ul li h3 {
+            padding-left: 100px; } }
+        .roadmap-right ul li h3::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
+          position: absolute;
+          left: -19px;
+          top: -2px; }
+      .roadmap-right ul li p {
+        padding-left: 60px; }
+        @media (min-width: 620px) {
+          .roadmap-right ul li p {
+            padding-left: 100px; } }
+  .roadmap-right ul li.is-active h3::before {
+    background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-box-shadow: 0 0 11px 0 #ffffff;
+            box-shadow: 0 0 11px 0 #ffffff; }
+  .roadmap-right ul li.is-active h3 {
+    font-size: 2rem; }
+  .roadmap-right ul li.is-active .roadmap-p {
+    font-size: 1.1rem; }
 
 .about-aqua {
   max-width: 1140px;
@@ -1561,12 +1577,12 @@ object {
         height: auto;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out; }
         .testimony-entries .fp-testimony .testimony-img,
         .testimony-entries .fp-testimony .testimony-content {
-          -webkit-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out; }
+          -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out; }
         .testimony-entries .fp-testimony:hover {
           -ms-flex-pack: distribute;
               justify-content: space-around;

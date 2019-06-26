@@ -93,12 +93,12 @@ get_header(); ?>
 				<section class="roadmap">
 					<h2><?php echo CFS()->get('roadmap_title'); ?></h2>
 					<!-- roadmap left side items -->
-					<div class="roadmap-left">
+					<div class="roadmap-left in-view">
 						<?php $fp_roadmaps = CFS()->get('roadmap_loop_left');
 						?>
 						<ul class="roadmap-ul">
 							<?php foreach ($fp_roadmaps as $fp_roadmap) : ?>
-								<li class=roadmap-left-info>
+								<li class="roadmap-left-info in-view">
 									<h3 class="roadmap-yr"><?php echo $fp_roadmap['roadmap_year']; ?></h3>
 									<p class="roadmap-p"> <?php echo $fp_roadmap['roadmap_info']; ?></p>
 								</li>
@@ -112,7 +112,7 @@ get_header(); ?>
 						?>
 						<ul class="roadmap-right-ul">
 							<?php foreach ($fp_roadmaps_right as $fp_roadmap_right) : ?>
-								<li class=roadmap-right-info>
+								<li class="roadmap-right-info in-view">
 									<h3 class="roadmap-yr"><?php echo $fp_roadmap_right['roadmap_year_right']; ?></h3>
 									<p class="roadmap-p"> <?php echo $fp_roadmap_right['roadmap_info_right']; ?></p>
 								</li>

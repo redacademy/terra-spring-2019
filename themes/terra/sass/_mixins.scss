@@ -16,17 +16,6 @@
     @content;
   }
 }
-@mixin one-k-px {
-  @media (max-width: 1000px) {
-    @content;
-  }
-}
-
-@mixin seven-fifty-px {
-  @media (max-width: 750px) {
-    @content;
-  }
-}
 
 @mixin desktop {
   @media (min-width: 620px) {

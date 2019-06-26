@@ -635,7 +635,7 @@ body {
     .roadmap .roadmap-left ul li.is-active h3 {
       font-size: 2rem; }
     .roadmap .roadmap-left ul li.is-active .roadmap-p {
-      font-size: 1.1rem; }
+      font-size: 1.6rem; }
 
 .roadmap-right {
   width: 50%;
@@ -679,7 +679,7 @@ body {
   .roadmap-right ul li.is-active h3 {
     font-size: 2rem; }
   .roadmap-right ul li.is-active .roadmap-p {
-    font-size: 1.1rem; }
+    font-size: 1.6rem; }
 
 .about-aqua {
   max-width: 1140px;

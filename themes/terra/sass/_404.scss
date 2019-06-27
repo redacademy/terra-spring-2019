@@ -18,14 +18,13 @@
           margin-left: 4%;
           margin-top: 15%;
           color: white;
-          box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.425);
           width: 53%;
           @media screen and (max-width: 620px) {
             width: 67%;
+            margin-left: 9%;
           }
         }
         .search-box-content {
-          box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
           width: 36%;
           @media screen and (max-width: 620px) {
             width: 83%;

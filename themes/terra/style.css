@@ -2944,15 +2944,12 @@ img {
         margin-left: 4%;
         margin-top: 15%;
         color: white;
-        -webkit-box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.425);
-                box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.425);
         width: 53%; }
         @media screen and (max-width: 620px) {
           .error404 .site-content .error-404 .page-content h2 {
-            width: 67%; } }
+            width: 67%;
+            margin-left: 9%; } }
       .error404 .site-content .error-404 .page-content .search-box-content {
-        -webkit-box-shadow: 43px 37px 22px -9px black;
-                box-shadow: 43px 37px 22px -9px black;
         width: 36%; }
         @media screen and (max-width: 620px) {
           .error404 .site-content .error-404 .page-content .search-box-content {

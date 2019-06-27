@@ -19,7 +19,7 @@
     if (subscriptionForm) {
       subscriptionForm.addEventListener(
         'wpcf7mailsent',
-        function(event) {
+        function() {
           $('.subscription-area').addClass('active');
           $('.subscription-form').fadeOut('slow');
           $('.sub-confirm-section').fadeIn('slow');
@@ -34,7 +34,7 @@
     if (contactForm) {
       contactForm.addEventListener(
         'wpcf7mailsent',
-        function(event) {
+        function() {
           $('.contact-form-border').addClass('sent-out-msg');
           $('.original-form').fadeOut('slow');
           $('.msg-sent-border').fadeIn('slow');

@@ -250,7 +250,10 @@ body {
           font-size: 2rem;
         }
         .roadmap-p {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
+          @include desktop {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -304,7 +307,10 @@ body {
         font-size: 2rem;
       }
       .roadmap-p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        @include desktop {
+          font-size: 1.5rem;
+        }
       }
     }
   } // ul
@@ -320,6 +326,7 @@ body {
     margin-top: 40px;
   }
   .intro-fp {
+    padding: 2rem;
     @include mobile-max {
       padding: $page-padding-mobile;
     }
@@ -349,6 +356,7 @@ body {
     img {
       width: 60%;
       @include desktop {
+        object-fit: contain;
         width: 50%;
         height: 120px;
       }
@@ -453,6 +461,10 @@ body {
       margin-top: 2rem;
       margin-bottom: 4.25rem;
 
+      a {
+        margin-left: 1rem;
+      }
+
       @include desktop {
         margin-bottom: 12.5rem;
       }
@@ -478,6 +490,7 @@ body {
   a {
     @include button-anchor;
     padding: 1rem 4rem 1rem 4rem;
+    margin-left: 1rem;
   }
   text-align: center;
   @include desktop {

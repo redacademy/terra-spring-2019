@@ -2698,7 +2698,6 @@ img {
     @media (min-width: 620px) {
       .page-the-project .phase-2,
       .page-the-project .phase-1 {
-<<<<<<< HEAD
         width: 20%; } }
   .page-the-project .phase-2::before {
     content: "";
@@ -2710,28 +2709,6 @@ img {
     left: -42px;
     top: -5px; }
   .page-the-project .series-round,
-=======
-        width: 50%; } }
-  .page-the-project .phase-2 {
-    position: relative;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    margin-left: 2rem;
-    margin-top: 4rem; }
-    .page-the-project .phase-2::before {
-      content: "";
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
-      position: absolute;
-      left: -51px;
-      top: -5px; }
-    @media (min-width: 620px) {
-      .page-the-project .phase-2 {
-        width: 50%; } }
->>>>>>> deb2cbd4f19a5716c907ff850b266f1ff0e78eb2
   .page-the-project .seed-round {
     width: 50%;
     padding-bottom: 4rem; }

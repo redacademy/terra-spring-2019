@@ -56,8 +56,8 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-        " 1 2 "
-        " 3 4 ";
+        ' 1 2 '
+        ' 3 4 ';
       img {
         width: 150px;
         &:nth-child(1) {
@@ -134,7 +134,7 @@
     .aqua-animation {
       position: relative;
       &:before {
-        content: "";
+        content: '';
         background: url(../../assets/images/illustrations/top-arrow.png);
         position: absolute;
         background-repeat: no-repeat;
@@ -152,7 +152,7 @@
         }
       }
       &:after {
-        content: "";
+        content: '';
         background: url(../../assets/images/illustrations/bottom-arrow.png);
         position: absolute;
         background-repeat: no-repeat;

@@ -613,7 +613,7 @@ body {
         .roadmap .roadmap-left ul li h3 {
           margin-top: 0; }
         .roadmap .roadmap-left ul li h3::after {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -660,7 +660,7 @@ body {
           .roadmap-right ul li h3 {
             padding-left: 100px; } }
         .roadmap-right ul li h3::before {
-          content: "";
+          content: '';
           width: 30px;
           height: 30px;
           border-radius: 50%;
@@ -825,7 +825,7 @@ body {
     padding: 0 1.25rem 0 1.25rem;
     line-height: 1.25rem; }
     .home .getting-there article::after {
-      content: "";
+      content: '';
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -1531,7 +1531,7 @@ object {
                         transform: scaleX(0.75); }
               .site-header .center-header .main-navigation .menu li a:after {
                 display: block;
-                content: "";
+                content: '';
                 border-bottom: solid 5px #00ecf5;
                 -webkit-transform-origin: 0% 50%;
                         transform-origin: 0% 50%;
@@ -1583,7 +1583,8 @@ object {
     -webkit-box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 14px 40px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    width: 100%; }
+    width: 100%;
+    padding: 1rem 0 1rem 0; }
     @media (min-width: 620px) {
       .testimony-entries .fp-testimony {
         width: 60%;
@@ -1597,17 +1598,17 @@ object {
           -webkit-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out; }
         .testimony-entries .fp-testimony:hover {
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
           width: 100%;
           padding: 2.5rem; }
           .testimony-entries .fp-testimony:hover .testimony-img {
-            -webkit-transform: scale(1.3);
-                    transform: scale(1.3); }
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2); }
           .testimony-entries .fp-testimony:hover .testimony-content {
             -webkit-transform: scale(1.3);
                     transform: scale(1.3);
-            line-height: 1.7rem; }
+            line-height: 1.7rem;
+            padding-top: 3rem;
+            padding-right: 2rem; }
         .testimony-entries .fp-testimony .testimony-img {
           width: 30%;
           -ms-flex-item-align: center;
@@ -1950,7 +1951,7 @@ img {
       width: 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: " 1 2 " " 3 4 "; }
+      grid-template-areas: ' 1 2 ' ' 3 4 '; }
       .page-aquaponics .what-aqua-imgs img {
         width: 150px; }
         .page-aquaponics .what-aqua-imgs img:nth-child(1) {
@@ -1992,13 +1993,17 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: minmax(150px 300px) minmax(150px 300px) 1fr; }
+  grid-template-rows: minmax(150px 300px) minmax(150px 300px) 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center; }
   @media (max-width: 620px) {
     .page-aquaponics .how-aqua {
       grid-template-columns: 25% 50% 25%; } }
   .page-aquaponics .how-aqua .aqua-animation {
     grid-column: 2;
-    grid-row: 1 / 2;
+    grid-row: 0 / 2;
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
@@ -2006,6 +2011,14 @@ img {
     padding: 2rem;
     -ms-flex-item-align: center;
         align-self: center; }
+    .page-aquaponics .how-aqua .aqua-animation .animation .animation-bg {
+      top: -50px; }
+      @media (max-width: 770px) {
+        .page-aquaponics .how-aqua .aqua-animation .animation .animation-bg {
+          top: 50px; } }
+      @media (max-width: 620px) {
+        .page-aquaponics .how-aqua .aqua-animation .animation .animation-bg {
+          top: -30px; } }
     @media (max-width: 620px) {
       .page-aquaponics .how-aqua .aqua-animation {
         padding-top: 150px; } }
@@ -2019,7 +2032,7 @@ img {
   .page-aquaponics .how-aqua .aqua-animation {
     position: relative; }
     .page-aquaponics .how-aqua .aqua-animation:before {
-      content: "";
+      content: '';
       background: url(../../assets/images/illustrations/top-arrow.png);
       position: absolute;
       background-repeat: no-repeat;
@@ -2028,14 +2041,20 @@ img {
       height: 200%; }
       @media (min-width: 620px) {
         .page-aquaponics .how-aqua .aqua-animation:before {
-          top: -20%;
+          top: 0;
           left: -9%; } }
       @media (max-width: 620px) {
         .page-aquaponics .how-aqua .aqua-animation:before {
           top: 45%;
           right: 38%; } }
+      @media (max-width: 1000px) {
+        .page-aquaponics .how-aqua .aqua-animation:before {
+          top: 65px; } }
+      @media (max-width: 770px) {
+        .page-aquaponics .how-aqua .aqua-animation:before {
+          top: 150px; } }
     .page-aquaponics .how-aqua .aqua-animation:after {
-      content: "";
+      content: '';
       background: url(../../assets/images/illustrations/bottom-arrow.png);
       position: absolute;
       background-repeat: no-repeat;
@@ -2048,8 +2067,14 @@ img {
           right: -7%; } }
       @media (min-width: 620px) {
         .page-aquaponics .how-aqua .aqua-animation:after {
-          top: 80%;
+          top: 104%;
           right: -8%; } }
+      @media (max-width: 1000px) {
+        .page-aquaponics .how-aqua .aqua-animation:after {
+          top: 75%; } }
+      @media (max-width: 770px) {
+        .page-aquaponics .how-aqua .aqua-animation:after {
+          top: 95%; } }
   .page-aquaponics .how-aqua .how-aqua-item:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1;
@@ -2158,7 +2183,7 @@ img {
     color: #4a4a4a;
     padding-left: 40px; }
   .page-aquaponics .history-aqua li:before {
-    content: "";
+    content: '';
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -2289,7 +2314,7 @@ img {
     border-spacing: 100px; }
     .page-aquaponics .cur-tech-container .cur-tech-h3:after {
       display: block;
-      content: "";
+      content: '';
       border-bottom: solid 5px #00ecf5;
       -webkit-transform-origin: 0% 50%;
               transform-origin: 0% 50%;
@@ -2347,14 +2372,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-    .page-support-us .entry-content img {
-      max-width: 100%;
-      min-width: 440px;
-      z-index: -5;
-      height: auto; }
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 8pc; }
     .page-support-us .entry-content p {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -2362,38 +2382,50 @@ img {
       color: #4a4a4a;
       text-align: left;
       line-height: 1.5rem; }
+      @media (max-width: 770px) {
+        .page-support-us .entry-content p {
+          width: 100%; } }
+      .page-support-us .entry-content p:nth-child(3) {
+        position: relative; }
     .page-support-us .entry-content h2 {
       width: 18pc;
       color: #4a4a4a;
       font-size: 22px;
       height: 5pc;
       margin: 0; }
-    @media (min-width: 620px) {
-      .page-support-us .entry-content {
-        padding-right: 2rem;
-        padding-left: 2rem;
-        padding-top: 8pc; }
-        .page-support-us .entry-content .lorem {
-          padding-bottom: 1.5%; }
-        .page-support-us .entry-content h2 {
-          width: auto;
-          font-size: 32px; }
+    .page-support-us .entry-content .lorem {
+      padding-bottom: 1.5%; }
+    .page-support-us .entry-content h2 {
+      width: auto;
+      font-size: 32px; }
+    .page-support-us .entry-content p {
+      font-size: 20px;
+      width: 60%;
+      padding: 0% 5% 4% 0%;
+      height: 18%; }
+      @media (max-width: 770px) {
         .page-support-us .entry-content p {
-          font-size: 20px;
-          width: 60%;
-          padding: 0% 3% 4% 0%;
-          height: 18%; }
-        .page-support-us .entry-content .banner-title h1 {
-          bottom: 9vw; }
-        .page-support-us .entry-content .button-center {
-          height: 25vh; }
+          width: 100%; } }
+    .page-support-us .entry-content .banner-title h1 {
+      bottom: 9vw; }
+    .page-support-us .entry-content .button-center {
+      height: 25vh; }
+      .page-support-us .entry-content .button-center .fund-me {
+        margin-left: 0; }
+        .page-support-us .entry-content .button-center .fund-me a {
+          margin-left: 0; }
+    .page-support-us .entry-content img {
+      position: static; }
+      @media (min-width: 620px) {
         .page-support-us .entry-content img {
           position: absolute;
-          z-index: -5;
-          right: -10%;
-          width: 50%;
-          height: 37.9%;
-          bottom: 27.5%; } }
+          right: -100%;
+          width: 100%;
+          height: auto;
+          bottom: -100%; } }
+  @media (min-width: 620px) and (max-width: 770px) {
+    .page-support-us .entry-content img {
+      position: static; } }
 
 /*--------------------------------------------------------------
 # Footer Templates
@@ -2410,7 +2442,7 @@ img {
     width: 100%;
     position: relative; }
     .page-the-project .whats-terra-container::after {
-      content: "";
+      content: '';
       z-index: -1;
       background: url("../../assets/images/illustrations/space-ring.svg");
       opacity: 0.4;
@@ -2611,7 +2643,8 @@ img {
       margin-right: auto;
       font-size: 1.4rem;
       font-weight: bold;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      padding-top: 2rem; }
       @media (min-width: 620px) {
         .page-the-project .source-funds h2 {
           font-size: 2.6em;
@@ -2635,6 +2668,12 @@ img {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto; }
+    @media (max-width: 620px) {
+      .page-the-project .sf-wrapper {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
+    .page-the-project .sf-wrapper .seed-container {
+      border-left: 8px solid #ffffff; }
     @media (min-width: 620px) {
       .page-the-project .sf-wrapper {
         display: -webkit-box;
@@ -2645,37 +2684,38 @@ img {
             -ms-flex-direction: row;
                 flex-direction: row;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .page-the-project .sf-wrapper .series-container,
-        .page-the-project .sf-wrapper .seed-container {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          width: 100%;
-          border-left: 8px solid #ffffff; }
-          .page-the-project .sf-wrapper .series-container:hover .series-rnd-h3,
-          .page-the-project .sf-wrapper .series-container:hover .seed-rnd-h3,
-          .page-the-project .sf-wrapper .seed-container:hover .series-rnd-h3,
-          .page-the-project .sf-wrapper .seed-container:hover .seed-rnd-h3 {
-            font-size: 2rem;
-            border-bottom: 4px solid white; }
-          .page-the-project .sf-wrapper .series-container:hover .phase-1::before,
-          .page-the-project .sf-wrapper .seed-container:hover .phase-1::before {
-            background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
-            -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
-            -webkit-box-shadow: 0 0 11px 0 #ffffff;
-                    box-shadow: 0 0 11px 0 #ffffff; }
-          .page-the-project .sf-wrapper .series-container:hover .phase-2::before,
-          .page-the-project .sf-wrapper .seed-container:hover .phase-2::before {
-            background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
-            -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
-            -webkit-box-shadow: 0 0 11px 0 #ffffff;
-                    box-shadow: 0 0 11px 0 #ffffff;
-            top: 2px; }
-        .page-the-project .sf-wrapper .series-container {
-          border-left: none; } }
+            flex-wrap: wrap; } }
+    .page-the-project .sf-wrapper .series-container,
+    .page-the-project .sf-wrapper .seed-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-left: 2rem;
+      border-left: 8px solid #ffffff; }
+      .page-the-project .sf-wrapper .series-container:hover .series-rnd-h3,
+      .page-the-project .sf-wrapper .series-container:hover .seed-rnd-h3,
+      .page-the-project .sf-wrapper .seed-container:hover .series-rnd-h3,
+      .page-the-project .sf-wrapper .seed-container:hover .seed-rnd-h3 {
+        font-size: 2rem;
+        border-bottom: 4px solid white; }
+      .page-the-project .sf-wrapper .series-container:hover .phase-1::before,
+      .page-the-project .sf-wrapper .seed-container:hover .phase-1::before {
+        background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+        -webkit-box-shadow: 0 0 11px 0 #ffffff;
+                box-shadow: 0 0 11px 0 #ffffff; }
+      .page-the-project .sf-wrapper .series-container:hover .phase-2::before,
+      .page-the-project .sf-wrapper .seed-container:hover .phase-2::before {
+        background: radial-gradient(ellipse at center, #00d4e8 0%, #00d4e8 50%, #ffffff 51%, #f7f7f7 100%);
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+        -webkit-box-shadow: 0 0 11px 0 #ffffff;
+                box-shadow: 0 0 11px 0 #ffffff;
+        top: 2px; }
+    .page-the-project .sf-wrapper .series-container {
+      border-left: none; }
   .page-the-project .phase-2,
   .page-the-project .phase-1 {
     position: relative;
@@ -2685,7 +2725,7 @@ img {
     margin-bottom: 0; }
     .page-the-project .phase-2::before,
     .page-the-project .phase-1::before {
-      content: "";
+      content: '';
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -2700,18 +2740,20 @@ img {
       .page-the-project .phase-1 {
         width: 20%; } }
   .page-the-project .phase-2::before {
-    content: "";
+    content: '';
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: radial-gradient(ellipse at center, #9b9b9b 51%, #fcfcfc 53%);
     position: absolute;
-    left: -42px;
+    left: -43px;
     top: -5px; }
   .page-the-project .series-round,
   .page-the-project .seed-round {
-    width: 50%;
-    padding-bottom: 4rem; }
+    width: 100%;
+    padding-bottom: 4rem;
+    margin-right: 2rem;
+    margin-left: 1rem; }
     @media (min-width: 620px) {
       .page-the-project .series-round,
       .page-the-project .seed-round {
@@ -2728,6 +2770,10 @@ img {
       .page-the-project .seed-rnd-h3 {
         margin-top: 0;
         text-align: center; } }
+    @media (max-width: 620px) {
+      .page-the-project .series-rnd-h3,
+      .page-the-project .seed-rnd-h3 {
+        margin-right: 2rem; } }
   .page-the-project .seed-p-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

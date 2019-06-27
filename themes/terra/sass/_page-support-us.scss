@@ -16,20 +16,21 @@
     padding: $page-padding-mobile;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 
-    img {
-      max-width: 100%;
-      min-width: 440px;
-      z-index: -5;
-      height: auto;
-    }
     p {
       justify-content: space-between;
       color: $font-color;
       text-align: left;
       line-height: $font__line-height-body;
+
+      @include seven-fifty-px {
+        width: 100%;
+      }
+      &:nth-child(3) {
+        position: relative;
+      }
     }
+
     h2 {
       width: 18pc;
       color: $font-color;
@@ -38,36 +39,50 @@
       margin: 0;
     }
 
-    @include desktop {
-      @include white-space-both-side;
-      padding-top: 8pc;
-      .lorem {
-        padding-bottom: 1.5%;
-      }
-      h2 {
-        width: auto;
-        font-size: 32px;
-      }
-      p {
-        font-size: 20px;
-        width: 60%;
-        padding: 0% 3% 4% 0%;
-        height: 18%;
-      }
-      .banner-title h1 {
-        bottom: 9vw;
-      }
-      .button-center {
-        height: 25vh;
-      }
+    @include white-space-both-side;
+    padding-top: 8pc;
+    .lorem {
+      padding-bottom: 1.5%;
+    }
+    h2 {
+      width: auto;
+      font-size: 32px;
+    }
+    p {
+      font-size: 20px;
+      width: 60%;
+      padding: 0% 5% 4% 0%;
+      height: 18%;
 
-      img {
+      @include seven-fifty-px {
+        width: 100%;
+      }
+    }
+    .banner-title h1 {
+      bottom: 9vw;
+    }
+    .button-center {
+      height: 25vh;
+      .fund-me {
+        margin-left: 0;
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+
+    img {
+      position: static;
+      @include desktop {
         position: absolute;
-        z-index: -5;
-        right: -10%;
-        width: 50%;
-        height: 37.9%;
-        bottom: 27.5%;
+        right: -100%;
+        width: 100%;
+        height: auto;
+        bottom: -100%;
+
+        @include seven-fifty-px {
+          position: static;
+        }
       }
     }
   }

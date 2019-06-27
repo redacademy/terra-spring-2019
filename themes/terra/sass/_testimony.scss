@@ -39,6 +39,7 @@
     box-shadow: $section-box-shadow;
     border-radius: 15px;
     width: 100%;
+    padding: 1rem 0 1rem 0;
     @include desktop {
       width: 60%;
       height: auto;
@@ -49,16 +50,16 @@
         transition: all 1s ease-in-out;
       }
       &:hover {
-        justify-content: space-around;
         width: 100%;
         padding: 2.5rem;
         .testimony-img {
-          transform: scale(1.3);
+          transform: scale(1.2);
         }
         .testimony-content {
-          // font-size: 1.5rem;
           transform: scale(1.3);
           line-height: 1.7rem;
+          padding-top: 3rem;
+          padding-right: 2rem;
         }
       }
 

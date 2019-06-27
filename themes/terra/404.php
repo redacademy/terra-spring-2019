@@ -24,7 +24,7 @@ get_header(); ?>
 				</div><!-- .page-header -->
 
 				<div class="search-box-content">
-					<p><?php echo esc_html('It looks like nothing was found at this location. Maybe try one of the links above'); ?></p>
+					<p><?php echo esc_html(' Maybe try one of the links above'); ?></p>
 				</div>
 
 

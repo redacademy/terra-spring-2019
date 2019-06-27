@@ -1,7 +1,7 @@
 body {
   font-family: $font__main;
   line-height: $font__line-height-body;
-  letter-spacing: $body-letter-spacing
+  letter-spacing: $body-letter-spacing;
 }
 
 h1,
@@ -17,6 +17,10 @@ h6 {
 
 p {
   color: $font-color;
+  font-size: $font_size_p_mobile;
+  @include desktop {
+    font-size: $font_size_p_desktop;
+  }
 }
 
 h2 {

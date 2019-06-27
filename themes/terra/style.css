@@ -2426,7 +2426,7 @@ img {
           right: -100%;
           width: 100%;
           height: auto;
-          bottom: -100%; } }
+          bottom: -85%; } }
   @media (min-width: 620px) and (max-width: 770px) {
     .page-support-us .entry-content img {
       position: static; } }

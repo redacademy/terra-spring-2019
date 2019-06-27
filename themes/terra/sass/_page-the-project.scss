@@ -11,19 +11,23 @@
     line-height: 1.5rem;
   }
 
+  .whats-terra-container {
+    width: 100%;
+    position: relative;
+    &::after {
+      @include space-ring-bg;
+      background-position: bottom right;
+      bottom: -100px;
+      right: 50px;
+      width: 40%;
+    }
+  }
+
   .whats-terra {
     padding: $page-padding-mobile;
     width: 100%;
     position: relative;
-    background: linear-gradient(
-          rgba(255, 255, 255, 0.8),
-          rgba(255, 255, 255, 0.8)
-        )
-        center,
-      url('../../assets/images/illustrations/space-ring.svg');
-    background-repeat: no-repeat no-repeat;
-    background-position: center, bottom -200px right -100px;
-    background-size: 100%, 90%;
+
     p {
       font-size: 1.2rem;
       &:last-child {
@@ -32,11 +36,7 @@
       }
     }
     @include desktop {
-      padding-left: 8rem;
-      padding-right: 5rem;
-      padding-bottom: 5rem;
-      padding-top: 3rem;
-      // background-position: center, bottom -200px right -100px;
+      @include center-page;
       background-size: 100%, 50%;
       p {
         width: 65%;
@@ -212,9 +212,8 @@
   .source-funds {
     width: 100%;
     background: linear-gradient(180deg, #42a4fa 0%, #002d6e 100%);
-    padding: 2.5rem;
-    padding-bottom: 10rem;
     h2 {
+      @include center-page;
       font-size: 1.4rem;
       font-weight: bold;
       margin-bottom: 3rem;
@@ -229,101 +228,100 @@
     li {
       color: white;
     }
-
-    @include desktop {
-      padding-top: 7rem;
-      padding-left: 7rem;
-    }
   }
 
   .sf-wrapper {
-    border-left: 8px solid #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    @include center-page;
 
     @include desktop {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
+      .series-container,
+      .seed-container {
+        display: flex;
+        width: 100%;
+        border-left: 8px solid #ffffff;
+
+        &:hover {
+          .series-rnd-h3,
+          .seed-rnd-h3 {
+            font-size: 2rem;
+            border-bottom: 4px solid white;
+          }
+          .phase-1::before {
+            @include roadmap-dot-hover;
+            transform: scale(1.3);
+            box-shadow: 0 0 11px 0 #ffffff;
+          }
+          .phase-2::before {
+            @include roadmap-dot-hover;
+            transform: scale(1.3);
+            box-shadow: 0 0 11px 0 #ffffff;
+            top: 2px;
+          }
+        }
+      }
+      .series-container {
+        border-left: none;
+      }
     }
   }
+  .phase-2,
   .phase-1 {
     position: relative;
-    order: 1;
+    width: 30%;
     margin-left: 2rem;
     margin-top: 0;
+    margin-bottom: 0;
     &::before {
       @include roadmap-dot;
       left: -51px;
       top: -5px;
+      transition: all 0.5s ease-in-out;
     }
     @include desktop {
-      width: 50%;
+      width: 20%;
     }
   }
+
   .phase-2 {
-    position: relative;
-    order: 3;
-    margin-left: 2rem;
-    margin-top: 4rem;
     &::before {
       @include roadmap-dot;
-      left: -51px;
+      left: -42px;
       top: -5px;
     }
-    @include desktop {
-      width: 50%;
-    }
   }
-
+  .series-round,
   .seed-round {
-    order: 2;
-    width: 270px;
-    align-items: center;
-    margin-left: 5rem;
+    width: 50%;
+    padding-bottom: 4rem;
     @include desktop {
-      width: 60%;
-      font-size: 1.3rem;
-    }
-  }
-  .series-round {
-    order: 4;
-    align-items: center;
-    margin-left: 5rem;
-    margin-top: 1rem;
-    border-left: none;
-    @include desktop {
-      width: 60%;
+      width: 40%;
       font-size: 1.3rem;
     }
   }
 
+  .series-rnd-h3,
   .seed-rnd-h3 {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     padding-bottom: 0.8rem;
+    transition: all 0.5s ease-in-out;
     @include desktop {
-      margin-top: 2rem;
-    }
-  }
-
-  .series-rnd-h3 {
-    border-bottom: 1px solid white;
-    padding-bottom: 0.8rem;
-    @include desktop {
-      width: 100%;
+      margin-top: 0;
+      text-align: center;
     }
   }
 
   .seed-p-wrapper {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: space-around;
-    .seed-p-left {
-      width: 110px;
-    }
-    .seed-p-right {
-      width: 70px;
-    }
   }
 
   .series-p-wrapper {
@@ -333,7 +331,7 @@
     .series-p-left,
     .series-p-middle,
     .series-p-right {
-      width: 63px;
+      width: 25%;
     }
   }
 
@@ -481,11 +479,8 @@
 
     &__right-col {
       width: 100%;
-      // border: 2px solid white;
-      // border-radius: 20px 20px 20px 20px;
       @include desktop {
         width: 58%;
-        // height: 90%;
       }
     }
 

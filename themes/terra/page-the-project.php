@@ -20,12 +20,12 @@ get_header(); ?>
 			<?php endwhile;
 		?>
 		</div>
+		<div class="whats-terra-container">
+			<div class="entry-content whats-terra">
+				<?php the_content(); ?>
 
-		<div class="entry-content whats-terra">
-			<?php the_content(); ?>
-
-		</div><!-- .entry-content -->
-
+			</div><!-- .entry-content -->
+		</div>
 
 
 		<!-- Lack of Awareness Section NOTE: need to hardcode background image unless we want CSF -->
@@ -139,37 +139,41 @@ get_header(); ?>
 
 			<h2><?php echo CFS()->get('source_of_funds_title'); ?></h2>
 			<div class="sf-wrapper">
-				<h3 class="phase-1"><?php echo CFS()->get('1st_phase_title'); ?></h3>
-				<h3 class="phase-2"><?php echo CFS()->get('2nd_phase_title'); ?></h3>
 
-				<div class="seed-round">
-					<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
-					<div class="seed-p-wrapper">
-						<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
-						<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+				<div class="seed-container">
+					<h3 class="phase-1"><?php echo CFS()->get('1st_phase_title'); ?></h3>
+					<div class="seed-round">
+						<h3 class="seed-rnd-h3"><?php echo CFS()->get('seed_round_title'); ?></h3>
+						<div class="seed-p-wrapper">
+							<p class="seed-p-left"><?php echo CFS()->get('text_left'); ?></p>
+							<p class="seed-p-right"><?php echo CFS()->get('text_right'); ?></p>
+						</div>
+						<ol class="seed-items">
+							<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
+							<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
+							<li class="seed-item3"><?php echo CFS()->get('seed_round_item_3'); ?></li>
+							<li class="seed-item4"><?php echo CFS()->get('seed_round_item_4'); ?></li>
+							<li class="seed-item5"><?php echo CFS()->get('seed_round_item_5'); ?></li>
+						</ol>
 					</div>
-					<ol class="seed-items">
-						<li class="seed-item1"><?php echo CFS()->get('seed_round_item_1'); ?></li>
-						<li class="seed-item2"><?php echo CFS()->get('seed_round_item_2'); ?></li>
-						<li class="seed-item3"><?php echo CFS()->get('seed_round_item_3'); ?></li>
-						<li class="seed-item4"><?php echo CFS()->get('seed_round_item_4'); ?></li>
-						<li class="seed-item5"><?php echo CFS()->get('seed_round_item_5'); ?></li>
-					</ol>
 				</div>
 
-				<div class="series-round">
-					<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
-					<div class="series-p-wrapper">
-						<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
-						<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
-						<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+				<div class="series-container">
+					<h3 class="phase-2"><?php echo CFS()->get('2nd_phase_title'); ?></h3>
+					<div class="series-round">
+						<h3 class="series-rnd-h3"><?php echo CFS()->get('series_round_title'); ?></h3>
+						<div class="series-p-wrapper">
+							<p class="series-p-left"><?php echo CFS()->get('series_round_text_left'); ?></p>
+							<p class="series-p-middle"><?php echo CFS()->get('series_round_text_middle'); ?></p>
+							<p class="series-p-right"><?php echo CFS()->get('series_round_text_right'); ?></p>
+						</div>
+						<ol class="series-items">
+							<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
+							<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
+							<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
+							<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
+						</ol>
 					</div>
-					<ol class="series-items">
-						<li class="series-item1"><?php echo CFS()->get('series_round_item_1'); ?></li>
-						<li class="series-item2"><?php echo CFS()->get('series_round_item_2'); ?></li>
-						<li class="series-item3"><?php echo CFS()->get('series_round_item_3'); ?></li>
-						<li class="series-item4"><?php echo CFS()->get('series_round_item_4'); ?></li>
-					</ol>
 				</div>
 			</div>
 		</section>

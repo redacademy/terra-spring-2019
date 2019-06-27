@@ -4,26 +4,39 @@
   .site-content {
     padding-top: 30px;
     padding-bottom: 0;
+
     .error-404 {
       @include center-page;
       @include center-block;
 
       .page-content {
+        .simple-bubbles {
+          display: none;
+        }
+
         h2 {
+          margin-left: 4%;
+          margin-top: 15%;
           color: white;
+          box-shadow: 43px 37px 22px -9px rgba(0, 0, 0, 0.425);
+          width: 53%;
+          @media screen and (max-width: 620px) {
+            width: 67%;
+          }
         }
         .search-box-content {
           box-shadow: 43px 37px 22px -9px rgb(0, 0, 0);
-          width: 28%;
+          width: 36%;
           @media screen and (max-width: 620px) {
-            width: 100%;
+            width: 83%;
           }
 
           p {
-            text-align: center;
+            padding-left: 11%;
             line-height: 1.3;
             font-size: 24px;
-            color: $btn-border-color;
+            color: white;
+            margin-bottom: 18%;
           }
         }
         .four-0-four {
@@ -33,7 +46,6 @@
           grid-template-rows: 600px;
           grid-template-areas: 'number animation number2';
           align-items: center;
-          font-size: 200px;
 
           @include mobile-max {
             grid-template-rows: 300px;
@@ -50,8 +62,10 @@
             color: white;
             width: 25%;
             grid-area: number;
+            font-size: 200px;
             @include mobile-max {
-              margin-left: 20%;
+              margin-right: 30%;
+              font-size: 150px;
             }
           }
           .second-4 {
@@ -59,9 +73,11 @@
             color: white;
             grid-area: number2;
             margin-right: 23%;
+            font-size: 200px;
 
             @include mobile-max {
               justify-self: start;
+              font-size: 150px;
             }
           }
         }

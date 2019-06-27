@@ -217,6 +217,7 @@
       font-size: 1.4rem;
       font-weight: bold;
       margin-bottom: 3rem;
+      padding-top: 2rem;
       @include desktop {
         font-size: 2.6em;
         margin-bottom: 5rem;
@@ -236,39 +237,49 @@
     justify-content: center;
     @include center-page;
 
+    @include mobile-max {
+      // border-left: 8px solid #ffffff;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    .seed-container {
+      border-left: 8px solid #ffffff;
+    }
+
     @include desktop {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+    }
+    .series-container,
+    .seed-container {
+      display: flex;
+      width: 100%;
+      margin-left: 2rem;
+      border-left: 8px solid #ffffff;
 
-      .series-container,
-      .seed-container {
-        display: flex;
-        width: 100%;
-        border-left: 8px solid #ffffff;
-
-        &:hover {
-          .series-rnd-h3,
-          .seed-rnd-h3 {
-            font-size: 2rem;
-            border-bottom: 4px solid white;
-          }
-          .phase-1::before {
-            @include roadmap-dot-hover;
-            transform: scale(1.3);
-            box-shadow: 0 0 11px 0 #ffffff;
-          }
-          .phase-2::before {
-            @include roadmap-dot-hover;
-            transform: scale(1.3);
-            box-shadow: 0 0 11px 0 #ffffff;
-            top: 2px;
-          }
+      &:hover {
+        .series-rnd-h3,
+        .seed-rnd-h3 {
+          font-size: 2rem;
+          border-bottom: 4px solid white;
+        }
+        .phase-1::before {
+          @include roadmap-dot-hover;
+          transform: scale(1.3);
+          box-shadow: 0 0 11px 0 #ffffff;
+        }
+        .phase-2::before {
+          @include roadmap-dot-hover;
+          transform: scale(1.3);
+          box-shadow: 0 0 11px 0 #ffffff;
+          top: 2px;
         }
       }
-      .series-container {
-        border-left: none;
-      }
+    }
+    .series-container {
+      border-left: none;
     }
   }
   .phase-2,
@@ -292,14 +303,16 @@
   .phase-2 {
     &::before {
       @include roadmap-dot;
-      left: -42px;
+      left: -43px;
       top: -5px;
     }
   }
   .series-round,
   .seed-round {
-    width: 50%;
+    width: 100%;
     padding-bottom: 4rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
     @include desktop {
       width: 40%;
       font-size: 1.3rem;
@@ -314,6 +327,10 @@
     @include desktop {
       margin-top: 0;
       text-align: center;
+    }
+
+    @include mobile-max {
+      margin-right: 2rem;
     }
   }
 

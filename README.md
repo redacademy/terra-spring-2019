@@ -52,8 +52,3 @@ There was a strong emphasis to create a website that the client would be able to
 
 Desktop 1120px and 620px for mobile
 
-### Challenges
-
-blah
-
-### Learning Curve

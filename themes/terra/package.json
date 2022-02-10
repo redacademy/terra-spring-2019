@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Terra Theme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
